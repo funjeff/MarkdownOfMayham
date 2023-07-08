@@ -742,6 +742,9 @@ u32 set_mario_action_airborne(struct MarioState *m, u32 action, u32 actionArg) {
     }
 
     switch (action) {
+        case ACT_GROUND_POUND:
+            m->groundClip = 1;
+            break;
         case ACT_DOUBLE_JUMP:
             set_mario_y_vel_based_on_fspeed(m, 52.0f, 0.25f);
             m->forwardVel *= 0.8f;

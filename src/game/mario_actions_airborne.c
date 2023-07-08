@@ -909,7 +909,6 @@ s32 act_steep_jump(struct MarioState *m) {
 s32 act_ground_pound(struct MarioState *m) {
     u32 stepResult;
     f32 yOffset;
-
     play_sound_if_no_flag(m, SOUND_ACTION_THROW, MARIO_ACTION_SOUND_PLAYED);
 
     if (m->actionState == 0) {
@@ -941,22 +940,22 @@ s32 act_ground_pound(struct MarioState *m) {
 
         stepResult = perform_air_step(m, 0);
         if (stepResult == AIR_STEP_LANDED) {
-            if (should_get_stuck_in_ground(m)) {
-#if ENABLE_RUMBLE
-                queue_rumble_data(5, 80);
-#endif
-                play_sound(SOUND_MARIO_OOOF2, m->marioObj->header.gfx.cameraToObject);
-                m->particleFlags |= PARTICLE_MIST_CIRCLE;
-                set_mario_action(m, ACT_BUTT_STUCK_IN_GROUND, 0);
-            } else {
-                play_mario_heavy_landing_sound(m, SOUND_ACTION_TERRAIN_HEAVY_LANDING);
-                if (!check_fall_damage(m, ACT_HARD_BACKWARD_GROUND_KB)) {
-                    m->particleFlags |= PARTICLE_MIST_CIRCLE | PARTICLE_HORIZONTAL_STAR;
-                    set_mario_action(m, ACT_GROUND_POUND_LAND, 0);
-                }
-            }
-            set_camera_shake_from_hit(SHAKE_GROUND_POUND);
-        }
+             if (should_get_stuck_in_ground(m)) {
+ #if ENABLE_RUMBLE
+                 queue_rumble_data(5, 80);
+ #endif
+                 play_sound(SOUND_MARIO_OOOF2, m->marioObj->header.gfx.cameraToObject);
+                 m->particleFlags |= PARTICLE_MIST_CIRCLE;
+                 set_mario_action(m, ACT_BUTT_STUCK_IN_GROUND, 0);
+             } else {
+                 play_mario_heavy_landing_sound(m, SOUND_ACTION_TERRAIN_HEAVY_LANDING);
+                 if (!check_fall_damage(m, ACT_HARD_BACKWARD_GROUND_KB)) {
+                     m->particleFlags |= PARTICLE_MIST_CIRCLE | PARTICLE_HORIZONTAL_STAR;
+                     set_mario_action(m, ACT_GROUND_POUND_LAND, 0);
+                 }
+             }
+             set_camera_shake_from_hit(SHAKE_GROUND_POUND);
+         }
 #ifndef DISABLE_GROUNDPOUND_BONK
         else if (stepResult == AIR_STEP_HIT_WALL) {
             mario_set_forward_vel(m, -16.0f);

@@ -30,10 +30,10 @@
 // #define BREATH_METER
 
 // Number of coins to spawn the "100 coin" star. If you remove the define altogether, then there won't be a 100 coin star at all.
-#define X_COIN_STAR 100
+//#define X_COIN_STAR 100
 
 // Stars don't kick you out of the level (does not play nicely with vanilla).
-// #define NON_STOP_STARS
+ #define NON_STOP_STARS
 
 // Bowser keys always exit the level. Only has an effect if NON_STOP_STARS is enabled.
 // #define KEYS_EXIT_LEVEL
@@ -48,22 +48,22 @@
 #define AREA_COUNT 8
 
 // Makes signs and NPCs easier to talk to.
-// #define EASIER_DIALOG_TRIGGER
+ #define EASIER_DIALOG_TRIGGER
 
 // Shows an "A" when Mario is able to talk [requires EASIER_DIALOG_TRIGGER].
-// #define DIALOG_INDICATOR
+ #define DIALOG_INDICATOR
 
 // Include the English characters that were missing from US segment2
 // J, Q, V, X, Z, ¨, !, !!, ?, &, %, ., and the beta key.
 // [MAKE SURE TO INCLUDE EU AND JP/SH BASEROMS IN THE REPO TO OBTAIN THE ASSETS]
 // If this is disabled, backup assets will be used.
-// #define COMPLETE_EN_US_SEGMENT2
+ //#define COMPLETE_EN_US_SEGMENT2
 
 // Removes multi-language cake screen.
 #define EU_CUSTOM_CAKE_FIX
 
 // Adds multiple languages to the game. Just a placeholder for the most part, because it only works with EU, and must be enabled with EU.
-#define MULTILANG (0 || VERSION_EU)
+//#define MULTILANG (0 || VERSION_EU)
 
 // Prevents infinite death loops by always restoring Mario's health when he's warped to any kind of warp while dead.
 #define PREVENT_DEATH_LOOP

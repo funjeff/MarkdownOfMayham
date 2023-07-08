@@ -5,6 +5,7 @@
 #include "engine/surface_collision.h"
 #include "engine/surface_load.h"
 #include "mario.h"
+#include "print.h"
 #include "audio/external.h"
 #include "game_init.h"
 #include "interaction.h"
@@ -237,6 +238,7 @@ u32 mario_update_windy_ground(struct MarioState *m) {
 }
 
 void stop_and_set_height_to_floor(struct MarioState *m) {
+
     struct Object *marioObj = m->marioObj;
 
     mario_set_forward_vel(m, 0.0f);
@@ -244,6 +246,15 @@ void stop_and_set_height_to_floor(struct MarioState *m) {
 
     //! This is responsible for some downwarps.
     m->pos[1] = m->floorHeight;
+
+    vec3f_copy(marioObj->header.gfx.pos, m->pos);
+    vec3s_set(marioObj->header.gfx.angle, 0, m->faceAngle[1], 0);
+}
+
+void clip_through_floor(struct MarioState *m) {
+    struct Object *marioObj = m->marioObj;
+
+    m->pos[1] = m->floorHeight - 100;
 
     vec3f_copy(marioObj->header.gfx.pos, m->pos);
     vec3s_set(marioObj->header.gfx.angle, 0, m->faceAngle[1], 0);
@@ -356,6 +367,7 @@ s32 perform_ground_step(struct MarioState *m) {
 
         stepResult = perform_ground_quarter_step(m, intendedPos);
         if (stepResult == GROUND_STEP_LEFT_GROUND || stepResult == GROUND_STEP_HIT_WALL_STOP_QSTEPS) {
+            
             break;
         }
     }
@@ -691,7 +703,20 @@ s32 perform_air_step(struct MarioState *m, u32 stepArg) {
 
         quarterStepResult = perform_air_quarter_step(m, intendedPos, stepArg);
 
-        if (quarterStepResult != AIR_STEP_NONE) {
+         if (quarterStepResult != AIR_STEP_NONE && m->groundClip) {
+            clip_through_floor(m);
+            intendedPos[0] = m->pos[0] + m->vel[0] / numSteps;
+            intendedPos[1] = m->pos[1] + m->vel[1] / numSteps;
+            intendedPos[2] = m->pos[2] + m->vel[2] / numSteps;
+
+            quarterStepResult = perform_air_quarter_step(m, intendedPos, stepArg);
+            if (quarterStepResult == AIR_STEP_NONE){
+                m->groundClip = 0;
+            }
+            break;
+         }
+
+        if (quarterStepResult != AIR_STEP_NONE && !m->groundClip) {
             stepResult = quarterStepResult;
         }
 

@@ -46,7 +46,7 @@
 // -- POWER STAR --
 
 // Collecting a Power Star will fully heal Mario.
-#define POWER_STARS_HEAL
+//#define POWER_STARS_HEAL
 
 // -- 1-UP MUSHROOM --
 
