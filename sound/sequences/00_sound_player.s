@@ -355,6 +355,25 @@ sound_ref .sound_action_jump_default
 sound_ref .sound_action_jump_default
 sound_ref .sound_action_jump_default
 sound_ref .sound_action_jump_default
+sound_ref .sound_dashpad_1
+sound_ref .sound_dashpad_2
+
+.sound_dashpad_1:
+chan_setbank 11 
+chan_setinstr 0 
+chan_setlayer 0, .layer_new_sound 
+chan_end
+
+.sound_dashpad_2:
+chan_setbank 11 
+chan_setinstr 0 
+chan_setlayer 0, .layer_new_sound 
+chan_end
+
+.layer_new_sound:
+layer_note1 39, 0xc8, 127 
+layer_end
+
 
 .sound_action_jump_default:
 chan_setbank 1

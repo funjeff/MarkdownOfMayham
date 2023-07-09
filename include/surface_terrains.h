@@ -12,24 +12,33 @@ enum SurfaceTypes {
     SURFACE_NEW_WATER_BOTTOM,           // 0x0003 // Custom water surface bottom marker
     SURFACE_0004,                       // 0x0004 // Unused, has no function and has parameters
     SURFACE_HANGABLE,                   // 0x0005 // Ceiling that Mario can climb on
-    SURFACE_0006,                       // 0x0006 // Unused
-    SURFACE_0007,                       // 0x0007 // Unused
-    SURFACE_0008,                       // 0x0008 // Unused
+    
+    
+    SURFACE_DASH_PAD_RIGHT,             // 0x0006 // Dash pad that sends you right
+    SURFACE_DASH_PAD_LEFT,              // 0x0007 // Dash pad that sends you left
+    SURFACE_DASH_PAD_UP,                // 0x0008 // Dash pad thet sends you up
+
     SURFACE_SLOW,                       // 0x0009 // Slow down Mario, unused
     SURFACE_DEATH_PLANE,                // 0x000A // Death floor
     SURFACE_CLOSE_CAMERA,               // 0x000B // Close camera
-    SURFACE_000C,                       // 0x000C // unused
+
+    SURFACE_DASH_PAD_DOWN,              // 0x000C // Dash pad that sends you down
+    
     SURFACE_WATER,                      // 0x000D // Water, has no action, used on some waterboxes below
     SURFACE_FLOWING_WATER,              // 0x000E // Water (flowing), has parameters
-    SURFACE_000F,                       // 0x000F // Unused
-    SURFACE_0010,                       // 0x0010 // Unused
-    SURFACE_0011,                       // 0x0011 // Unused
+    
+    SURFACE_DASH_PAD_DOWN_FAST,         // 0x000F // Dash pad that sends you down fast
+    SURFACE_DASH_PAD_UP_FAST,           // 0x0010 // Dash pad that sends you up fast
+    SURFACE_DASH_PAD_LEFT_FAST,         // 0x0011 // Dash pad that sends you left fast
+
+
     SURFACE_INTANGIBLE,                 // 0x0012 // Intangible (Separates BBH mansion from merry-go-round, for room usage)
     SURFACE_VERY_SLIPPERY,              // 0x0013 // Very slippery, mostly used for slides
     SURFACE_SLIPPERY,                   // 0x0014 // Slippery
     SURFACE_NOT_SLIPPERY,               // 0x0015 // Non-slippery, climbable
     SURFACE_TTM_VINES,                  // 0x0016 // TTM vines, has no action defined
-    SURFACE_0017,                       // 0x0017 // Unused
+    
+    SURFACE_DASH_PAD_RIGHT_FAST,        // 0x0017 // Dash pad that sends you right fast
     SURFACE_0018,                       // 0x0018 // Unused
     SURFACE_0019,                       // 0x0019 // Unused
     SURFACE_MGR_MUSIC,                  // 0x001A // Plays the Merry go round music, see handle_merry_go_round_music in bbh_merry_go_round.inc.c for more details

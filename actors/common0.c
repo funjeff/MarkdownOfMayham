@@ -79,3 +79,7 @@ UNUSED static const u64 binid_17 = 17;
 
 #include "koopa_shell/model.inc.c"
 UNUSED static const u64 binid_18 = 18;
+
+#include "dashpad/model.inc.c"
+#include "dashpad_collison/collision.inc.c"
+#include "dashpad/collision.inc.c"

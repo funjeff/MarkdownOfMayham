@@ -769,6 +769,18 @@ const BehaviorScript bhvTower[] = {
     END_LOOP(),
 };
 
+const BehaviorScript bhvDashpad[] = {
+    BEGIN(OBJ_LIST_LEVEL),
+    OR_INT(oFlags, OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE),
+    CALL_NATIVE(bhv_dashpad_init),
+	LOAD_COLLISION_DATA(dashpad_collision),
+	//SET_HITBOX(/*Radius*/ 900, /*Height*/ 100),
+	BEGIN_LOOP(),
+    	CALL_NATIVE(load_object_collision_model),
+        CALL_NATIVE(bhv_dashpad_loop),
+    END_LOOP(),
+};
+
 const BehaviorScript bhvBulletBillCannon[] = {
     BEGIN(OBJ_LIST_SURFACE),
     OR_INT(oFlags, OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE),

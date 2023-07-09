@@ -1137,5 +1137,7 @@ s32 mario_execute_stationary_action(struct MarioState *m) {
         m->particleFlags |= PARTICLE_IDLE_WATER_WAVE;
     }
 
+    mario_update_dash(gMarioState);
+
     return cancel;
 }
