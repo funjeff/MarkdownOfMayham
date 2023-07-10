@@ -1,0 +1,15 @@
+extern const GeoLayout flag_mario_geo[];
+extern Lights1 flag_mario_CheckpointFlagMarkMat00_f3d_lights;
+extern Lights1 flag_mario_CheckpointFlagBodyMat00_f3d_lights;
+extern u8 flag_mario_CheckpointFlagMark_alb_1_ci8[];
+extern u8 flag_mario_CheckpointFlagMark_alb_1_ci8_pal_rgba16[];
+extern u8 flag_mario_CheckpointFlagBody_alb_rgba16[];
+extern Vtx flag_mario_CheckpointFlag__CheckpointFlagMarkMat00_mesh_layer_1_vtx_0[230];
+extern Gfx flag_mario_CheckpointFlag__CheckpointFlagMarkMat00_mesh_layer_1_tri_0[];
+extern Vtx flag_mario_CheckpointFlag__CheckpointFlagMarkMat00_mesh_layer_1_vtx_1[1511];
+extern Gfx flag_mario_CheckpointFlag__CheckpointFlagMarkMat00_mesh_layer_1_tri_1[];
+extern Gfx mat_flag_mario_CheckpointFlagMarkMat00_f3d[];
+extern Gfx mat_revert_flag_mario_CheckpointFlagMarkMat00_f3d[];
+extern Gfx mat_flag_mario_CheckpointFlagBodyMat00_f3d[];
+extern Gfx flag_mario_CheckpointFlag__CheckpointFlagMarkMat00_mesh_layer_1[];
+extern Gfx flag_mario_material_revert_render_settings[];

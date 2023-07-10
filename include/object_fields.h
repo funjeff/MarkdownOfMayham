@@ -1337,5 +1337,6 @@ os16112*/
 
 #define /*0x100*/ dashpadSpeed  oF4
 
+#define /*0x100*/ checkpointUsed oF4
 
 #endif // OBJECT_FIELDS_H

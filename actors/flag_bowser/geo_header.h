@@ -1,0 +1,15 @@
+extern const GeoLayout flag_bowser_geo[];
+extern Lights1 flag_bowser_CheckpointFlagMarkMat00_f3d_lights;
+extern Lights1 flag_bowser_CheckpointFlagBodyMat00_f3d_lights;
+extern u8 flag_bowser_CheckpointFlagMark_alb_0_ci8[];
+extern u8 flag_bowser_CheckpointFlagMark_alb_0_ci8_pal_rgba16[];
+extern u8 flag_bowser_CheckpointFlagBody_alb_rgba16[];
+extern Vtx flag_bowser_CheckpointFlag__CheckpointFlagMarkMat00_mesh_layer_1_vtx_0[230];
+extern Gfx flag_bowser_CheckpointFlag__CheckpointFlagMarkMat00_mesh_layer_1_tri_0[];
+extern Vtx flag_bowser_CheckpointFlag__CheckpointFlagMarkMat00_mesh_layer_1_vtx_1[1511];
+extern Gfx flag_bowser_CheckpointFlag__CheckpointFlagMarkMat00_mesh_layer_1_tri_1[];
+extern Gfx mat_flag_bowser_CheckpointFlagMarkMat00_f3d[];
+extern Gfx mat_revert_flag_bowser_CheckpointFlagMarkMat00_f3d[];
+extern Gfx mat_flag_bowser_CheckpointFlagBodyMat00_f3d[];
+extern Gfx flag_bowser_CheckpointFlag__CheckpointFlagMarkMat00_mesh_layer_1[];
+extern Gfx flag_bowser_material_revert_render_settings[];

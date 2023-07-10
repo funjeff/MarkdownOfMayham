@@ -29,3 +29,5 @@
 #include "koopa_shell/geo.inc.c"
 
 #include "dashpad/geo.inc.c"
+#include "flag_bowser/geo.inc.c"
+#include "flag_mario/geo.inc.c"

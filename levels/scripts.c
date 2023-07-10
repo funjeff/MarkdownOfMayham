@@ -197,6 +197,10 @@ const LevelScript script_func_global_1[] = {
     LOAD_MODEL_FROM_GEO(MODEL_CHUCKYA,                 chuckya_geo),
     LOAD_MODEL_FROM_GEO(MODEL_TRAJECTORY_MARKER_BALL,      bowling_ball_track_geo),
     LOAD_MODEL_FROM_GEO(MODEL_DASHPAD,                 dashpad_geo),
+    LOAD_MODEL_FROM_GEO(MODEL_THI_WARP_PIPE,           warp_pipe_geo),
+    LOAD_MODEL_FROM_GEO(MODEL_FLAG_MARIO,              flag_mario_geo),
+    LOAD_MODEL_FROM_GEO(MODEL_FLAG_BOWSER,             flag_bowser_geo),
+    
     RETURN(),
 };
 

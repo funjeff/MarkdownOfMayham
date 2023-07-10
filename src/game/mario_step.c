@@ -128,7 +128,9 @@ u32 mario_update_dash(struct MarioState *m){
     
     if (m->floor->type == SURFACE_DASH_PAD_UP){
         set_mario_action(m,ACT_DASHING, 0);
-        m->forwardVel = 80;
+        if ( m->forwardVel < 80){
+           m->forwardVel = 80;
+        }
         m->dashTime = 100;
         m->faceAngle [1] = 16340 * 3;
        if (!m->onPad){
@@ -143,7 +145,9 @@ u32 mario_update_dash(struct MarioState *m){
 
     if (m->floor->type == SURFACE_DASH_PAD_DOWN){
         set_mario_action(m,ACT_DASHING, 0);
-        m->forwardVel = 80;
+          if ( m->forwardVel < 80){
+           m->forwardVel = 80;
+        }
         m->dashTime = 100;
         m->faceAngle [1] = 16340 * 1;
         if (!m->onPad){
@@ -158,7 +162,9 @@ u32 mario_update_dash(struct MarioState *m){
 
     if (m->floor->type == SURFACE_DASH_PAD_LEFT){
         set_mario_action(m,ACT_DASHING, 0);
-        m->forwardVel = 80;
+          if ( m->forwardVel < 80){
+           m->forwardVel = 80;
+        }
         m->dashTime = 100;
         m->faceAngle [1] = 16340 * 2;
         if (!m->onPad){
@@ -173,7 +179,9 @@ u32 mario_update_dash(struct MarioState *m){
 
     if (m->floor->type == SURFACE_DASH_PAD_RIGHT){
         set_mario_action(m,ACT_DASHING, 0);
-        m->forwardVel = 80;
+          if ( m->forwardVel < 80){
+           m->forwardVel = 80;
+        }
         m->dashTime = 100;
         m->faceAngle [1] = 16340 * 0;
         if (!m->onPad){
@@ -236,7 +244,7 @@ u32 mario_update_dash(struct MarioState *m){
 
     if (m->floor->type == SURFACE_DASH_PAD_RIGHT_FAST){
         set_mario_action(m,ACT_DASHING, 0);
-         m->forwardVel = 200;
+        m->forwardVel = 200;
         m->dashTime = 100;
         m->faceAngle [1] = 16340 * 0;
         if (!m->onPad){
