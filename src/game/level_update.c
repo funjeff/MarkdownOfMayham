@@ -732,6 +732,13 @@ s16 level_trigger_warp(struct MarioState *m, s32 warpOp) {
 #endif
                 sDelayedWarpTimer = 48;
                 sSourceWarpNodeId = WARP_NODE_DEATH;
+                struct ObjectWarpNode* node = area_get_warp_node(sSourceWarpNodeId);
+
+                sWarpCheckpointActive = check_warp_checkpoint(&node->node);
+
+
+
+
                 play_transition(WARP_TRANSITION_FADE_INTO_BOWSER, sDelayedWarpTimer, 0x00, 0x00, 0x00);
                 play_sound(SOUND_MENU_BOWSER_LAUGH, gGlobalSoundSource);
 #ifdef PREVENT_DEATH_LOOP
@@ -751,6 +758,10 @@ s16 level_trigger_warp(struct MarioState *m, s32 warpOp) {
 #else
                     sSourceWarpNodeId = WARP_NODE_DEATH;
 #endif
+
+                     struct ObjectWarpNode* warpNode = area_get_warp_node(sSourceWarpNodeId);
+
+                    sWarpCheckpointActive = check_warp_checkpoint(&warpNode->node);
                 }
 
                 sDelayedWarpTimer = 20;
@@ -1314,8 +1325,7 @@ s32 lvl_set_current_level(UNUSED s16 initOrUpdate, s32 levelNum) {
     sWarpCheckpointActive = FALSE;
     gCurrLevelNum = levelNum;
     gCurrCourseNum = gLevelToCourseNumTable[levelNum - 1];
-	if (gCurrLevelNum == LEVEL_BOB) return 0;
-
+	
     if (gCurrDemoInput != NULL || gCurrCreditsEntry != NULL || gCurrCourseNum == COURSE_NONE) {
         return FALSE;
     }

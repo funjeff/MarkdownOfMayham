@@ -22,6 +22,14 @@ Lights1 bob_dl_f3d_material_004_lights = gdSPDefLights1(
 	0x7F, 0x7F, 0x7F,
 	0xFF, 0xFF, 0xFF, 0x28, 0x28, 0x28);
 
+Lights1 bob_dl_Material_f3d_002_lights = gdSPDefLights1(
+	0x73, 0x73, 0x73,
+	0xE7, 0xE7, 0xE7, 0x28, 0x28, 0x28);
+
+Lights1 bob_dl_f3d_material_001_lights = gdSPDefLights1(
+	0x7F, 0x7F, 0x7F,
+	0xFF, 0xFF, 0xFF, 0x28, 0x28, 0x28);
+
 Gfx bob_dl_dash_pannel_texture_rgba16_aligner[] = {gsSPEndDisplayList()};
 u8 bob_dl_dash_pannel_texture_rgba16[] = {
 	0xf9, 0x13, 0xf9, 0x55, 0xf9, 0x53, 0xf9, 0x57, 
@@ -2374,6 +2382,65 @@ Gfx bob_dl_DeathPlane_mesh_layer_5_tri_0[] = {
 	gsSPEndDisplayList(),
 };
 
+Vtx bob_dl_Cube_006_mesh_layer_1_vtx_0[24] = {
+	{{ {4099, 67, -4099}, 0, {624, 496}, {0, 127, 0, 255} }},
+	{{ {-4099, 67, -4099}, 0, {880, 496}, {0, 127, 0, 255} }},
+	{{ {-4099, 67, 4099}, 0, {880, 240}, {0, 127, 0, 255} }},
+	{{ {4099, 67, 4099}, 0, {624, 240}, {0, 127, 0, 255} }},
+	{{ {4099, -67, 4099}, 0, {368, 240}, {0, 0, 127, 255} }},
+	{{ {4099, 67, 4099}, 0, {624, 240}, {0, 0, 127, 255} }},
+	{{ {-4099, 67, 4099}, 0, {624, -16}, {0, 0, 127, 255} }},
+	{{ {-4099, -67, 4099}, 0, {368, -16}, {0, 0, 127, 255} }},
+	{{ {-4099, -67, 4099}, 0, {368, 1008}, {129, 0, 0, 255} }},
+	{{ {-4099, 67, 4099}, 0, {624, 1008}, {129, 0, 0, 255} }},
+	{{ {-4099, 67, -4099}, 0, {624, 752}, {129, 0, 0, 255} }},
+	{{ {-4099, -67, -4099}, 0, {368, 752}, {129, 0, 0, 255} }},
+	{{ {-4099, -67, -4099}, 0, {112, 496}, {0, 129, 0, 255} }},
+	{{ {4099, -67, -4099}, 0, {368, 496}, {0, 129, 0, 255} }},
+	{{ {4099, -67, 4099}, 0, {368, 240}, {0, 129, 0, 255} }},
+	{{ {-4099, -67, 4099}, 0, {112, 240}, {0, 129, 0, 255} }},
+	{{ {4099, -67, -4099}, 0, {368, 496}, {127, 0, 0, 255} }},
+	{{ {4099, 67, -4099}, 0, {624, 496}, {127, 0, 0, 255} }},
+	{{ {4099, 67, 4099}, 0, {624, 240}, {127, 0, 0, 255} }},
+	{{ {4099, -67, 4099}, 0, {368, 240}, {127, 0, 0, 255} }},
+	{{ {-4099, -67, -4099}, 0, {368, 752}, {0, 0, 129, 255} }},
+	{{ {-4099, 67, -4099}, 0, {624, 752}, {0, 0, 129, 255} }},
+	{{ {4099, 67, -4099}, 0, {624, 496}, {0, 0, 129, 255} }},
+	{{ {4099, -67, -4099}, 0, {368, 496}, {0, 0, 129, 255} }},
+};
+
+Gfx bob_dl_Cube_006_mesh_layer_1_tri_0[] = {
+	gsSPVertex(bob_dl_Cube_006_mesh_layer_1_vtx_0 + 0, 16, 0),
+	gsSP1Triangle(0, 1, 2, 0),
+	gsSP1Triangle(0, 2, 3, 0),
+	gsSP1Triangle(4, 5, 6, 0),
+	gsSP1Triangle(4, 6, 7, 0),
+	gsSP1Triangle(8, 9, 10, 0),
+	gsSP1Triangle(8, 10, 11, 0),
+	gsSP1Triangle(12, 13, 14, 0),
+	gsSP1Triangle(12, 14, 15, 0),
+	gsSPVertex(bob_dl_Cube_006_mesh_layer_1_vtx_0 + 16, 8, 0),
+	gsSP1Triangle(0, 1, 2, 0),
+	gsSP1Triangle(0, 2, 3, 0),
+	gsSP1Triangle(4, 5, 6, 0),
+	gsSP1Triangle(4, 6, 7, 0),
+	gsSPEndDisplayList(),
+};
+
+Vtx bob_dl_DeathPlane_001_mesh_layer_5_vtx_0[4] = {
+	{{ {-5891, 0, 5891}, 0, {-16, 1008}, {0, 127, 0, 255} }},
+	{{ {5891, 0, 5891}, 0, {1008, 1008}, {0, 127, 0, 255} }},
+	{{ {5891, 0, -5891}, 0, {1008, -16}, {0, 127, 0, 255} }},
+	{{ {-5891, 0, -5891}, 0, {-16, -16}, {0, 127, 0, 255} }},
+};
+
+Gfx bob_dl_DeathPlane_001_mesh_layer_5_tri_0[] = {
+	gsSPVertex(bob_dl_DeathPlane_001_mesh_layer_5_vtx_0 + 0, 4, 0),
+	gsSP1Triangle(0, 1, 2, 0),
+	gsSP1Triangle(0, 2, 3, 0),
+	gsSPEndDisplayList(),
+};
+
 Gfx mat_bob_dl_Material_f3d_001[] = {
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(0, 0, 0, SHADE, 0, 0, 0, ENVIRONMENT, 0, 0, 0, SHADE, 0, 0, 0, ENVIRONMENT),
@@ -2442,6 +2509,22 @@ Gfx mat_bob_dl_f3d_material_004[] = {
 	gsSPEndDisplayList(),
 };
 
+Gfx mat_bob_dl_Material_f3d_002[] = {
+	gsDPPipeSync(),
+	gsDPSetCombineLERP(0, 0, 0, SHADE, 0, 0, 0, ENVIRONMENT, 0, 0, 0, SHADE, 0, 0, 0, ENVIRONMENT),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsSPSetLights1(bob_dl_Material_f3d_002_lights),
+	gsSPEndDisplayList(),
+};
+
+Gfx mat_bob_dl_f3d_material_001[] = {
+	gsDPPipeSync(),
+	gsDPSetCombineLERP(0, 0, 0, SHADE, 0, 0, 0, 0, 0, 0, 0, SHADE, 0, 0, 0, 0),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsSPSetLights1(bob_dl_f3d_material_001_lights),
+	gsSPEndDisplayList(),
+};
+
 Gfx bob_dl_Cube_mesh_layer_1[] = {
 	gsSPDisplayList(mat_bob_dl_Material_f3d_001),
 	gsSPDisplayList(bob_dl_Cube_mesh_layer_1_tri_0),
@@ -2481,6 +2564,18 @@ Gfx bob_dl_Cube_005_mesh_layer_1[] = {
 Gfx bob_dl_DeathPlane_mesh_layer_5[] = {
 	gsSPDisplayList(mat_bob_dl_f3d_material_004),
 	gsSPDisplayList(bob_dl_DeathPlane_mesh_layer_5_tri_0),
+	gsSPEndDisplayList(),
+};
+
+Gfx bob_dl_Cube_006_mesh_layer_1[] = {
+	gsSPDisplayList(mat_bob_dl_Material_f3d_002),
+	gsSPDisplayList(bob_dl_Cube_006_mesh_layer_1_tri_0),
+	gsSPEndDisplayList(),
+};
+
+Gfx bob_dl_DeathPlane_001_mesh_layer_5[] = {
+	gsSPDisplayList(mat_bob_dl_f3d_material_001),
+	gsSPDisplayList(bob_dl_DeathPlane_001_mesh_layer_5_tri_0),
 	gsSPEndDisplayList(),
 };
 

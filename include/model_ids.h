@@ -552,6 +552,9 @@
 
 //custom models start here
 #define MODEL_DASHPAD                     0xE4        // dashpad_geo
+#define MODEL_FLAG_BOWSER                  0xE5        // flag_bowser_geo
+#define MODEL_FLAG_MARIO                  0xE6        // flag_mario_geo
+
 
 // Menu Models (overwrites Level Geometry IDs)
 #define MODEL_MAIN_MENU_MARIO_SAVE_BUTTON         MODEL_LEVEL_GEOMETRY_03   // main_menu_geo_0001D0

@@ -357,16 +357,23 @@ sound_ref .sound_action_jump_default
 sound_ref .sound_action_jump_default
 sound_ref .sound_dashpad_1
 sound_ref .sound_dashpad_2
+sound_ref .sound_checkpoint
 
 .sound_dashpad_1:
-chan_setbank 11 
-chan_setinstr 0 
+chan_setbank 11
+chan_setinstr 0
 chan_setlayer 0, .layer_new_sound 
 chan_end
 
 .sound_dashpad_2:
-chan_setbank 11 
-chan_setinstr 0 
+chan_setbank 11
+chan_setinstr 1
+chan_setlayer 0, .layer_new_sound 
+chan_end
+
+.sound_checkpoint:
+chan_setbank 11
+chan_setinstr 2
 chan_setlayer 0, .layer_new_sound 
 chan_end
 

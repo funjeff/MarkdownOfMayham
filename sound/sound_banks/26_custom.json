@@ -19,10 +19,16 @@
             "release_rate": 208,
             "envelope": "envelope0",
             "sound": "01_dash2"
+        },
+		"inst2": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "02_smw_midway_gate"
         }
     },
     "instrument_list": [
         "inst0",
-		"inst1"
+		"inst1",
+		"inst2"
     ]
 }

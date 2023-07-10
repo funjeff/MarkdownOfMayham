@@ -201,4 +201,8 @@ extern const Collision unknown_seg8_collision_080262F8[];
 
 #include "dashpad/collision_header.h"
 
+#include "flag_bowser/geo_header.h"
+
+#include "flag_mario/geo_header.h"
+
 #endif
