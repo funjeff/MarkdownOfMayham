@@ -429,7 +429,7 @@ void init_mario_after_warp(void) {
 void warp_area(void) {
     if (sWarpDest.type != WARP_TYPE_NOT_WARPING) {
         if (sWarpDest.type == WARP_TYPE_CHANGE_AREA) {
-            level_control_timer(TIMER_CONTROL_HIDE);
+          //  level_control_timer(TIMER_CONTROL_HIDE);
             unload_mario_area();
             load_area(sWarpDest.areaIdx);
         }
@@ -442,7 +442,7 @@ void warp_area(void) {
 void warp_level(void) {
     gCurrLevelNum = sWarpDest.levelNum;
 
-    level_control_timer(TIMER_CONTROL_HIDE);
+//    level_control_timer(TIMER_CONTROL_HIDE);
 
     load_area(sWarpDest.areaIdx);
     init_mario_after_warp();
