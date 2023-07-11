@@ -807,16 +807,19 @@ void render_clock_end(s32 x, s32 y, s32 width, s32 height, s32 s, s32 t) {
 void render_hud(void) {
     s16 hudDisplayFlags = gHudDisplay.flags;
 
-    render_clock_start_top(0,0,64,32,0,0);
-    render_clock_start_bottom(0,32,64,32,0,0);
-    
-    render_clock_end_top(252,0,64,32,0,0);
-    render_clock_end_bottom(252,32,64,32,0,0);
-    
-    render_head_open(100,100,52,36,0,0);
-    render_head_closed(100,136,52,36,0,0);
+    // render_spaghetti(54,15,16,17,0,0);
+    // render_spaghetti(94,15,16,17,0,0);
+    // render_spaghetti(134,15,16,17,0,0);
+    // render_spaghetti(174,15,16,17,0,0);
+    // render_spaghetti(214,15,16,17,0,0);
+    // render_spaghetti(256,15,16,17,0,0);
 
-     render_spaghetti(100,180,25,26,0,0);
+    // render_clock_start(0,0,42,42,0,0);
+    
+    // render_clock_end(272,0,42,42,0,0);
+    
+    // render_head_closed(100,20,52,36,0,0);
+   
 
     if (hudDisplayFlags == HUD_DISPLAY_NONE) {
         sPowerMeterHUD.animation = POWER_METER_HIDDEN;
