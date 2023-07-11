@@ -476,6 +476,9 @@ void render_hud_timer(void) {
     gSPDisplayList(gDisplayListHead++, dl_hud_img_end);
 }
 
+void render_hud_timeLeft(void) {
+    
+}
 /**
  * Sets HUD status camera value depending of the actions
  * defined in update_camera_status.

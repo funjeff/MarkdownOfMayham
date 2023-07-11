@@ -58,6 +58,5 @@ void bhv_restart_checkpoint_loop(void) {
             play_sound(SOUND_CHECKPOINT, gMarioObject->header.gfx.pos);
         }
 
-		}
-
 	}
+}
