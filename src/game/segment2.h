@@ -89,4 +89,11 @@ extern u8 render_clock_start_bottom_texture[];
 
 extern u8 render_clock_start_top_texture[];
 
+extern u8 render_clock_start_texture[];
+
+extern u8 render_clock_end_texture[];
+
+extern u8 render_spaghetti_texture[];
+extern u8 render_spaghetti_texture_pal_rgba16[];
+
 #endif // SEGMENT2_H
