@@ -75,4 +75,18 @@ extern Gfx dl_billboard_num_E[];
 extern Gfx dl_billboard_num_F[];
 #endif
 
+extern u8 render_head_open_texture[];
+
+extern u8 render_head_closed_texture[];
+
+extern u8 render_spaghetti_texture[];
+
+extern u8 render_clock_end_bottom_texture[];
+
+extern u8 render_clock_end_top_texture[];
+
+extern u8 render_clock_start_bottom_texture[];
+
+extern u8 render_clock_start_top_texture[];
+
 #endif // SEGMENT2_H
