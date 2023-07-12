@@ -1,0 +1,10 @@
+extern void scroll_wf_dl_Dash_E_mesh_layer_1_vtx_0();
+extern void scroll_wf_dl_Dash_Left_mesh_layer_1_vtx_1();
+extern void scroll_wf_dl_Dash_Left_001_mesh_layer_1_vtx_1();
+extern void scroll_wf_dl_Dash_Left_002_mesh_layer_1_vtx_1();
+extern void scroll_wf_dl_Dash_Left_003_mesh_layer_1_vtx_1();
+extern void scroll_wf_dl_Dash_Left_004_mesh_layer_1_vtx_1();
+extern void scroll_wf_dl_Dash_Left_005_mesh_layer_1_vtx_1();
+extern void scroll_wf_dl_Dash_Left_006_mesh_layer_1_vtx_1();
+extern void scroll_wf_dl_Dash_Right_mesh_layer_1_vtx_1();
+extern void scroll_wf();

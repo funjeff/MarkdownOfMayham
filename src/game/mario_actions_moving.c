@@ -804,7 +804,8 @@ s32 act_dashing (struct MarioState *m){
             break;
 
         case GROUND_STEP_HIT_WALL:
-            push_or_sidle_wall(m, startPos);
+            mario_bonk_reflection_dash(m, TRUE);
+            set_mario_action(m, ACT_GROUND_BONK,0);
             m->actionTimer = 0;
             break;
     }
@@ -816,7 +817,7 @@ s32 act_dashing (struct MarioState *m){
         return begin_braking_action(m);
     }
 
-    if (m->input & INPUT_A_PRESSED && m->floor->type != SURFACE_DASH_PAD_DOWN && m->floor->type != SURFACE_DASH_PAD_UP && m->floor->type != SURFACE_DASH_PAD_LEFT && m->floor->type != SURFACE_DASH_PAD_RIGHT) {
+    if (m->input & INPUT_A_PRESSED && m->floor->type != SURFACE_DASH_PAD_DOWN && m->floor->type != SURFACE_DASH_PAD_UP && m->floor->type != SURFACE_DASH_PAD_LEFT && m->floor->type != SURFACE_DASH_PAD_RIGHT && m->floor->type != SURFACE_DASH_PAD_DOWN_FAST && m->floor->type != SURFACE_DASH_PAD_UP_FAST && m->floor->type != SURFACE_DASH_PAD_LEFT_FAST && m->floor->type != SURFACE_DASH_PAD_RIGHT_FAST) {
         return set_jump_from_landing(m);
     }
 
@@ -2082,7 +2083,9 @@ s32 mario_execute_moving_action(struct MarioState *m) {
         m->particleFlags &= ~PARTICLE_DUST;
     }
 
-        mario_update_dash(m);
+        if (!m->lastStepLeftGround){
+            mario_update_dash(m);
+        }
 
     return cancel;
 }

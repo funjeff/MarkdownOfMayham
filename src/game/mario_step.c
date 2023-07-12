@@ -124,6 +124,24 @@ void mario_bonk_reflection(struct MarioState *m, u32 negateSpeed) {
     }
 }
 
+void mario_bonk_reflection_dash(struct MarioState *m, u32 negateSpeed) {
+    if (m->wall != NULL) {
+        s16 wallAngle = m->wallYaw;
+        m->faceAngle[1] = wallAngle - (s16)(m->faceAngle[1] - wallAngle);
+
+        play_sound((m->flags & MARIO_METAL_CAP) ? SOUND_ACTION_METAL_BONK : SOUND_ACTION_BONK,
+                   m->marioObj->header.gfx.cameraToObject);
+    } else {
+        play_sound(SOUND_ACTION_HIT, m->marioObj->header.gfx.cameraToObject);
+    }
+
+    if (negateSpeed) {
+        mario_set_forward_vel(m, -(m->forwardVel/5));
+    } else {
+        m->faceAngle[1] += 0x8000;
+    }
+}
+
 u32 mario_update_dash(struct MarioState *m){
     
     if (m->floor->type == SURFACE_DASH_PAD_UP){
@@ -395,6 +413,7 @@ void stop_and_set_height_to_floor(struct MarioState *m) {
 void clip_through_floor(struct MarioState *m) {
     struct Object *marioObj = m->marioObj;
 
+
     m->pos[1] = m->floorHeight - 100;
 
     vec3f_copy(marioObj->header.gfx.pos, m->pos);
@@ -498,7 +517,7 @@ s32 perform_ground_step(struct MarioState *m) {
     u32 stepResult;
     Vec3f intendedPos;
     const f32 numSteps = 4.0f;
-
+    m->lastStepLeftGround = 0;
     set_mario_wall(m, NULL);
 
     for (i = 0; i < 4; i++) {
@@ -508,7 +527,7 @@ s32 perform_ground_step(struct MarioState *m) {
 
         stepResult = perform_ground_quarter_step(m, intendedPos);
         if (stepResult == GROUND_STEP_LEFT_GROUND || stepResult == GROUND_STEP_HIT_WALL_STOP_QSTEPS) {
-            
+            m->lastStepLeftGround = 1;
             break;
         }
     }

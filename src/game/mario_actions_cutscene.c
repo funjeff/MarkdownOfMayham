@@ -1584,6 +1584,7 @@ s32 act_squished(struct MarioState *m) {
         m->vel[1] = 0;
 
         // check if there's no floor 10 units away from the surface
+
         if (perform_ground_step(m) == GROUND_STEP_LEFT_GROUND) {
             // instant un-squish
             m->squishTimer = 0;
