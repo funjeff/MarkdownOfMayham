@@ -337,6 +337,8 @@ void set_mario_initial_action(struct MarioState *m, u32 spawnType, u32 actionArg
 }
 
 void init_mario_after_warp(void) {
+
+
     struct ObjectWarpNode *spawnNode = area_get_warp_node(sWarpDest.nodeId);
     u32 marioSpawnType = get_mario_spawn_type(spawnNode->object);
 
@@ -980,6 +982,8 @@ void basic_update(void) {
         update_camera(gCurrentArea->camera);
     }
 }
+
+
 
 s32 play_mode_normal(void) {
 #ifndef DISABLE_DEMO

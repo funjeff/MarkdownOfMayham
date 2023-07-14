@@ -790,8 +790,14 @@ s32 act_dashing (struct MarioState *m){
 
     sparkleObj->oPosY += -30.0f;
 
+    m->dashTime = m->dashTime -1;
+    if (m->dashTime == 0){
+        return begin_braking_action(m);
+    }
+
       switch (perform_ground_step(m)) {
         case GROUND_STEP_LEFT_GROUND:
+            m->dashTime = 0;
             set_mario_action(m, ACT_FREEFALL, 0);
             set_mario_animation(m, MARIO_ANIM_GENERAL_FALL);
             break;
@@ -804,6 +810,7 @@ s32 act_dashing (struct MarioState *m){
             break;
 
         case GROUND_STEP_HIT_WALL:
+            m->dashTime = 0;
             mario_bonk_reflection_dash(m, TRUE);
             set_mario_action(m, ACT_GROUND_BONK,0);
             m->actionTimer = 0;
@@ -812,12 +819,8 @@ s32 act_dashing (struct MarioState *m){
 
     tilt_body_walking(m, startYaw);
 
-    m->dashTime = m->dashTime -1;
-    if (m->dashTime == 0){
-        return begin_braking_action(m);
-    }
-
     if (m->input & INPUT_A_PRESSED && m->floor->type != SURFACE_DASH_PAD_DOWN && m->floor->type != SURFACE_DASH_PAD_UP && m->floor->type != SURFACE_DASH_PAD_LEFT && m->floor->type != SURFACE_DASH_PAD_RIGHT && m->floor->type != SURFACE_DASH_PAD_DOWN_FAST && m->floor->type != SURFACE_DASH_PAD_UP_FAST && m->floor->type != SURFACE_DASH_PAD_LEFT_FAST && m->floor->type != SURFACE_DASH_PAD_RIGHT_FAST) {
+        m->dashTime = 0;
         return set_jump_from_landing(m);
     }
 

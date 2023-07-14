@@ -143,7 +143,11 @@ void mario_bonk_reflection_dash(struct MarioState *m, u32 negateSpeed) {
 }
 
 u32 mario_update_dash(struct MarioState *m){
+
+    //print_text_fmt_int(100,100,"%d",m->dashTime);
     
+    //print_text(100,100,"memes");
+
     if (m->floor->type == SURFACE_DASH_PAD_UP){
         set_mario_action(m,ACT_DASHING, 0);
         if ( m->forwardVel < 80){
@@ -215,7 +219,6 @@ u32 mario_update_dash(struct MarioState *m){
      if (m->floor->type == SURFACE_DASH_PAD_UP_FAST){
         set_mario_action(m,ACT_DASHING, 0);
         m->forwardVel = 200;
-        m->dashTime = 100;
         m->faceAngle [1] = 16340 * 3;
        if (!m->onPad){
             m->onPad = 1;
@@ -224,14 +227,16 @@ u32 mario_update_dash(struct MarioState *m){
             } else {
                 play_sound(SOUND_DASH_PANNEL_1, m->marioObj->header.gfx.pos);
             }
-             play_sound(SOUND_MARIO_HERE_WE_GO, m->marioObj->header.gfx.pos);
+            if (m->dashTime == 0){
+                play_sound(SOUND_MARIO_HERE_WE_GO, m->marioObj->header.gfx.pos);
+            }
         }
+         m->dashTime = 100;
     }
 
     if (m->floor->type == SURFACE_DASH_PAD_DOWN_FAST){
         set_mario_action(m,ACT_DASHING, 0);
         m->forwardVel = 200;
-        m->dashTime = 100;
         m->faceAngle [1] = 16340 * 1;
         if (!m->onPad){
             m->onPad = 1;
@@ -240,14 +245,16 @@ u32 mario_update_dash(struct MarioState *m){
             } else {
                 play_sound(SOUND_DASH_PANNEL_1, m->marioObj->header.gfx.pos);
             }
-             play_sound(SOUND_MARIO_HERE_WE_GO, m->marioObj->header.gfx.pos);
+              if (m->dashTime == 0){
+                play_sound(SOUND_MARIO_HERE_WE_GO, m->marioObj->header.gfx.pos);
+            }
         }
+         m->dashTime = 100;
     }
 
     if (m->floor->type == SURFACE_DASH_PAD_LEFT_FAST){
         set_mario_action(m,ACT_DASHING, 0);
          m->forwardVel = 200;
-        m->dashTime = 100;
         m->faceAngle [1] = 16340 * 2;
         if (!m->onPad){
             m->onPad = 1;
@@ -256,14 +263,16 @@ u32 mario_update_dash(struct MarioState *m){
             } else {
                 play_sound(SOUND_DASH_PANNEL_1, m->marioObj->header.gfx.pos);
             }
-             play_sound(SOUND_MARIO_HERE_WE_GO, m->marioObj->header.gfx.pos);
+            if (m->dashTime == 0){
+                play_sound(SOUND_MARIO_HERE_WE_GO, m->marioObj->header.gfx.pos);
+            }
         }
+         m->dashTime = 100;
     }
 
     if (m->floor->type == SURFACE_DASH_PAD_RIGHT_FAST){
         set_mario_action(m,ACT_DASHING, 0);
         m->forwardVel = 200;
-        m->dashTime = 100;
         m->faceAngle [1] = 16340 * 0;
         if (!m->onPad){
             m->onPad = 1;
@@ -272,8 +281,11 @@ u32 mario_update_dash(struct MarioState *m){
             } else {
                 play_sound(SOUND_DASH_PANNEL_1, m->marioObj->header.gfx.pos);
             }
-             play_sound(SOUND_MARIO_HERE_WE_GO, m->marioObj->header.gfx.pos);
-        }   
+             if (m->dashTime == 0){
+                play_sound(SOUND_MARIO_HERE_WE_GO, m->marioObj->header.gfx.pos);
+            }
+        }
+         m->dashTime = 100;
     }
     
 

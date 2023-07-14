@@ -450,26 +450,50 @@ void render_hud_keys(void) {
  * Renders the timer when Mario start sliding in PSS.
  */
 void render_hud_timer(void) {
+    //put this here for now
+    sTimerRunning = 1;
+
+    //print_text_fmt_int(120,120,"%d",sTimerRunning);
+
     Texture *(*hudLUT)[58] = segmented_to_virtual(&main_hud_lut);
     u16 timerValFrames = gHudDisplay.timer;
     u16 timerMins = timerValFrames / (30 * 60);
     u16 timerSecs = (timerValFrames - (timerMins * 1800)) / 30;
 
-    u16 timeLeft = 1800 - ((60 * timerMins) + timerSecs);
+    u32 timeLeft = 240 - ((60 * timerMins) + timerSecs);
 
-    render_spaghetti(54,15,16,17,0,0);
-    render_spaghetti(94,15,16,17,0,0);
-    render_spaghetti(134,15,16,17,0,0);
-    render_spaghetti(174,15,16,17,0,0);
-    render_spaghetti(214,15,16,17,0,0);
-    render_spaghetti(256,15,16,17,0,0);
+    u16 headX = 42 + (230 - ((230 *timeLeft)/240));
 
+
+    if (headX < 50){
+        render_spaghetti(54,15,16,17,0,0);
+    }
+
+    if (headX < 90){
+        render_spaghetti(94,15,16,17,0,0);
+    }
+    if (headX < 130) {
+        render_spaghetti(134,15,16,17,0,0);
+    }
+    if (headX < 170){
+        render_spaghetti(174,15,16,17,0,0);
+    }
+    if (headX < 210) {
+        render_spaghetti(214,15,16,17,0,0);
+    }
+    if (headX < 250){
+        render_spaghetti(256,15,16,17,0,0);
+    }
     render_clock_start(0,0,42,42,0,0);
     
     render_clock_end(272,0,42,42,0,0);
     
-    render_mario_head_closed(42,10,52,36,0,0);
-
+    if (headX % 2){
+        render_closed_mario_head(headX,6,52,36,0,0);
+    } else {
+        render_open_mario_head(headX,6,52,36,0,0);
+    }
+  //  print_text_fmt_int(100,100,"%d",timeLeft);
 
 }
 
