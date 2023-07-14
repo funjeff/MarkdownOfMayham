@@ -455,6 +455,20 @@ void render_hud_timer(void) {
     u16 timerMins = timerValFrames / (30 * 60);
     u16 timerSecs = (timerValFrames - (timerMins * 1800)) / 30;
 
+    u16 timeLeft = 1800 - ((60 * timerMins) + timerSecs);
+
+    render_spaghetti(54,15,16,17,0,0);
+    render_spaghetti(94,15,16,17,0,0);
+    render_spaghetti(134,15,16,17,0,0);
+    render_spaghetti(174,15,16,17,0,0);
+    render_spaghetti(214,15,16,17,0,0);
+    render_spaghetti(256,15,16,17,0,0);
+
+    render_clock_start(0,0,42,42,0,0);
+    
+    render_clock_end(272,0,42,42,0,0);
+    
+    render_head_closed(42,10,52,36,0,0);
 
 
 }
@@ -806,19 +820,6 @@ void render_clock_end(s32 x, s32 y, s32 width, s32 height, s32 s, s32 t) {
 
 void render_hud(void) {
     s16 hudDisplayFlags = gHudDisplay.flags;
-
-    render_spaghetti(54,15,16,17,0,0);
-    render_spaghetti(94,15,16,17,0,0);
-    render_spaghetti(134,15,16,17,0,0);
-    render_spaghetti(174,15,16,17,0,0);
-    render_spaghetti(214,15,16,17,0,0);
-    render_spaghetti(256,15,16,17,0,0);
-
-    render_clock_start(0,0,42,42,0,0);
-    
-    render_clock_end(272,0,42,42,0,0);
-    
-    render_head_closed(100,20,52,36,0,0);
    
 
     if (hudDisplayFlags == HUD_DISPLAY_NONE) {
@@ -859,7 +860,7 @@ void render_hud(void) {
 #endif
 
         if (hudDisplayFlags & HUD_DISPLAY_FLAG_COIN_COUNT) {
-            render_hud_coins();
+           // render_hud_coins();
         }
 
         if (hudDisplayFlags & HUD_DISPLAY_FLAG_STAR_COUNT) {
