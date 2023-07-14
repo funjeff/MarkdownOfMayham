@@ -468,7 +468,7 @@ void render_hud_timer(void) {
     
     render_clock_end(272,0,42,42,0,0);
     
-    render_head_closed(42,10,52,36,0,0);
+    render_mario_head_closed(42,10,52,36,0,0);
 
 
 }
