@@ -96,4 +96,8 @@ extern u8 render_clock_end_texture[];
 extern u8 render_spaghetti_texture[];
 extern u8 render_spaghetti_texture_pal_rgba16[];
 
+extern u8 render_open_mario_head_texture[];
+
+extern u8 render_closed_mario_head_texture[];
+
 #endif // SEGMENT2_H
