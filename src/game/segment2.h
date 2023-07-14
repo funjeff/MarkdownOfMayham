@@ -100,4 +100,6 @@ extern u8 render_open_mario_head_texture[];
 
 extern u8 render_closed_mario_head_texture[];
 
+extern u8 render_closed_mario_head_real_texture[];
+
 #endif // SEGMENT2_H
