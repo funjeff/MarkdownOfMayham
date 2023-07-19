@@ -180,7 +180,7 @@ Gfx *geo_exec_flying_carpet_create(s32 callContext, struct GraphNode *node, UNUS
 /**
  * Create a display list for the end screen with Peach's delicious cake.
  */
-Gfx *geo_exec_cake_end_screen(s32 callContext, struct GraphNode *node, UNUSED Mat4 mtx) {
+Gfx *geo_exec_cake_end_screen1(s32 callContext, struct GraphNode *node, UNUSED Mat4 mtx) {
     struct GraphNodeGenerated *generatedNode = (struct GraphNodeGenerated *) node;
     Gfx *displayList = NULL;
     Gfx *displayListHead = NULL;
@@ -212,7 +212,179 @@ Gfx *geo_exec_cake_end_screen(s32 callContext, struct GraphNode *node, UNUSED Ma
         }
 #endif
 #else
+        gSPDisplayList(displayListHead++, dl_cake_end_screen1);
+#endif
+        gSPEndDisplayList(displayListHead);
+    }
+
+    return displayList;
+}
+
+/**
+ * Create a display list for the end screen with Peach's delicious cake.
+ */
+Gfx *geo_exec_cake_end_screen2(s32 callContext, struct GraphNode *node, UNUSED Mat4 mtx) {
+    struct GraphNodeGenerated *generatedNode = (struct GraphNodeGenerated *) node;
+    Gfx *displayList = NULL;
+    Gfx *displayListHead = NULL;
+
+    if (callContext == GEO_CONTEXT_RENDER) {
+        displayList = alloc_display_list(3 * sizeof(*displayList));
+        displayListHead = displayList;
+
+        SET_GRAPH_NODE_LAYER(generatedNode->fnNode.node.flags, LAYER_OPAQUE);
+#if MULTILANG
         gSPDisplayList(displayListHead++, dl_cake_end_screen);
+#else
+        gSPDisplayList(displayListHead++, dl_proj_mtx_fullscreen);
+#endif
+#if MULTILANG
+#ifdef EU_CUSTOM_CAKE_FIX
+    gSPDisplayList(displayListHead++, dl_cake_end_screen_eu_fix);
+#else
+    switch (eu_get_language()) {
+            case LANGUAGE_ENGLISH:
+                gSPDisplayList(displayListHead++, dl_cake_end_screen_eu_english);
+                break;
+            case LANGUAGE_FRENCH:
+                gSPDisplayList(displayListHead++, dl_cake_end_screen_eu_french );
+                break;
+            case LANGUAGE_GERMAN:
+                gSPDisplayList(displayListHead++, dl_cake_end_screen_eu_german );
+                break;
+        }
+#endif
+#else
+        gSPDisplayList(displayListHead++, dl_cake_end_screen2);
+#endif
+        gSPEndDisplayList(displayListHead);
+    }
+
+    return displayList;
+}
+
+/**
+ * Create a display list for the end screen with Peach's delicious cake.
+ */
+Gfx *geo_exec_cake_end_screen3(s32 callContext, struct GraphNode *node, UNUSED Mat4 mtx) {
+    struct GraphNodeGenerated *generatedNode = (struct GraphNodeGenerated *) node;
+    Gfx *displayList = NULL;
+    Gfx *displayListHead = NULL;
+
+    if (callContext == GEO_CONTEXT_RENDER) {
+        displayList = alloc_display_list(3 * sizeof(*displayList));
+        displayListHead = displayList;
+
+        SET_GRAPH_NODE_LAYER(generatedNode->fnNode.node.flags, LAYER_OPAQUE);
+#if MULTILANG
+        gSPDisplayList(displayListHead++, dl_cake_end_screen);
+#else
+        gSPDisplayList(displayListHead++, dl_proj_mtx_fullscreen);
+#endif
+#if MULTILANG
+#ifdef EU_CUSTOM_CAKE_FIX
+    gSPDisplayList(displayListHead++, dl_cake_end_screen_eu_fix);
+#else
+    switch (eu_get_language()) {
+            case LANGUAGE_ENGLISH:
+                gSPDisplayList(displayListHead++, dl_cake_end_screen_eu_english);
+                break;
+            case LANGUAGE_FRENCH:
+                gSPDisplayList(displayListHead++, dl_cake_end_screen_eu_french );
+                break;
+            case LANGUAGE_GERMAN:
+                gSPDisplayList(displayListHead++, dl_cake_end_screen_eu_german );
+                break;
+        }
+#endif
+#else
+        gSPDisplayList(displayListHead++, dl_cake_end_screen3);
+#endif
+        gSPEndDisplayList(displayListHead);
+    }
+
+    return displayList;
+}
+
+/**
+ * Create a display list for the end screen with Peach's delicious cake.
+ */
+Gfx *geo_exec_cake_end_screen4(s32 callContext, struct GraphNode *node, UNUSED Mat4 mtx) {
+    struct GraphNodeGenerated *generatedNode = (struct GraphNodeGenerated *) node;
+    Gfx *displayList = NULL;
+    Gfx *displayListHead = NULL;
+
+    if (callContext == GEO_CONTEXT_RENDER) {
+        displayList = alloc_display_list(3 * sizeof(*displayList));
+        displayListHead = displayList;
+
+        SET_GRAPH_NODE_LAYER(generatedNode->fnNode.node.flags, LAYER_OPAQUE);
+#if MULTILANG
+        gSPDisplayList(displayListHead++, dl_cake_end_screen);
+#else
+        gSPDisplayList(displayListHead++, dl_proj_mtx_fullscreen);
+#endif
+#if MULTILANG
+#ifdef EU_CUSTOM_CAKE_FIX
+    gSPDisplayList(displayListHead++, dl_cake_end_screen_eu_fix);
+#else
+    switch (eu_get_language()) {
+            case LANGUAGE_ENGLISH:
+                gSPDisplayList(displayListHead++, dl_cake_end_screen_eu_english);
+                break;
+            case LANGUAGE_FRENCH:
+                gSPDisplayList(displayListHead++, dl_cake_end_screen_eu_french );
+                break;
+            case LANGUAGE_GERMAN:
+                gSPDisplayList(displayListHead++, dl_cake_end_screen_eu_german );
+                break;
+        }
+#endif
+#else
+        gSPDisplayList(displayListHead++, dl_cake_end_screen4);
+#endif
+        gSPEndDisplayList(displayListHead);
+    }
+
+    return displayList;
+}
+
+/**
+ * Create a display list for the end screen with Peach's delicious cake.
+ */
+Gfx *geo_exec_cake_end_screen5(s32 callContext, struct GraphNode *node, UNUSED Mat4 mtx) {
+    struct GraphNodeGenerated *generatedNode = (struct GraphNodeGenerated *) node;
+    Gfx *displayList = NULL;
+    Gfx *displayListHead = NULL;
+
+    if (callContext == GEO_CONTEXT_RENDER) {
+        displayList = alloc_display_list(3 * sizeof(*displayList));
+        displayListHead = displayList;
+
+        SET_GRAPH_NODE_LAYER(generatedNode->fnNode.node.flags, LAYER_OPAQUE);
+#if MULTILANG
+        gSPDisplayList(displayListHead++, dl_cake_end_screen);
+#else
+        gSPDisplayList(displayListHead++, dl_proj_mtx_fullscreen);
+#endif
+#if MULTILANG
+#ifdef EU_CUSTOM_CAKE_FIX
+    gSPDisplayList(displayListHead++, dl_cake_end_screen_eu_fix);
+#else
+    switch (eu_get_language()) {
+            case LANGUAGE_ENGLISH:
+                gSPDisplayList(displayListHead++, dl_cake_end_screen_eu_english);
+                break;
+            case LANGUAGE_FRENCH:
+                gSPDisplayList(displayListHead++, dl_cake_end_screen_eu_french );
+                break;
+            case LANGUAGE_GERMAN:
+                gSPDisplayList(displayListHead++, dl_cake_end_screen_eu_german );
+                break;
+        }
+#endif
+#else
+        gSPDisplayList(displayListHead++, dl_cake_end_screen5);
 #endif
         gSPEndDisplayList(displayListHead);
     }

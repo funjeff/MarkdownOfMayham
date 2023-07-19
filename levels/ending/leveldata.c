@@ -290,8 +290,36 @@ const Vtx cake_verts[] = {
     MAKE_ROW_VERTICES(7),
 };
 
-#define LOAD_CAKE_TEXTURE(i) \
-    gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, cake_end_texture_data + (CAKE_TEX_WIDTH * CAKE_TEX_HEIGHT * 2 * (i))), \
+#define LOAD_CAKE1_TEXTURE(i) \
+    gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, cake_end_texture_data1 + (CAKE_TEX_WIDTH * CAKE_TEX_HEIGHT * 2 * (i))), \
+    gsDPLoadSync(), \
+    gsDPLoadBlock(G_TX_LOADTILE, 0, 0, \
+        (((CAKE_TEX_WIDTH)*(CAKE_TEX_HEIGHT) + G_IM_SIZ_16b_INCR) >> G_IM_SIZ_16b_SHIFT)-1, \
+        CALC_DXT(CAKE_TEX_WIDTH, G_IM_SIZ_16b_BYTES))
+
+#define LOAD_CAKE2_TEXTURE(i) \
+    gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, cake_end_texture_data2 + (CAKE_TEX_WIDTH * CAKE_TEX_HEIGHT * 2 * (i))), \
+    gsDPLoadSync(), \
+    gsDPLoadBlock(G_TX_LOADTILE, 0, 0, \
+        (((CAKE_TEX_WIDTH)*(CAKE_TEX_HEIGHT) + G_IM_SIZ_16b_INCR) >> G_IM_SIZ_16b_SHIFT)-1, \
+        CALC_DXT(CAKE_TEX_WIDTH, G_IM_SIZ_16b_BYTES))
+
+#define LOAD_CAKE3_TEXTURE(i) \
+    gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, cake_end_texture_data3 + (CAKE_TEX_WIDTH * CAKE_TEX_HEIGHT * 2 * (i))), \
+    gsDPLoadSync(), \
+    gsDPLoadBlock(G_TX_LOADTILE, 0, 0, \
+        (((CAKE_TEX_WIDTH)*(CAKE_TEX_HEIGHT) + G_IM_SIZ_16b_INCR) >> G_IM_SIZ_16b_SHIFT)-1, \
+        CALC_DXT(CAKE_TEX_WIDTH, G_IM_SIZ_16b_BYTES))
+
+#define LOAD_CAKE4_TEXTURE(i) \
+    gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, cake_end_texture_data4 + (CAKE_TEX_WIDTH * CAKE_TEX_HEIGHT * 2 * (i))), \
+    gsDPLoadSync(), \
+    gsDPLoadBlock(G_TX_LOADTILE, 0, 0, \
+        (((CAKE_TEX_WIDTH)*(CAKE_TEX_HEIGHT) + G_IM_SIZ_16b_INCR) >> G_IM_SIZ_16b_SHIFT)-1, \
+        CALC_DXT(CAKE_TEX_WIDTH, G_IM_SIZ_16b_BYTES))
+
+#define LOAD_CAKE5_TEXTURE(i) \
+    gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, cake_end_texture_data5 + (CAKE_TEX_WIDTH * CAKE_TEX_HEIGHT * 2 * (i))), \
     gsDPLoadSync(), \
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, \
         (((CAKE_TEX_WIDTH)*(CAKE_TEX_HEIGHT) + G_IM_SIZ_16b_INCR) >> G_IM_SIZ_16b_SHIFT)-1, \
@@ -300,23 +328,83 @@ const Vtx cake_verts[] = {
 #define LOAD_CAKE_VERTICES(i) \
     gsSPVertex(cake_verts + 4 * (i), 4, 0)
 
-#define CAKE_TRIS(i) \
-    LOAD_CAKE_TEXTURE(i), \
+#define CAKE1_TRIS(i) \
+    LOAD_CAKE1_TEXTURE(i), \
     gsSP2Triangles(0,  2,  1, 0x0,  1,  2,  3, 0x0)
 
-#define CAKE_RECT(i) \
-    LOAD_CAKE_VERTICES(i), \
-    CAKE_TRIS(i) \
+#define CAKE2_TRIS(i) \
+    LOAD_CAKE2_TEXTURE(i), \
+    gsSP2Triangles(0,  2,  1, 0x0,  1,  2,  3, 0x0)
 
-#define CAKE_ROW(row) \
-    CAKE_RECT((row) * NUM_CAKE_TEXTURES_X + 0),\
-    CAKE_RECT((row) * NUM_CAKE_TEXTURES_X + 1),\
-    CAKE_RECT((row) * NUM_CAKE_TEXTURES_X + 2),\
-    CAKE_RECT((row) * NUM_CAKE_TEXTURES_X + 3),\
-    CAKE_RECT((row) * NUM_CAKE_TEXTURES_X + 4)
+#define CAKE3_TRIS(i) \
+    LOAD_CAKE3_TEXTURE(i), \
+    gsSP2Triangles(0,  2,  1, 0x0,  1,  2,  3, 0x0)
+
+#define CAKE4_TRIS(i) \
+    LOAD_CAKE4_TEXTURE(i), \
+    gsSP2Triangles(0,  2,  1, 0x0,  1,  2,  3, 0x0)
+
+#define CAKE5_TRIS(i) \
+    LOAD_CAKE5_TEXTURE(i), \
+    gsSP2Triangles(0,  2,  1, 0x0,  1,  2,  3, 0x0)
+
+#define CAKE_RECT1(i) \
+    LOAD_CAKE_VERTICES(i), \
+    CAKE1_TRIS(i) \
+
+#define CAKE_RECT2(i) \
+    LOAD_CAKE_VERTICES(i), \
+    CAKE2_TRIS(i) \
+
+#define CAKE_RECT3(i) \
+    LOAD_CAKE_VERTICES(i), \
+    CAKE3_TRIS(i) \
+
+#define CAKE_RECT4(i) \
+    LOAD_CAKE_VERTICES(i), \
+    CAKE4_TRIS(i) \
+
+#define CAKE_RECT5(i) \
+    LOAD_CAKE_VERTICES(i), \
+    CAKE5_TRIS(i) \
+
+#define CAKE_ROW1(row) \
+    CAKE_RECT1((row) * NUM_CAKE_TEXTURES_X + 0),\
+    CAKE_RECT1((row) * NUM_CAKE_TEXTURES_X + 1),\
+    CAKE_RECT1((row) * NUM_CAKE_TEXTURES_X + 2),\
+    CAKE_RECT1((row) * NUM_CAKE_TEXTURES_X + 3),\
+    CAKE_RECT1((row) * NUM_CAKE_TEXTURES_X + 4)
+
+#define CAKE_ROW2(row) \
+    CAKE_RECT2((row) * NUM_CAKE_TEXTURES_X + 0),\
+    CAKE_RECT2((row) * NUM_CAKE_TEXTURES_X + 1),\
+    CAKE_RECT2((row) * NUM_CAKE_TEXTURES_X + 2),\
+    CAKE_RECT2((row) * NUM_CAKE_TEXTURES_X + 3),\
+    CAKE_RECT2((row) * NUM_CAKE_TEXTURES_X + 4)
+
+#define CAKE_ROW3(row) \
+    CAKE_RECT3((row) * NUM_CAKE_TEXTURES_X + 0),\
+    CAKE_RECT3((row) * NUM_CAKE_TEXTURES_X + 1),\
+    CAKE_RECT3((row) * NUM_CAKE_TEXTURES_X + 2),\
+    CAKE_RECT3((row) * NUM_CAKE_TEXTURES_X + 3),\
+    CAKE_RECT3((row) * NUM_CAKE_TEXTURES_X + 4)
+
+#define CAKE_ROW4(row) \
+    CAKE_RECT4((row) * NUM_CAKE_TEXTURES_X + 0),\
+    CAKE_RECT4((row) * NUM_CAKE_TEXTURES_X + 1),\
+    CAKE_RECT4((row) * NUM_CAKE_TEXTURES_X + 2),\
+    CAKE_RECT4((row) * NUM_CAKE_TEXTURES_X + 3),\
+    CAKE_RECT4((row) * NUM_CAKE_TEXTURES_X + 4)
+
+#define CAKE_ROW5(row) \
+    CAKE_RECT5((row) * NUM_CAKE_TEXTURES_X + 0),\
+    CAKE_RECT5((row) * NUM_CAKE_TEXTURES_X + 1),\
+    CAKE_RECT5((row) * NUM_CAKE_TEXTURES_X + 2),\
+    CAKE_RECT5((row) * NUM_CAKE_TEXTURES_X + 3),\
+    CAKE_RECT5((row) * NUM_CAKE_TEXTURES_X + 4)
 
 // 0x07026400 - 0x07027350
-const Gfx dl_cake_end_screen[] = {
+const Gfx dl_cake_end_screen1[] = {
     gsDPPipeSync(),
     gsDPSetCombineMode(G_CC_DECALRGB, G_CC_DECALRGB),
     gsDPSetRenderMode(G_RM_AA_OPA_SURF, G_RM_AA_OPA_SURF2),
@@ -334,14 +422,150 @@ const Gfx dl_cake_end_screen[] = {
         (CAKE_TEX_WIDTH - 1) << G_TEXTURE_IMAGE_FRAC,
         (CAKE_TEX_HEIGHT - 1) << G_TEXTURE_IMAGE_FRAC),
 
-    CAKE_ROW(0),
-    CAKE_ROW(1),
-    CAKE_ROW(2),
-    CAKE_ROW(3),
-    CAKE_ROW(4),
-    CAKE_ROW(5),
-    CAKE_ROW(6),
-    CAKE_ROW(7),
+    CAKE_ROW1(0),
+    CAKE_ROW1(1),
+    CAKE_ROW1(2),
+    CAKE_ROW1(3),
+    CAKE_ROW1(4),
+    CAKE_ROW1(5),
+    CAKE_ROW1(6),
+    CAKE_ROW1(7),
+
+    gsDPPipeSync(),
+    gsSPTexture(0xFFFF, 0xFFFF, 0, G_TX_RENDERTILE, G_OFF),
+    gsSPSetGeometryMode(G_LIGHTING),
+    gsDPSetCombineMode(G_CC_SHADE, G_CC_SHADE),
+    gsDPSetRenderMode(G_RM_AA_ZB_OPA_SURF, G_RM_AA_ZB_OPA_SURF2),
+    gsSPEndDisplayList(),
+};
+const Gfx dl_cake_end_screen2[] = {
+    gsDPPipeSync(),
+    gsDPSetCombineMode(G_CC_DECALRGB, G_CC_DECALRGB),
+    gsDPSetRenderMode(G_RM_AA_OPA_SURF, G_RM_AA_OPA_SURF2),
+    gsSPTexture(0xFFFF, 0xFFFF, 0, G_TX_RENDERTILE, G_ON),
+
+    gsDPSetTile(G_IM_FMT_RGBA, G_IM_SIZ_16b_LOAD_BLOCK, 0, 0,
+        G_TX_LOADTILE, 0,
+        G_TX_CLAMP, G_TX_NOMASK, G_TX_NOLOD,
+        G_TX_CLAMP, G_TX_NOMASK, G_TX_NOLOD),
+    gsDPSetTile(G_IM_FMT_RGBA, G_IM_SIZ_16b, (((CAKE_TEX_WIDTH * G_IM_SIZ_16b_LINE_BYTES)+7)>>3), 0,
+        G_TX_RENDERTILE, 0,
+        G_TX_CLAMP, G_TX_NOMASK, G_TX_NOLOD,
+        G_TX_CLAMP, G_TX_NOMASK, G_TX_NOLOD),
+    gsDPSetTileSize(G_TX_RENDERTILE, 0, 0,
+        (CAKE_TEX_WIDTH - 1) << G_TEXTURE_IMAGE_FRAC,
+        (CAKE_TEX_HEIGHT - 1) << G_TEXTURE_IMAGE_FRAC),
+
+    CAKE_ROW2(0),
+    CAKE_ROW2(1),
+    CAKE_ROW2(2),
+    CAKE_ROW2(3),
+    CAKE_ROW2(4),
+    CAKE_ROW2(5),
+    CAKE_ROW2(6),
+    CAKE_ROW2(7),
+
+    gsDPPipeSync(),
+    gsSPTexture(0xFFFF, 0xFFFF, 0, G_TX_RENDERTILE, G_OFF),
+    gsSPSetGeometryMode(G_LIGHTING),
+    gsDPSetCombineMode(G_CC_SHADE, G_CC_SHADE),
+    gsDPSetRenderMode(G_RM_AA_ZB_OPA_SURF, G_RM_AA_ZB_OPA_SURF2),
+    gsSPEndDisplayList(),
+};
+const Gfx dl_cake_end_screen3[] = {
+    gsDPPipeSync(),
+    gsDPSetCombineMode(G_CC_DECALRGB, G_CC_DECALRGB),
+    gsDPSetRenderMode(G_RM_AA_OPA_SURF, G_RM_AA_OPA_SURF2),
+    gsSPTexture(0xFFFF, 0xFFFF, 0, G_TX_RENDERTILE, G_ON),
+
+    gsDPSetTile(G_IM_FMT_RGBA, G_IM_SIZ_16b_LOAD_BLOCK, 0, 0,
+        G_TX_LOADTILE, 0,
+        G_TX_CLAMP, G_TX_NOMASK, G_TX_NOLOD,
+        G_TX_CLAMP, G_TX_NOMASK, G_TX_NOLOD),
+    gsDPSetTile(G_IM_FMT_RGBA, G_IM_SIZ_16b, (((CAKE_TEX_WIDTH * G_IM_SIZ_16b_LINE_BYTES)+7)>>3), 0,
+        G_TX_RENDERTILE, 0,
+        G_TX_CLAMP, G_TX_NOMASK, G_TX_NOLOD,
+        G_TX_CLAMP, G_TX_NOMASK, G_TX_NOLOD),
+    gsDPSetTileSize(G_TX_RENDERTILE, 0, 0,
+        (CAKE_TEX_WIDTH - 1) << G_TEXTURE_IMAGE_FRAC,
+        (CAKE_TEX_HEIGHT - 1) << G_TEXTURE_IMAGE_FRAC),
+
+    CAKE_ROW3(0),
+    CAKE_ROW3(1),
+    CAKE_ROW3(2),
+    CAKE_ROW3(3),
+    CAKE_ROW3(4),
+    CAKE_ROW3(5),
+    CAKE_ROW3(6),
+    CAKE_ROW3(7),
+
+    gsDPPipeSync(),
+    gsSPTexture(0xFFFF, 0xFFFF, 0, G_TX_RENDERTILE, G_OFF),
+    gsSPSetGeometryMode(G_LIGHTING),
+    gsDPSetCombineMode(G_CC_SHADE, G_CC_SHADE),
+    gsDPSetRenderMode(G_RM_AA_ZB_OPA_SURF, G_RM_AA_ZB_OPA_SURF2),
+    gsSPEndDisplayList(),
+};
+const Gfx dl_cake_end_screen4[] = {
+    gsDPPipeSync(),
+    gsDPSetCombineMode(G_CC_DECALRGB, G_CC_DECALRGB),
+    gsDPSetRenderMode(G_RM_AA_OPA_SURF, G_RM_AA_OPA_SURF2),
+    gsSPTexture(0xFFFF, 0xFFFF, 0, G_TX_RENDERTILE, G_ON),
+
+    gsDPSetTile(G_IM_FMT_RGBA, G_IM_SIZ_16b_LOAD_BLOCK, 0, 0,
+        G_TX_LOADTILE, 0,
+        G_TX_CLAMP, G_TX_NOMASK, G_TX_NOLOD,
+        G_TX_CLAMP, G_TX_NOMASK, G_TX_NOLOD),
+    gsDPSetTile(G_IM_FMT_RGBA, G_IM_SIZ_16b, (((CAKE_TEX_WIDTH * G_IM_SIZ_16b_LINE_BYTES)+7)>>3), 0,
+        G_TX_RENDERTILE, 0,
+        G_TX_CLAMP, G_TX_NOMASK, G_TX_NOLOD,
+        G_TX_CLAMP, G_TX_NOMASK, G_TX_NOLOD),
+    gsDPSetTileSize(G_TX_RENDERTILE, 0, 0,
+        (CAKE_TEX_WIDTH - 1) << G_TEXTURE_IMAGE_FRAC,
+        (CAKE_TEX_HEIGHT - 1) << G_TEXTURE_IMAGE_FRAC),
+
+    CAKE_ROW4(0),
+    CAKE_ROW4(1),
+    CAKE_ROW4(2),
+    CAKE_ROW4(3),
+    CAKE_ROW4(4),
+    CAKE_ROW4(5),
+    CAKE_ROW4(6),
+    CAKE_ROW4(7),
+
+    gsDPPipeSync(),
+    gsSPTexture(0xFFFF, 0xFFFF, 0, G_TX_RENDERTILE, G_OFF),
+    gsSPSetGeometryMode(G_LIGHTING),
+    gsDPSetCombineMode(G_CC_SHADE, G_CC_SHADE),
+    gsDPSetRenderMode(G_RM_AA_ZB_OPA_SURF, G_RM_AA_ZB_OPA_SURF2),
+    gsSPEndDisplayList(),
+};
+const Gfx dl_cake_end_screen5[] = {
+    gsDPPipeSync(),
+    gsDPSetCombineMode(G_CC_DECALRGB, G_CC_DECALRGB),
+    gsDPSetRenderMode(G_RM_AA_OPA_SURF, G_RM_AA_OPA_SURF2),
+    gsSPTexture(0xFFFF, 0xFFFF, 0, G_TX_RENDERTILE, G_ON),
+
+    gsDPSetTile(G_IM_FMT_RGBA, G_IM_SIZ_16b_LOAD_BLOCK, 0, 0,
+        G_TX_LOADTILE, 0,
+        G_TX_CLAMP, G_TX_NOMASK, G_TX_NOLOD,
+        G_TX_CLAMP, G_TX_NOMASK, G_TX_NOLOD),
+    gsDPSetTile(G_IM_FMT_RGBA, G_IM_SIZ_16b, (((CAKE_TEX_WIDTH * G_IM_SIZ_16b_LINE_BYTES)+7)>>3), 0,
+        G_TX_RENDERTILE, 0,
+        G_TX_CLAMP, G_TX_NOMASK, G_TX_NOLOD,
+        G_TX_CLAMP, G_TX_NOMASK, G_TX_NOLOD),
+    gsDPSetTileSize(G_TX_RENDERTILE, 0, 0,
+        (CAKE_TEX_WIDTH - 1) << G_TEXTURE_IMAGE_FRAC,
+        (CAKE_TEX_HEIGHT - 1) << G_TEXTURE_IMAGE_FRAC),
+
+    CAKE_ROW5(0),
+    CAKE_ROW5(1),
+    CAKE_ROW5(2),
+    CAKE_ROW5(3),
+    CAKE_ROW5(4),
+    CAKE_ROW5(5),
+    CAKE_ROW5(6),
+    CAKE_ROW5(7),
 
     gsDPPipeSync(),
     gsSPTexture(0xFFFF, 0xFFFF, 0, G_TX_RENDERTILE, G_OFF),

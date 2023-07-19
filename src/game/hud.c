@@ -18,6 +18,8 @@
 #include "puppycam2.h"
 #include "puppyprint.h"
 
+
+
 #include "config.h"
 
 /* @file hud.c
@@ -416,9 +418,9 @@ void render_debug_mode(void) {
  * Renders the amount of coins collected.
  */
 void render_hud_coins(void) {
-    print_text(HUD_COINS_X, HUD_TOP_Y, "$"); // 'Coin' glyph
-    print_text((HUD_COINS_X + 16), HUD_TOP_Y, "*"); // 'X' glyph
-    print_text_fmt_int((HUD_COINS_X + 30), HUD_TOP_Y, "%d", gHudDisplay.coins);
+    print_text(HUD_COINS_X, HUD_TOP_Y - 192, "$"); // 'Coin' glyph
+    print_text((HUD_COINS_X + 16), HUD_TOP_Y - 192, "*"); // 'X' glyph
+    print_text_fmt_int((HUD_COINS_X + 30), HUD_TOP_Y - 192, "%d", gHudDisplay.coins);
 }
 
 /**
@@ -446,6 +448,7 @@ void render_hud_keys(void) {
     }
 }
 
+
 /**
  * Renders the timer when Mario start sliding in PSS.
  */
@@ -460,9 +463,9 @@ void render_hud_timer(void) {
     u16 timerMins = timerValFrames / (30 * 60);
     u16 timerSecs = (timerValFrames - (timerMins * 1800)) / 30;
 
-    u32 timeLeft = 240 - ((60 * timerMins) + timerSecs);
+    u32 timeLeft = 1830 - ((60 * timerMins) + timerSecs);
 
-    u16 headX = 42 + (230 - ((230 *timeLeft)/240));
+    u16 headX = 42 + (230 - ((230 *timeLeft)/1830));
 
 
     if (headX < 50){
@@ -488,10 +491,87 @@ void render_hud_timer(void) {
     
     render_clock_end(272,0,42,42,0,0);
     
-    if (headX % 2){
-        render_closed_mario_head(headX,6,52,36,0,0);
+    if (timeLeft % 2){
+        render_closed_mario_head_real(headX,6,52,36,0,0);
     } else {
         render_open_mario_head(headX,6,52,36,0,0);
+    }
+	
+	u16 framesLeft = 30*60*30.5 - (timerValFrames);
+
+	  if (framesLeft == 30*60*30){
+	  	play_sound(SOUND_30_MINUTES_LEFT, gMarioState->marioObj->header.gfx.cameraToObject);
+	  }
+	  if (framesLeft == 30*60*30 - 57){
+	  	play_sound(SOUND_30_LEFT, gMarioState->marioObj->header.gfx.cameraToObject);
+	  }
+
+
+	if (framesLeft == 20*60*30){
+		play_sound(SOUND_20_MINUTES_LEFT, gMarioState->marioObj->header.gfx.cameraToObject);
+	}
+
+	if (framesLeft == 20*60*30 - 57){
+		play_sound(SOUND_20_LEFT, gMarioState->marioObj->header.gfx.cameraToObject);
+	}
+
+	//10 minutes left alarm plays 2 minutes early to see if anybody notices
+	if (framesLeft == 12*60*30){
+		play_sound(SOUND_10_MINUTES_LEFT, gMarioState->marioObj->header.gfx.cameraToObject);
+	}
+
+	if (framesLeft == 12*60*30 - 57){
+		play_sound(SOUND_10_LEFT, gMarioState->marioObj->header.gfx.cameraToObject);
+	}
+
+
+	//10 seconds left troll
+	if (framesLeft == 3*60*30){
+		play_sound(SOUND_10_SECONDS_LEFT, gMarioState->marioObj->header.gfx.cameraToObject);
+	}
+
+	if (framesLeft == 3*60*30 - 57){
+		play_sound(SOUND_10s_LEFT, gMarioState->marioObj->header.gfx.cameraToObject);
+	}
+
+	if (framesLeft == 3*60*30 - 5*30){
+		play_sound(SOUND_543, gMarioState->marioObj->header.gfx.cameraToObject);
+	}
+	if (framesLeft == 3*60*30 - 6.7*30){
+		play_sound(SOUND_3DOT5, gMarioState->marioObj->header.gfx.cameraToObject);
+	}
+	if (framesLeft == 3*60*30 - 7.7*30){
+		play_sound(SOUND_21, gMarioState->marioObj->header.gfx.cameraToObject);
+	}
+	if (framesLeft == 3*60*30 - 9.7*30){
+		play_sound(SOUND_SIKE, gMarioState->marioObj->header.gfx.cameraToObject);
+	}
+	
+	//1 minute left for real
+	if (framesLeft == 1*60*30){
+		play_sound(SOUND_1_MINUTE_LEFT, gMarioState->marioObj->header.gfx.cameraToObject);
+	}
+
+	//Ten seconds left for real
+	if (framesLeft == 3*60*30){
+		play_sound(SOUND_10_SECONDS_LEFT, gMarioState->marioObj->header.gfx.cameraToObject);
+	}
+
+	if (framesLeft == 10*30 - 57){
+		play_sound(SOUND_10s_LEFT, gMarioState->marioObj->header.gfx.cameraToObject);
+	}
+	if (framesLeft == 10*30 - 5*30){
+		play_sound(SOUND_543, gMarioState->marioObj->header.gfx.cameraToObject);
+	}
+	if (framesLeft == 10*30 - 6.7*30){
+		play_sound(SOUND_3DOT5, gMarioState->marioObj->header.gfx.cameraToObject);
+	}
+	if (framesLeft == 10*30 - 7.7*30){
+		play_sound(SOUND_21, gMarioState->marioObj->header.gfx.cameraToObject);
+	}
+
+    if (timeLeft == 0){
+       level_trigger_warp(gMarioState, WARP_OP_CREDITS_END2);
     }
   //  print_text_fmt_int(100,100,"%d",timeLeft);
 
@@ -977,7 +1057,7 @@ void render_hud(void) {
 #endif
 
         if (hudDisplayFlags & HUD_DISPLAY_FLAG_COIN_COUNT) {
-           // render_hud_coins();
+            render_hud_coins();
         }
 
         if (hudDisplayFlags & HUD_DISPLAY_FLAG_STAR_COUNT) {

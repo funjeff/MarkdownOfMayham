@@ -24,11 +24,137 @@
             "release_rate": 208,
             "envelope": "envelope0",
             "sound": "02_smw_midway_gate"
+        },
+		"inst3": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "03_why"
+        },
+		"inst4": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "04_yummy"
+        },
+		"inst5": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "05_so_freakin_epic"
+        },
+		"inst6": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "06_favorate_dish"
+        },
+		"inst7": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "07_oh_my_god"
+        },
+		"inst8": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "08_question"
+        },
+		"inst9": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "09_spagetti"
+        },
+		"inst10": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "10_thirty_minutes_left"
+        },
+		"inst11": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "11_twenty_minutes_left"
+        },
+		"inst12": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "12_ten_minutes_left"
+        },
+		"inst13": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "13_one_minute_left"
+        },
+		"inst14": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "14_543"
+        },
+		"inst15": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "15_21"
+        },
+		"inst16": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "16_ten_seconds_left"
+        },
+		"inst17": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "17_30_left"
+        },
+		"inst18": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "18_20_left"
+        },
+		"inst19": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "19_10_left"
+        },
+		"inst20": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "20_1_left"
+        },
+		"inst21": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "21_10s_left"
+        },
+		"inst22": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "22_3dot5"
+        },
+		"inst23": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "23_sike"
         }
     },
     "instrument_list": [
         "inst0",
 		"inst1",
-		"inst2"
+		"inst2",
+		"inst3",
+		"inst4",
+		"inst5",
+		"inst6",
+		"inst7",
+		"inst8",
+		"inst9",
+		"inst10",
+		"inst11",
+		"inst12",
+		"inst13",
+		"inst14",
+		"inst15",
+		"inst16",
+		"inst17",
+		"inst18",
+		"inst19",
+		"inst20",
+		"inst21",
+		"inst22",
+		"inst23"
     ]
 }

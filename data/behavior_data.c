@@ -791,6 +791,15 @@ const BehaviorScript bhvRestartCheckpoint[] = {
     END_LOOP(),
 };
 
+const BehaviorScript bhvEndScreenText[] = {
+    BEGIN(OBJ_LIST_LEVEL),
+    OR_INT(oFlags, OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE),
+    SET_OBJ_PHYSICS(/*Wall hitbox radius*/ 30, /*Gravity*/ -400, /*Bounciness*/ -50, /*Drag strength*/ 1000, /*Friction*/ 1000, /*Buoyancy*/ 200, /*Unused*/ 0, 0),
+	BEGIN_LOOP(),
+        CALL_NATIVE(bhv_end_screen_text_loop),
+    END_LOOP(),
+};
+
 const BehaviorScript bhvWarpOneWay[] = {
     BEGIN(OBJ_LIST_LEVEL),
     OR_INT(oFlags, (OBJ_FLAG_SET_FACE_YAW_TO_MOVE_YAW | OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE)),
@@ -1023,6 +1032,18 @@ const BehaviorScript bhvYellowCoin[] = {
     CALL_NATIVE(bhv_yellow_coin_init),
     BEGIN_LOOP(),
         CALL_NATIVE(bhv_yellow_coin_loop),
+    END_LOOP(),
+};
+
+const BehaviorScript bhvBlueCoin[] = {
+    BEGIN(OBJ_LIST_LEVEL),
+    // Yellow coin - common:
+    BILLBOARD(),
+    OR_INT(oFlags, (OBJ_FLAG_COMPUTE_DIST_TO_MARIO | OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE)),
+    CALL_NATIVE(bhv_init_room),
+    CALL_NATIVE(bhv_blue_coin_init),
+    BEGIN_LOOP(),
+        CALL_NATIVE(bhv_blue_coin_loop),
     END_LOOP(),
 };
 
@@ -3527,6 +3548,21 @@ const BehaviorScript bhvToadMessage[] = {
     END_LOOP(),
 };
 
+const BehaviorScript bhvSpaghettiClerk[] = {
+    BEGIN(OBJ_LIST_GENACTOR),
+    OR_INT(oFlags, (OBJ_FLAG_PERSISTENT_RESPAWN | OBJ_FLAG_COMPUTE_DIST_TO_MARIO | OBJ_FLAG_SET_FACE_YAW_TO_MOVE_YAW | OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE)),
+    LOAD_ANIMATIONS(oAnimations, toad_seg6_anims_0600FB58),
+    //ANIMATE(TOAD_ANIM_WEST_WAVING_BOTH_ARMS),
+    SET_INTERACT_TYPE(INTERACT_TEXT),
+    SET_HITBOX(/*Radius*/ 80, /*Height*/ 100),
+    SET_INT(oIntangibleTimer, 0),
+    CALL_NATIVE(bhv_init_room),
+    CALL_NATIVE(bhv_clerk_message_init),
+    BEGIN_LOOP(),
+        CALL_NATIVE(bhv_clerk_message_loop),
+    END_LOOP(),
+};
+
 const BehaviorScript bhvUnlockDoorStar[] = {
     BEGIN(OBJ_LIST_LEVEL),
     OR_INT(oFlags, (OBJ_FLAG_SET_FACE_YAW_TO_MOVE_YAW | OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE)),
@@ -3666,6 +3702,7 @@ const BehaviorScript bhvMovingYellowCoin[] = {
         ADD_INT(oAnimState, 1),
     END_LOOP(),
 };
+
 
 const BehaviorScript bhvMovingBlueCoin[] = {
     BEGIN(OBJ_LIST_LEVEL),

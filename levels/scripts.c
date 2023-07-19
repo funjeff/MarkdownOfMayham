@@ -46,6 +46,10 @@ static const LevelScript script_exec_level_table[2
 
 static const LevelScript goto_intro_splash_screen[6];
 static const LevelScript goto_ending[6];
+static const LevelScript goto_ending2[6];
+static const LevelScript goto_ending3[6];
+static const LevelScript goto_ending4[6];
+static const LevelScript goto_ending5[6];
 static const LevelScript goto_mario_head_regular[6];
 static const LevelScript goto_mario_head_dizzy[6];
 static const LevelScript goto_debug_level_select[6];
@@ -122,7 +126,11 @@ const LevelScript level_main_scripts_entry[] = {
         JUMP_LINK(script_exec_level_table),
         SLEEP(/*frames*/ 1),
     LOOP_UNTIL(/*op*/ OP_LT, /*arg*/ WARP_SPECIAL_NONE),
-    JUMP_IF(   /*op*/ OP_EQ, /*arg*/ WARP_SPECIAL_ENDING,              goto_ending),
+   JUMP_IF(   /*op*/ OP_EQ, /*arg*/ WARP_SPECIAL_ENDING,              goto_ending),
+    JUMP_IF(   /*op*/ OP_EQ, /*arg*/ WARP_SPECIAL_ENDING2,             goto_ending2),
+    JUMP_IF(   /*op*/ OP_EQ, /*arg*/ WARP_SPECIAL_ENDING3,             goto_ending3),
+    JUMP_IF(   /*op*/ OP_EQ, /*arg*/ WARP_SPECIAL_ENDING4,             goto_ending4),
+    JUMP_IF(   /*op*/ OP_EQ, /*arg*/ WARP_SPECIAL_ENDING5,             goto_ending5),
     JUMP_IF(   /*op*/ OP_EQ, /*arg*/ WARP_SPECIAL_MARIO_HEAD_REGULAR,  goto_mario_head_regular),
     JUMP_IF(   /*op*/ OP_EQ, /*arg*/ WARP_SPECIAL_MARIO_HEAD_DIZZY,    goto_mario_head_dizzy),
     JUMP_IF(   /*op*/ OP_EQ, /*arg*/ WARP_SPECIAL_INTRO_SPLASH_SCREEN, goto_intro_splash_screen),
@@ -133,9 +141,25 @@ static const LevelScript goto_intro_splash_screen[] = {
     EXIT_AND_EXECUTE_WITH_CODE(/*seg*/ SEGMENT_MENU_INTRO, _introSegmentRomStart, _introSegmentRomEnd, level_intro_splash_screen, _introSegmentBssStart, _introSegmentBssEnd),
 };
 
-static const LevelScript goto_ending[] = {
-    EXIT_AND_EXECUTE_WITH_CODE(/*seg*/ SEGMENT_LEVEL_SCRIPT, _endingSegmentRomStart, _endingSegmentRomEnd, level_ending_entry, _endingSegmentBssStart, _endingSegmentBssEnd),
-};
+ static const LevelScript goto_ending[] = {
+     EXIT_AND_EXECUTE_WITH_CODE(/*seg*/ SEGMENT_LEVEL_SCRIPT, _endingSegmentRomStart, _endingSegmentRomEnd, level_ending_entry, _endingSegmentBssStart, _endingSegmentBssEnd),
+ };
+
+  static const LevelScript goto_ending2[] = {
+      EXIT_AND_EXECUTE_WITH_CODE(/*seg*/ SEGMENT_LEVEL_SCRIPT, _endingSegmentRomStart, _endingSegmentRomEnd, level_ending_entry2, _endingSegmentBssStart, _endingSegmentBssEnd),
+  };
+
+  static const LevelScript goto_ending3[] = {
+      EXIT_AND_EXECUTE_WITH_CODE(/*seg*/ SEGMENT_LEVEL_SCRIPT, _endingSegmentRomStart, _endingSegmentRomEnd, level_ending_entry3, _endingSegmentBssStart, _endingSegmentBssEnd),
+  };
+
+ static const LevelScript goto_ending4[] = {
+     EXIT_AND_EXECUTE_WITH_CODE(/*seg*/ SEGMENT_LEVEL_SCRIPT, _endingSegmentRomStart, _endingSegmentRomEnd, level_ending_entry4, _endingSegmentBssStart, _endingSegmentBssEnd),
+ };
+
+  static const LevelScript goto_ending5[] = {
+      EXIT_AND_EXECUTE_WITH_CODE(/*seg*/ SEGMENT_LEVEL_SCRIPT, _endingSegmentRomStart, _endingSegmentRomEnd, level_ending_entry5, _endingSegmentBssStart, _endingSegmentBssEnd),
+  };
 
 static const LevelScript goto_mario_head_regular[] = {
     EXIT_AND_EXECUTE_WITH_CODE(/*seg*/ SEGMENT_MENU_INTRO, _introSegmentRomStart, _introSegmentRomEnd, level_intro_mario_head_regular, _introSegmentBssStart, _introSegmentBssEnd),
@@ -184,22 +208,23 @@ const LevelScript script_func_global_1[] = {
     LOAD_MODEL_FROM_GEO(MODEL_GOOMBA,                  goomba_geo),
     LOAD_MODEL_FROM_DL( MODEL_EXCLAMATION_POINT,       exclamation_box_outline_seg8_dl_exclamation_point, LAYER_OCCLUDE_SILHOUETTE_ALPHA),
     LOAD_MODEL_FROM_GEO(MODEL_KOOPA_SHELL,             koopa_shell_geo),
-    LOAD_MODEL_FROM_GEO(MODEL_METAL_BOX,               metal_box_geo),
-    LOAD_MODEL_FROM_DL( MODEL_METAL_BOX_DL,            metal_box_dl,                             LAYER_OPAQUE),
+    //LOAD_MODEL_FROM_GEO(MODEL_METAL_BOX,               metal_box_geo),
+    //LOAD_MODEL_FROM_DL( MODEL_METAL_BOX_DL,            metal_box_dl,                             LAYER_OPAQUE),
     LOAD_MODEL_FROM_GEO(MODEL_BLACK_BOBOMB,            black_bobomb_geo),
     LOAD_MODEL_FROM_GEO(MODEL_BOBOMB_BUDDY,            bobomb_buddy_geo),
-    LOAD_MODEL_FROM_DL( MODEL_DL_CANNON_LID,           cannon_lid_seg8_dl_080048E0,              LAYER_OPAQUE),
-    LOAD_MODEL_FROM_GEO(MODEL_BOWLING_BALL,            bowling_ball_geo),
-    LOAD_MODEL_FROM_GEO(MODEL_CANNON_BARREL,           cannon_barrel_geo),
-    LOAD_MODEL_FROM_GEO(MODEL_CANNON_BASE,             cannon_base_geo),
-    LOAD_MODEL_FROM_GEO(MODEL_HEART,                   heart_geo),
-    LOAD_MODEL_FROM_GEO(MODEL_FLYGUY,                  flyguy_geo),
-    LOAD_MODEL_FROM_GEO(MODEL_CHUCKYA,                 chuckya_geo),
-    LOAD_MODEL_FROM_GEO(MODEL_TRAJECTORY_MARKER_BALL,      bowling_ball_track_geo),
-    LOAD_MODEL_FROM_GEO(MODEL_DASHPAD,                 dashpad_geo),
+    //LOAD_MODEL_FROM_DL( MODEL_DL_CANNON_LID,           cannon_lid_seg8_dl_080048E0,              LAYER_OPAQUE),
+    //LOAD_MODEL_FROM_GEO(MODEL_BOWLING_BALL,            bowling_ball_geo),
+    //LOAD_MODEL_FROM_GEO(MODEL_CANNON_BARREL,           cannon_barrel_geo),
+    //LOAD_MODEL_FROM_GEO(MODEL_CANNON_BASE,             cannon_base_geo),
+    //LOAD_MODEL_FROM_GEO(MODEL_HEART,                   heart_geo),
+    //LOAD_MODEL_FROM_GEO(MODEL_FLYGUY,                  flyguy_geo),
+   // LOAD_MODEL_FROM_GEO(MODEL_CHUCKYA,                 chuckya_geo),
+   // LOAD_MODEL_FROM_GEO(MODEL_TRAJECTORY_MARKER_BALL,      bowling_ball_track_geo),
+   // LOAD_MODEL_FROM_GEO(MODEL_DASHPAD,                 dashpad_geo),
     LOAD_MODEL_FROM_GEO(MODEL_THI_WARP_PIPE,           warp_pipe_geo),
     LOAD_MODEL_FROM_GEO(MODEL_FLAG_MARIO,              flag_mario_geo),
     LOAD_MODEL_FROM_GEO(MODEL_FLAG_BOWSER,             flag_bowser_geo),
+   // LOAD_MODEL_FROM_GEO(MODEL_TOAD,                    toad_geo),
     
     RETURN(),
 };

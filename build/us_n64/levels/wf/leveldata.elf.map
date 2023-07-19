@@ -1,0 +1,587 @@
+
+Discarded input sections
+
+ .note.GNU-stack
+                0x0000000000000000        0x0 build/us_n64/levels/wf/leveldata.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+Address of section .text set to 0x7000000
+LOAD build/us_n64/bin/grass.elf
+LOAD build/us_n64/levels/wf/leveldata.o
+                [!provide]                        PROVIDE (__executable_start = SEGMENT_START ("text-segment", 0x400000))
+                0x0000000000400000                . = SEGMENT_START ("text-segment", 0x400000)
+
+.interp
+ *(.interp)
+
+.MIPS.abiflags  0x0000000000400000       0x18
+ *(.MIPS.abiflags)
+ .MIPS.abiflags
+                0x0000000000400000       0x18 build/us_n64/levels/wf/leveldata.o
+
+.reginfo        0x0000000000400018       0x18
+ *(.reginfo)
+ .reginfo       0x0000000000400018       0x18 build/us_n64/levels/wf/leveldata.o
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.dynamic
+ *(.dynamic)
+
+.hash
+ *(.hash)
+
+.gnu.hash
+ *(.gnu.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.dyn        0x0000000000400030        0x0
+ *(.rel.init)
+ *(.rel.text .rel.text.* .rel.gnu.linkonce.t.*)
+ *(.rel.fini)
+ *(.rel.rodata .rel.rodata.* .rel.gnu.linkonce.r.*)
+ *(.rel.data.rel.ro .rel.data.rel.ro.* .rel.gnu.linkonce.d.rel.ro.*)
+ *(.rel.data .rel.data.* .rel.gnu.linkonce.d.*)
+ *(.rel.tdata .rel.tdata.* .rel.gnu.linkonce.td.*)
+ *(.rel.tbss .rel.tbss.* .rel.gnu.linkonce.tb.*)
+ *(.rel.ctors)
+ *(.rel.dtors)
+ *(.rel.got)
+ *(.rel.dyn)
+ .rel.dyn       0x0000000000400030        0x0 build/us_n64/levels/wf/leveldata.o
+ *(.rel.sdata .rel.sdata.* .rel.gnu.linkonce.s.*)
+ *(.rel.sbss .rel.sbss.* .rel.gnu.linkonce.sb.*)
+ *(.rel.sdata2 .rel.sdata2.* .rel.gnu.linkonce.s2.*)
+ *(.rel.sbss2 .rel.sbss2.* .rel.gnu.linkonce.sb2.*)
+ *(.rel.bss .rel.bss.* .rel.gnu.linkonce.b.*)
+                [!provide]                        PROVIDE (__rel_iplt_start = .)
+ *(.rel.iplt)
+                [!provide]                        PROVIDE (__rel_iplt_end = .)
+
+.rela.dyn       0x0000000000400030        0x0
+ *(.rela.init)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ *(.rela.fini)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rela.ctors)
+ *(.rela.dtors)
+ *(.rela.got)
+ *(.rela.sdata .rela.sdata.* .rela.gnu.linkonce.s.*)
+ *(.rela.sbss .rela.sbss.* .rela.gnu.linkonce.sb.*)
+ *(.rela.sdata2 .rela.sdata2.* .rela.gnu.linkonce.s2.*)
+ *(.rela.sbss2 .rela.sbss2.* .rela.gnu.linkonce.sb2.*)
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+                [!provide]                        PROVIDE (__rela_iplt_start = .)
+ *(.rela.iplt)
+                [!provide]                        PROVIDE (__rela_iplt_end = .)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.init
+ *(SORT_NONE(.init))
+
+.plt
+ *(.plt)
+
+.iplt
+ *(.iplt)
+
+.text           0x0000000007000000        0x0
+                0x0000000007000000                _ftext = .
+ *(.text.unlikely .text.*_unlikely .text.unlikely.*)
+ *(.text.exit .text.exit.*)
+ *(.text.startup .text.startup.*)
+ *(.text.hot .text.hot.*)
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x0000000007000000        0x0 build/us_n64/levels/wf/leveldata.o
+ *(.gnu.warning)
+ *(.mips16.fn.*)
+ *(.mips16.call.*)
+
+.fini
+ *(SORT_NONE(.fini))
+                [!provide]                        PROVIDE (__etext = .)
+                [!provide]                        PROVIDE (_etext = .)
+                [!provide]                        PROVIDE (etext = .)
+
+.rodata
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+
+.rodata1
+ *(.rodata1)
+
+.sdata2
+ *(.sdata2 .sdata2.* .gnu.linkonce.s2.*)
+
+.sbss2
+ *(.sbss2 .sbss2.* .gnu.linkonce.sb2.*)
+
+.eh_frame_hdr
+ *(.eh_frame_hdr)
+ *(.eh_frame_entry .eh_frame_entry.*)
+
+.eh_frame
+ *(.eh_frame)
+ *(.eh_frame.*)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.gnu_extab
+ *(.gnu_extab*)
+
+.exception_ranges
+ *(.exception_ranges .exception_ranges*)
+                0x0000000007000000                . = DATA_SEGMENT_ALIGN (CONSTANT (MAXPAGESIZE), CONSTANT (COMMONPAGESIZE))
+
+.eh_frame
+ *(.eh_frame)
+ *(.eh_frame.*)
+
+.gnu_extab
+ *(.gnu_extab)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges .exception_ranges*)
+
+.tdata
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array  0x0000000007000000        0x0
+                [!provide]                        PROVIDE (__preinit_array_start = .)
+ *(.preinit_array)
+                [!provide]                        PROVIDE (__preinit_array_end = .)
+
+.init_array     0x0000000007000000        0x0
+                [!provide]                        PROVIDE (__init_array_start = .)
+ *(SORT_BY_INIT_PRIORITY(.init_array.*) SORT_BY_INIT_PRIORITY(.ctors.*))
+ *(.init_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .ctors)
+                [!provide]                        PROVIDE (__init_array_end = .)
+
+.fini_array     0x0000000007000000        0x0
+                [!provide]                        PROVIDE (__fini_array_start = .)
+ *(SORT_BY_INIT_PRIORITY(.fini_array.*) SORT_BY_INIT_PRIORITY(.dtors.*))
+ *(.fini_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .dtors)
+                [!provide]                        PROVIDE (__fini_array_end = .)
+
+.ctors
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT_BY_NAME(.ctors.*))
+ *(.ctors)
+
+.dtors
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT_BY_NAME(.dtors.*))
+ *(.dtors)
+
+.jcr
+ *(.jcr)
+
+.data.rel.ro
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ *(.data.rel.ro .data.rel.ro.* .gnu.linkonce.d.rel.ro.*)
+                0x0000000007000000                . = DATA_SEGMENT_RELRO_END (., 0x0)
+
+.data           0x0000000007000000    0x1a430
+                0x0000000007000000                _fdata = .
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x0000000007000000    0x1a430 build/us_n64/levels/wf/leveldata.o
+                0x0000000007000000                wf_dl_material_revert_render_settings
+                0x0000000007000040                wf_dl_Platforn_001_mesh_layer_1
+                0x0000000007000058                wf_dl_Platforn_mesh_layer_1
+                0x0000000007000070                wf_dl_Geometry_001_mesh_layer_1
+                0x0000000007000088                wf_dl_Geometry_mesh_layer_1
+                0x0000000007000110                wf_dl_death_plane_working_001_mesh_layer_5
+                0x0000000007000128                wf_dl_death_plane_working_mesh_layer_5
+                0x0000000007000140                wf_dl_death_mesh_layer_5
+                0x0000000007000160                wf_dl_Dash_Right_mesh_layer_1
+                0x0000000007000188                wf_dl_Dash_Left_006_mesh_layer_1
+                0x00000000070001b0                wf_dl_Dash_Left_005_mesh_layer_1
+                0x00000000070001d8                wf_dl_Dash_Left_004_mesh_layer_1
+                0x0000000007000200                wf_dl_Dash_Left_003_mesh_layer_1
+                0x0000000007000228                wf_dl_Dash_Left_002_mesh_layer_1
+                0x0000000007000250                wf_dl_Dash_Left_001_mesh_layer_1
+                0x0000000007000278                wf_dl_Dash_Left_mesh_layer_1
+                0x00000000070002a0                wf_dl_Dash_E_mesh_layer_1
+                0x00000000070002b8                wf_dl_Cube_mesh_layer_1
+                0x00000000070002d0                mat_wf_dl_floor_001
+                0x0000000007000308                mat_wf_dl_wall_001
+                0x0000000007000340                mat_wf_dl_right_fast_001
+                0x0000000007000378                mat_wf_dl_down
+                0x00000000070003b0                mat_wf_dl_right_003
+                0x00000000070003e8                mat_wf_dl_up_002
+                0x0000000007000420                mat_wf_dl_left_003
+                0x0000000007000458                mat_wf_dl_f3d_material_009
+                0x0000000007000490                mat_wf_dl_f3d_material_004
+                0x00000000070004c8                mat_wf_dl_f3dlite_material
+                0x0000000007000500                mat_revert_wf_dl_f3d_material_013
+                0x0000000007000518                mat_wf_dl_f3d_material_013
+                0x0000000007000588                mat_wf_dl_down_fast
+                0x00000000070005e8                mat_wf_dl_f3d_material_008
+                0x0000000007000620                mat_wf_dl_yeehaw_001
+                0x0000000007000680                mat_wf_dl_left_001
+                0x00000000070006e0                mat_wf_dl_f3d_material_007
+                0x0000000007000718                mat_wf_dl_right_001
+                0x0000000007000778                mat_wf_dl_f3d_material_012
+                0x00000000070007b0                wf_dl_Platforn_001_mesh_layer_1_tri_0
+                0x0000000007000828                wf_dl_Platforn_001_mesh_layer_1_vtx_0
+                0x00000000070009a8                wf_dl_Platforn_mesh_layer_1_tri_0
+                0x0000000007000a20                wf_dl_Platforn_mesh_layer_1_vtx_0
+                0x0000000007000ba0                wf_dl_Geometry_001_mesh_layer_1_tri_0
+                0x0000000007000c28                wf_dl_Geometry_001_mesh_layer_1_vtx_0
+                0x0000000007000d88                wf_dl_Geometry_mesh_layer_1_tri_7
+                0x0000000007000fb8                wf_dl_Geometry_mesh_layer_1_vtx_7
+                0x0000000007001618                wf_dl_Geometry_mesh_layer_1_tri_6
+                0x0000000007001658                wf_dl_Geometry_mesh_layer_1_vtx_6
+                0x00000000070016d8                wf_dl_Geometry_mesh_layer_1_tri_5
+                0x00000000070016f8                wf_dl_Geometry_mesh_layer_1_vtx_5
+                0x0000000007001738                wf_dl_Geometry_mesh_layer_1_tri_4
+                0x0000000007001758                wf_dl_Geometry_mesh_layer_1_vtx_4
+                0x0000000007001798                wf_dl_Geometry_mesh_layer_1_tri_3
+                0x00000000070017c8                wf_dl_Geometry_mesh_layer_1_vtx_3
+                0x0000000007001848                wf_dl_Geometry_mesh_layer_1_tri_2
+                0x0000000007001888                wf_dl_Geometry_mesh_layer_1_vtx_2
+                0x0000000007001948                wf_dl_Geometry_mesh_layer_1_tri_1
+                0x0000000007001988                wf_dl_Geometry_mesh_layer_1_vtx_1
+                0x0000000007001a08                wf_dl_Geometry_mesh_layer_1_tri_0
+                0x0000000007001f18                wf_dl_Geometry_mesh_layer_1_vtx_0
+                0x0000000007002f38                wf_dl_death_plane_working_001_mesh_layer_5_tri_0
+                0x0000000007003038                wf_dl_death_plane_working_001_mesh_layer_5_vtx_0
+                0x00000000070032d8                wf_dl_death_plane_working_mesh_layer_5_tri_0
+                0x00000000070033d8                wf_dl_death_plane_working_mesh_layer_5_vtx_0
+                0x0000000007003678                wf_dl_death_mesh_layer_5_tri_0
+                0x0000000007003698                wf_dl_death_mesh_layer_5_vtx_0
+                0x00000000070036d8                wf_dl_Dash_Right_mesh_layer_1_tri_1
+                0x00000000070036f8                wf_dl_Dash_Right_mesh_layer_1_vtx_1
+                0x0000000007003738                wf_dl_Dash_Right_mesh_layer_1_tri_0
+                0x00000000070037e0                wf_dl_Dash_Right_mesh_layer_1_vtx_0
+                0x00000000070039e0                wf_dl_Dash_Left_006_mesh_layer_1_tri_1
+                0x0000000007003a00                wf_dl_Dash_Left_006_mesh_layer_1_vtx_1
+                0x0000000007003a40                wf_dl_Dash_Left_006_mesh_layer_1_tri_0
+                0x0000000007003af0                wf_dl_Dash_Left_006_mesh_layer_1_vtx_0
+                0x0000000007003d30                wf_dl_Dash_Left_005_mesh_layer_1_tri_1
+                0x0000000007003d50                wf_dl_Dash_Left_005_mesh_layer_1_vtx_1
+                0x0000000007003d90                wf_dl_Dash_Left_005_mesh_layer_1_tri_0
+                0x0000000007003e40                wf_dl_Dash_Left_005_mesh_layer_1_vtx_0
+                0x0000000007004080                wf_dl_Dash_Left_004_mesh_layer_1_tri_1
+                0x00000000070040a0                wf_dl_Dash_Left_004_mesh_layer_1_vtx_1
+                0x00000000070040e0                wf_dl_Dash_Left_004_mesh_layer_1_tri_0
+                0x0000000007004190                wf_dl_Dash_Left_004_mesh_layer_1_vtx_0
+                0x00000000070043d0                wf_dl_Dash_Left_003_mesh_layer_1_tri_1
+                0x00000000070043f0                wf_dl_Dash_Left_003_mesh_layer_1_vtx_1
+                0x0000000007004430                wf_dl_Dash_Left_003_mesh_layer_1_tri_0
+                0x00000000070044e0                wf_dl_Dash_Left_003_mesh_layer_1_vtx_0
+                0x0000000007004720                wf_dl_Dash_Left_002_mesh_layer_1_tri_1
+                0x0000000007004740                wf_dl_Dash_Left_002_mesh_layer_1_vtx_1
+                0x0000000007004780                wf_dl_Dash_Left_002_mesh_layer_1_tri_0
+                0x0000000007004830                wf_dl_Dash_Left_002_mesh_layer_1_vtx_0
+                0x0000000007004a70                wf_dl_Dash_Left_001_mesh_layer_1_tri_1
+                0x0000000007004a90                wf_dl_Dash_Left_001_mesh_layer_1_vtx_1
+                0x0000000007004ad0                wf_dl_Dash_Left_001_mesh_layer_1_tri_0
+                0x0000000007004b80                wf_dl_Dash_Left_001_mesh_layer_1_vtx_0
+                0x0000000007004dc0                wf_dl_Dash_Left_mesh_layer_1_tri_1
+                0x0000000007004de0                wf_dl_Dash_Left_mesh_layer_1_vtx_1
+                0x0000000007004e20                wf_dl_Dash_Left_mesh_layer_1_tri_0
+                0x0000000007004ed0                wf_dl_Dash_Left_mesh_layer_1_vtx_0
+                0x0000000007005110                wf_dl_Dash_E_mesh_layer_1_tri_0
+                0x0000000007005188                wf_dl_Dash_E_mesh_layer_1_vtx_0
+                0x0000000007005308                wf_dl_Cube_mesh_layer_1_tri_0
+                0x0000000007005380                wf_dl_Cube_mesh_layer_1_vtx_0
+                0x0000000007005500                wf_dl_pit_i8
+                0x0000000007006500                wf_dl_pit_i8_aligner
+                0x0000000007006508                wf_dl_dash_pannel_texture_rgba16
+                0x0000000007007508                wf_dl_dash_pannel_texture_rgba16_aligner
+                0x0000000007007510                wf_dl_floor_001_lights
+                0x0000000007007528                wf_dl_wall_001_lights
+                0x0000000007007540                wf_dl_right_fast_001_lights
+                0x0000000007007558                wf_dl_down_lights
+                0x0000000007007570                wf_dl_right_003_lights
+                0x0000000007007588                wf_dl_up_002_lights
+                0x00000000070075a0                wf_dl_left_003_lights
+                0x00000000070075b8                wf_dl_f3d_material_009_lights
+                0x00000000070075d0                wf_dl_f3d_material_004_lights
+                0x00000000070075e8                wf_dl_f3dlite_material_lights
+                0x0000000007007600                wf_dl_f3d_material_013_lights
+                0x0000000007007618                wf_dl_down_fast_lights
+                0x0000000007007630                wf_dl_f3d_material_008_lights
+                0x0000000007007648                wf_dl_yeehaw_001_lights
+                0x0000000007007660                wf_dl_left_001_lights
+                0x0000000007007678                wf_dl_f3d_material_007_lights
+                0x0000000007007690                wf_dl_right_001_lights
+                0x00000000070076a8                wf_dl_f3d_material_012_lights
+                0x00000000070076c0                wf_area_1_macro_objs
+                0x00000000070076c4                wf_area_1_collision
+                0x0000000007008de0                wf_movtex_water
+                0x0000000007008e10                wf_seg7_macro_objs
+                0x0000000007008fc0                wf_seg7_collision_070102D8
+                0x000000000700ae20                wf_seg7_collision_bullet_bill_cannon
+                0x000000000700aeac                wf_seg7_collision_tower
+                0x000000000700b3e0                wf_seg7_collision_rotating_platform
+                0x000000000700b4f0                wf_seg7_collision_tower_door
+                0x000000000700b524                wf_seg7_collision_kickable_board
+                0x000000000700b5c0                wf_seg7_collision_breakable_wall_2
+                0x000000000700b5fc                wf_seg7_collision_breakable_wall
+                0x000000000700b638                wf_seg7_collision_platform
+                0x000000000700b6c4                wf_seg7_collision_trapezoid
+                0x000000000700b750                wf_seg7_collision_tumbling_bridge
+                0x000000000700b784                wf_seg7_collision_sliding_brick_platform
+                0x000000000700b7d4                wf_seg7_collision_clocklike_rotation
+                0x000000000700b894                wf_seg7_collision_large_bomp
+                0x000000000700b984                wf_seg7_collision_small_bomp
+                0x000000000700ba78                wf_seg7_dl_0700F7F8
+                0x000000000700bb80                wf_seg7_dl_0700F6C0
+                0x000000000700bc50                wf_seg7_dl_0700F610
+                0x000000000700bef0                wf_seg7_dl_0700F340
+                0x000000000700c080                wf_seg7_dl_0700F1A8
+                0x000000000700c210                wf_seg7_dl_0700F018
+                0x000000000700c440                wf_seg7_dl_0700EDC0
+                0x000000000700c698                wf_seg7_dl_0700EB40
+                0x000000000700c818                wf_seg7_dl_0700E9B8
+                0x000000000700ca48                wf_seg7_dl_0700E760
+                0x000000000700cda0                wf_seg7_dl_0700E3D0
+                0x000000000700d050                wf_seg7_dl_0700E0F0
+                0x000000000700d2f0                wf_seg7_dl_0700DE20
+                0x000000000700d6e0                wf_seg7_dl_0700D9F0
+                0x000000000700d9a0                wf_seg7_dl_0700D708
+                0x000000000700dd68                wf_seg7_dl_0700D300
+                0x000000000700e008                wf_seg7_dl_0700D028
+                0x000000000700ef70                wf_seg7_dl_0700BF50
+                0x000000000700f3e8                wf_seg7_dl_0700BA28
+                0x000000000700fe08                wf_seg7_dl_0700AFB8
+                0x000000000700fee8                wf_seg7_dl_0700AEC8
+                0x0000000007010178                wf_seg7_dl_0700ABA0
+                0x0000000007010b38                wf_seg7_dl_0700A170
+                0x0000000007010ea8                wf_seg7_dl_07009DB0
+                0x0000000007011388                wf_seg7_dl_07009890
+                0x0000000007011490                wf_seg7_dl_07009780
+                0x0000000007011950                wf_seg7_dl_07009278
+                0x0000000007011ba8                wf_seg7_dl_07008FE8
+                0x0000000007012340                wf_seg7_dl_070087B0
+                0x0000000007013468                wf_seg7_dl_07007518
+                0x0000000007013738                wf_seg7_dl_07007220
+                0x0000000007014060                wf_seg7_dl_07006820
+                0x0000000007014270                wf_seg7_dl_070065F8
+                0x0000000007014378                wf_seg7_dl_070064E8
+                0x0000000007014910                wf_seg7_dl_07005EE8
+                0x0000000007014a18                wf_seg7_dl_07005DD8
+                0x0000000007015118                wf_seg7_dl_07005690
+                0x0000000007015260                wf_seg7_dl_07005538
+                0x0000000007015480                wf_seg7_dl_070052B8
+                0x00000000070155d0                wf_seg7_dl_070050C8
+
+.data1
+ *(.data1)
+
+.got.plt
+ *(.got.plt)
+                0x000000000701a430                . = .
+                0x000000000701a430                . = .
+                0x0000000007022420                _gp = (ALIGN (0x10) + 0x7ff0)
+
+.got
+ *(.got)
+
+.sdata
+ *(.sdata .sdata.* .gnu.linkonce.s.*)
+
+.lit8
+ *(.lit8)
+
+.lit4
+ *(.lit4)
+                0x000000000701a430                _edata = .
+                [!provide]                        PROVIDE (edata = .)
+                0x000000000701a430                . = .
+                0x000000000701a430                __bss_start = .
+                0x000000000701a430                _fbss = .
+
+.sbss
+ *(.dynsbss)
+ *(.sbss .sbss.* .gnu.linkonce.sb.*)
+ *(.scommon)
+
+.bss            0x000000000701a430        0x0
+ *(.dynbss)
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x000000000701a430        0x0 build/us_n64/levels/wf/leveldata.o
+ *(COMMON)
+                0x000000000701a430                . = ALIGN ((. != 0x0)?0x4:0x1)
+                0x000000000701a430                . = ALIGN (0x4)
+                0x000000000701a430                . = SEGMENT_START ("ldata-segment", .)
+                0x000000000701a430                . = ALIGN (0x4)
+                0x000000000701a430                _end = .
+                [!provide]                        PROVIDE (end = .)
+                0x000000000701a430                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x25
+ *(.comment)
+ .comment       0x0000000000000000       0x25 build/us_n64/levels/wf/leveldata.o
+                                         0x26 (size before relaxing)
+
+.pdr            0x0000000000000000        0x0
+ .pdr           0x0000000000000000        0x0 build/us_n64/levels/wf/leveldata.o
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info .gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line .debug_line.* .debug_line_end)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_macro
+ *(.debug_macro)
+
+.debug_addr
+ *(.debug_addr)
+
+.gnu.attributes
+                0x0000000000000000       0x10
+ *(.gnu.attributes)
+ .gnu.attributes
+                0x0000000000000000       0x10 build/us_n64/levels/wf/leveldata.o
+
+.gptab.sdata
+ *(.gptab.data)
+ *(.gptab.sdata)
+
+.gptab.sbss
+ *(.gptab.bss)
+ *(.gptab.sbss)
+
+.mdebug.abi32   0x0000000000000000        0x0
+ *(.mdebug.abi32)
+ .mdebug.abi32  0x0000000000000000        0x0 build/us_n64/levels/wf/leveldata.o
+
+.mdebug.abiN32
+ *(.mdebug.abiN32)
+
+.mdebug.abi64
+ *(.mdebug.abi64)
+
+.mdebug.abiO64
+ *(.mdebug.abiO64)
+
+.mdebug.eabi32
+ *(.mdebug.eabi32)
+
+.mdebug.eabi64
+ *(.mdebug.eabi64)
+
+.gcc_compiled_long32
+ *(.gcc_compiled_long32)
+
+.gcc_compiled_long64
+ *(.gcc_compiled_long64)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+OUTPUT(build/us_n64/levels/wf/leveldata.elf elf32-bigmips)

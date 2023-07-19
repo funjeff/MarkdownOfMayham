@@ -783,4 +783,7 @@ UNUSED s32 debug_sequence_tracker(s16 debugInputSequence[]) {
 
 #include "behaviors/dashpad_inc.c"
 #include "behaviors/restart_checkpoint.inc.c"
+#include "behaviors/spaghetti_clerk.inc.c"
+#include "behaviors/end_screen_text.inc.c"
+
 

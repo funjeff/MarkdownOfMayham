@@ -40,8 +40,7 @@ void bhv_restart_checkpoint_init(void) {
 }
 
 void bhv_restart_checkpoint_loop(void) {
-	
-
+	//print_text(100,100,"memes");
 	if (obj_check_if_collided_with_object(o, gMarioObject) && !o->checkpointUsed) {
 
         o->checkpointUsed = 1;

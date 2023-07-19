@@ -25,6 +25,10 @@ enum WarpOperation {
     WARP_OP_WARP_FLOOR,
     WARP_OP_GAME_OVER,
     WARP_OP_CREDITS_END,
+    WARP_OP_CREDITS_END2,
+    WARP_OP_CREDITS_END3,
+    WARP_OP_CREDITS_END4,
+    WARP_OP_CREDITS_END5,
     WARP_OP_DEMO_NEXT,
     WARP_OP_CREDITS_START,
     WARP_OP_CREDITS_NEXT,
@@ -37,6 +41,10 @@ enum SpecialWarpDestinations {
     WARP_SPECIAL_MARIO_HEAD_DIZZY    = -3,
     WARP_SPECIAL_MARIO_HEAD_REGULAR  = -2,
     WARP_SPECIAL_ENDING              = -1,
+    WARP_SPECIAL_ENDING2             = -10,
+    WARP_SPECIAL_ENDING3             = -11,
+    WARP_SPECIAL_ENDING4             = -12,
+    WARP_SPECIAL_ENDING5             = -13,
     WARP_SPECIAL_NONE                =  0,
 };
 
@@ -178,6 +186,13 @@ s32 lvl_init_or_update(                  s16 initOrUpdate, UNUSED s32 levelNum);
 s32 lvl_init_from_save_file(      UNUSED s16 initOrUpdate,        s32 levelNum);
 s32 lvl_set_current_level(        UNUSED s16 initOrUpdate,        s32 levelNum);
 s32 lvl_play_the_end_screen_sound(UNUSED s16 initOrUpdate, UNUSED s32 levelNum);
+s32 lvl_play_the_end_screen_sound12(UNUSED s16 initOrUpdate, UNUSED s32 levelNum);
+s32 lvl_play_the_end_screen_sound2(UNUSED s16 initOrUpdate, UNUSED s32 levelNum);
+s32 lvl_play_the_end_screen_sound22(UNUSED s16 initOrUpdate, UNUSED s32 levelNum);
+s32 lvl_play_the_end_screen_sound3(UNUSED s16 initOrUpdate, UNUSED s32 levelNum);
+s32 lvl_play_the_end_screen_sound4(UNUSED s16 initOrUpdate, UNUSED s32 levelNum);
+s32 lvl_play_the_end_screen_sound5(UNUSED s16 initOrUpdate, UNUSED s32 levelNum);
+s32 lvl_draw_end_screen_text     (UNUSED s16 initOrUpdate, UNUSED s32 levelNum);
 void basic_update(void);
 
 #endif // LEVEL_UPDATE_H

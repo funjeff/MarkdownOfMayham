@@ -712,9 +712,13 @@ s16 level_trigger_warp(struct MarioState *m, s32 warpOp) {
                 break;
 
             case WARP_OP_CREDITS_END:
+            case WARP_OP_CREDITS_END2:
+            case WARP_OP_CREDITS_END3:
+            case WARP_OP_CREDITS_END4:
+            case WARP_OP_CREDITS_END5: 
                 sDelayedWarpTimer = 60;
                 sSourceWarpNodeId = WARP_NODE_DEFAULT;
-                fadeMusic = FALSE;
+                fadeMusic = TRUE;
                 gSavedCourseNum = COURSE_NONE;
                 play_transition(WARP_TRANSITION_FADE_INTO_COLOR, sDelayedWarpTimer, 0x00, 0x00, 0x00);
                 break;
@@ -854,11 +858,26 @@ void initiate_delayed_warp(void) {
                     save_file_reload();
                     warp_special(WARP_SPECIAL_MARIO_HEAD_DIZZY);
                     break;
-
                 case WARP_OP_CREDITS_END:
                     warp_special(WARP_SPECIAL_ENDING);
                     sound_banks_enable(SEQ_PLAYER_SFX, SOUND_BANKS_ALL & ~SOUND_BANKS_DISABLED_AFTER_CREDITS);
                     break;
+                case WARP_OP_CREDITS_END2:
+                     warp_special(WARP_SPECIAL_ENDING2);
+                     sound_banks_enable(SEQ_PLAYER_SFX, SOUND_BANKS_ALL & ~SOUND_BANKS_DISABLED_AFTER_CREDITS);
+                     break;
+                 case WARP_OP_CREDITS_END3:
+                     warp_special(WARP_SPECIAL_ENDING3);
+                     sound_banks_enable(SEQ_PLAYER_SFX, SOUND_BANKS_ALL & ~SOUND_BANKS_DISABLED_AFTER_CREDITS);
+                     break;
+                 case WARP_OP_CREDITS_END4:
+                     warp_special(WARP_SPECIAL_ENDING4);
+                     sound_banks_enable(SEQ_PLAYER_SFX, SOUND_BANKS_ALL & ~SOUND_BANKS_DISABLED_AFTER_CREDITS);
+                     break;
+                 case WARP_OP_CREDITS_END5:
+                     warp_special(WARP_SPECIAL_ENDING5);
+                     sound_banks_enable(SEQ_PLAYER_SFX, SOUND_BANKS_ALL & ~SOUND_BANKS_DISABLED_AFTER_CREDITS);
+                     break;
 
                 case WARP_OP_DEMO_NEXT:
                     warp_special(WARP_SPECIAL_MARIO_HEAD_REGULAR);
@@ -1358,6 +1377,44 @@ s32 lvl_set_current_level(UNUSED s16 initOrUpdate, s32 levelNum) {
  * Play the "thank you so much for to playing my game" sound.
  */
 s32 lvl_play_the_end_screen_sound(UNUSED s16 initOrUpdate, UNUSED s32 levelNum) {
-    play_sound(SOUND_MENU_THANK_YOU_PLAYING_MY_GAME, gGlobalSoundSource);
+    play_sound(SOUND_OH_MY_GOD, gGlobalSoundSource);
     return TRUE;
+}
+
+s32 lvl_play_the_end_screen_sound12(UNUSED s16 initOrUpdate, UNUSED s32 levelNum) {
+    play_sound(SOUND_SO_FREAKIN_EPIC, gGlobalSoundSource);
+    return TRUE;
+}
+
+s32 lvl_play_the_end_screen_sound2(UNUSED s16 initOrUpdate, UNUSED s32 levelNum) {
+    play_sound(SOUND_QUESTION, gGlobalSoundSource);
+    return TRUE;
+}
+
+s32 lvl_play_the_end_screen_sound22(UNUSED s16 initOrUpdate, UNUSED s32 levelNum) {
+    play_sound(SOUND_WHY, gGlobalSoundSource);
+    return TRUE;
+}
+
+s32 lvl_play_the_end_screen_sound3(UNUSED s16 initOrUpdate, UNUSED s32 levelNum) {
+    play_sound(SOUND_YUMMY, gGlobalSoundSource);
+    return TRUE;
+}
+
+s32 lvl_play_the_end_screen_sound4(UNUSED s16 initOrUpdate, UNUSED s32 levelNum) {
+    play_sound(SOUND_MY_FAVORATE_DISH, gGlobalSoundSource);
+    return TRUE;
+}
+
+s32 lvl_play_the_end_screen_sound5(UNUSED s16 initOrUpdate, UNUSED s32 levelNum) {
+    play_sound(SOUND_SPAGHETTI, gGlobalSoundSource);
+    return TRUE;
+}
+
+#include "src/game/print.h"
+
+s32 lvl_draw_end_screen_text(UNUSED s16 initOrUpdate, UNUSED s32 levelNum) {
+     play_sound(SOUND_MOVING_SHOCKED, gGlobalSoundSource);
+   //  print_text(100,100,"memes");
+     return TRUE;
 }

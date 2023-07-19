@@ -358,6 +358,14 @@ sound_ref .sound_action_jump_default
 sound_ref .sound_dashpad_1
 sound_ref .sound_dashpad_2
 sound_ref .sound_checkpoint
+sound_ref .sound_30_mins
+sound_ref .sound_20_mins
+sound_ref .sound_10_mins
+sound_ref .sound_1_min
+sound_ref .sound_543
+sound_ref .sound_21
+sound_ref .sound_10_secs
+
 
 .sound_dashpad_1:
 chan_setbank 11
@@ -371,9 +379,46 @@ chan_setinstr 1
 chan_setlayer 0, .layer_new_sound 
 chan_end
 
-.sound_checkpoint:
+.sound_30_mins:
 chan_setbank 11
-chan_setinstr 2
+chan_setinstr 10
+chan_setlayer 0, .layer_new_sound 
+chan_end
+
+.sound_20_mins:
+chan_setbank 11
+chan_setinstr 11
+chan_setlayer 0, .layer_new_sound 
+chan_end
+
+.sound_10_mins:
+chan_setbank 11
+chan_setinstr 12
+chan_setlayer 0, .layer_new_sound 
+chan_end
+
+
+.sound_1_min:
+chan_setbank 11
+chan_setinstr 13
+chan_setlayer 0, .layer_new_sound 
+chan_end
+
+.sound_543:
+chan_setbank 11
+chan_setinstr 14
+chan_setlayer 0, .layer_new_sound 
+chan_end
+
+.sound_21:
+chan_setbank 11
+chan_setinstr 15
+chan_setlayer 0, .layer_new_sound 
+chan_end
+
+.sound_10_secs:
+chan_setbank 11
+chan_setinstr 16
 chan_setlayer 0, .layer_new_sound 
 chan_end
 
@@ -1607,6 +1652,15 @@ sound_ref .sound_moving_riding_shell_spooky
 sound_ref .sound_moving_riding_shell_snow
 sound_ref .sound_moving_riding_shell_ice
 sound_ref .sound_moving_riding_shell_sand
+sound_ref .sound_30_left
+
+
+.sound_30_left:
+chan_setbank 11
+chan_setinstr 17
+chan_setlayer 0, .layer_new_sound 
+chan_end
+
 
 .sound_moving_slide_default:
 chan_setbank 3
@@ -2450,7 +2504,8 @@ chan_jump .sound_mario_wah2
 .sound_mario_drowning:
 chan_setbank 10
 chan_setinstr 13
-chan_setlayer 0, .layer_E49
+chan_setlayer 0, .layer_30AA
+chan_setlayer 1, .layer_30AF 
 chan_end
 
 .layer_E49:
@@ -6940,6 +6995,122 @@ sound_ref .chan_2D18
 sound_ref .sound_menu_power_meter
 sound_ref .sound_menu_camera_buzz
 sound_ref .sound_menu_camera_turn
+sound_ref .sound_why
+sound_ref .sound_yummy
+sound_ref .sound_so_freakin_epic
+sound_ref .sound_favorate_dish
+sound_ref .sound_mario_drowning_copy
+sound_ref .sound_oh_my_god
+sound_ref .sound_question
+sound_ref .sound_spagetti
+sound_ref .sound_10_left
+sound_ref .sound_1_left
+sound_ref .sound_10s_left
+sound_ref .sound_3dot5
+sound_ref .sound_sike
+
+.sound_20_left:
+chan_setbank 11
+chan_setinstr 18
+chan_setlayer 0, .layer_new_sound 
+chan_end
+
+.sound_10_left:
+chan_setbank 11
+chan_setinstr 19
+chan_setlayer 0, .layer_new_sound 
+chan_end
+
+
+.sound_1_left:
+chan_setbank 11
+chan_setinstr 20
+chan_setlayer 0, .layer_new_sound 
+chan_end
+
+
+.sound_10s_left:
+chan_setbank 11
+chan_setinstr 21
+chan_setlayer 0, .layer_new_sound 
+chan_end
+
+
+.sound_3dot5:
+chan_setbank 11
+chan_setinstr 22
+chan_setlayer 0, .layer_new_sound 
+chan_end
+
+.sound_sike:
+chan_setbank 11
+chan_setinstr 23
+chan_setlayer 0, .layer_new_sound 
+chan_end
+
+
+.sound_checkpoint:
+chan_setbank 11
+chan_setinstr 2
+chan_setlayer 0, .layer_30AA
+chan_setlayer 1, .layer_30AF
+chan_end
+
+.sound_spagetti:
+chan_setbank 11
+chan_setinstr 9
+chan_setlayer 0, .layer_30AA
+chan_setlayer 1, .layer_30AF 
+chan_end
+
+.sound_why:
+chan_setbank 11
+chan_setinstr 3
+chan_setlayer 0, .layer_30AA
+chan_setlayer 1, .layer_30AF 
+chan_end
+
+.sound_yummy:
+chan_setbank 11
+chan_setinstr 4
+chan_setlayer 0, .layer_30AA
+chan_setlayer 1, .layer_30AF
+chan_end
+
+.sound_so_freakin_epic:
+chan_setbank 11
+chan_setinstr 5
+chan_setlayer 0, .layer_30AA
+chan_setlayer 1, .layer_30AF 
+chan_end
+
+.sound_favorate_dish:
+chan_setbank 11
+chan_setinstr 6
+chan_setlayer 0, .layer_30AA
+chan_setlayer 1, .layer_30AF 
+chan_end
+
+.sound_oh_my_god:
+chan_setbank 11
+chan_setinstr 7
+chan_setlayer 0, .layer_30AA
+chan_setlayer 1, .layer_30AF 
+chan_end
+
+.sound_question:
+chan_setbank 11
+chan_setinstr 8
+chan_setlayer 0, .layer_30AA
+chan_setlayer 1, .layer_30AF 
+chan_end
+
+.sound_mario_drowning_copy:
+chan_setbank 10
+chan_setinstr 13
+chan_setlayer 0, .layer_30AA
+chan_setlayer 1, .layer_30AF 
+chan_end
 
 .sound_menu_change_select:
 chan_setbank 9

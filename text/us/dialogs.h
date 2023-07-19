@@ -1264,18 +1264,51 @@ them when they're fading\n\
 away. Instead, sneak up\n\
 behind them and punch."))
 
-DEFINE_DIALOG(DIALOG_103, 1, 4, 95, 200, _("\
-Upon four towers\n\
-one must alight...\n\
-Then at the peak\n\
-shall shine the light..."))
+DEFINE_DIALOG(DIALOG_103, 1, 3, 95, 200, _("\
+Yo welcome to olive garden!\n\
+\n\
+What you wanna eat?\n\
+Spaghetti?\n\
+\n\
+\n\
+Were out of Spaghetti\n\
+\n\
+\n\
+\n\
+\n\
+\n\
+nah just kidding\n\
+how much you want?\n\
+\n\
+just one plate?\n\
+\n\
+\n\
+no problem we'll\n\
+have that out in\n\
+a second"))
 
-DEFINE_DIALOG(DIALOG_104, 1, 5, 30, 200, _("\
-The shadowy star in front\n\
-of you is a 『Star\n\
-Marker.』 When you collect\n\
-all 8 Red Coins, the Star\n\
-will appear here."))
+DEFINE_DIALOG(DIALOG_104, 1, 3, 95, 200, _("\
+Yo welcome to olive garden!\n\
+\n\
+What you wanna eat?\n\
+Spaghetti?\n\
+\n\
+\n\
+Were out of Spaghetti\n\
+\n\
+\n\
+\n\
+\n\
+\n\
+nah just kidding\n\
+how much you want?\n\
+\n\
+25 orders?\n\
+\n\
+\n\
+uh OK we'll\n\
+have that out in\n\
+a second"))
 
 DEFINE_DIALOG(DIALOG_105, 1, 3, 95, 200, _("\
 Ready for blastoff! Come\n\
@@ -1310,24 +1343,63 @@ the tower of terror,\n\
 the Big Boo!\n\
 Ka ha ha ha..."))
 
-DEFINE_DIALOG(DIALOG_109, 1, 4, 95, 200, _("\
-Ooooo Nooooo!\n\
-Talk about out-of-body\n\
-experiences--my body\n\
-has melted away!\n\
-Have you run in to any\n\
-headhunters lately??\n\
-I could sure use a new\n\
-body!\n\
-Brrr! My face might\n\
-freeze like this!"))
+DEFINE_DIALOG(DIALOG_109, 1, 3, 95, 200, _("\
+Yo welcome to olive garden!\n\
+\n\
+What you wanna eat?\n\
+Spaghetti?\n\
+\n\
+\n\
+Were out of Spaghetti\n\
+\n\
+\n\
+\n\
+\n\
+\n\
+nah just kidding\n\
+how much you want?\n\
+\n\
+what?\n\
+...\n\
+could you repeat that?\n\
+your kidding right?\n\
+\n\
+\n\
+I don't think there\n\
+is that much spaghetti\n\
+on the entire earth\n\
+well we can try I guess!\n\
+\n\
+\n\
+we'll have that out\n\
+for you whenever it\n\
+becomes possible"))
 
-DEFINE_DIALOG(DIALOG_110, 1, 5, 95, 200, _("\
-I need a good head on my\n\
-shoulders. Do you know of\n\
-anybody in need of a good\n\
-body? Please! I'll follow\n\
-you if you do!"))
+DEFINE_DIALOG(DIALOG_110, 1, 3, 95, 200, _("\
+Yo welcome to olive garden!\n\
+\n\
+What you wanna eat?\n\
+Spaghetti?\n\
+\n\
+\n\
+Were out of Spaghetti\n\
+\n\
+\n\
+\n\
+\n\
+\n\
+nah just kidding\n\
+how much you want?\n\
+\n\
+2 Tons?\n\
+2 TONS!?!?!?!?!?!\n\
+\n\
+I don't know If Im\n\
+legally allowed to\n\
+sell that much\n\
+but uh OK we'll\n\
+have that out in\n\
+a bit"))
 
 DEFINE_DIALOG(DIALOG_111, 1, 4, 95, 200, _("\
 Perfect! What a great\n\

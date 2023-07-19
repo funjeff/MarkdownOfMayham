@@ -12,6 +12,18 @@ struct ObjectHitbox sYellowCoinHitbox = {
     /* hurtboxHeight:     */ 0,
 };
 
+struct ObjectHitbox sBlueCoinHitbox = {
+    /* interactType:      */ INTERACT_COIN,
+    /* downOffset:        */ 0,
+    /* damageOrCoinValue: */ 5,
+    /* health:            */ 0,
+    /* numLootCoins:      */ 0,
+    /* radius:            */ 100,
+    /* height:            */ 64,
+    /* hurtboxRadius:     */ 0,
+    /* hurtboxHeight:     */ 0,
+};
+
 /**
  *     3
  *   4   6
@@ -70,6 +82,34 @@ void bhv_yellow_coin_init(void) {
 }
 
 void bhv_yellow_coin_loop(void) {
+    bhv_coin_sparkles_init();
+    o->oAnimState++;
+}
+void bhv_blue_coin_init(void) {
+    cur_obj_set_behavior(bhvBlueCoin);
+    obj_set_hitbox(o, &sBlueCoinHitbox);
+    cur_obj_update_floor_height();
+
+    if (500.0f < absf(o->oPosY - o->oFloorHeight)) {
+        if (cur_obj_has_model(MODEL_YELLOW_COIN)) {
+            cur_obj_set_model(MODEL_YELLOW_COIN_NO_SHADOW);
+        } else if (cur_obj_has_model(MODEL_BLUE_COIN)) {
+            cur_obj_set_model(MODEL_BLUE_COIN_NO_SHADOW);
+        } else if (cur_obj_has_model(MODEL_RED_COIN)) {
+            cur_obj_set_model(MODEL_RED_COIN_NO_SHADOW);
+#ifdef IA8_30FPS_COINS
+        } else if (cur_obj_has_model(MODEL_SILVER_COIN)) {
+            cur_obj_set_model(MODEL_SILVER_COIN_NO_SHADOW);
+#endif
+        }
+    }
+
+    if (o->oFloorHeight < FLOOR_LOWER_LIMIT_MISC) {
+        obj_mark_for_deletion(o);
+    }
+}
+
+void bhv_blue_coin_loop(void) {
     bhv_coin_sparkles_init();
     o->oAnimState++;
 }

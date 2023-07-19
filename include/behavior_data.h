@@ -544,7 +544,12 @@ extern const BehaviorScript bhvUnusedFakeStar[];
 //custom
 extern const BehaviorScript bhvDashpad[];
 
+
+extern const BehaviorScript bhvEndScreenText[];
 extern const BehaviorScript bhvRestartCheckpoint[];
 extern const BehaviorScript bhvWarpOneWay[];
+extern const BehaviorScript bhvSpaghettiClerk[];
+extern const BehaviorScript bhvBlueCoin[];
+
 
 #endif // BEHAVIOR_DATA_H
