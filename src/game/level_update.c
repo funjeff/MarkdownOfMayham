@@ -1251,7 +1251,7 @@ s32 init_level(void) {
                     if (save_file_exists(gCurrSaveFileNum - 1)) {
                         set_mario_action(gMarioState, ACT_IDLE, 0);
                     } else {
-                        set_mario_action(gMarioState, ACT_INTRO_CUTSCENE, 0);
+                        set_mario_action(gMarioState, ACT_FIRST_CUTSCENE, 0);
                         fadeFromColor = TRUE;
                     }
                 }
@@ -1348,6 +1348,8 @@ s32 lvl_set_current_level(UNUSED s16 initOrUpdate, s32 levelNum) {
     sWarpCheckpointActive = FALSE;
     gCurrLevelNum = levelNum;
     gCurrCourseNum = gLevelToCourseNumTable[levelNum - 1];
+	if (gCurrLevelNum == LEVEL_BOB) return 0;
+	if (gCurrLevelNum == LEVEL_CASTLE_GROUNDS) return 0;
 		if (gCurrLevelNum == LEVEL_WF) return 0;
 	
     if (gCurrDemoInput != NULL || gCurrCreditsEntry != NULL || gCurrCourseNum == COURSE_NONE) {

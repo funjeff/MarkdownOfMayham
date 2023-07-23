@@ -577,6 +577,22 @@ void render_hud_timer(void) {
 
 }
 
+void render_hud_watch(void){
+
+	u16 xPos = 100;
+	u16 yPos = 50;
+
+	render_top_left_watch(xPos,yPos,64,32,0,0);
+	render_top_right_watch(xPos + 64,yPos,64,32,0,0);
+	render_middle1_left_watch(xPos,yPos + 32,64,32,0,0);
+	render_middle1_right_watch(xPos + 64,yPos + 32,64,32,0,0);
+	render_middle2_left_watch(xPos,yPos + 64,64,32,0,0);
+	render_middle2_right_watch(xPos + 64,yPos + 64,64,32,0,0);
+	render_bottom_left_watch(xPos,yPos + 96,64,32,0,0);
+	render_bottom_right_watch(xPos + 64,yPos + 96,64,32,0,0);
+	
+}
+
 /**
  * Sets HUD status camera value depending of the actions
  * defined in update_camera_status.
@@ -1330,6 +1346,10 @@ void render_hud(void) {
             }
 #endif
         }
+
+		if (hudDisplayFlags & HUD_DISPLAY_FLAG_WATCH){
+			render_hud_watch();
+		}
 
         if (hudDisplayFlags & HUD_DISPLAY_FLAG_TIMER) {
             render_hud_timer();

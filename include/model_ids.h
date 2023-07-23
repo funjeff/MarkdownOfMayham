@@ -554,6 +554,7 @@
 #define MODEL_DASHPAD                     0xE4        // dashpad_geo
 #define MODEL_FLAG_BOWSER                 0xE5        // flag_bowser_geo
 #define MODEL_FLAG_MARIO                  0xE6        // flag_mario_geo
+#define MODEL_PAPER                       0xE7        // paper_geo
 
 
 // Menu Models (overwrites Level Geometry IDs)

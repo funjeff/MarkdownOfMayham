@@ -133,19 +133,31 @@ fast! A human blur!\n\
 Here you go--you've won\n\
 it, fair and square!"))
 
-DEFINE_DIALOG(DIALOG_008, 1, 4, 30, 200, _("\
-BEWARE OF CHAIN CHOMP\n\
-Extreme Danger!\n\
-Get close and press [C]^\n\
-for a better look.\n\
-Scary, huh?\n\
-See the Red Coin on top\n\
-of the stake?\n\
+DEFINE_DIALOG(DIALOG_008, 1, 3, 30, 200, _("\
+ATTENTION ALL PASTA\n\
+     PAISANOS\n\
+!!!!!!!!!!!!!!!!!!!\n\
+We have a deal you \n\
+WONT wanna miss!\n\
+!!!!!!!!!!!!!!!!!!!\n\
+our trademark spaghetti\n\ 
+dish usually costs 6\n\
+coins\n\
+but for today only we\n\
+are lowering the price\n\
+to just 4 COINS!!!?!?!\n\
+      But act now!\n\ 
 \n\
-When you collect eight of\n\
-them, a Power Star will\n\
-appear in the meadow\n\
-across the bridge."))
+This deal wont last long\n\
+any late customers \n\
+will NOT be eligible\n\
+for the special price\n\
+so be sure to get here\n\
+    by 12 O'clock\n\
+\n\
+come on down and \n\
+get some grub!\n\
+if you can!"))
 
 DEFINE_DIALOG(DIALOG_009, 1, 5, 30, 200, _("\
 Long time, no see! Wow,\n\

@@ -129,6 +129,51 @@
             "release_rate": 208,
             "envelope": "envelope0",
             "sound": "23_sike"
+        },
+		"inst24": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "24_sleep1"
+        },
+		"inst25": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "25_sleep2"
+        },
+		"inst26": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "26_sleep3"
+        },
+		"inst27": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "27_sleep4"
+        },
+		"inst28": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "28_sleep5"
+        },
+		"inst29": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "29_hmm"
+        },
+		"inst30": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "30_yeah1"
+        },
+		"inst31": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "31_yeah2"
+        },
+		"inst32": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "32_yeah3"
         }
     },
     "instrument_list": [
@@ -155,6 +200,15 @@
 		"inst20",
 		"inst21",
 		"inst22",
-		"inst23"
+		"inst23",
+		"inst24",
+		"inst25",
+		"inst26",
+		"inst27",
+		"inst28",
+		"inst29",
+		"inst30",
+		"inst31",
+		"inst32"
     ]
 }

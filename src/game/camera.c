@@ -4938,6 +4938,9 @@ u8 get_cutscene_from_mario_status(struct Camera *c) {
             case CAM_EVENT_START_CREDITS:
                 cutscene = CUTSCENE_CREDITS;
                 break;
+              case CAM_EVENT_FIRST:
+                cutscene = CUTSCENE_FIRST;
+                break;
         }
     }
     //! doorStatus is reset every frame. CameraTriggers need to constantly set doorStatus
@@ -6060,6 +6063,9 @@ struct CameraTrigger sCamWF[] = {
 	NULL_TRIGGER
 };
 struct CameraTrigger sCamTTM[] = {
+	NULL_TRIGGER
+};
+struct CameraTrigger sCamCastleGrounds[] = {
 	NULL_TRIGGER
 };
 struct CameraTrigger *sCameraTriggers[LEVEL_COUNT + 1] = {

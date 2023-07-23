@@ -224,6 +224,7 @@ const LevelScript script_func_global_1[] = {
     LOAD_MODEL_FROM_GEO(MODEL_THI_WARP_PIPE,           warp_pipe_geo),
     LOAD_MODEL_FROM_GEO(MODEL_FLAG_MARIO,              flag_mario_geo),
     LOAD_MODEL_FROM_GEO(MODEL_FLAG_BOWSER,             flag_bowser_geo),
+    LOAD_MODEL_FROM_GEO(MODEL_PAPER,                   paper_geo), 
    // LOAD_MODEL_FROM_GEO(MODEL_TOAD,                    toad_geo),
     
     RETURN(),

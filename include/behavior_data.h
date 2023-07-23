@@ -551,5 +551,9 @@ extern const BehaviorScript bhvWarpOneWay[];
 extern const BehaviorScript bhvSpaghettiClerk[];
 extern const BehaviorScript bhvBlueCoin[];
 
+extern const BehaviorScript bhvCutsceneProp[];
+extern const BehaviorScript bhvCutsceneTrigger[];
+
+
 
 #endif // BEHAVIOR_DATA_H

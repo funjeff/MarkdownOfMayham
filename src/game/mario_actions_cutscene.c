@@ -2524,8 +2524,7 @@ static s32 act_end_peach_cutscene(struct MarioState *m) {
             end_peach_cutscene_fade_out(m);
             break;
     }
-
-    m->actionTimer++;
+        m->actionTimer++;
 
     sEndCutsceneVp.vp.vscale[0] = SCREEN_WIDTH  * 2;
     sEndCutsceneVp.vp.vscale[1] = SCREEN_HEIGHT * 1.5f;
@@ -2533,6 +2532,149 @@ static s32 act_end_peach_cutscene(struct MarioState *m) {
     sEndCutsceneVp.vp.vtrans[1] = SCREEN_HEIGHT * 2;
     override_viewport_and_clip(NULL, &sEndCutsceneVp, 0, 0, 0);
 
+    return FALSE;
+}
+
+enum {
+    FIRST_SETUP,
+    FIRST_MARIO_CHILLIN,
+    FIRST_FLYER_FALL,
+    FIRST_READ_FLYER,
+    FIRST_RUN_INTO_CASTLE,
+    FIRST_CANNON_LAUNCH,
+};
+
+static void first_setup(struct MarioState *m){
+    m->statusForCamera->cameraEvent = CAM_EVENT_FIRST;
+    gHudDisplay.flags = HUD_DISPLAY_NONE;
+    set_mario_animation(m, MARIO_ANIM_SLEEP_LYING);
+    play_sound(SOUND_SLEEP1, gGlobalSoundSource);
+    advance_cutscene_step(m);
+}
+
+static void first_mario_chillin(struct MarioState *m) {
+    m->actionTimer = m->actionTimer + 1;
+
+     if (m->actionTimer == 57){
+         play_sound(SOUND_SLEEP2, gGlobalSoundSource);
+     }
+    
+     if (m->actionTimer == 114){
+         play_sound(SOUND_SLEEP3, gGlobalSoundSource);
+     }
+
+     if (m->actionTimer == 171){
+         play_sound(SOUND_SLEEP4, gGlobalSoundSource);
+     }
+
+     if (m->actionTimer == 228){
+         play_sound(SOUND_SLEEP5, gGlobalSoundSource);
+     }
+
+     if (m->actionTimer == 20){
+        advance_cutscene_step(m);
+        struct Object * paper = spawn_object_relative(0,0,390,450, gMarioObject, MODEL_PAPER   ,bhvCutsceneProp);
+        // paper->cutscenePropMove = 1;
+        // paper->cutscenePropMoveOnState = FIRST_WALK_TO_FLYER + 1;
+        // paper->cutscenePropObjMoveSpeed = 5;
+     }
+    
+
+}
+
+static void first_flyer_fall(struct MarioState *m){
+    uintptr_t *behaviorAddr = segmented_to_virtual(bhvCutsceneProp);
+
+	struct ObjectNode *listHead = &gObjectLists[get_object_list_from_behavior(behaviorAddr)];
+
+	struct Object *paperProp = (struct Object *) listHead->next;
+
+	 while (paperProp != (struct Object *) listHead) {
+		 if (paperProp->behavior == behaviorAddr) {
+			 break;
+		 }
+		 paperProp = (struct Object *) paperProp->header.next;
+	 }
+
+    m->actionTimer = m->actionTimer + 1;
+    //  paperProp->oPosX = paperProp->oPosZ + 10;
+      if (m->actionTimer == 70){
+        set_mario_animation(m, MARIO_ANIM_START_SLEEP_SITTING);
+        play_sound(SOUND_HMMMMMM, gGlobalSoundSource);
+      }
+      paperProp->oPosY = paperProp->oPosY - 4;
+      if (m->actionTimer > 80){
+        create_dialog_box(DIALOG_008);
+        advance_cutscene_step(m);
+      }
+     
+}
+
+static void first_read_flyer(struct MarioState *m){
+
+    if (get_dialog_id() != 8){
+     
+     m->actionTimer = m->actionTimer + 1;
+     if (m->actionTimer == 1){
+        play_sound(SOUND_YEAH1, gGlobalSoundSource);
+     }
+    }
+
+    if (m->actionTimer == 57){
+         play_sound(SOUND_YEAH2, gGlobalSoundSource);
+    }
+
+     if (m->actionTimer > 105) {
+        gHudDisplay.flags = gHudDisplay.flags | HUD_DISPLAY_FLAG_WATCH;
+
+     }
+
+     if (m->actionTimer == 114){
+         play_sound(SOUND_YEAH3, gGlobalSoundSource);
+     }
+
+    if (m->actionTimer == 23){
+        set_mario_animation(m,MARIO_ANIM_SINGLE_JUMP);
+    }
+
+    if (m->actionTimer < 30 && m->actionTimer > 23){
+        gMarioObject->header.gfx.pos[1] = gMarioObject->header.gfx.pos[1] + 30;
+    }
+    
+}
+
+static void first_run_into_castle(struct MarioState *m){
+
+}
+
+static void first_cannon_launch(struct MarioState *m){
+
+}
+
+
+
+
+static s32 act_first_cutscene(struct MarioState *m){
+    switch (m->actionArg){
+        case FIRST_SETUP:
+            first_setup(m);
+            break;
+        case FIRST_MARIO_CHILLIN:
+            first_mario_chillin(m);
+            break;
+        case FIRST_FLYER_FALL:
+            first_flyer_fall(m);
+            break;
+        case FIRST_READ_FLYER:
+            first_read_flyer(m);
+            break;
+        case FIRST_RUN_INTO_CASTLE:
+            first_run_into_castle(m);
+            break;
+        case FIRST_CANNON_LAUNCH:
+            first_cannon_launch(m);
+            break;
+    }
     return FALSE;
 }
 
@@ -2650,6 +2792,7 @@ s32 mario_execute_cutscene_action(struct MarioState *m) {
 
     /* clang-format off */
     switch (m->action) {
+        case ACT_FIRST_CUTSCENE:             cancel = act_first_cutscene(m);              break;
         case ACT_DISAPPEARED:                cancel = act_disappeared(m);                break;
         case ACT_INTRO_CUTSCENE:             cancel = act_intro_cutscene(m);             break;
         case ACT_STAR_DANCE_EXIT:            cancel = act_star_dance(m);                 break;

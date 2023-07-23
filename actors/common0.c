@@ -85,3 +85,4 @@ UNUSED static const u64 binid_18 = 18;
 #include "dashpad/collision.inc.c"
 #include "flag_bowser/model.inc.c"
 #include "flag_mario/model.inc.c"
+#include "paper/model.inc.c"

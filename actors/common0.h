@@ -205,4 +205,6 @@ extern const Collision unknown_seg8_collision_080262F8[];
 
 #include "flag_mario/geo_header.h"
 
+#include "paper/geo_header.h"
+
 #endif

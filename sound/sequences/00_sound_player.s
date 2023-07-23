@@ -7008,6 +7008,34 @@ sound_ref .sound_1_left
 sound_ref .sound_10s_left
 sound_ref .sound_3dot5
 sound_ref .sound_sike
+sound_ref .sound_sleep1
+sound_ref .sound_sleep2
+sound_ref .sound_sleep3
+sound_ref .sound_sleep4
+sound_ref .sound_sleep5
+sound_ref .sound_hmm
+sound_ref .sound_yeah1
+sound_ref .sound_yeah2
+sound_ref .sound_yeah3
+
+
+.sound_yeah1:
+chan_setbank 11
+chan_setinstr 30
+chan_setlayer 0, .layer_new_sound 
+chan_end
+
+.sound_yeah2:
+chan_setbank 11
+chan_setinstr 31
+chan_setlayer 0, .layer_new_sound 
+chan_end
+
+.sound_yeah3:
+chan_setbank 11
+chan_setinstr 32
+chan_setlayer 0, .layer_new_sound 
+chan_end
 
 .sound_20_left:
 chan_setbank 11
@@ -7045,6 +7073,42 @@ chan_end
 .sound_sike:
 chan_setbank 11
 chan_setinstr 23
+chan_setlayer 0, .layer_new_sound 
+chan_end
+
+.sound_sleep1:
+chan_setbank 11
+chan_setinstr 24
+chan_setlayer 0, .layer_new_sound 
+chan_end
+
+.sound_sleep2:
+chan_setbank 11
+chan_setinstr 25
+chan_setlayer 0, .layer_new_sound 
+chan_end
+
+.sound_sleep3:
+chan_setbank 11
+chan_setinstr 26
+chan_setlayer 0, .layer_new_sound 
+chan_end
+
+.sound_sleep4:
+chan_setbank 11
+chan_setinstr 27
+chan_setlayer 0, .layer_new_sound 
+chan_end
+
+.sound_sleep5:
+chan_setbank 11
+chan_setinstr 28
+chan_setlayer 0, .layer_new_sound 
+chan_end
+
+.sound_hmm:
+chan_setbank 11
+chan_setinstr 29
 chan_setlayer 0, .layer_new_sound 
 chan_end
 
