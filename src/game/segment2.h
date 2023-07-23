@@ -118,4 +118,6 @@ extern u8 render_bottom_left_watch_texture[];
 
 extern u8 render_bottom_right_watch_texture[];
 
+extern u8 render_middle1_right_watch_2_texture[];
+
 #endif // SEGMENT2_H
