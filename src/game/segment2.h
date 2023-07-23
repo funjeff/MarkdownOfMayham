@@ -102,4 +102,20 @@ extern u8 render_closed_mario_head_texture[];
 
 extern u8 render_closed_mario_head_real_texture[];
 
+extern u8 render_top_left_watch_texture[];
+
+extern u8 render_top_right_watch_texture[];
+
+extern u8 render_middle1_left_watch_texture[];
+
+extern u8 render_middle1_right_watch_texture[];
+
+extern u8 render_middle2_left_watch_texture[];
+
+extern u8 render_middle2_right_watch_texture[];
+
+extern u8 render_bottom_left_watch_texture[];
+
+extern u8 render_bottom_right_watch_texture[];
+
 #endif // SEGMENT2_H
