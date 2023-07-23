@@ -174,6 +174,31 @@
             "release_rate": 208,
             "envelope": "envelope0",
             "sound": "32_yeah3"
+        },
+		"inst33": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "33_mother_fucker"
+        },
+		"inst34": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "34_cannon_fire1"
+        },
+		"inst35": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "35_cannon_fire2"
+        },
+		"inst36": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "36_cannon_prep1"
+        },
+		"inst37": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "37_cannon_prep2"
         }
     },
     "instrument_list": [
@@ -209,6 +234,11 @@
 		"inst29",
 		"inst30",
 		"inst31",
-		"inst32"
+		"inst32",
+		"inst33",
+		"inst34",
+		"inst35",
+		"inst36",
+		"inst37"
     ]
 }

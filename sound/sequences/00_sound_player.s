@@ -7017,7 +7017,41 @@ sound_ref .sound_hmm
 sound_ref .sound_yeah1
 sound_ref .sound_yeah2
 sound_ref .sound_yeah3
+sound_ref .sound_mother_fucker
+sound_ref .sound_cannon_prep1
+sound_ref .sound_cannon_prep2
+sound_ref .sound_cannon_fire1
+sound_ref .sound_cannon_fire2
 
+.sound_cannon_prep1:
+chan_setbank 11
+chan_setinstr 36
+chan_setlayer 0, .layer_new_sound 
+chan_end
+
+.sound_cannon_prep2:
+chan_setbank 11
+chan_setinstr 37
+chan_setlayer 0, .layer_new_sound 
+chan_end
+
+.sound_cannon_fire1:
+chan_setbank 11
+chan_setinstr 34
+chan_setlayer 0, .layer_new_sound 
+chan_end
+
+.sound_cannon_fire2:
+chan_setbank 11
+chan_setinstr 35
+chan_setlayer 0, .layer_new_sound 
+chan_end
+
+.sound_mother_fucker:
+chan_setbank 11
+chan_setinstr 33
+chan_setlayer 0, .layer_new_sound 
+chan_end
 
 .sound_yeah1:
 chan_setbank 11

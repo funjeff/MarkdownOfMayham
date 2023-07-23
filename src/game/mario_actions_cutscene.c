@@ -2541,6 +2541,7 @@ enum {
     FIRST_FLYER_FALL,
     FIRST_READ_FLYER,
     FIRST_RUN_INTO_CASTLE,
+    FIRST_CANNON_ZOOM_OUT,
     FIRST_CANNON_LAUNCH,
 };
 
@@ -2624,13 +2625,29 @@ static void first_read_flyer(struct MarioState *m){
          play_sound(SOUND_YEAH2, gGlobalSoundSource);
     }
 
-     if (m->actionTimer > 105) {
+     if (m->actionTimer == 105) {
         gHudDisplay.flags = gHudDisplay.flags | HUD_DISPLAY_FLAG_WATCH;
-
      }
 
      if (m->actionTimer == 114){
          play_sound(SOUND_YEAH3, gGlobalSoundSource);
+     }
+
+     if (m->actionTimer == 180){
+         play_sound(SOUND_MOTHER_FUCKER, gGlobalSoundSource);   
+         gHudDisplay.flags = gHudDisplay.flags - HUD_DISPLAY_FLAG_WATCH;
+         set_mario_animation(m,MARIO_ANIM_GROUND_BONK);
+     }
+
+     if (m->actionTimer > 180 && m->actionTimer < 187){
+        gMarioObject->header.gfx.pos[1] = gMarioObject->header.gfx.pos[1] - 30;
+     }
+
+     if (m->actionTimer == 217){
+        advance_cutscene_step(m);
+        set_mario_animation(m,MARIO_ANIM_RUNNING);
+        //play_sound(SOUND_MARIO_HERE_WE_GO, gGlobalSoundSource);
+        gMarioObject->header.gfx.angle[1] = 16340*2;
      }
 
     if (m->actionTimer == 23){
@@ -2644,11 +2661,58 @@ static void first_read_flyer(struct MarioState *m){
 }
 
 static void first_run_into_castle(struct MarioState *m){
+    gMarioObject->header.gfx.pos[2] = gMarioObject->header.gfx.pos[2] - 70;
+    m->actionTimer = m->actionTimer + 1;
 
+    if (m->actionTimer == 20){
+        advance_cutscene_step(m);
+    }
+}
+
+static void first_cannon_zoom_out(struct MarioState *m){
+    if (m->actionTimer < 50){
+        gMarioObject->header.gfx.pos[2] = gMarioObject->header.gfx.pos[2] - 70;
+    }
+    m->actionTimer = m->actionTimer + 1;
+
+    if (m->actionTimer == 80){
+        play_sound(SOUND_GENERAL_OPEN_WOOD_DOOR, gGlobalSoundSource);
+        set_mario_animation(m,MARIO_ANIM_IDLE_HEAD_CENTER);
+        gMarioObject->header.gfx.pos[1] = gMarioObject->header.gfx.pos[1] + 4000;
+        advance_cutscene_step(m);
+    }
 }
 
 static void first_cannon_launch(struct MarioState *m){
+    m->actionTimer = m->actionTimer + 1;
+    if (m->actionTimer == 30){
+        play_sound(SOUND_CANNON_PREP1,gGlobalSoundSource);
+    }
 
+    if (m->actionTimer == 87){
+        play_sound(SOUND_CANNON_PREP2,gGlobalSoundSource);
+    }
+
+    if (m->actionTimer == 150){
+        play_sound(SOUND_CANNON_FIRE1,gGlobalSoundSource);
+    }
+
+    if (m->actionTimer > 161){
+
+        gMarioObject->header.gfx.pos[2] = gMarioObject->header.gfx.pos[2] + 200;
+        gMarioObject->header.gfx.angle[0] = gMarioObject->header.gfx.angle[0] + 3000;
+
+    }
+
+    if (m->actionTimer == 207){
+        play_sound(SOUND_CANNON_FIRE2,gGlobalSoundSource);
+    }
+
+    if (m->actionTimer == 240){
+        gMarioState->usedObj = gMarioObject;
+        SET_BPARAM2(gMarioObject->oBehParams,1);
+        level_trigger_warp(gMarioState, WARP_OP_WARP_OBJECT);
+    }
 }
 
 
@@ -2670,6 +2734,9 @@ static s32 act_first_cutscene(struct MarioState *m){
             break;
         case FIRST_RUN_INTO_CASTLE:
             first_run_into_castle(m);
+            break;
+        case FIRST_CANNON_ZOOM_OUT:
+            first_cannon_zoom_out(m);
             break;
         case FIRST_CANNON_LAUNCH:
             first_cannon_launch(m);

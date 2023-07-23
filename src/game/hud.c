@@ -585,7 +585,7 @@ void render_hud_watch(void){
 	render_top_left_watch(xPos,yPos,64,32,0,0);
 	render_top_right_watch(xPos + 64,yPos,64,32,0,0);
 	render_middle1_left_watch(xPos,yPos + 32,64,32,0,0);
-	render_middle1_right_watch(xPos + 64,yPos + 32,64,32,0,0);
+	render_middle1_right_watch_2(xPos + 64,yPos + 32,64,32,0,0);
 	render_middle2_left_watch(xPos,yPos + 64,64,32,0,0);
 	render_middle2_right_watch(xPos + 64,yPos + 64,64,32,0,0);
 	render_bottom_left_watch(xPos,yPos + 96,64,32,0,0);
