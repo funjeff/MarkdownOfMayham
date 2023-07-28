@@ -140,6 +140,7 @@ enum HUDDisplayFlag {
     HUD_DISPLAY_FLAG_UNKNOWN_0020     = (1 <<  5), // 0x0020
     HUD_DISPLAY_FLAG_TIMER            = (1 <<  6), // 0x0040
     HUD_DISPLAY_FLAG_WATCH            = (1 <<  7), // 0x0040
+    HUD_DISPLAY_FLAG_SKIP_BUTTON           = (1 <<  8), // 0x0040
 #ifdef BREATH_METER
     HUD_DISPLAY_FLAG_BREATH_METER     = (1 << 14), // 0x4000
 #endif

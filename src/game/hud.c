@@ -593,6 +593,14 @@ void render_hud_watch(void){
 	
 }
 
+void render_hud_skip_notification(void){
+	u16 xPos = 210;
+	u16 yPos = 200;
+
+	render_skip_button(xPos,yPos,45,40,0,0);
+	print_text(xPos + 55, 10, "SKIP");
+}
+
 /**
  * Sets HUD status camera value depending of the actions
  * defined in update_camera_status.
@@ -1415,6 +1423,10 @@ void render_hud(void) {
 
         if (hudDisplayFlags & HUD_DISPLAY_FLAG_TIMER) {
             render_hud_timer();
+        }
+
+		 if (hudDisplayFlags & HUD_DISPLAY_FLAG_SKIP_BUTTON) {
+            render_hud_skip_notification();
         }
 
         if (gSurfacePoolError & NOT_ENOUGH_ROOM_FOR_SURFACES) print_text(10, 40, "SURFACE POOL FULL");

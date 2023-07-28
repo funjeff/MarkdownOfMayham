@@ -225,8 +225,9 @@ const LevelScript script_func_global_1[] = {
     LOAD_MODEL_FROM_GEO(MODEL_FLAG_MARIO,              flag_mario_geo),
     LOAD_MODEL_FROM_GEO(MODEL_FLAG_BOWSER,             flag_bowser_geo),
     LOAD_MODEL_FROM_GEO(MODEL_PAPER,                   paper_geo), 
+    LOAD_MODEL_FROM_GEO(MODEL_ELEVATOR_POLE,           elevator_pole_geo), 
    // LOAD_MODEL_FROM_GEO(MODEL_TOAD,                    toad_geo),
-    
+    LOAD_MODEL_FROM_GEO(MODEL_THWOMP,                  thwomp_geo),
     RETURN(),
 };
 
@@ -235,7 +236,7 @@ const LevelScript script_func_global_2[] = {
     LOAD_MODEL_FROM_GEO(MODEL_YELLOW_SPHERE,           yellow_sphere_geo),
     LOAD_MODEL_FROM_GEO(MODEL_HOOT,                    hoot_geo),
     LOAD_MODEL_FROM_GEO(MODEL_YOSHI_EGG,               yoshi_egg_geo),
-    LOAD_MODEL_FROM_GEO(MODEL_THWOMP,                  thwomp_geo),
+    //LOAD_MODEL_FROM_GEO(MODEL_THWOMP,                  thwomp_geo),
     LOAD_MODEL_FROM_GEO(MODEL_HEAVE_HO,                heave_ho_geo),
     RETURN(),
 };

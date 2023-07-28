@@ -553,7 +553,8 @@ extern const BehaviorScript bhvBlueCoin[];
 
 extern const BehaviorScript bhvCutsceneProp[];
 extern const BehaviorScript bhvCutsceneTrigger[];
-
+extern const BehaviorScript bhvElevatorPole[];
+extern const BehaviorScript bhvCutsceneNone1[];
 
 
 #endif // BEHAVIOR_DATA_H

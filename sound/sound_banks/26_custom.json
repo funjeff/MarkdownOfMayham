@@ -199,6 +199,21 @@
             "release_rate": 208,
             "envelope": "envelope0",
             "sound": "37_cannon_prep2"
+        },
+		"inst38": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "38_button_click"
+        },
+		"inst39": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "39_goomba_voice"
+        },
+		"inst40": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "40_stomp"
         }
     },
     "instrument_list": [
@@ -239,6 +254,9 @@
 		"inst34",
 		"inst35",
 		"inst36",
-		"inst37"
+		"inst37",
+		"inst38",
+		"inst39",
+		"inst40"
     ]
 }

@@ -86,3 +86,4 @@ UNUSED static const u64 binid_18 = 18;
 #include "flag_bowser/model.inc.c"
 #include "flag_mario/model.inc.c"
 #include "paper/model.inc.c"
+#include "elevator_pole/model.inc.c"

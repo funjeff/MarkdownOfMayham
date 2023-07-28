@@ -32,3 +32,4 @@
 #include "flag_bowser/geo.inc.c"
 #include "flag_mario/geo.inc.c"
 #include "paper/geo.inc.c"
+#include "elevator_pole/geo.inc.c"

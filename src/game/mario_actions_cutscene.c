@@ -2535,6 +2535,172 @@ static s32 act_end_peach_cutscene(struct MarioState *m) {
     return FALSE;
 }
 
+
+enum {
+    BUTTON_THWOMP,
+    BUTTON_GOOMBA,
+    BUTTON_THWOMP_UP,
+};
+
+static void button_thwomp(struct MarioState *m){
+
+     m->actionTimer = m->actionTimer + 1;
+
+      if (m->actionTimer == 1) {
+        m->statusForCamera->cameraEvent = CAM_EVENT_THWOMP;
+          play_sound(SOUND_BUTTON_CLICK, gGlobalSoundSource);
+    	  set_mario_animation(gMarioState, MARIO_ANIM_IDLE_HEAD_CENTER);
+      }
+
+
+      if (m->actionTimer == 55) {
+          play_sound(SOUND_HMMMMMM, gGlobalSoundSource);
+      }
+
+      if (m->actionTimer == 79){
+          struct Object * thwomp = spawn_object_relative(0,0,590,0, gMarioObject, MODEL_THWOMP,bhvCutsceneProp);
+          obj_set_angle(thwomp,thwomp->oFaceAnglePitch,thwomp->oFaceAngleYaw + 16340*2, thwomp->oFaceAngleRoll);
+          play_sound(SOUND_OBJ_THWOMP, gGlobalSoundSource);
+      }
+
+      if (m->actionTimer >= 79){
+      uintptr_t *behaviorAddr = segmented_to_virtual(bhvCutsceneProp);
+
+	  struct ObjectNode *listHead = &gObjectLists[get_object_list_from_behavior(behaviorAddr)];
+
+	  struct Object *thwompProp = (struct Object *) listHead->next;
+
+	   while (thwompProp != (struct Object *) listHead) {
+	  	 if (thwompProp->behavior == behaviorAddr) {
+	  		 break;
+	  	 }
+	  	 thwompProp = (struct Object *) thwompProp->header.next;
+	   }
+
+      thwompProp->oPosY = thwompProp->oPosY - 50;
+
+      }
+
+     if(m->actionTimer == 90){
+        advance_cutscene_step(m);
+     }
+
+}
+
+static void button_goomba(struct MarioState *m){
+
+        m->actionTimer = m->actionTimer + 1;
+
+        if (m->actionTimer == 30){
+        struct Object * goomba = spawn_object_relative(0,800,15,0, gMarioObject, MODEL_GOOMBA,bhvCutsceneNone1);
+        obj_set_angle(goomba,goomba->oFaceAnglePitch ,goomba->oFaceAngleYaw, goomba->oFaceAngleRoll+ 16340);
+        
+        }
+
+        if (m->actionTimer < 80 && m->actionTimer > 30){
+             uintptr_t *behaviorAddr = segmented_to_virtual(bhvCutsceneNone1);
+
+	         struct ObjectNode *listHead = &gObjectLists[get_object_list_from_behavior(behaviorAddr)];
+
+	        struct Object *goombaProp = (struct Object *) listHead->next;
+
+	        while (goombaProp != (struct Object *) listHead) {
+	  	        if (goombaProp->behavior == behaviorAddr) {
+	  		        break;
+	  	        }
+	  	    goombaProp = (struct Object *) goombaProp->header.next;
+	        }
+
+            goombaProp->oPosZ = goombaProp->oPosZ + 10;
+        }
+
+        if (m->actionTimer == 80){
+            play_sound(SOUND_GOOMBA_VOICE, gGlobalSoundSource);
+        }
+
+        if (m->actionTimer < 115 && m->actionTimer > 100){
+              uintptr_t *behaviorAddr = segmented_to_virtual(bhvCutsceneNone1);
+
+	         struct ObjectNode *listHead = &gObjectLists[get_object_list_from_behavior(behaviorAddr)];
+
+	        struct Object *goombaProp = (struct Object *) listHead->next;
+
+	        while (goombaProp != (struct Object *) listHead) {
+	  	        if (goombaProp->behavior == behaviorAddr) {
+	  		        break;
+	  	        }
+	  	    goombaProp = (struct Object *) goombaProp->header.next;
+	        }
+
+            goombaProp->oPosZ = goombaProp->oPosZ + 25;
+            goombaProp->oPosY = goombaProp->oPosY + 83 - (8* (m->actionTimer - 100));
+            
+        }
+
+        if (m->actionTimer == 116){
+            play_sound(SOUND_STOMP, gGlobalSoundSource);
+            advance_cutscene_step(m);
+        }
+
+        
+}
+
+static void button_thwomp_up(struct MarioState *m){
+    m->actionTimer = m->actionTimer + 1;
+    uintptr_t *behaviorAddr = segmented_to_virtual(bhvCutsceneProp);
+
+	  struct ObjectNode *listHead = &gObjectLists[get_object_list_from_behavior(behaviorAddr)];
+
+	  struct Object *thwompProp = (struct Object *) listHead->next;
+
+	   while (thwompProp != (struct Object *) listHead) {
+	  	 if (thwompProp->behavior == behaviorAddr) {
+	  		 break;
+	  	 }
+	  	 thwompProp = (struct Object *) thwompProp->header.next;
+	   }
+
+      thwompProp->oPosY = thwompProp->oPosY + 30;
+
+       uintptr_t *behaviorAddr2 = segmented_to_virtual(bhvCutsceneNone1);
+
+	  struct ObjectNode *listHead2 = &gObjectLists[get_object_list_from_behavior(behaviorAddr)];
+
+	  struct Object *goombaProp = (struct Object *) listHead2->next;
+
+	   while (goombaProp != (struct Object *) listHead2) {
+	  	 if (goombaProp->behavior == behaviorAddr2) {
+	  		 break;
+	  	 }
+	  	 goombaProp = (struct Object *) goombaProp->header.next;
+	   }
+
+      goombaProp->oPosY = goombaProp->oPosY + 30;
+
+      if (m->actionTimer == 40){
+        mark_obj_for_deletion(goombaProp);
+        mark_obj_for_deletion(thwompProp);
+        m->statusForCamera->cameraEvent = CAM_EVENT_NONE;
+        set_mario_action(m,ACT_IDLE,0);
+      }
+}
+
+
+static s32 act_button_cutscene(struct MarioState *m){
+    switch (m->actionArg){
+        case BUTTON_THWOMP:
+            button_thwomp(m);
+            break;
+        case BUTTON_GOOMBA:
+            button_goomba(m);
+            break;
+        case BUTTON_THWOMP_UP:
+            button_thwomp_up(m);
+            break;
+    }
+    return FALSE;
+}
+
 enum {
     FIRST_SETUP,
     FIRST_MARIO_CHILLIN,
@@ -2548,6 +2714,7 @@ enum {
 static void first_setup(struct MarioState *m){
     m->statusForCamera->cameraEvent = CAM_EVENT_FIRST;
     gHudDisplay.flags = HUD_DISPLAY_NONE;
+    gHudDisplay.flags = gHudDisplay.flags | HUD_DISPLAY_FLAG_SKIP_BUTTON;
     set_mario_animation(m, MARIO_ANIM_SLEEP_LYING);
     play_sound(SOUND_SLEEP1, gGlobalSoundSource);
     advance_cutscene_step(m);
@@ -2572,7 +2739,7 @@ static void first_mario_chillin(struct MarioState *m) {
          play_sound(SOUND_SLEEP5, gGlobalSoundSource);
      }
 
-     if (m->actionTimer == 20){
+     if (m->actionTimer == 200){
         advance_cutscene_step(m);
         struct Object * paper = spawn_object_relative(0,0,390,450, gMarioObject, MODEL_PAPER   ,bhvCutsceneProp);
         // paper->cutscenePropMove = 1;
@@ -2597,6 +2764,10 @@ static void first_flyer_fall(struct MarioState *m){
 		 paperProp = (struct Object *) paperProp->header.next;
 	 }
 
+     if (m->actionTimer == 28){
+         play_sound(SOUND_SLEEP5, gGlobalSoundSource);
+     }
+
     m->actionTimer = m->actionTimer + 1;
     //  paperProp->oPosX = paperProp->oPosZ + 10;
       if (m->actionTimer == 70){
@@ -2605,6 +2776,7 @@ static void first_flyer_fall(struct MarioState *m){
       }
       paperProp->oPosY = paperProp->oPosY - 4;
       if (m->actionTimer > 80){
+        gHudDisplay.flags = gHudDisplay.flags - HUD_DISPLAY_FLAG_SKIP_BUTTON;
         create_dialog_box(DIALOG_008);
         advance_cutscene_step(m);
       }
@@ -2614,9 +2786,9 @@ static void first_flyer_fall(struct MarioState *m){
 static void first_read_flyer(struct MarioState *m){
 
     if (get_dialog_id() != 8){
-     
      m->actionTimer = m->actionTimer + 1;
      if (m->actionTimer == 1){
+        gHudDisplay.flags = gHudDisplay.flags | HUD_DISPLAY_FLAG_SKIP_BUTTON;
         play_sound(SOUND_YEAH1, gGlobalSoundSource);
      }
     }
@@ -2710,12 +2882,11 @@ static void first_cannon_launch(struct MarioState *m){
 
     if (m->actionTimer == 240){
         gMarioState->usedObj = gMarioObject;
+        gHudDisplay.flags = gHudDisplay.flags - HUD_DISPLAY_FLAG_SKIP_BUTTON;
         SET_BPARAM2(gMarioObject->oBehParams,1);
         level_trigger_warp(gMarioState, WARP_OP_WARP_OBJECT);
     }
 }
-
-
 
 
 static s32 act_first_cutscene(struct MarioState *m){
@@ -2742,6 +2913,15 @@ static s32 act_first_cutscene(struct MarioState *m){
             first_cannon_launch(m);
             break;
     }
+
+    if (gHudDisplay.flags & HUD_DISPLAY_FLAG_SKIP_BUTTON && gPlayer1Controller->buttonPressed & START_BUTTON){
+        gMarioState->usedObj = gMarioObject;
+        gHudDisplay.flags = gHudDisplay.flags - HUD_DISPLAY_FLAG_WATCH;
+        gHudDisplay.flags = gHudDisplay.flags - HUD_DISPLAY_FLAG_SKIP_BUTTON;
+        SET_BPARAM2(gMarioObject->oBehParams,1);
+        level_trigger_warp(gMarioState, WARP_OP_WARP_OBJECT);
+    }
+
     return FALSE;
 }
 
@@ -2857,9 +3037,11 @@ s32 mario_execute_cutscene_action(struct MarioState *m) {
         return TRUE;
     }
 
+
     /* clang-format off */
     switch (m->action) {
-        case ACT_FIRST_CUTSCENE:             cancel = act_first_cutscene(m);              break;
+        case ACT_FIRST_CUTSCENE:             cancel = act_first_cutscene(m);             break;
+        case ACT_BUTTON_CUTSCENE:            cancel = act_button_cutscene(m);            break;
         case ACT_DISAPPEARED:                cancel = act_disappeared(m);                break;
         case ACT_INTRO_CUTSCENE:             cancel = act_intro_cutscene(m);             break;
         case ACT_STAR_DANCE_EXIT:            cancel = act_star_dance(m);                 break;

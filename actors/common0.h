@@ -207,4 +207,6 @@ extern const Collision unknown_seg8_collision_080262F8[];
 
 #include "paper/geo_header.h"
 
+#include "elevator_pole/geo_header.h"
+
 #endif

@@ -562,6 +562,7 @@ void bhv_clerk_message_loop(void);
 void bhv_cutscene_prop_loop(void);
 void bhv_cutscene_trigger_loop (void);
 void bhv_cutscene_trigger_init (void);
+void bhv_elevator_pole_loop (void);
 
 
 Gfx *geo_move_mario_part_from_parent(s32 callContext, UNUSED struct GraphNode *node, Mat4 mtx);

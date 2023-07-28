@@ -30,3 +30,8 @@
 #include "src/s2d_engine/config.h"
 #include FONT_C_FILE
 #endif
+
+#include "elevator_pole_collision/collision.inc.c"
+
+#include "thwomp/model.inc.c"
+#include "thwomp/collision.inc.c"

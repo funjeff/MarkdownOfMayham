@@ -555,6 +555,7 @@
 #define MODEL_FLAG_BOWSER                 0xE5        // flag_bowser_geo
 #define MODEL_FLAG_MARIO                  0xE6        // flag_mario_geo
 #define MODEL_PAPER                       0xE7        // paper_geo
+#define MODEL_ELEVATOR_POLE               0xE8        // elevator_pole_geo
 
 
 // Menu Models (overwrites Level Geometry IDs)
