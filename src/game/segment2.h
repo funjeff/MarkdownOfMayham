@@ -122,4 +122,48 @@ extern u8 render_middle1_right_watch_2_texture[];
 
 extern u8 render_skip_button_texture[];
 
+extern u8 render_reaction1_texture[];
+
+extern u8 render_reaction2_texture[];
+
+extern u8 render_reaction3_texture[];
+
+extern u8 render_reaction3f2_texture[];
+
+extern u8 render_reaction4_texture[];
+
+extern u8 render_reaction5_texture[];
+
+extern u8 render_reaction5f2_texture[];
+
+extern u8 render_reaction6_texture[];
+extern u8 render_reaction6_texture_pal_rgba16[];
+
+extern u8 render_reaction7_texture[];
+
+extern u8 render_reaction7f2_texture[];
+
+extern u8 render_reaction8_texture[];
+
+extern u8 render_reaction8f2_texture[];
+
+extern u8 render_reaction9_texture[];
+
+extern u8 render_reaction10_texture[];
+
+extern u8 render_reaction10f2_texture[];
+
+extern u8 render_reaction11_texture[];
+
+extern u8 render_reaction11f2_texture[];
+
+extern u8 render_reaction13_texture[];
+
+extern u8 render_reaction14_texture[];
+
+extern u8 render_reaction_top_texture[];
+
+extern u8 render_reaction_bottom_texture[];
+extern u8 render_reaction_bottom_texture_pal_rgba16[];
+
 #endif // SEGMENT2_H
