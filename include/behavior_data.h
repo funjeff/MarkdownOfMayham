@@ -543,6 +543,7 @@ extern const BehaviorScript bhvUnusedFakeStar[];
 
 //custom
 extern const BehaviorScript bhvDashpad[];
+extern const BehaviorScript bhvTrollpad[];
 
 
 extern const BehaviorScript bhvEndScreenText[];
@@ -555,6 +556,8 @@ extern const BehaviorScript bhvCutsceneProp[];
 extern const BehaviorScript bhvCutsceneTrigger[];
 extern const BehaviorScript bhvElevatorPole[];
 extern const BehaviorScript bhvCutsceneNone1[];
+
+extern const BehaviorScript bhvBombombKingGate[];
 
 
 #endif // BEHAVIOR_DATA_H

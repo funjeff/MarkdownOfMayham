@@ -278,9 +278,43 @@ I'm sleeping because...\n\
 like being disturbed.\n\
 Please walk quietly."))
 
-DEFINE_DIALOG(DIALOG_019, 1, 2, 30, 200, _("\
-Shhh! Please walk\n\
-quietly in the hallway!"))
+DEFINE_DIALOG(DIALOG_019, 1, 4, 30, 200, _("\
+Mario\n\
+Here for the deal\n\
+I assume?\n\
+\n\
+Well too bad!\n\
+you arent gonna\n\
+get ANY\n\
+\n\
+not unless you can\n\
+get past ME!\n\
+\n\
+\n\
+Thats right Mario\n\
+Its finally time for\n\
+me to get my revenge!\n\
+\n\
+What\n\
+you're not scared?\n\
+\n\
+\n\
+oh I get it you think\n\
+you can defeat me like\n\
+you did last time?\n\
+\n\
+hahahahahahahhahahahha\n\
+hahahahahahahahahahaha\n\
+hahahahahahahahahahaha\n\
+hahahahahahahahahahaha\n\
+good luck with that\n\
+\n\
+\n\
+\n\
+you're not getting\n\
+past me unless you\n\
+have something with\n\
+more force than a train"))
 
 DEFINE_DIALOG(DIALOG_020, 1, 6, 95, 150, _("\
 Dear Mario:\n\
@@ -2087,18 +2121,602 @@ KEEP_ON_PLAYING "』\n\
 The Super Mario 64 Team"))
 
 DEFINE_DIALOG(DIALOG_162, 1, 4, 30, 200, _("\
-No, no, no! Not you\n\
-again! I'm in a great\n\
-hurry, can't you see?\n\
+Oh ...\n\
 \n\
-I've no time to squabble\n\
-over Stars. Here, have it.\n\
-I never meant to hide it\n\
-from you...\n\
-It's just that I'm in such\n\
-a rush. That's it, that's\n\
-all. Now, I must be off.\n\
-Owww! Let me go!"))
+\n\
+I see\n\
+To tell you the truth I\n\
+knew I probably coulden't\n\
+defeat you Mario.\n\
+\n\
+but thats the thing\n\
+\n\
+\n\
+\n\
+I don't have to defeat\n\
+you\n\
+\n\
+\n\
+I just have to make\n\
+you run out of time\n\
+\n\
+\n\
+so anyway did I ever\n\
+tell you about the time\n\
+I fought in the big\n\
+leagues\n\
+Its a really intresting\n\
+story\n\
+Im sure you would love to\n\
+hear it\n\
+it all started when was\n\
+in college. I was \n\
+majoring in bombolgy with\n\
+a minor in throwing\n\
+but secretly after class\n\
+I would sneek into \n\
+dangerous underground\n\
+fights\n\
+My name is King bombomb\n\
+but I went by The bombomb\n\
+king so that nobody\n\
+would know my identity\n\
+After winning match after\n\
+match of cage fights. The\n\
+bombomb king became a\n\
+name to be feared\n\
+so much so that I got an\n\
+invatation to the match of\n\
+the century\n\
+\n\
+A no holds barred grudge\n\
+match between the bombomb\n\
+king and the mysterious \n\
+man know only as \n\
+NSPTBSTMKESOUMTAWPAMS\n\
+MWDMMHMSWCMKMAWVVWWOL\n\
+SMPGKBMPOBLMITTBBCCTC\n\
+LGLSTBBBBPLOBBAKFSGIB\n\
+BMMBGGSBHSJOHMHMBWNMB\n\
+BSCFSMBMGKBJB\n\
+\n\
+\n\
+I knew I wasen't ready\n\
+for this fight so I \n\
+trained every day for\n\
+three months to prepare\n\
+when the day finally came\n\
+I was terrified no other\n\
+opponent I had faced even\n\
+compared\n\
+I tried to open with my \n\
+trademark grab n throw \n\
+combo but he dodged it \n\
+effortlessly\n\
+he dashed around me in a\n\
+flash, then picked me up\n\
+from behind and threw me\n\
+on the ground\n\
+it was humiliating!!!\n\
+I taunted back\n\
+YOU DARE TOSS\n\
+THE BOMBOMB KING!!\n\
+but inside I was shaking\n\
+in fear and he knew it\n\
+instantly captializing to\n\
+throw me again\n\
+at this point the pain\n\
+set in\n\
+\n\
+\n\
+no bombomb had ever\n\
+survived being thrown\n\
+three times\n\
+\n\
+I had to give up before\n\
+I got hurt\n\
+\n\
+\n\
+and I was gonna until it\n\
+hit me all at once\n\
+\n\
+\n\
+NSPTBSTMKESOUMTAWPAMS\n\
+MWDMMHMSWCMKMAWVVWWOL\n\
+SMPGKBMPOBLMITTBBCCTC\n\
+LGLSTBBBBPLOBBAKFSGIB\n\
+BMMBGGSBHSJOHMHMBWNMB\n\
+BSCFSMBMGKBJB\n\
+\n\
+\n\
+theres only one thing that\n\
+could stand for\n\
+\n\
+\n\
+Even though I could barely\n\
+walk I turrned and faced\n\
+my opponent with the\n\
+utmost determination\n\
+and said\n\
+\n\
+\n\
+\n\
+Nathaniel\n\
+\n\
+\n\
+\n\
+Scuttlebug\n\
+\n\
+\n\
+\n\
+Paragoomba\n\
+\n\
+\n\
+\n\
+Two-Legged\n\
+\n\
+\n\
+\n\
+Black-Haired\n\
+\n\
+\n\
+\n\
+Singularity\n\
+\n\
+\n\
+\n\
+Three-Legged\n\
+\n\
+\n\
+\n\
+Master Rochi\n\
+\n\
+\n\
+\n\
+Koopa the Quick\n\
+\n\
+\n\
+\n\
+Every Time\n\
+\n\
+\n\
+\n\
+Sometimes\n\
+\n\
+\n\
+\n\
+Once-in-a-while\n\
+\n\
+\n\
+\n\
+Untitled Artist One\n\
+\n\
+\n\
+\n\
+Majong Titans Withheld\n\
+Available on PC\n\
+\n\
+\n\
+Windows Flash Computer\n\
+\n\
+\n\
+\n\
+Personal Computer\n\
+\n\
+\n\
+\n\
+Android Mobile Phone\n\
+\n\
+\n\
+\n\
+Samsung Galaxy\n\
+\n\
+\n\
+\n\
+Microsoft Windows 10\n\
+\n\
+\n\
+\n\
+Windows 2000 Desktop\n\
+\n\
+\n\
+\n\
+Linux Mint PC\n\
+\n\
+\n\
+\n\
+Mac\n\
+\n\
+\n\
+\n\
+HTML5\n\
+\n\
+\n\
+\n\
+Mario Platform\n\
+\n\
+\n\
+\n\
+Super Windows 8.1\n\
+\n\
+\n\
+\n\
+Windows Microsoft 7\n\
+\n\
+\n\
+\n\
+Chrome OS\n\
+\n\
+\n\
+\n\
+Mobile Android Kitkat\n\
+\n\
+\n\
+\n\
+Macantosh Apple Computer\n\
+\n\
+\n\
+\n\
+Windows Virtualbox\n\
+\n\
+\n\
+\n\
+VMWare\n\
+\n\
+\n\
+\n\
+Wii U browser\n\
+\n\
+\n\
+\n\
+Wii U nintendo browser\n\
+\n\
+\n\
+\n\
+Original nintendololo\n\
+\n\
+\n\
+\n\
+Official 3DS Linux Super\n\
+Ubuntu Spongebob Stupid\n\
+and Mario Simulator\n\
+\n\
+Portable Device\n\
+\n\
+\n\
+\n\
+Goomba\n\
+\n\
+\n\
+\n\
+Kooba troop\n\
+\n\
+\n\
+\n\
+para boopa\n\
+\n\
+\n\
+\n\
+bullet bill\n\
+\n\
+\n\
+\n\
+my aunt jill\n\
+\n\
+\n\
+\n\
+pirana plant\n\
+\n\
+\n\
+\n\
+obmabas rant\n\
+\n\
+\n\
+\n\
+big boo\n\
+\n\
+\n\
+\n\
+little boo\n\
+\n\
+\n\
+\n\
+medium boo\n\
+\n\
+\n\
+\n\
+I miss you boo\n\
+\n\
+\n\
+\n\
+Thwompy\n\
+\n\
+\n\
+\n\
+Thwimpy\n\
+\n\
+\n\
+\n\
+bimble bimpy\n\
+\n\
+\n\
+\n\
+Chain Chomp\n\
+\n\
+\n\
+\n\
+Chain Thwomp\n\
+\n\
+\n\
+\n\
+Teeny Weeny\n\
+\n\
+\n\
+\n\
+Cheeney Beeney\n\
+\n\
+\n\
+\n\
+Lakitu\n\
+\n\
+\n\
+\n\
+Grakitu\n\
+\n\
+\n\
+\n\
+Lickety Splickety\n\
+\n\
+\n\
+\n\
+Spiney Whiney\n\
+\n\
+\n\
+\n\
+Two Tone Liney\n\
+\n\
+\n\
+\n\
+Bomb-omb\n\
+\n\
+\n\
+\n\
+Bombomb\n\
+\n\
+\n\
+\n\
+Boobomb\n\
+\n\
+\n\
+\n\
+Boobomb\n\
+\n\
+\n\
+\n\
+Pokey wokey\n\
+\n\
+\n\
+\n\
+Lickey Dokey\n\
+\n\
+\n\
+\n\
+oopemboopem\n\
+\n\
+\n\
+\n\
+Bonzai Wonzai\n\
+\n\
+\n\
+\n\
+Billy Harrington\n\
+\n\
+\n\
+\n\
+Amp Shockey\n\
+\n\
+\n\
+\n\
+Klepto\n\
+\n\
+\n\
+\n\
+Fly Unagi Il\n\
+\n\
+\n\
+\n\
+Sooshi Wooshi\n\
+\n\
+\n\
+\n\
+Golden Tiger Roll\n\
+\n\
+\n\
+\n\
+In Jolly Rodger bays home\n\
+\n\
+\n\
+\n\
+Its time for dinner\n\
+\n\
+\n\
+\n\
+Bill blaster\n\
+\n\
+\n\
+\n\
+Bob ross\n\
+\n\
+\n\
+\n\
+Ballspace\n\
+\n\
+\n\
+\n\
+Microgoomba\n\
+\n\
+\n\
+\n\
+Medication Beach goomba\n\
+\n\
+\n\
+\n\
+Grindle\n\
+\n\
+\n\
+\n\
+Spindle\n\
+\n\
+\n\
+\n\
+Skeeter\n\
+\n\
+\n\
+\n\
+Bubba\n\
+\n\
+\n\
+\n\
+Your in trubba\n\
+\n\
+\n\
+\n\
+hiromame\n\
+\n\
+\n\
+\n\
+spooper pooper\n\
+\n\
+\n\
+\n\
+Jamboree\n\
+\n\
+\n\
+\n\
+omama\n\
+\n\
+\n\
+\n\
+Heave ho\n\
+\n\
+\n\
+\n\
+Mr. Blizzerd\n\
+\n\
+\n\
+\n\
+holdey golden lizzard\n\
+\n\
+\n\
+\n\
+mad piano who always\n\
+scared me as a kid in\n\
+super mario 64\n\
+\n\
+bub\n\
+\n\
+\n\
+\n\
+whoosh dont blow me off\n\
+the mountain\n\
+\n\
+\n\
+Nathan\n\
+\n\
+\n\
+\n\
+moneybag\n\
+\n\
+\n\
+\n\
+boneyslag\n\
+\n\
+\n\
+\n\
+bomb\n\
+\n\
+\n\
+\n\
+snuff it\n\
+\n\
+\n\
+\n\
+chuckya\n\
+\n\
+\n\
+\n\
+fuck ya\n\
+\n\
+\n\
+\n\
+sushi shark\n\
+\n\
+\n\
+\n\
+Mr I\n\
+\n\
+\n\
+\n\
+bookend\n\
+\n\
+\n\
+\n\
+Bigger Mr I\n\
+\n\
+\n\
+\n\
+giant eyeball\n\
+\n\
+\n\
+\n\
+killer chair\n\
+floats and follows you \n\
+from one room to the\n\
+another\n\
+band\n\
+\n\
+\n\
+i nameco entertainment\n\
+Japanese video game\n\
+development\n\
+\n\
+\n\
+BANDY\n\
+\n\
+\n\
+\n\
+I WILL DEFEAT YOU\n\
+\n\
+\n\
+\n\
+I was filled with a wave\n\
+of courage\n\
+\n\
+\n\
+I raced towards him he\n\
+tried to dodge but it was\n\
+too late I had him\n\
+\n\
+with a single throw he\n\
+was out of the match\n\
+and I had won\n\
+\n\
+they awarded me my \n\
+trophy but i knew I\n\
+coulden't keep living\n\
+a lie\n\
+In front of thousands of \n\
+people I took off my mask \n\
+\n\
+\n\
+shock was on everyones \n\
+faces as they realised I \n\
+wasen't the bombomb king\n\
+I was King bombomb\n\
+and then everybody clapped\n\
+\n\
+\n\
+the end!"))
 
 DEFINE_DIALOG(DIALOG_163, 1, 5, 30, 200, _("\
 Noooo! You've really\n\
@@ -2141,12 +2759,591 @@ Ready...set...\n\
 \n\
 //Go//// Don't Go"))
 
-DEFINE_DIALOG(DIALOG_165, 1, 5, 30, 200, _("\
-I take no responsibility\n\
-whatsoever for those who\n\
-get dizzy and pass out\n\
-from running around\n\
-this post."))
+DEFINE_DIALOG(DIALOG_165, 1, 4, 30, 200, _("\
+WHOA WHOA WHOA\n\
+MARIO! You werent\n\
+listening to my story!\n\
+\n\
+Its almost like you don't\n\
+even care about it!\n\
+\n\
+\n\
+a good listner stays on\n\
+each part of a story for\n\
+a while before advancing\n\
+to the next part\n\
+how about this? Ill start\n\
+over and you pay more\n\
+attention this time\n\
+\n\
+it all started when was\n\
+in college. I was \n\
+majoring in bombolgy with\n\
+a minor in throwing\n\
+but secretly after class\n\
+I would sneek into \n\
+dangerous underground\n\
+fights\n\
+My name is King bombomb\n\
+but I went by The bombomb\n\
+king so that nobody\n\
+would know my identity\n\
+After winning match after\n\
+match of cage fights. The\n\
+bombomb king became a\n\
+name to be feared\n\
+so much so that I got an\n\
+invatation to the match of\n\
+the century\n\
+\n\
+A no holds barred grudge\n\
+match between the bombomb\n\
+king and the mysterious \n\
+man know only as \n\
+NSPTBSTMKESOUMTAWPAMS\n\
+MWDMMHMSWCMKMAWVVWWOL\n\
+SMPGKBMPOBLMITTBBCCTC\n\
+LGLSTBBBBPLOBBAKFSGIB\n\
+BMMBGGSBHSJOHMHMBWNMB\n\
+BSCFSMBMGKBJB\n\
+\n\
+\n\
+I knew I wasen't ready\n\
+for this fight so I \n\
+trained every day for\n\
+three months to prepare\n\
+when the day finally came\n\
+I was terrified no other\n\
+opponent I had faced even\n\
+compared\n\
+I tried to open with my \n\
+trademark grab n throw \n\
+combo but he dodged it \n\
+effortlessly\n\
+he dashed around me in a\n\
+flash, then picked me up\n\
+from behind and threw me\n\
+on the ground\n\
+it was humiliating!!!\n\
+I taunted back\n\
+YOU DARE TOSS\n\
+THE BOMBOMB KING!!\n\
+but inside I was shaking\n\
+in fear and he knew it\n\
+instantly captializing to\n\
+throw me again\n\
+at this point the pain\n\
+set in\n\
+\n\
+\n\
+no bombomb had ever\n\
+survived being thrown\n\
+three times\n\
+\n\
+I had to give up before\n\
+I got hurt\n\
+\n\
+\n\
+and I was gonna until it\n\
+hit me all at once\n\
+\n\
+\n\
+NSPTBSTMKESOUMTAWPAMS\n\
+MWDMMHMSWCMKMAWVVWWOL\n\
+SMPGKBMPOBLMITTBBCCTC\n\
+LGLSTBBBBPLOBBAKFSGIB\n\
+BMMBGGSBHSJOHMHMBWNMB\n\
+BSCFSMBMGKBJB\n\
+\n\
+\n\
+theres only one thing that\n\
+could stand for\n\
+\n\
+\n\
+Even though I could barely\n\
+walk I turrned and faced\n\
+my opponent with the\n\
+utmost determination\n\
+and said\n\
+\n\
+\n\
+\n\
+Nathaniel\n\
+\n\
+\n\
+\n\
+Scuttlebug\n\
+\n\
+\n\
+\n\
+Paragoomba\n\
+\n\
+\n\
+\n\
+Two-Legged\n\
+\n\
+\n\
+\n\
+Black-Haired\n\
+\n\
+\n\
+\n\
+Singularity\n\
+\n\
+\n\
+\n\
+Three-Legged\n\
+\n\
+\n\
+\n\
+Master Rochi\n\
+\n\
+\n\
+\n\
+Koopa the Quick\n\
+\n\
+\n\
+\n\
+Every Time\n\
+\n\
+\n\
+\n\
+Sometimes\n\
+\n\
+\n\
+\n\
+Once-in-a-while\n\
+\n\
+\n\
+\n\
+Untitled Artist One\n\
+\n\
+\n\
+\n\
+Majong Titans Withheld\n\
+Available on PC\n\
+\n\
+\n\
+Windows Flash Computer\n\
+\n\
+\n\
+\n\
+Personal Computer\n\
+\n\
+\n\
+\n\
+Android Mobile Phone\n\
+\n\
+\n\
+\n\
+Samsung Galaxy\n\
+\n\
+\n\
+\n\
+Microsoft Windows 10\n\
+\n\
+\n\
+\n\
+Windows 2000 Desktop\n\
+\n\
+\n\
+\n\
+Linux Mint PC\n\
+\n\
+\n\
+\n\
+Mac\n\
+\n\
+\n\
+\n\
+HTML5\n\
+\n\
+\n\
+\n\
+Mario Platform\n\
+\n\
+\n\
+\n\
+Super Windows 8.1\n\
+\n\
+\n\
+\n\
+Windows Microsoft 7\n\
+\n\
+\n\
+\n\
+Chrome OS\n\
+\n\
+\n\
+\n\
+Mobile Android Kitkat\n\
+\n\
+\n\
+\n\
+Macantosh Apple Computer\n\
+\n\
+\n\
+\n\
+Windows Virtualbox\n\
+\n\
+\n\
+\n\
+VMWare\n\
+\n\
+\n\
+\n\
+Wii U browser\n\
+\n\
+\n\
+\n\
+Wii U nintendo browser\n\
+\n\
+\n\
+\n\
+Original nintendololo\n\
+\n\
+\n\
+\n\
+Official 3DS Linux Super\n\
+Ubuntu Spongebob Stupid\n\
+and Mario Simulator\n\
+\n\
+Portable Device\n\
+\n\
+\n\
+\n\
+Goomba\n\
+\n\
+\n\
+\n\
+Kooba troop\n\
+\n\
+\n\
+\n\
+para boopa\n\
+\n\
+\n\
+\n\
+bullet bill\n\
+\n\
+\n\
+\n\
+my aunt jill\n\
+\n\
+\n\
+\n\
+pirana plant\n\
+\n\
+\n\
+\n\
+obmabas rant\n\
+\n\
+\n\
+\n\
+big boo\n\
+\n\
+\n\
+\n\
+little boo\n\
+\n\
+\n\
+\n\
+medium boo\n\
+\n\
+\n\
+\n\
+I miss you boo\n\
+\n\
+\n\
+\n\
+Thwompy\n\
+\n\
+\n\
+\n\
+Thwimpy\n\
+\n\
+\n\
+\n\
+bimble bimpy\n\
+\n\
+\n\
+\n\
+Chain Chomp\n\
+\n\
+\n\
+\n\
+Chain Thwomp\n\
+\n\
+\n\
+\n\
+Teeny Weeny\n\
+\n\
+\n\
+\n\
+Cheeney Beeney\n\
+\n\
+\n\
+\n\
+Lakitu\n\
+\n\
+\n\
+\n\
+Grakitu\n\
+\n\
+\n\
+\n\
+Lickety Splickety\n\
+\n\
+\n\
+\n\
+Spiney Whiney\n\
+\n\
+\n\
+\n\
+Two Tone Liney\n\
+\n\
+\n\
+\n\
+Bomb-omb\n\
+\n\
+\n\
+\n\
+Bombomb\n\
+\n\
+\n\
+\n\
+Boobomb\n\
+\n\
+\n\
+\n\
+Boobomb\n\
+\n\
+\n\
+\n\
+Pokey wokey\n\
+\n\
+\n\
+\n\
+Lickey Dokey\n\
+\n\
+\n\
+\n\
+oopemboopem\n\
+\n\
+\n\
+\n\
+Bonzai Wonzai\n\
+\n\
+\n\
+\n\
+Billy Harrington\n\
+\n\
+\n\
+\n\
+Amp Shockey\n\
+\n\
+\n\
+\n\
+Klepto\n\
+\n\
+\n\
+\n\
+Fly Unagi Il\n\
+\n\
+\n\
+\n\
+Sooshi Wooshi\n\
+\n\
+\n\
+\n\
+Golden Tiger Roll\n\
+\n\
+\n\
+\n\
+In Jolly Rodger bays home\n\
+\n\
+\n\
+\n\
+Its time for dinner\n\
+\n\
+\n\
+\n\
+Bill blaster\n\
+\n\
+\n\
+\n\
+Bob ross\n\
+\n\
+\n\
+\n\
+Ballspace\n\
+\n\
+\n\
+\n\
+Microgoomba\n\
+\n\
+\n\
+\n\
+Medication Beach goomba\n\
+\n\
+\n\
+\n\
+Grindle\n\
+\n\
+\n\
+\n\
+Spindle\n\
+\n\
+\n\
+\n\
+Skeeter\n\
+\n\
+\n\
+\n\
+Bubba\n\
+\n\
+\n\
+\n\
+Your in trubba\n\
+\n\
+\n\
+\n\
+hiromame\n\
+\n\
+\n\
+\n\
+spooper pooper\n\
+\n\
+\n\
+\n\
+Jamboree\n\
+\n\
+\n\
+\n\
+omama\n\
+\n\
+\n\
+\n\
+Heave ho\n\
+\n\
+\n\
+\n\
+Mr. Blizzerd\n\
+\n\
+\n\
+\n\
+holdey golden lizzard\n\
+\n\
+\n\
+\n\
+mad piano who always\n\
+scared me as a kid in\n\
+super mario 64\n\
+\n\
+bub\n\
+\n\
+\n\
+\n\
+whoosh dont blow me off\n\
+the mountain\n\
+\n\
+\n\
+Nathan\n\
+\n\
+\n\
+\n\
+moneybag\n\
+\n\
+\n\
+\n\
+boneyslag\n\
+\n\
+\n\
+\n\
+bomb\n\
+\n\
+\n\
+\n\
+snuff it\n\
+\n\
+\n\
+\n\
+chuckya\n\
+\n\
+\n\
+\n\
+fuck ya\n\
+\n\
+\n\
+\n\
+sushi shark\n\
+\n\
+\n\
+\n\
+Mr I\n\
+\n\
+\n\
+\n\
+bookend\n\
+\n\
+\n\
+\n\
+Bigger Mr I\n\
+\n\
+\n\
+\n\
+giant eyeball\n\
+\n\
+\n\
+\n\
+killer chair\n\
+floats and follows you \n\
+from one room to the\n\
+another\n\
+band\n\
+\n\
+\n\
+i nameco entertainment\n\
+Japanese video game\n\
+development\n\
+\n\
+\n\
+BANDY\n\
+\n\
+\n\
+\n\
+I WILL DEFEAT YOU\n\
+\n\
+\n\
+\n\
+I was filled with a wave\n\
+of courage\n\
+\n\
+\n\
+I raced towards him he\n\
+tried to dodge but it was\n\
+too late I had him\n\
+\n\
+with a single throw he\n\
+was out of the match\n\
+and I had won\n\
+\n\
+they awarded me my \n\
+trophy but i knew I\n\
+coulden't keep living\n\
+a lie\n\
+In front of thousands of \n\
+people I took off my mask \n\
+\n\
+\n\
+shock was on everyones \n\
+faces as they realised I \n\
+wasen't the bombomb king\n\
+I was King bombomb\n\
+and then everybody clapped\n\
+\n\
+\n\
+the end!"))
 
 DEFINE_DIALOG(DIALOG_166, 1, 4, 30, 200, _("\
 I'll be back soon.\n\

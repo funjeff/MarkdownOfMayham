@@ -554,6 +554,7 @@ void bhv_volcano_trap_loop(void);
 
 void bhv_dashpad_init(void);
 void bhv_dashpad_loop(void);
+void bhv_trollpad_loop(void);
 void bhv_restart_checkpoint_loop(void);
 void bhv_restart_checkpoint_init(void);
 void bhv_end_screen_text_loop(void);
@@ -563,6 +564,7 @@ void bhv_cutscene_prop_loop(void);
 void bhv_cutscene_trigger_loop (void);
 void bhv_cutscene_trigger_init (void);
 void bhv_elevator_pole_loop (void);
+void bhv_bombomb_king_gate_loop (void);
 
 
 Gfx *geo_move_mario_part_from_parent(s32 callContext, UNUSED struct GraphNode *node, Mat4 mtx);

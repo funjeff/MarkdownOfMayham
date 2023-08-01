@@ -781,6 +781,15 @@ const BehaviorScript bhvDashpad[] = {
     END_LOOP(),
 };
 
+const BehaviorScript bhvTrollpad[] = {
+    BEGIN(OBJ_LIST_LEVEL),
+    OR_INT(oFlags, OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE),
+	SET_HITBOX(/*Radius*/ 900, /*Height*/ 100),
+	BEGIN_LOOP(),
+        CALL_NATIVE(bhv_trollpad_loop),
+    END_LOOP(),
+};
+
 const BehaviorScript bhvCutsceneNone1[] = {
     BEGIN(OBJ_LIST_LEVEL),
     OR_INT(oFlags, OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE),
@@ -797,6 +806,17 @@ const BehaviorScript bhvElevatorPole[] = {
 	BEGIN_LOOP(),
     	CALL_NATIVE(load_object_collision_model),
         CALL_NATIVE(bhv_elevator_pole_loop),
+    END_LOOP(),
+};
+
+const BehaviorScript bhvBombombKingGate[] = {
+    BEGIN(OBJ_LIST_SURFACE),
+    OR_INT(oFlags, OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE),
+	LOAD_COLLISION_DATA(bombomb_king_gate_collision),
+	SET_HITBOX(/*Radius*/ 200, /*Height*/ 100),
+	BEGIN_LOOP(),
+    	CALL_NATIVE(load_object_collision_model),
+        CALL_NATIVE(bhv_bombomb_king_gate_loop),
     END_LOOP(),
 };
 

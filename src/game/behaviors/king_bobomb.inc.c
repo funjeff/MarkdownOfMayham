@@ -35,7 +35,7 @@ void king_bobomb_act_inactive(void) { // act 0
             seq_player_lower_volume(SEQ_PLAYER_LEVEL, 60, 40);
         }
     } else if (cur_obj_update_dialog_with_cutscene(MARIO_DIALOG_LOOK_UP,
-        DIALOG_FLAG_TURN_TO_MARIO, CUTSCENE_DIALOG, DIALOG_017)) {
+        DIALOG_FLAG_TURN_TO_MARIO, CUTSCENE_DIALOG, DIALOG_019)) {
         o->oAction = KING_BOBOMB_ACT_ACTIVE;
         o->oFlags |= OBJ_FLAG_HOLDABLE;
     }
@@ -82,9 +82,27 @@ void king_bobomb_act_active(void) { // act 2
         o->oAction = KING_BOBOMB_ACT_GRABBED_MARIO;
     }
 
+    if (obj_check_if_collided_with_object(o, gMarioObject) && gMarioState->action == ACT_DASHING){
+        gMarioState->heldObj = o;
+        obj_set_held_state(gMarioState->heldObj, bhvCarrySomethingThrown);
+
+        gMarioState->heldObj->oPosX = gMarioState->marioBodyState->heldObjLastPosition[0] + 32.0f * sins(gMarioState->faceAngle[1]);
+        gMarioState->heldObj->oPosY = gMarioState->marioBodyState->heldObjLastPosition[1];
+        gMarioState->heldObj->oPosZ = gMarioState->marioBodyState->heldObjLastPosition[2] + 32.0f * coss(gMarioState->faceAngle[1]);
+
+        gMarioState->heldObj->oMoveAngleYaw = gMarioState->faceAngle[1];
+
+        gMarioState->heldObj = NULL;
+        o->oAction = KING_BOBOMB_ACT_BEEN_THROWN;
+        gMarioState->dashTime = 0;
+        mario_bonk_reflection_dash(gMarioState, TRUE);
+        set_mario_action(gMarioState, ACT_GROUND_BONK,0);
+        gMarioState->actionTimer = 0;
+    }
+
     if (mario_is_far_below_object(1200.0f)) {
         o->oAction = KING_BOBOMB_ACT_INACTIVE;
-        stop_background_music(SEQUENCE_ARGS(4, SEQ_EVENT_BOSS));
+   //     stop_background_music(SEQUENCE_ARGS(4, SEQ_EVENT_BOSS));
     }
 }
 
@@ -150,7 +168,7 @@ void king_bobomb_act_activate(void) { // act 1
 
     if (mario_is_far_below_object(1200.0f)) {
         o->oAction = KING_BOBOMB_ACT_INACTIVE;
-        stop_background_music(SEQUENCE_ARGS(4, SEQ_EVENT_BOSS));
+    //    stop_background_music(SEQUENCE_ARGS(4, SEQ_EVENT_BOSS));
     }
 }
 
@@ -194,26 +212,42 @@ void king_bobomb_act_hit_ground(void) { // act 6
 
 void king_bobomb_act_death(void) { // act 7
     cur_obj_init_animation_with_sound(KING_BOBOMB_ANIM_HIT_GROUND);
-    if (cur_obj_update_dialog_with_cutscene(MARIO_DIALOG_LOOK_UP,
-        DIALOG_FLAG_TEXT_DEFAULT, CUTSCENE_DIALOG, DIALOG_116)) {
-        create_sound_spawner(SOUND_OBJ_KING_WHOMP_DEATH);
+    
+    //if (!o->oKingBobombReset){
+        if (cur_obj_update_dialog(MARIO_DIALOG_LOOK_UP,
+            DIALOG_FLAG_TEXT_DEFAULT, CUTSCENE_DIALOG, DIALOG_020)) {
+            create_sound_spawner(SOUND_OBJ_KING_WHOMP_DEATH);
 
-        cur_obj_hide();
-        cur_obj_become_intangible();
+            cur_obj_hide();
+            cur_obj_become_intangible();
 
-        spawn_mist_particles_variable(0, 0, 200.0f);
-        spawn_triangle_break_particles(20, MODEL_DIRT_ANIMATION, 3.0f, TINY_DIRT_PARTICLE_ANIM_STATE_YELLOW);
-        cur_obj_shake_screen(SHAKE_POS_SMALL);
+            spawn_mist_particles_variable(0, 0, 200.0f);
+            spawn_triangle_break_particles(20, MODEL_DIRT_ANIMATION, 3.0f, TINY_DIRT_PARTICLE_ANIM_STATE_YELLOW);
+            cur_obj_shake_screen(SHAKE_POS_SMALL);
 
-        cur_obj_spawn_star_at_y_offset(2000.0f, 4500.0f, -4500.0f, 200.0f);
+        //  cur_obj_spawn_star_at_y_offset(2000.0f, 4500.0f, -4500.0f, 200.0f);
 
-        o->oAction = KING_BOBOMB_ACT_STOP_MUSIC;
-    }
+            o->oAction = KING_BOBOMB_ACT_STOP_MUSIC;
+        }
+    //}
+     o->oKingBobombStationaryTimer = o->oKingBobombStationaryTimer + 1;
+     if (gMarioState->input & INPUT_A_PRESSED || gMarioState->input & INPUT_B_PRESSED  || gPlayer1Controller->buttonPressed & D_CBUTTONS || gPlayer1Controller->buttonPressed & R_CBUTTONS || gPlayer1Controller->buttonPressed & START_BUTTON || gPlayer1Controller->buttonPressed & D_JPAD || gPlayer1Controller->buttonPressed & R_JPAD ) {
+         if (o->oKingBobombStationaryTimer < 11){
+           
+           reset_dialog_render_state();
+           create_dialog_box(DIALOG_165);
+
+           //  o->oKingBobombReset = 1;
+            //  o->oDialogState = DIALOG_STATUS_START_DIALOG;
+         }
+         o->oKingBobombStationaryTimer = 0;
+     }
+
 }
 
 void king_bobomb_act_stop_music(void) { // act 8
     if (o->oTimer == 60) {
-        stop_background_music(SEQUENCE_ARGS(4, SEQ_EVENT_BOSS));
+     //   stop_background_music(SEQUENCE_ARGS(4, SEQ_EVENT_BOSS));
     }
 }
 
@@ -228,6 +262,9 @@ void king_bobomb_act_been_thrown(void) { // act 4
             cur_obj_play_sound_2(SOUND_OBJ_KING_BOBOMB);
 
             o->oAction = o->oHealth ? KING_BOBOMB_ACT_HIT_GROUND : KING_BOBOMB_ACT_DEATH;
+            if (o->oAction == KING_BOBOMB_ACT_DEATH){
+                o->oKingBobombStationaryTimer = 0;
+            }
         }
     } else if (o->oSubAction == KING_BOBOMB_SUB_ACT_THROWN_FALL) {
         if (o->oMoveFlags & OBJ_MOVE_ON_GROUND) {
@@ -295,7 +332,7 @@ void king_bobomb_act_return_home(void) { // act 5
         case KING_BOBOMB_SUB_ACT_RETURN_HOME_WAIT_FOR_DIALOG:
             if (mario_is_far_below_object(1200.0f)) {
                 o->oAction = KING_BOBOMB_ACT_INACTIVE;
-                stop_background_music(SEQUENCE_ARGS(4, SEQ_EVENT_BOSS));
+             //   stop_background_music(SEQUENCE_ARGS(4, SEQ_EVENT_BOSS));
             }
 
             if (cur_obj_can_mario_activate_textbox_2(500.0f, 100.0f)) {
@@ -360,6 +397,7 @@ void king_bobomb_move(void) {
 
 void bhv_king_bobomb_loop(void) {
     o->oInteractionSubtype |= INT_SUBTYPE_GRABS_MARIO;
+    o->oInteractionSubtype |= INT_SUBTYPE_NOT_GRABBABLE;
 
     switch (o->oHeldState) {
         case HELD_FREE:

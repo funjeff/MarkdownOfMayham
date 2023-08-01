@@ -649,6 +649,7 @@
 #define /*0x108*/ oKingBobombPlayerGrabEscapeCooldown OBJECT_FIELD_S32(0x20)
 #define /*0x10C*/ oKingBobombBlinkTimer               OBJECT_FIELD_S32(0x21)
 
+
 /* Klepto */
 #define /*0x0F4*/ oKleptoDistanceToTarget      OBJECT_FIELD_F32(0x1B)
 #define /*0x0F8*/ oKleptoHomeYOffset           OBJECT_FIELD_F32(0x1C)
@@ -1352,5 +1353,7 @@ os16112*/
 #define cutscenePropDoesDeleteItself os16104
 #define cutscenePropSpawnSparkles os16106
 #define cutscenePropDisableGoodMovement os16108
+
+#define trollPadTimer os16F4
 
 #endif // OBJECT_FIELDS_H

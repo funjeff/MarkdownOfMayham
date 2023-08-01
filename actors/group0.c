@@ -35,3 +35,5 @@
 
 #include "thwomp/model.inc.c"
 #include "thwomp/collision.inc.c"
+#include "bombomb_king_gate/model.inc.c"
+#include "bombomb_king_gate/collision.inc.c"

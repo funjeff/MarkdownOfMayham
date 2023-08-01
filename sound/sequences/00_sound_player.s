@@ -7025,6 +7025,13 @@ sound_ref .sound_cannon_fire2
 sound_ref .sound_button_click
 sound_ref .sound_goomba_voice
 sound_ref .sound_stomp
+sound_ref .sound_stone_push
+
+.sound_stone_push:
+chan_setbank 11
+chan_setinstr 41
+chan_setlayer 0, .layer_new_sound 
+chan_end
 
 .sound_button_click:
 chan_setbank 11

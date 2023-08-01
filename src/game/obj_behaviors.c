@@ -782,10 +782,12 @@ UNUSED s32 debug_sequence_tracker(s16 debugInputSequence[]) {
 #include "behaviors/yoshi.inc.c"
 
 #include "behaviors/dashpad_inc.c"
+#include "behaviors/trollpad.inc.c"
 #include "behaviors/restart_checkpoint.inc.c"
 #include "behaviors/spaghetti_clerk.inc.c"
 #include "behaviors/end_screen_text.inc.c"
 #include "behaviors/cutscene_prop.inc.c"
 #include "behaviors/cutscene_trigger.inc.c"
 #include "behaviors/elevator_pole.inc.c"
+#include "behaviors/bombomb_king_gate.inc.c"
 

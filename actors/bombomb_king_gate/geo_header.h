@@ -1,0 +1,10 @@
+extern const GeoLayout bombomb_king_gate_geo[];
+extern Lights1 bombomb_king_gate_f3dlite_material_lights;
+extern u8 bombomb_king_gate_gate_ci8[];
+extern u8 bombomb_king_gate_gate_ci8_pal_rgba16[];
+extern Vtx bombomb_king_gate_Cube_mesh_layer_1_vtx_0[24];
+extern Gfx bombomb_king_gate_Cube_mesh_layer_1_tri_0[];
+extern Gfx mat_bombomb_king_gate_f3dlite_material[];
+extern Gfx mat_revert_bombomb_king_gate_f3dlite_material[];
+extern Gfx bombomb_king_gate_Cube_mesh_layer_1[];
+extern Gfx bombomb_king_gate_material_revert_render_settings[];

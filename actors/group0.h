@@ -341,4 +341,8 @@ extern const Collision thwomp_seg5_collision_0500B92C[];
 
 #include "elevator_pole_collision/collision_header.h"
 
+#include "bombomb_king_gate/geo_header.h"
+
+#include "bombomb_king_gate/collision_header.h"
+
 #endif

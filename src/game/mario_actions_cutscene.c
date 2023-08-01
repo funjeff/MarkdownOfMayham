@@ -2701,6 +2701,10 @@ static s32 act_button_cutscene(struct MarioState *m){
     return FALSE;
 }
 
+static s32 act_do_nothing(struct MarioState *m){
+    return FALSE;
+}
+
 enum {
     FIRST_SETUP,
     FIRST_MARIO_CHILLIN,
@@ -3040,6 +3044,7 @@ s32 mario_execute_cutscene_action(struct MarioState *m) {
 
     /* clang-format off */
     switch (m->action) {
+        case ACT_DO_NOTHING:                 cancel = act_do_nothing(m);                 break;
         case ACT_FIRST_CUTSCENE:             cancel = act_first_cutscene(m);             break;
         case ACT_BUTTON_CUTSCENE:            cancel = act_button_cutscene(m);            break;
         case ACT_DISAPPEARED:                cancel = act_disappeared(m);                break;

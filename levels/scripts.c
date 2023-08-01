@@ -220,7 +220,7 @@ const LevelScript script_func_global_1[] = {
     //LOAD_MODEL_FROM_GEO(MODEL_FLYGUY,                  flyguy_geo),
    // LOAD_MODEL_FROM_GEO(MODEL_CHUCKYA,                 chuckya_geo),
    // LOAD_MODEL_FROM_GEO(MODEL_TRAJECTORY_MARKER_BALL,      bowling_ball_track_geo),
-   // LOAD_MODEL_FROM_GEO(MODEL_DASHPAD,                 dashpad_geo),
+    LOAD_MODEL_FROM_GEO(MODEL_DASHPAD,                 dashpad_geo),
     LOAD_MODEL_FROM_GEO(MODEL_THI_WARP_PIPE,           warp_pipe_geo),
     LOAD_MODEL_FROM_GEO(MODEL_FLAG_MARIO,              flag_mario_geo),
     LOAD_MODEL_FROM_GEO(MODEL_FLAG_BOWSER,             flag_bowser_geo),
@@ -228,6 +228,7 @@ const LevelScript script_func_global_1[] = {
     LOAD_MODEL_FROM_GEO(MODEL_ELEVATOR_POLE,           elevator_pole_geo), 
    // LOAD_MODEL_FROM_GEO(MODEL_TOAD,                    toad_geo),
     LOAD_MODEL_FROM_GEO(MODEL_THWOMP,                  thwomp_geo),
+    LOAD_MODEL_FROM_GEO(BOMBOMB_KING_GATE,             bombomb_king_gate_geo),
     RETURN(),
 };
 

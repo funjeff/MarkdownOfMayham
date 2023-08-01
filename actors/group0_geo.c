@@ -17,3 +17,5 @@
 #include "sparkle_animation/geo.inc.c"
 #include "mario/geo.inc.c"
 #include "thwomp/geo.inc.c"
+
+#include "bombomb_king_gate/geo.inc.c"
