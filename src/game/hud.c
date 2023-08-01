@@ -601,6 +601,97 @@ void render_hud_skip_notification(void){
 	print_text(xPos + 55, 10, "SKIP");
 }
 
+int reactionNum;
+int reactionSwitched = 0;
+
+void render_hud_live_reaction(void){
+	u16 xPos = 253;
+	u16 yPos = 40;
+
+	u16 timerValFrames = gHudDisplay.timer;
+    u16 timerMins = timerValFrames / (30 * 60);
+    u16 timerSecs = (timerValFrames - (timerMins * 1800)) / 30;
+	f32 timerSecsf = (timerValFrames - (timerMins * 1800)) / 30.0;
+
+	if (timerSecs % 5 == 0 && !reactionSwitched){
+		reactionNum = random_u16()%13;
+		reactionSwitched = 1;
+	}
+
+	if (timerSecs % 5 != 0){
+		reactionSwitched = 0;
+	}
+
+	render_reaction_top(xPos,yPos,64,32,0,0);
+	render_reaction_bottom(xPos,yPos + 32,64,32,0,0);
+	
+	switch(reactionNum){
+		case 0:
+			render_reaction1(xPos + 8,yPos+22,48,40,0,0);
+			break;
+		case 1:
+			render_reaction2(xPos + 8,yPos+22,48,40,0,0);
+			break;
+		case 2:
+			if (timerSecs %2 == 0){
+				render_reaction3(xPos + 8,yPos+22,48,40,0,0);
+			} else {
+				render_reaction3f2(xPos + 8,yPos+22,48,40,0,0);
+			}
+			break;
+		case 3:
+			render_reaction4(xPos + 8,yPos+22,48,40,0,0);
+			break;
+		case 4:
+			if (timerSecs %2 == 0){
+				render_reaction5(xPos + 8,yPos+22,48,40,0,0);
+			} else {
+				render_reaction5f2(xPos + 8,yPos+22,48,40,0,0);
+			}
+			break;
+		case 5:
+			render_reaction6(xPos + 8,yPos+22,48,40,0,0);
+			break;
+		case 6:
+			if (timerSecsf - timerSecs > 0.5){
+				render_reaction7(xPos + 8,yPos+22,48,40,0,0);
+			} else {
+				render_reaction7f2(xPos + 8,yPos+22,48,40,0,0);
+			}
+			break;
+		case 7:
+			if (timerSecsf - timerSecs > 0.5){
+				render_reaction8(xPos + 8,yPos+22,48,40,0,0);
+			} else {
+				render_reaction8f2(xPos + 8,yPos+22,48,40,0,0);
+			}
+			break;
+		case 8:
+			render_reaction9(xPos + 8,yPos+22,48,40,0,0);
+			break;
+		case 9:
+			if (timerSecs %2 == 0){
+				render_reaction10(xPos + 8,yPos+22,48,40,0,0);
+			} else {
+				render_reaction10f2(xPos + 8,yPos+22,48,40,0,0);
+			}
+			break;
+		case 10:
+			if (timerSecs %2 == 0){
+				render_reaction11(xPos + 8,yPos+22,48,40,0,0);
+			} else {
+				render_reaction11f2(xPos + 8,yPos+22,48,40,0,0);
+			}
+			break;
+		case 11:
+			render_reaction13(xPos + 8,yPos+22,48,40,0,0);
+			break;
+		case 12:
+			render_reaction14(xPos + 8,yPos+22,48,40,0,0);
+			break;	
+	}
+}
+
 /**
  * Sets HUD status camera value depending of the actions
  * defined in update_camera_status.
@@ -2091,6 +2182,10 @@ void render_hud(void) {
         if (hudDisplayFlags & HUD_DISPLAY_FLAG_TIMER) {
             render_hud_timer();
         }
+		
+		if (hudDisplayFlags & HUD_DISPLAY_LIVE_REACTION){
+			render_hud_live_reaction();
+		}
 
 		 if (hudDisplayFlags & HUD_DISPLAY_FLAG_SKIP_BUTTON) {
             render_hud_skip_notification();
