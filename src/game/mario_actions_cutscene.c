@@ -985,7 +985,7 @@ s32 act_warp_door_spawn(struct MarioState *m) {
 
 s32 act_emerge_from_pipe(struct MarioState *m) {
     struct Object *marioObj = m->marioObj;
-
+    
     if (m->actionTimer++ < 11) {
         marioObj->header.gfx.node.flags &= ~GRAPH_RENDER_ACTIVE;
         return FALSE;
@@ -1023,8 +1023,13 @@ s32 act_spawn_spin_airborne(struct MarioState *m) {
 
     // landed on floor, play spawn land animation
     if (perform_air_step(m, AIR_STEP_CHECK_NONE) == AIR_STEP_LANDED) {
-        play_mario_landing_sound(m, SOUND_ACTION_TERRAIN_LANDING);
-        set_mario_action(m, ACT_SPAWN_SPIN_LANDING, 0);
+        if (m->actionArg){
+            play_sound(SOUND_MARIO_OOOF,m->marioObj->header.gfx.cameraToObject);
+            set_mario_action(m, ACT_GROUND_BONK, 0);
+        } else {
+            play_mario_landing_sound(m, SOUND_ACTION_TERRAIN_LANDING);
+            set_mario_action(m, ACT_SPAWN_SPIN_LANDING, 0);
+        }
     }
 
     // is 300 units above floor, spin and play woosh sounds
@@ -2718,7 +2723,6 @@ enum {
 static void first_setup(struct MarioState *m){
     m->statusForCamera->cameraEvent = CAM_EVENT_FIRST;
     gHudDisplay.flags = HUD_DISPLAY_NONE;
-    gHudDisplay.flags = gHudDisplay.flags | HUD_DISPLAY_FLAG_SKIP_BUTTON;
     set_mario_animation(m, MARIO_ANIM_SLEEP_LYING);
     play_sound(SOUND_SLEEP1, gGlobalSoundSource);
     advance_cutscene_step(m);
@@ -2730,7 +2734,11 @@ static void first_mario_chillin(struct MarioState *m) {
      if (m->actionTimer == 57){
          play_sound(SOUND_SLEEP2, gGlobalSoundSource);
      }
-    
+
+     if (m->actionTimer == 95){
+        gHudDisplay.flags = gHudDisplay.flags | HUD_DISPLAY_FLAG_SKIP_BUTTON;
+     }
+
      if (m->actionTimer == 114){
          play_sound(SOUND_SLEEP3, gGlobalSoundSource);
      }
@@ -2919,8 +2927,10 @@ static s32 act_first_cutscene(struct MarioState *m){
     }
 
     if (gHudDisplay.flags & HUD_DISPLAY_FLAG_SKIP_BUTTON && gPlayer1Controller->buttonPressed & START_BUTTON){
+        if (gHudDisplay.flags & HUD_DISPLAY_FLAG_WATCH){
+            gHudDisplay.flags = gHudDisplay.flags - HUD_DISPLAY_FLAG_WATCH;
+        }
         gMarioState->usedObj = gMarioObject;
-        gHudDisplay.flags = gHudDisplay.flags - HUD_DISPLAY_FLAG_WATCH;
         gHudDisplay.flags = gHudDisplay.flags - HUD_DISPLAY_FLAG_SKIP_BUTTON;
         SET_BPARAM2(gMarioObject->oBehParams,1);
         level_trigger_warp(gMarioState, WARP_OP_WARP_OBJECT);

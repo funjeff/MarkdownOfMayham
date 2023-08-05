@@ -475,6 +475,8 @@ struct MarioState {
     /*0xC8*/ u16 dashTime;
     /*0xC8*/ s8 onPad;
              s8 lastStepLeftGround;
+             s8 zoomStop;
+             s8 respawnIceCream;
     // -- HackerSM64 MarioState fields begin --
 #ifdef BREATH_METER
              s16 breath;

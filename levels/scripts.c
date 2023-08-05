@@ -229,6 +229,7 @@ const LevelScript script_func_global_1[] = {
    // LOAD_MODEL_FROM_GEO(MODEL_TOAD,                    toad_geo),
     LOAD_MODEL_FROM_GEO(MODEL_THWOMP,                  thwomp_geo),
     LOAD_MODEL_FROM_GEO(BOMBOMB_KING_GATE,             bombomb_king_gate_geo),
+    LOAD_MODEL_FROM_GEO(MODEL_ICE_CREAM_CONE,                ice_cream_geo),
     RETURN(),
 };
 

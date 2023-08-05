@@ -30,12 +30,27 @@ struct ObjectHitbox sRestartCheckpointFlagHitbox = {
     /* hurtboxHeight: */ 100,
 };
 
+struct ObjectHitbox sRestartCheckpointBigHitbox = {
+    /* interactType: */ 0,
+    /* downOffset: */65,
+    /* damageOrCoinValue: */ 0,
+    /* health: */ 0,
+    /* numLootCoins: */ 0,
+    /* radius: */300,
+    /* height: */ 250,
+    /* hurtboxRadius: */ 100,
+    /* hurtboxHeight: */ 100,
+};
+
 void bhv_restart_checkpoint_init(void) {
     if (!GET_BPARAM1(o->oBehParams)){
         cur_obj_set_model(MODEL_FLAG_BOWSER);
         obj_set_hitbox(o, &sRestartCheckpointFlagHitbox);
     } else {
         obj_set_hitbox(o, &sRestartCheckpointHitbox);
+    }
+    if (GET_BPARAM3(o->oBehParams)){
+         obj_set_hitbox(o, &sRestartCheckpointBigHitbox);
     }
 }
 
@@ -56,6 +71,7 @@ void bhv_restart_checkpoint_loop(void) {
             cur_obj_set_model(MODEL_FLAG_MARIO);
             play_sound(SOUND_CHECKPOINT, gMarioObject->header.gfx.pos);
         }
+
 
 	}
 }

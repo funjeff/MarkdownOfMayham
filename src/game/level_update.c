@@ -294,6 +294,11 @@ void set_mario_initial_action(struct MarioState *m, u32 spawnType, u32 actionArg
         case MARIO_SPAWN_SPIN_AIRBORNE_CIRCLE:
             set_mario_action(m, ACT_SPAWN_SPIN_AIRBORNE, 0);
             break;
+        case MARIO_SPAWN_SPIN_AIRBORNE_AND_HURT_ASS:
+            set_mario_action(m, ACT_SPAWN_SPIN_AIRBORNE, 1);
+            break;
+        case MARIO_SPAWN_AND_RENDER:
+            set_mario_action(m, ACT_EMERGE_FROM_PIPE, 1);
         case MARIO_SPAWN_DEATH:
             set_mario_action(m, ACT_FALLING_DEATH_EXIT, 0);
             break;
@@ -383,6 +388,9 @@ void init_mario_after_warp(void) {
             break;
         case MARIO_SPAWN_SPIN_AIRBORNE:
             play_transition(WARP_TRANSITION_FADE_FROM_COLOR, 0x1A, 0xFF, 0xFF, 0xFF);
+            break;
+        case MARIO_SPAWN_SPIN_AIRBORNE_AND_HURT_ASS:
+             play_transition(WARP_TRANSITION_FADE_FROM_CIRCLE, 0x10, 0x00, 0x00, 0x00);
             break;
         case MARIO_SPAWN_SPIN_AIRBORNE_CIRCLE:
             play_transition(WARP_TRANSITION_FADE_FROM_CIRCLE, 0x10, 0x00, 0x00, 0x00);
@@ -771,6 +779,7 @@ s16 level_trigger_warp(struct MarioState *m, s32 warpOp) {
                 }
 
                 sDelayedWarpTimer = 20;
+                m->respawnIceCream = 1;
                 play_transition(WARP_TRANSITION_FADE_INTO_CIRCLE, sDelayedWarpTimer, 0x00, 0x00, 0x00);
                 break;
 
@@ -1020,7 +1029,7 @@ s32 play_mode_normal(void) {
     warp_area();
     check_instant_warp();
 
-    if (sTimerRunning && gHudDisplay.timer < 17999) {
+    if (sTimerRunning) {
         gHudDisplay.timer++;
     }
 

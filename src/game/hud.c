@@ -456,8 +456,6 @@ void render_hud_timer(void) {
     //put this here for now
     sTimerRunning = 1;
 
-    //print_text_fmt_int(120,120,"%d",sTimerRunning);
-
     Texture *(*hudLUT)[58] = segmented_to_virtual(&main_hud_lut);
     u16 timerValFrames = gHudDisplay.timer;
     u16 timerMins = timerValFrames / (30 * 60);

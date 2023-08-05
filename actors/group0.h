@@ -345,4 +345,6 @@ extern const Collision thwomp_seg5_collision_0500B92C[];
 
 #include "bombomb_king_gate/collision_header.h"
 
+#include "ice_cream/geo_header.h"
+
 #endif

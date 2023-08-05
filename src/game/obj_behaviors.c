@@ -783,6 +783,9 @@ UNUSED s32 debug_sequence_tracker(s16 debugInputSequence[]) {
 
 #include "behaviors/dashpad_inc.c"
 #include "behaviors/trollpad.inc.c"
+#include "behaviors/ice_cream.inc.c"
+#include "behaviors/desert_zoom_out.inc.c"
+#include "behaviors/desert_zoom_out_cancel.inc.c"
 #include "behaviors/restart_checkpoint.inc.c"
 #include "behaviors/spaghetti_clerk.inc.c"
 #include "behaviors/end_screen_text.inc.c"

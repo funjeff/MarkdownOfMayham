@@ -557,6 +557,7 @@
 #define MODEL_PAPER                       0xE7        // paper_geo
 #define MODEL_ELEVATOR_POLE               0xE8        // elevator_pole_geo
 #define BOMBOMB_KING_GATE                 0xE9        // elevator_pole_geo
+#define MODEL_ICE_CREAM_CONE                    0xEA        // ice_cream_geo
 
 
 // Menu Models (overwrites Level Geometry IDs)

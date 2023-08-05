@@ -19,3 +19,4 @@
 #include "thwomp/geo.inc.c"
 
 #include "bombomb_king_gate/geo.inc.c"
+#include "ice_cream/geo.inc.c"

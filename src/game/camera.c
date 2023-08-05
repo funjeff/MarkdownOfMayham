@@ -4938,8 +4938,11 @@ u8 get_cutscene_from_mario_status(struct Camera *c) {
             case CAM_EVENT_START_CREDITS:
                 cutscene = CUTSCENE_CREDITS;
                 break;
-              case CAM_EVENT_FIRST:
+            case CAM_EVENT_FIRST:
                 cutscene = CUTSCENE_FIRST;
+                break;
+            case CAM_EVENT_DESERT:
+                cutscene = CUTSCENE_DESERT;
                 break;
         }
     }
@@ -7237,6 +7240,23 @@ void cutscene_first_loop(struct Camera *c){
 	}
 }
 
+void cutscene_desert_camera_start(UNUSED struct Camera *c) {
+    //vec3f_set(c->focus, c->focus[0] - 800, c->focus[1] + 1500, c->focus[2]);
+}
+
+void cutscene_desert_start(struct Camera *c){
+    cutscene_event(cutscene_desert_camera_start,c,0,0);
+}
+
+void cutscene_desert_camera_loop(UNUSED struct Camera *c) {
+
+}
+
+void cutscene_desert_loop(struct Camera *c){
+    if (!gMarioState->zoomStop){
+	    vec3f_set(c->pos, c->pos[0] + 80, c->pos[1] + 180, c->pos[2] - 700);
+    }
+}
 
 /**
  * Zero the cvars that are used when Mario is flying.
@@ -10024,6 +10044,11 @@ struct Cutscene sCutsceneFirst[] = {
     { cutscene_first_loop, CUTSCENE_LOOP }
 };
 
+struct Cutscene sCutsceneDesert[] = {
+    { cutscene_desert_start, 1 },
+    { cutscene_desert_loop, CUTSCENE_LOOP }
+};
+
 /**
  * Cutscene that plays when Mario enters a door that warps to another area.
  */
@@ -10841,6 +10866,7 @@ void play_cutscene(struct Camera *c) {
         CUTSCENE(CUTSCENE_ENTER_PYRAMID_TOP,    sCutsceneEnterPyramidTop)
         CUTSCENE(CUTSCENE_SSL_PYRAMID_EXPLODE,  sCutscenePyramidTopExplode)
         CUTSCENE(CUTSCENE_FIRST,                sCutsceneFirst)
+        CUTSCENE(CUTSCENE_DESERT,               sCutsceneDesert)
     }
 
 #undef CUTSCENE

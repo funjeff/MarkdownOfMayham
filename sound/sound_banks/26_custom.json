@@ -219,6 +219,11 @@
             "release_rate": 208,
             "envelope": "envelope0",
             "sound": "41_stone_push"
+        },
+		"inst42": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "42_chomp"
         }
     },
     "instrument_list": [
@@ -263,6 +268,7 @@
 		"inst38",
 		"inst39",
 		"inst40",
-		"inst41"
+		"inst41",
+		"inst42"
     ]
 }

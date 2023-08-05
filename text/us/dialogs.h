@@ -135,7 +135,7 @@ it, fair and square!"))
 
 DEFINE_DIALOG(DIALOG_008, 1, 3, 30, 200, _("\
 ATTENTION ALL PASTA\n\
-     PAISANOS\n\
+PAISANOS\n\
 !!!!!!!!!!!!!!!!!!!\n\
 We have a deal you \n\
 WONT wanna miss!\n\
@@ -146,14 +146,14 @@ coins\n\
 but for today only we\n\
 are lowering the price\n\
 to just 4 COINS!!!?!?!\n\
-      But act now!\n\ 
+But act now!\n\ 
 \n\
 This deal wont last long\n\
 any late customers \n\
 will NOT be eligible\n\
 for the special price\n\
 so be sure to get here\n\
-    by 12 O'clock\n\
+by 12 O'clock\n\
 \n\
 come on down and \n\
 get some grub!\n\
@@ -816,41 +816,56 @@ Do not swim here.\n\
 I'm serious.\n\
 /--The Penguin"))
 
-DEFINE_DIALOG(DIALOG_062, 1, 3, 30, 200, _("\
-Hidden inside the green\n\
-block is the amazing\n\
-Metal Cap.\n\
-Wearing it, you won't\n\
-catch fire or be hurt\n\
-by enemy attacks.\n\
-You don't even have to\n\
-breathe while wearing it.\n\
+DEFINE_DIALOG(DIALOG_062, 1, 6, 30, 200, _("\
+Hack made by Dude45\n\
+and Pikmanfan2002\n\
 \n\
-The only problem:\n\
-It is too heavy to\n\
-swim with."))
+\n\
+\n\
+\n\
+This is our third hack\n\
+so feel free to put\n\
+""SECOND HACK!??!??!""\n\
+in the title and just\n\
+have it be clickbait\n\
+\n\
+Be sure to collect a lot\n\
+of coins!  if you do\n\
+you might get a\n\
+better ending!\n\
+\n\
+\n\
+but be careful if you\n\
+don't make it to the\n\
+resturant in time you\n\
+will get the worst\n\
+ending regardles of\n\
+coins\n\
+We also added the ground\n\
+pound dive to make map\n\
+traversal a bit easier\n\
+\n\
+\n\
+\n\
+In today's episode of the\n\
+Super Show, the part of \n\
+Baljeet Tjinder will be\n\
+played by Luigi Amiibo.\n\
+\n\
+\n\
+Anyway the timer doesen't\n\
+stop while reading text\n\
+so I would get moving if\n\
+I were you!\n\
+\n\
+"))
 
-DEFINE_DIALOG(DIALOG_063, 1, 5, 30, 200, _("\
-The Vanish Cap is inside\n\
-the blue block. Mr. I.\n\
-will be surprised, since\n\
-you'll be invisible when\n\
-you wear it!\n\
-Even the Big Boo will be\n\
-fooled--and you can walk\n\
-through secret walls, too."))
+DEFINE_DIALOG(DIALOG_063, 1, 2, 30, 200, _("\
+I lied about the ground\n\
+pound dive"))
 
-DEFINE_DIALOG(DIALOG_064, 1, 5, 30, 200, _("\
-When you put on the Wing\n\
-Cap that comes from a\n\
-red block, do the Triple\n\
-Jump to soar high into\n\
-the sky.\n\
-Use the Control Stick to\n\
-guide Mario. Pull back to\n\
-to fly up, press forward\n\
-to nose down, and press [Z]\n\
-to land."))
+DEFINE_DIALOG(DIALOG_064, 1, 1, 30, 200, _("\
+Firsties?"))
 
 DEFINE_DIALOG(DIALOG_065, 1, 6, 30, 200, _("\
 Swimming Lessons!\n\

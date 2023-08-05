@@ -300,6 +300,7 @@ extern const BehaviorScript bhvHardAirKnockBackWarp[];
 extern const BehaviorScript bhvSpinAirborneCircleWarp[];
 extern const BehaviorScript bhvDeathWarp[];
 extern const BehaviorScript bhvSpinAirborneWarp[];
+extern const BehaviorScript bhvAssHurtWarp[];
 extern const BehaviorScript bhvFlyingWarp[];
 extern const BehaviorScript bhvPaintingStarCollectWarp[];
 extern const BehaviorScript bhvPaintingDeathWarp[];
@@ -544,11 +545,14 @@ extern const BehaviorScript bhvUnusedFakeStar[];
 //custom
 extern const BehaviorScript bhvDashpad[];
 extern const BehaviorScript bhvTrollpad[];
-
+extern const BehaviorScript bhvTrollCoin[];
+extern const BehaviorScript bhvDesertZoomOut[];
+extern const BehaviorScript bhvDesertZoomOutCancel[];
 
 extern const BehaviorScript bhvEndScreenText[];
 extern const BehaviorScript bhvRestartCheckpoint[];
 extern const BehaviorScript bhvWarpOneWay[];
+extern const BehaviorScript bhvWarpIceCream[];
 extern const BehaviorScript bhvSpaghettiClerk[];
 extern const BehaviorScript bhvBlueCoin[];
 
@@ -557,6 +561,7 @@ extern const BehaviorScript bhvCutsceneTrigger[];
 extern const BehaviorScript bhvElevatorPole[];
 extern const BehaviorScript bhvCutsceneNone1[];
 
+extern const BehaviorScript bhvIceCream[];
 extern const BehaviorScript bhvBombombKingGate[];
 
 

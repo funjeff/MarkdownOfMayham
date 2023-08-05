@@ -1137,10 +1137,12 @@ s32 mario_execute_stationary_action(struct MarioState *m) {
     if (!cancel && (m->input & INPUT_IN_WATER)) {
         m->particleFlags |= PARTICLE_IDLE_WATER_WAVE;
     }
-
      if (!m->lastStepLeftGround){
-            mario_update_dash(m);
-        }
+        mario_update_dash(m);
+    }
+    if (m->lastStepLeftGround){
+        perform_ground_step(m);
+    }
 
     return cancel;
 }

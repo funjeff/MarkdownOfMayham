@@ -1653,6 +1653,7 @@ sound_ref .sound_moving_riding_shell_snow
 sound_ref .sound_moving_riding_shell_ice
 sound_ref .sound_moving_riding_shell_sand
 sound_ref .sound_30_left
+sound_ref .sound_20_left
 
 
 .sound_30_left:
@@ -7026,6 +7027,15 @@ sound_ref .sound_button_click
 sound_ref .sound_goomba_voice
 sound_ref .sound_stomp
 sound_ref .sound_stone_push
+sound_ref .sound_chomp
+
+
+.sound_chomp:
+chan_setbank 11
+chan_setinstr 42
+chan_setlayer 0, .layer_new_sound 
+chan_end
+
 
 .sound_stone_push:
 chan_setbank 11

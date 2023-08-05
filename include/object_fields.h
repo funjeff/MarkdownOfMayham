@@ -1356,4 +1356,7 @@ os16112*/
 
 #define trollPadTimer os16F4
 
+#define zoomOutTimer os16F4
+
+
 #endif // OBJECT_FIELDS_H

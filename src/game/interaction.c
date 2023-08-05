@@ -730,6 +730,16 @@ void reset_mario_pitch(struct MarioState *m) {
 u32 interact_coin(struct MarioState *m, UNUSED u32 interactType, struct Object *obj) {
     m->numCoins += obj->oDamageOrCoinValue;
     m->healCounter += 4 * obj->oDamageOrCoinValue;
+
+    if (!obj->oDamageOrCoinValue){
+        u32 coinSound;
+        if (gMarioState->action & (ACT_FLAG_SWIMMING | ACT_FLAG_METAL_WATER)) {
+            coinSound = SOUND_GENERAL_COIN_WATER;
+        } else {
+            coinSound = SOUND_GENERAL_COIN;
+        }
+        play_sound(coinSound, gMarioState->marioObj->header.gfx.cameraToObject);
+    }
 #ifdef BREATH_METER
     m->breathCounter += (4 * obj->oDamageOrCoinValue);
 #endif

@@ -790,6 +790,33 @@ const BehaviorScript bhvTrollpad[] = {
     END_LOOP(),
 };
 
+const BehaviorScript bhvDesertZoomOut[] = {
+    BEGIN(OBJ_LIST_LEVEL),
+    OR_INT(oFlags, OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE),
+	SET_HITBOX(/*Radius*/ 200, /*Height*/ 100),
+	BEGIN_LOOP(),
+        CALL_NATIVE(bhv_desert_zoom_out_loop),
+    END_LOOP(),
+};
+
+const BehaviorScript bhvIceCream[] = {
+    BEGIN(OBJ_LIST_LEVEL),
+    OR_INT(oFlags, OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE),
+	SET_HITBOX(/*Radius*/ 200, /*Height*/ 50),
+	BEGIN_LOOP(),
+        CALL_NATIVE(bhv_yum_loop),
+    END_LOOP(),
+};
+
+const BehaviorScript bhvDesertZoomOutCancel[] = {
+    BEGIN(OBJ_LIST_LEVEL),
+    OR_INT(oFlags, OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE),
+	SET_HITBOX(/*Radius*/ 200, /*Height*/ 100),
+	BEGIN_LOOP(),
+        CALL_NATIVE(bhv_desert_zoom_out_cancel_loop),
+    END_LOOP(),
+};
+
 const BehaviorScript bhvCutsceneNone1[] = {
     BEGIN(OBJ_LIST_LEVEL),
     OR_INT(oFlags, OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE),
@@ -859,6 +886,15 @@ const BehaviorScript bhvEndScreenText[] = {
 };
 
 const BehaviorScript bhvWarpOneWay[] = {
+    BEGIN(OBJ_LIST_LEVEL),
+    OR_INT(oFlags, (OBJ_FLAG_SET_FACE_YAW_TO_MOVE_YAW | OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE)),
+    SET_INT(oIntangibleTimer, 0),
+    BEGIN_LOOP(),
+        CALL_NATIVE(bhv_warp_loop),
+    END_LOOP(),
+};
+
+const BehaviorScript bhvWarpIceCream[] = {
     BEGIN(OBJ_LIST_LEVEL),
     OR_INT(oFlags, (OBJ_FLAG_SET_FACE_YAW_TO_MOVE_YAW | OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE)),
     SET_INT(oIntangibleTimer, 0),
@@ -1088,6 +1124,18 @@ const BehaviorScript bhvYellowCoin[] = {
     OR_INT(oFlags, (OBJ_FLAG_COMPUTE_DIST_TO_MARIO | OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE)),
     CALL_NATIVE(bhv_init_room),
     CALL_NATIVE(bhv_yellow_coin_init),
+    BEGIN_LOOP(),
+        CALL_NATIVE(bhv_yellow_coin_loop),
+    END_LOOP(),
+};
+
+const BehaviorScript bhvTrollCoin[] = {
+    BEGIN(OBJ_LIST_LEVEL),
+    // Yellow coin - common:
+    BILLBOARD(),
+    OR_INT(oFlags, (OBJ_FLAG_COMPUTE_DIST_TO_MARIO | OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE)),
+    CALL_NATIVE(bhv_init_room),
+    CALL_NATIVE(bhv_troll_coin_init),
     BEGIN_LOOP(),
         CALL_NATIVE(bhv_yellow_coin_loop),
     END_LOOP(),
@@ -3651,6 +3699,10 @@ const BehaviorScript bhvDeathWarp[] = {
 };
 
 const BehaviorScript bhvSpinAirborneWarp[] = {
+    BREAK(),
+};
+
+const BehaviorScript bhvAssHurtWarp[] = {
     BREAK(),
 };
 
