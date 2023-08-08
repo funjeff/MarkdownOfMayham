@@ -175,4 +175,10 @@ extern u8 render_tv_bottom_texture_pal_rgba16[];
 extern u8 render_tv_text_texture[];
 extern u8 render_tv_text_texture_pal_rgba16[];
 
+extern u8 render_tv_top_texture[];
+extern u8 render_tv_top_texture_pal_rgba16[];
+
+extern u8 render_tv_bottom2_texture[];
+extern u8 render_tv_bottom2_texture_pal_rgba16[];
+
 #endif // SEGMENT2_H
