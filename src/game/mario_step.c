@@ -253,7 +253,7 @@ u32 mario_update_dash(struct MarioState *m){
     }
 
      if (m->floor->type == SURFACE_DASH_PAD_FREEZE){
-        set_mario_action(m,ACT_DASHING_NO_CONTROL), 0);
+        set_mario_action(m,ACT_DASH_NO_CONTROL, 0);
         m->forwardVel = 200;
         m->faceAngle [1] = 16340 * 1;
         if (!m->onPad){

@@ -620,8 +620,8 @@ void render_hud_live_reaction(void){
 		reactionSwitched = 0;
 	}
 
-	render_reaction_top(xPos,yPos,64,32,0,0);
-	render_reaction_bottom(xPos,yPos + 32,64,32,0,0);
+	render_tv_top_bottom(xPos,yPos,64,32,0,0);
+	render_tv_bottom(xPos,yPos + 32,64,32,0,0);
 	
 	switch(reactionNum){
 		case 0:
