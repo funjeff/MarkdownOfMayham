@@ -625,67 +625,67 @@ void render_hud_live_reaction(void){
 	
 	switch(reactionNum){
 		case 0:
-			render_reaction1(xPos + 8,yPos+22,48,40,0,0);
+			render_reaction1(xPos + 6,yPos+19,48,40,0,0);
 			break;
 		case 1:
-			render_reaction2(xPos + 8,yPos+22,48,40,0,0);
+			render_reaction2(xPos + 6,yPos+19,48,40,0,0);
 			break;
 		case 2:
 			if (timerSecs %2 == 0){
-				render_reaction3(xPos + 8,yPos+22,48,40,0,0);
+				render_reaction3(xPos + 6,yPos+19,48,40,0,0);
 			} else {
-				render_reaction3f2(xPos + 8,yPos+22,48,40,0,0);
+				render_reaction3f2(xPos + 6,yPos+19,48,40,0,0);
 			}
 			break;
 		case 3:
-			render_reaction4(xPos + 8,yPos+22,48,40,0,0);
+			render_reaction4(xPos + 6,yPos+19,48,40,0,0);
 			break;
 		case 4:
 			if (timerSecs %2 == 0){
-				render_reaction5(xPos + 8,yPos+22,48,40,0,0);
+				render_reaction5(xPos + 6,yPos+19,48,40,0,0);
 			} else {
-				render_reaction5f2(xPos + 8,yPos+22,48,40,0,0);
+				render_reaction5f2(xPos + 6,yPos+19,48,40,0,0);
 			}
 			break;
 		case 5:
-			render_reaction6(xPos + 8,yPos+22,48,40,0,0);
+			render_reaction6(xPos + 6,yPos+19,48,40,0,0);
 			break;
 		case 6:
 			if (timerSecsf - timerSecs > 0.5){
-				render_reaction7(xPos + 8,yPos+22,48,40,0,0);
+				render_reaction7(xPos + 6,yPos+19,48,40,0,0);
 			} else {
-				render_reaction7f2(xPos + 8,yPos+22,48,40,0,0);
+				render_reaction7f2(xPos + 6,yPos+19,48,40,0,0);
 			}
 			break;
 		case 7:
 			if (timerSecsf - timerSecs > 0.5){
-				render_reaction8(xPos + 8,yPos+22,48,40,0,0);
+				render_reaction8(xPos + 6,yPos+19,48,40,0,0);
 			} else {
-				render_reaction8f2(xPos + 8,yPos+22,48,40,0,0);
+				render_reaction8f2(xPos + 6,yPos+19,48,40,0,0);
 			}
 			break;
 		case 8:
-			render_reaction9(xPos + 8,yPos+22,48,40,0,0);
+			render_reaction9(xPos + 6,yPos+19,48,40,0,0);
 			break;
 		case 9:
 			if (timerSecs %2 == 0){
-				render_reaction10(xPos + 8,yPos+22,48,40,0,0);
+				render_reaction10(xPos + 6,yPos+19,48,40,0,0);
 			} else {
-				render_reaction10f2(xPos + 8,yPos+22,48,40,0,0);
+				render_reaction10f2(xPos + 6,yPos+19,48,40,0,0);
 			}
 			break;
 		case 10:
 			if (timerSecs %2 == 0){
-				render_reaction11(xPos + 8,yPos+22,48,40,0,0);
+				render_reaction11(xPos + 6,yPos+19,48,40,0,0);
 			} else {
-				render_reaction11f2(xPos + 8,yPos+22,48,40,0,0);
+				render_reaction11f2(xPos + 6,yPos+19,48,40,0,0);
 			}
 			break;
 		case 11:
-			render_reaction13(xPos + 8,yPos+22,48,40,0,0);
+			render_reaction13(xPos + 6,yPos+19,48,40,0,0);
 			break;
 		case 12:
-			render_reaction14(xPos + 8,yPos+22,48,40,0,0);
+			render_reaction14(xPos + 6,yPos+19,48,40,0,0);
 			break;	
 	}
 }

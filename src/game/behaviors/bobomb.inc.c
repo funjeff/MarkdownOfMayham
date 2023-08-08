@@ -294,7 +294,7 @@ void bobomb_buddy_act_idle(void) {
 
     // vec3f_copy(&o->oBobombBuddyPosCopyVec, &o->oPosVec);
 
-    object_step();
+   // object_step();
 
     if (animFrame == 5 || animFrame == 16) {
         cur_obj_play_sound_2(SOUND_OBJ_BOBOMB_WALK);

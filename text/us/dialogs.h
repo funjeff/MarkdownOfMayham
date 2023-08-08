@@ -556,31 +556,44 @@ Cold, Cold Crevasse\n\
 Below!"))
 
 DEFINE_DIALOG(DIALOG_041, 1, 3, 30, 200, _("\
-I win! You lose!\n\
-Ha ha ha!\n\
+Hey Mario!\n\
+you like my new poster\n\
 \n\
-That's what you get for\n\
-messin' with Koopa the\n\
-Quick.\n\
-Better luck next time!"))
+Its based off my favorate\n\
+video game portal 2!\n\
+\n\
+What?\n\
+You thought it was a\n\
+real portal?\n\
+Mario\n\
+\n\
+\n\
+portals aren't real\n\
+\n\
+\n\
+You did know that\n\
+right?\n\
+"))
 
-DEFINE_DIALOG(DIALOG_042, 1, 4, 30, 200, _("\
-Caution! Narrow Bridge!\n\
-Cross slowly!\n\
+DEFINE_DIALOG(DIALOG_042, 1, 3, 30, 200, _("\
+Hey Mario!\n\
+you like my new poster\n\
+\n\
+Its based off my favorate\n\
+video game portal 2!\n\
+\n\
+What?\n\
+You thought it was a\n\
+real portal?\n\
+Mario\n\
 \n\
 \n\
-You can jump to the edge\n\
-of the cliff and hang on,\n\
-and you can climb off the\n\
-edge if you move slowly.\n\
-When you want to let go,\n\
-either press [Z] or press\n\
-the Control Stick in the\n\
-direction of Mario's back.\n\
-To climb up, press Up on\n\
-the Control Stick. To\n\
-scurry up quickly, press\n\
-the [A] Button."))
+portals aren't real\n\
+\n\
+\n\
+You did know that\n\
+right?\n\
+"))
 
 DEFINE_DIALOG(DIALOG_043, 1, 5, 30, 200, _("\
 If you jump and hold the\n\

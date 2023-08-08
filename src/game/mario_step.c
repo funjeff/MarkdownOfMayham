@@ -252,6 +252,24 @@ u32 mario_update_dash(struct MarioState *m){
          m->dashTime = 100;
     }
 
+     if (m->floor->type == SURFACE_DASH_PAD_FREEZE){
+        set_mario_action(m,ACT_DASHING_NO_CONTROL), 0);
+        m->forwardVel = 200;
+        m->faceAngle [1] = 16340 * 1;
+        if (!m->onPad){
+            m->onPad = 1;
+            if (RAND(3)) {
+                play_sound(SOUND_DASH_PANNEL_2, m->marioObj->header.gfx.pos);
+            } else {
+                play_sound(SOUND_DASH_PANNEL_1, m->marioObj->header.gfx.pos);
+            }
+              if (m->dashTime == 0){
+                play_sound(SOUND_MARIO_HERE_WE_GO, m->marioObj->header.gfx.pos);
+            }
+        }
+         m->dashTime = 100;
+    }
+
     if (m->floor->type == SURFACE_DASH_PAD_LEFT_FAST){
         set_mario_action(m,ACT_DASHING, 0);
          m->forwardVel = 200;

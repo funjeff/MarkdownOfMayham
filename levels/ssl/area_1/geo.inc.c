@@ -46,7 +46,7 @@ const GeoLayout ssl_area_1_geo[] = {
 		GEO_TRANSLATE_NODE_WITH_DL(LAYER_OPAQUE, 0, 127, 12196, ssl_dl_Pipe_mesh_layer_1),
 		GEO_TRANSLATE_NODE_WITH_DL(LAYER_OPAQUE, -900, 127, 12196, ssl_dl_Pipe_001_mesh_layer_1),
 		GEO_TRANSLATE_NODE_WITH_DL(LAYER_OPAQUE, 900, 127, 12196, ssl_dl_Pipe_002_mesh_layer_1),
-		GEO_TRANSLATE_NODE_WITH_DL(LAYER_TRANSPARENT, 0, -93, 2631, ssl_dl_Portal_mesh_layer_5),
+		GEO_TRANSLATE_NODE_WITH_DL(LAYER_TRANSPARENT, 0, -93, 2658, ssl_dl_Portal_mesh_layer_5),
 		GEO_TRANSLATE_NODE_WITH_DL(LAYER_TRANSPARENT, 0, 1158, 2170, ssl_dl_Portal_001_mesh_layer_5),
 		GEO_TRANSLATE_NODE_WITH_DL(LAYER_OPAQUE, -11960, 1794, -10276, ssl_dl_Rock_mesh_layer_1),
 		GEO_TRANSLATE_NODE_WITH_DL(LAYER_OPAQUE, -8658, 1794, -15065, ssl_dl_Rock_001_mesh_layer_1),
