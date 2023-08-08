@@ -1357,6 +1357,8 @@ s32 lvl_set_current_level(UNUSED s16 initOrUpdate, s32 levelNum) {
     sWarpCheckpointActive = FALSE;
     gCurrLevelNum = levelNum;
     gCurrCourseNum = gLevelToCourseNumTable[levelNum - 1];
+	if (gCurrLevelNum == LEVEL_SSL) return 0;
+	if (gCurrLevelNum == LEVEL_WDW) return 0;
 	if (gCurrLevelNum == LEVEL_BOB) return 0;
 	if (gCurrLevelNum == LEVEL_CASTLE_GROUNDS) return 0;
 		if (gCurrLevelNum == LEVEL_WF) return 0;
@@ -1421,8 +1423,6 @@ s32 lvl_play_the_end_screen_sound5(UNUSED s16 initOrUpdate, UNUSED s32 levelNum)
     play_sound(SOUND_SPAGHETTI, gGlobalSoundSource);
     return TRUE;
 }
-
-#include "src/game/print.h"
 
 s32 lvl_draw_end_screen_text(UNUSED s16 initOrUpdate, UNUSED s32 levelNum) {
      play_sound(SOUND_MOVING_SHOCKED, gGlobalSoundSource);

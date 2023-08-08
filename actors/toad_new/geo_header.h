@@ -1,0 +1,10 @@
+extern const GeoLayout toad_new_geo[];
+extern Lights1 toad_new_Material02_f3d_lights;
+extern u8 toad_new_Toad_grp_ci8[];
+extern u8 toad_new_Toad_grp_ci8_pal_rgba16[];
+extern Vtx toad_new_Toad_mesh_layer_1_vtx_0[523];
+extern Gfx toad_new_Toad_mesh_layer_1_tri_0[];
+extern Gfx mat_toad_new_Material02_f3d[];
+extern Gfx mat_revert_toad_new_Material02_f3d[];
+extern Gfx toad_new_Toad_mesh_layer_1[];
+extern Gfx toad_new_material_revert_render_settings[];

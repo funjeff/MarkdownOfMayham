@@ -224,6 +224,51 @@
             "release_rate": 208,
             "envelope": "envelope0",
             "sound": "42_chomp"
+        },
+		"inst43": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "43_come_on"
+        },
+		"inst44": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "44_holy_crap"
+        },
+		"inst45": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "45_jumpscare"
+        },
+		"inst46": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "46_kirby_death1"
+        },
+		"inst47": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "47_kirby_death2"
+        },
+		"inst48": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "48_satchel"
+        },
+		"inst49": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "49_you_cant_do_this"
+        },
+		"inst50": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "50_louie"
+        },
+		"inst51": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "51_purp_death"
         }
     },
     "instrument_list": [
@@ -269,6 +314,15 @@
 		"inst39",
 		"inst40",
 		"inst41",
-		"inst42"
+		"inst42",
+		"inst43",
+		"inst44",
+		"inst45",
+		"inst46",
+		"inst47",
+		"inst48",
+		"inst49",
+		"inst50",
+		"inst51"
     ]
 }

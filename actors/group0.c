@@ -38,3 +38,22 @@
 #include "bombomb_king_gate/model.inc.c"
 #include "bombomb_king_gate/collision.inc.c"
 #include "ice_cream/model.inc.c"
+
+#include "king_bobomb/model.inc.c"
+#include "king_bobomb/anims/data.inc.c"
+#include "king_bobomb/anims/table.inc.c"
+UNUSED static const u64 binid_0 = 0;
+
+#include "toad/model.inc.c"
+#include "toad/anims/data.inc.c"
+#include "toad/anims/table.inc.c"
+UNUSED static const u64 binid_1 = 1;
+#include "toad_new/model.inc.c"
+#include "baljeet/model.inc.c"
+#include "peter/model.inc.c"
+#include "ggoblin/model.inc.c"
+#include "quincy/model.inc.c"
+#include "louie/model.inc.c"
+#include "purp/model.inc.c"
+#include "freddy/model.inc.c"
+#include "kirby/model.inc.c"

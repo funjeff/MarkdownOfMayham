@@ -1,0 +1,10 @@
+extern const GeoLayout kirby_geo[];
+extern Lights1 kirby_kirby_f3d_lights;
+extern u8 kirby_dd489eac_ci4[];
+extern u8 kirby_dd489eac_ci4_pal_rgba16[];
+extern Vtx kirby_DrawCall_1_mesh_layer_1_vtx_0[772];
+extern Gfx kirby_DrawCall_1_mesh_layer_1_tri_0[];
+extern Gfx mat_kirby_kirby_f3d[];
+extern Gfx mat_revert_kirby_kirby_f3d[];
+extern Gfx kirby_DrawCall_1_mesh_layer_1[];
+extern Gfx kirby_material_revert_render_settings[];

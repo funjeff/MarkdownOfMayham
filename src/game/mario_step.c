@@ -881,7 +881,7 @@ s32 perform_air_step(struct MarioState *m, u32 stepArg) {
 
         quarterStepResult = perform_air_quarter_step(m, intendedPos, stepArg);
 
-         if (quarterStepResult != AIR_STEP_NONE && m->groundClip) {
+         if (quarterStepResult != AIR_STEP_NONE && (m->groundClip && !m->groundClipDisabled)) {
             clip_through_floor(m);
             intendedPos[0] = m->pos[0] + m->vel[0] / numSteps;
             intendedPos[1] = m->pos[1] + m->vel[1] / numSteps;
@@ -894,7 +894,7 @@ s32 perform_air_step(struct MarioState *m, u32 stepArg) {
             break;
          }
 
-        if (quarterStepResult != AIR_STEP_NONE && !m->groundClip) {
+        if (quarterStepResult != AIR_STEP_NONE && (!m->groundClip || m->groundClipDisabled)) {
             stepResult = quarterStepResult;
         }
 

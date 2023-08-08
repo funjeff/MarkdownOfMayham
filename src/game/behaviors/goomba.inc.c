@@ -1,4 +1,4 @@
-
+#include "src/game/print.h"
 /**
  * Behavior for bhvGoomba and bhvGoombaTripletSpawner,
  * Goombas can either be spawned individually, or spawned by a triplet spawner.
@@ -13,7 +13,7 @@ static struct ObjectHitbox sGoombaHitbox = {
     /* downOffset:        */ 0,
     /* damageOrCoinValue: */ 1,
     /* health:            */ 0,
-    /* numLootCoins:      */ 1,
+	/* numLootCoins:      */ -1,
     /* radius:            */ 72,
     /* height:            */ 50,
     /* hurtboxRadius:     */ 42,
@@ -138,7 +138,7 @@ void bhv_goomba_init(void) {
  * Enter the jump action and set initial y velocity.
  */
 static void goomba_begin_jump(void) {
-    cur_obj_play_sound_2(SOUND_OBJ_GOOMBA_ALERT);
+   // cur_obj_play_sound_2(SOUND_OBJ_GOOMBA_ALERT);
 
     o->oAction = GOOMBA_ACT_JUMP;
     o->oForwardVel = 0.0f;
@@ -330,6 +330,7 @@ void bhv_goomba_update(void) {
             o->oAnimState += FLOOMBA_ANIM_STATE_EYES_OPEN;
         }
 #endif
+
         cur_obj_update_floor_and_walls();
 
         if (o->oGoombaScale == 0.0f || (animSpeed = (o->oForwardVel / o->oGoombaScale * 0.4f)) < 1.0f) {
@@ -342,25 +343,55 @@ void bhv_goomba_update(void) {
 #endif
         cur_obj_init_animation_with_accel_and_sound(GOOMBA_ANIM_DEFAULT, animSpeed);
 
+        if (!GET_BPARAM3(o->oBehParams)){
         switch (o->oAction) {
-            case GOOMBA_ACT_WALK:
-                goomba_act_walk();
-                break;
-            case GOOMBA_ACT_ATTACKED_MARIO:
-                goomba_act_attacked_mario();
-                break;
-            case GOOMBA_ACT_JUMP:
-                goomba_act_jump();
-                break;
-#if defined(FLOOMBAS) && defined(INTRO_FLOOMBAS)
-            case FLOOMBA_ACT_STARTUP:
-                floomba_act_startup();
-                break;
-#endif
+				case GOOMBA_ACT_WALK:
+					goomba_act_walk();
+					break;
+				case GOOMBA_ACT_ATTACKED_MARIO:
+					goomba_act_attacked_mario();
+					break;
+				case GOOMBA_ACT_JUMP:
+					goomba_act_jump();
+					break;
+	#if defined(FLOOMBAS) && defined(INTRO_FLOOMBAS)
+				case FLOOMBA_ACT_STARTUP:
+					floomba_act_startup();
+					break;
+	#endif
+        }
         }
         if (obj_handle_attacks(&sGoombaHitbox, GOOMBA_ACT_ATTACKED_MARIO,
                                sGoombaAttackHandlers[o->oGoombaSize & 0x1])
                                && (o->oAction != GOOMBA_ACT_ATTACKED_MARIO)) {
+
+            switch (GET_BPARAM4(o->oBehParams)) {
+                case 1:
+                    play_sound(SOUND_COME_ON, gMarioState->marioObj->header.gfx.cameraToObject);
+                    break;
+                case 2:
+                    play_sound(SOUND_HOLY_CRAP, gMarioState->marioObj->header.gfx.cameraToObject);
+                    break;
+                case 3:
+                    play_sound(SOUND_JUMPSCARE, gMarioState->marioObj->header.gfx.cameraToObject);
+                    break;
+                case 4:
+                    play_sound(SOUND_KIRBY_DEATH1, gMarioState->marioObj->header.gfx.cameraToObject);
+                    break;
+                case 5:
+                    play_sound(SOUND_SATCHEL, gMarioState->marioObj->header.gfx.cameraToObject);
+                    break;
+                case 6:
+                    play_sound(SOUND_YOU_CANT_DO_THIS, gMarioState->marioObj->header.gfx.cameraToObject);
+                    break;
+                case 7:
+                    play_sound(SOUND_LOUIE, gMarioState->marioObj->header.gfx.cameraToObject);
+                    break;
+                case 8:
+                    play_sound(SOUND_PURP_DEATH, gMarioState->marioObj->header.gfx.cameraToObject);
+                    break;
+                    
+            }
             mark_goomba_as_dead();
         }
 

@@ -18,16 +18,15 @@ Gfx *geo_update_held_mario_pos(s32 callContext, UNUSED struct GraphNode *node, M
 void bhv_bobomb_anchor_mario_loop(void) {
     common_anchor_mario_behavior(50.0f, 50.0f, INT_STATUS_MARIO_DROPPED_BY_OBJ);
 }
-
 void king_bobomb_act_inactive(void) { // act 0
     o->oForwardVel = 0.0f;
     o->oVelY = 0.0f;
-
     if (o->oSubAction == KING_BOBOMB_SUB_ACT_INACTIVE_INIT) {
         cur_obj_become_intangible();
         gSecondCameraFocus = o;
         cur_obj_init_animation_with_sound(KING_BOBOMB_ANIM_IDLE);
         cur_obj_set_pos_to_home();
+        
         o->oHealth = 3;
 
         if (cur_obj_can_mario_activate_textbox_2(500.0f, 100.0f)) {
@@ -86,11 +85,11 @@ void king_bobomb_act_active(void) { // act 2
         gMarioState->heldObj = o;
         obj_set_held_state(gMarioState->heldObj, bhvCarrySomethingThrown);
 
-        gMarioState->heldObj->oPosX = gMarioState->marioBodyState->heldObjLastPosition[0] + 32.0f * sins(gMarioState->faceAngle[1]);
-        gMarioState->heldObj->oPosY = gMarioState->marioBodyState->heldObjLastPosition[1];
-        gMarioState->heldObj->oPosZ = gMarioState->marioBodyState->heldObjLastPosition[2] + 32.0f * coss(gMarioState->faceAngle[1]);
+  //      gMarioState->heldObj->oPosX = gMarioState->marioBodyState->heldObjLastPosition[0] + 12.0f * sins(gMarioState->faceAngle[1]);
+       // gMarioState->heldObj->oPosY = gMarioState->marioBodyState->heldObjLastPosition[1];
+//        gMarioState->heldObj->oPosZ = gMarioState->marioBodyState->heldObjLastPosition[2] + 12.0f * coss(gMarioState->faceAngle[1]);
 
-        gMarioState->heldObj->oMoveAngleYaw = gMarioState->faceAngle[1];
+    //    gMarioState->heldObj->oMoveAngleYaw = gMarioState->faceAngle[1];
 
         gMarioState->heldObj = NULL;
         o->oAction = KING_BOBOMB_ACT_BEEN_THROWN;

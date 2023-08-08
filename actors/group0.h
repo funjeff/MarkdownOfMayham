@@ -347,4 +347,77 @@ extern const Collision thwomp_seg5_collision_0500B92C[];
 
 #include "ice_cream/geo_header.h"
 
+// king_bobomb
+extern const GeoLayout king_bobomb_geo[];
+extern const Gfx king_bobomb_seg5_dl_0500A4B8[];
+extern const Gfx king_bobomb_seg5_dl_0500A4F0[];
+extern const Gfx king_bobomb_seg5_dl_0500A5A0[];
+extern const Gfx king_bobomb_seg5_dl_0500A5D8[];
+extern const Gfx king_bobomb_seg5_dl_0500A688[];
+extern const Gfx king_bobomb_seg5_dl_0500A6C0[];
+extern const Gfx king_bobomb_seg5_dl_0500A770[];
+extern const Gfx king_bobomb_seg5_dl_0500A7A8[];
+extern const Gfx king_bobomb_seg5_dl_0500A858[];
+extern const Gfx king_bobomb_seg5_dl_0500A890[];
+extern const Gfx king_bobomb_seg5_dl_0500A940[];
+extern const Gfx king_bobomb_seg5_dl_0500A978[];
+extern const Gfx king_bobomb_seg5_dl_0500ABC0[];
+extern const Gfx king_bobomb_seg5_dl_0500AD08[];
+extern const Gfx king_bobomb_seg5_dl_0500AF20[];
+extern const Gfx king_bobomb_seg5_dl_0500B068[];
+extern const Gfx king_bobomb_seg5_sub_dl_body_left_side[];
+extern const Gfx king_bobomb_seg5_sub_dl_body_right_side[];
+extern const Gfx king_bobomb_seg5_dl_body[];
+extern const Gfx king_bobomb_seg5_dl_eyes[];
+extern const Gfx king_bobomb_seg5_dl_eyes_blink[];
+extern const Gfx king_bobomb_seg5_dl_0500B3C8[];
+extern const Gfx king_bobomb_seg5_dl_0500B418[];
+extern const Gfx king_bobomb_seg5_dl_0500B5F0[];
+extern const Gfx king_bobomb_seg5_dl_0500B6C0[];
+extern const struct Animation *const king_bobomb_seg5_anims_0500FE30[];
+
+// toad
+extern const GeoLayout toad_geo_000114[];
+extern const GeoLayout toad_geo_00027C[];
+extern const GeoLayout toad_geo[];
+extern const Gfx toad_seg6_dl_06007300[];
+extern const Gfx toad_seg6_dl_06007498[];
+extern const Gfx toad_seg6_dl_060076C0[];
+extern const Gfx toad_seg6_dl_06007710[];
+extern const Gfx toad_seg6_us_dl_06007788[];
+extern const Gfx toad_seg6_dl_06007960[];
+extern const Gfx toad_seg6_dl_06007A48[];
+extern const Gfx toad_seg6_us_dl_06007B00[];
+extern const Gfx toad_seg6_dl_06007D10[];
+extern const Gfx toad_seg6_dl_06007EB0[];
+extern const Gfx toad_seg6_dl_060080C0[];
+extern const Gfx toad_seg6_dl_060081F8[];
+extern const Gfx toad_seg6_dl_060083E8[];
+extern const Gfx toad_seg6_dl_06008520[];
+extern const Gfx toad_seg6_us_dl_06008608[];
+extern const Gfx toad_seg6_dl_06008748[];
+extern const Gfx toad_seg6_dl_06008890[];
+extern const Gfx toad_seg6_dl_06008A90[];
+extern const Gfx toad_seg6_dl_06008BD8[];
+extern const struct Animation *const toad_seg6_anims_0600FB58[];
+
+
+#include "toad_new/geo_header.h"
+
+#include "baljeet/geo_header.h"
+
+#include "peter/geo_header.h"
+
+#include "ggoblin/geo_header.h"
+
+#include "quincy/geo_header.h"
+
+#include "louie/geo_header.h"
+
+#include "purp/geo_header.h"
+
+#include "freddy/geo_header.h"
+
+#include "kirby/geo_header.h"
+
 #endif

@@ -328,7 +328,7 @@
 // group 3
 #define MODEL_WATER_BOMB                  0x54        // water_bomb_geo
 #define MODEL_WATER_BOMB_SHADOW           0x55        // water_bomb_shadow_geo
-#define MODEL_KING_BOBOMB                 0x56        // king_bobomb_geo
+#define MODEL_KING_BOBOMB                 0xEB        // king_bobomb_geo
 
 // group 4
 #define MODEL_MANTA_RAY                   0x54        // manta_seg5_geo_05008D14
@@ -557,7 +557,18 @@
 #define MODEL_PAPER                       0xE7        // paper_geo
 #define MODEL_ELEVATOR_POLE               0xE8        // elevator_pole_geo
 #define BOMBOMB_KING_GATE                 0xE9        // elevator_pole_geo
-#define MODEL_ICE_CREAM_CONE                    0xEA        // ice_cream_geo
+#define MODEL_ICE_CREAM_CONE              0xEA        // ice_cream_geo
+#define MODEL_TOAD_NEW                    0xEC        // ice_cream_geo
+#define MODEL_BALJEET                     0xED        // baljeet_geo
+#define MODEL_PETER                       0xEE        // peter_geo
+#define MODEL_GREEN_GOBLIN                0xEF        // ggoblin_geo
+#define MODEL_QUINCY                      0xF0        // ggoblin_geo
+#define MODEL_LOUIE                       0xF1        // ggoblin_geo
+#define MODEL_PURP                        0xF2
+#define MODEL_FREDDY                      0xF3
+#define MODEL_KIRBY                       0xF4
+
+
 
 
 // Menu Models (overwrites Level Geometry IDs)

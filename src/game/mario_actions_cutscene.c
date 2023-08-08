@@ -2616,7 +2616,7 @@ static void button_goomba(struct MarioState *m){
 	  	    goombaProp = (struct Object *) goombaProp->header.next;
 	        }
 
-            goombaProp->oPosZ = goombaProp->oPosZ + 10;
+            goombaProp->oPosX = goombaProp->oPosX + 10;
         }
 
         if (m->actionTimer == 80){
@@ -2637,7 +2637,7 @@ static void button_goomba(struct MarioState *m){
 	  	    goombaProp = (struct Object *) goombaProp->header.next;
 	        }
 
-            goombaProp->oPosZ = goombaProp->oPosZ + 25;
+            goombaProp->oPosX = goombaProp->oPosX + 25;
             goombaProp->oPosY = goombaProp->oPosY + 83 - (8* (m->actionTimer - 100));
             
         }

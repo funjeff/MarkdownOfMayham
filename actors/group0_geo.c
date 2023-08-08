@@ -20,3 +20,16 @@
 
 #include "bombomb_king_gate/geo.inc.c"
 #include "ice_cream/geo.inc.c"
+
+#include "king_bobomb/geo.inc.c"
+
+#include "toad/geo.inc.c"
+#include "toad_new/geo.inc.c"
+#include "baljeet/geo.inc.c"
+#include "peter/geo.inc.c"
+#include "ggoblin/geo.inc.c"
+#include "quincy/geo.inc.c"
+#include "louie/geo.inc.c"
+#include "purp/geo.inc.c"
+#include "freddy/geo.inc.c"
+#include "kirby/geo.inc.c"

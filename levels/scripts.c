@@ -219,7 +219,7 @@ const LevelScript script_func_global_1[] = {
     //LOAD_MODEL_FROM_GEO(MODEL_HEART,                   heart_geo),
     //LOAD_MODEL_FROM_GEO(MODEL_FLYGUY,                  flyguy_geo),
    // LOAD_MODEL_FROM_GEO(MODEL_CHUCKYA,                 chuckya_geo),
-   // LOAD_MODEL_FROM_GEO(MODEL_TRAJECTORY_MARKER_BALL,      bowling_ball_track_geo),
+   // LOAD_MODEL_FROM_GEO(MODEL_TRAJECTOR33.Y_MARKER_BALL,      bowling_ball_track_geo),
     LOAD_MODEL_FROM_GEO(MODEL_DASHPAD,                 dashpad_geo),
     LOAD_MODEL_FROM_GEO(MODEL_THI_WARP_PIPE,           warp_pipe_geo),
     LOAD_MODEL_FROM_GEO(MODEL_FLAG_MARIO,              flag_mario_geo),
@@ -229,7 +229,18 @@ const LevelScript script_func_global_1[] = {
    // LOAD_MODEL_FROM_GEO(MODEL_TOAD,                    toad_geo),
     LOAD_MODEL_FROM_GEO(MODEL_THWOMP,                  thwomp_geo),
     LOAD_MODEL_FROM_GEO(BOMBOMB_KING_GATE,             bombomb_king_gate_geo),
-    LOAD_MODEL_FROM_GEO(MODEL_ICE_CREAM_CONE,                ice_cream_geo),
+    LOAD_MODEL_FROM_GEO(MODEL_ICE_CREAM_CONE,          ice_cream_geo),
+    LOAD_MODEL_FROM_GEO(MODEL_KING_BOBOMB,             king_bobomb_geo),
+    LOAD_MODEL_FROM_GEO(MODEL_TOAD_NEW,                toad_new_geo),
+    LOAD_MODEL_FROM_GEO(MODEL_PETER,                   peter_geo),
+    LOAD_MODEL_FROM_GEO(MODEL_GREEN_GOBLIN,            ggoblin_geo),
+    LOAD_MODEL_FROM_GEO(MODEL_QUINCY,                  quincy_geo),
+    LOAD_MODEL_FROM_GEO(MODEL_LOUIE,                   louie_geo),
+    LOAD_MODEL_FROM_GEO(MODEL_PURP,                    purp_geo),
+    LOAD_MODEL_FROM_GEO(MODEL_FREDDY,                  freddy_geo),
+    LOAD_MODEL_FROM_GEO(MODEL_KIRBY,                   kirby_geo),
+    LOAD_MODEL_FROM_GEO(MODEL_BALJEET,                  baljeet_geo),
+
     RETURN(),
 };
 
@@ -271,7 +282,7 @@ const LevelScript script_func_global_6[] = {
     LOAD_MODEL_FROM_GEO(MODEL_POKEY_BODY_PART,         pokey_body_part_geo),
     LOAD_MODEL_FROM_GEO(MODEL_TWEESTER,                tweester_geo),
     LOAD_MODEL_FROM_GEO(MODEL_KLEPTO,                  klepto_geo),
-    LOAD_MODEL_FROM_GEO(MODEL_EYEROK_LEFT_HAND,        eyerok_left_hand_geo),
+   // LOAD_MODEL_FROM_GEO(MODEL_EYEROK_LEFT_HAND,        eyerok_left_hand_geo),
     LOAD_MODEL_FROM_GEO(MODEL_EYEROK_RIGHT_HAND,       eyerok_right_hand_geo),
     RETURN(),
 };
@@ -366,7 +377,7 @@ const LevelScript script_func_global_16[] = {
     LOAD_MODEL_FROM_GEO(MODEL_MIPS,                    mips_geo),
     LOAD_MODEL_FROM_GEO(MODEL_BOO_CASTLE,              boo_castle_geo),
     LOAD_MODEL_FROM_GEO(MODEL_LAKITU,                  lakitu_geo),
-    LOAD_MODEL_FROM_GEO(MODEL_TOAD,                    toad_geo),
+  //  LOAD_MODEL_FROM_GEO(MODEL_TOAD,                    toad_geo),
     RETURN(),
 };
 

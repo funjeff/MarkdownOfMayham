@@ -7028,7 +7028,69 @@ sound_ref .sound_goomba_voice
 sound_ref .sound_stomp
 sound_ref .sound_stone_push
 sound_ref .sound_chomp
+sound_ref .sound_come_on
+sound_ref .sound_holy_crap
+sound_ref .sound_jumpscare
+sound_ref .sound_kirby_death1
+sound_ref .sound_kirby_death2
+sound_ref .sound_satchel
+sound_ref .sound_you_cant_do_this
+sound_ref .sound_louie
+sound_ref .sound_purp_death
 
+.sound_come_on:
+chan_setbank 11
+chan_setinstr 43
+chan_setlayer 0, .layer_new_sound 
+chan_end
+
+.sound_holy_crap:
+chan_setbank 11
+chan_setinstr 44
+chan_setlayer 0, .layer_new_sound 
+chan_end
+
+.sound_jumpscare:
+chan_setbank 11
+chan_setinstr 45
+chan_setlayer 0, .layer_new_sound 
+chan_end
+
+.sound_kirby_death1:
+chan_setbank 11
+chan_setinstr 46
+chan_setlayer 0, .layer_new_sound 
+chan_end
+
+.sound_kirby_death2:
+chan_setbank 11
+chan_setinstr 47
+chan_setlayer 0, .layer_new_sound 
+chan_end
+
+.sound_satchel:
+chan_setbank 11
+chan_setinstr 48
+chan_setlayer 0, .layer_new_sound 
+chan_end
+
+.sound_you_cant_do_this:
+chan_setbank 11
+chan_setinstr 49
+chan_setlayer 0, .layer_new_sound 
+chan_end
+
+.sound_louie:
+chan_setbank 11
+chan_setinstr 50
+chan_setlayer 0, .layer_new_sound 
+chan_end
+
+.sound_purp_death:
+chan_setbank 11
+chan_setinstr 51
+chan_setlayer 0, .layer_new_sound 
+chan_end
 
 .sound_chomp:
 chan_setbank 11
