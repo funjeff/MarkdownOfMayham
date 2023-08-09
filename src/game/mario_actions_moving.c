@@ -776,6 +776,31 @@ void update_dashing_speed(struct MarioState *m) {
     apply_slope_accel(m);
 }
 
+void update_dash_no_control_speed(struct MarioState *m) {
+
+#ifdef VELOCITY_BASED_TURN_SPEED
+    if ((m->heldObj == NULL) && !(m->action & ACT_FLAG_SHORT_HITBOX)) {
+        if (m->forwardVel >= 16.0f) {
+            s16 turnRange = abs_angle_diff(m->faceAngle[1], m->intendedYaw);
+            f32 fac = (m->forwardVel + m->intendedMag);
+            turnRange *= (1.0f - (CLAMP(fac, 0.0f, 32.0f) / 32.0f));
+            turnRange = MAX(turnRange, 0x800);
+
+            approach_angle_bool(&m->faceAngle[1], m->intendedYaw, turnRange);
+        } else {
+            m->faceAngle[1] = m->intendedYaw;
+        }
+    } else {
+        m->faceAngle[1] = m->intendedYaw - approach_s32((s16)(m->intendedYaw - m->faceAngle[1]), 0, 0x800, 0x800);
+    }
+#else
+    // Vanilla
+    // m->faceAngle[1] =
+    //     m->intendedYaw - approach_s32((s16)(m->intendedYaw - m->faceAngle[1]), 0, 0x800, 0x800);
+#endif
+    apply_slope_accel(m);
+}
+
 s32 act_dashing (struct MarioState *m){
     Vec3f startPos;
     s16 startYaw = m->faceAngle[1];
@@ -836,7 +861,7 @@ s32 act_dashing_no_control (struct MarioState *m){
     m->actionState = ACT_STATE_WALKING_NO_WALL;
 
     vec3f_copy(startPos, m->pos);
-    update_dashing_speed(m);
+    update_dash_no_control_speed(m);
 
 
     struct Object *sparkleObj = spawn_object(m->marioObj, MODEL_NONE, bhvSparkleSpawn);
