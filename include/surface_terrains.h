@@ -39,15 +39,15 @@ enum SurfaceTypes {
     SURFACE_TTM_VINES,                  // 0x0016 // TTM vines, has no action defined
     
     SURFACE_DASH_PAD_RIGHT_FAST,        // 0x0017 // Dash pad that sends you right fast
-    SURFACE_0018,                       // 0x0018 // Unused
-    SURFACE_0019,                       // 0x0019 // Unused
+    SURFACE_DASH_PAD_FREEZE_DOWN,       // 0x0018 // Unused
+    SURFACE_DASH_PAD_FREEZE_UP,         // 0x0019 // Unused
     SURFACE_MGR_MUSIC,                  // 0x001A // Plays the Merry go round music, see handle_merry_go_round_music in bbh_merry_go_round.inc.c for more details
     SURFACE_INSTANT_WARP_1B,            // 0x001B // Instant warp to another area, used to warp between areas in WDW and the endless stairs to warp back
     SURFACE_INSTANT_WARP_1C,            // 0x001C // Instant warp to another area, used to warp between areas in WDW
     SURFACE_INSTANT_WARP_1D,            // 0x001D // Instant warp to another area, used to warp between areas in DDD, SSL and TTM
     SURFACE_INSTANT_WARP_1E,            // 0x001E // Instant warp to another area, used to warp between areas in DDD, SSL and TTM
-    SURFACE_001F,                       // 0x001F // Unused
-    SURFACE_0020,                       // 0x0020 // Unused
+    SURFACE_DASH_PAD_FREEZE_LEFT,       // 0x001F // Unused
+    SURFACE_DASH_PAD_FREEZE_RIGHT,      // 0x0020 // Unused
     SURFACE_SHALLOW_QUICKSAND,          // 0x0021 // Shallow Quicksand (depth of 10 units)
     SURFACE_DEEP_QUICKSAND,             // 0x0022 // Quicksand (lethal, slow, depth of 160 units)
     SURFACE_INSTANT_QUICKSAND,          // 0x0023 // Quicksand (lethal, instant)

@@ -776,6 +776,31 @@ void update_dashing_speed(struct MarioState *m) {
     apply_slope_accel(m);
 }
 
+void update_dash_no_control_speed(struct MarioState *m) {
+
+#ifdef VELOCITY_BASED_TURN_SPEED
+    if ((m->heldObj == NULL) && !(m->action & ACT_FLAG_SHORT_HITBOX)) {
+        if (m->forwardVel >= 16.0f) {
+            s16 turnRange = abs_angle_diff(m->faceAngle[1], m->intendedYaw);
+            f32 fac = (m->forwardVel + m->intendedMag);
+            turnRange *= (1.0f - (CLAMP(fac, 0.0f, 32.0f) / 32.0f));
+            turnRange = MAX(turnRange, 0x800);
+
+            approach_angle_bool(&m->faceAngle[1], m->intendedYaw, turnRange);
+        } else {
+            m->faceAngle[1] = m->intendedYaw;
+        }
+    } else {
+        m->faceAngle[1] = m->intendedYaw - approach_s32((s16)(m->intendedYaw - m->faceAngle[1]), 0, 0x800, 0x800);
+    }
+#else
+    // Vanilla
+    // m->faceAngle[1] =
+    //     m->intendedYaw - approach_s32((s16)(m->intendedYaw - m->faceAngle[1]), 0, 0x800, 0x800);
+#endif
+    apply_slope_accel(m);
+}
+
 s32 act_dashing (struct MarioState *m){
     Vec3f startPos;
     s16 startYaw = m->faceAngle[1];
@@ -829,6 +854,50 @@ s32 act_dashing (struct MarioState *m){
 
 }
 
+
+s32 act_dashing_no_control (struct MarioState *m){
+    Vec3f startPos;
+
+    m->actionState = ACT_STATE_WALKING_NO_WALL;
+
+    vec3f_copy(startPos, m->pos);
+    update_dash_no_control_speed(m);
+
+
+    struct Object *sparkleObj = spawn_object(m->marioObj, MODEL_NONE, bhvSparkleSpawn);
+
+    sparkleObj->oPosY += -30.0f;
+
+    m->dashTime = m->dashTime -1;
+    if (m->dashTime == 0){
+        return begin_braking_action(m);
+    }
+
+      switch (perform_ground_step(m)) {
+        case GROUND_STEP_LEFT_GROUND:
+            m->dashTime = 0;
+            set_mario_action(m, ACT_FREEFALL, 0);
+            set_mario_animation(m, MARIO_ANIM_GENERAL_FALL);
+            break;
+
+        case GROUND_STEP_NONE:
+            anim_and_audio_for_walk(m);
+            if (m->intendedMag - m->forwardVel > 16.0f) {
+                m->particleFlags |= PARTICLE_DUST;
+            }
+            break;
+
+        case GROUND_STEP_HIT_WALL:
+            m->dashTime = 0;
+            mario_bonk_reflection_dash(m, TRUE);
+            set_mario_action(m, ACT_GROUND_BONK,0);
+            m->actionTimer = 0;
+            break;
+    }
+
+    return FALSE;
+
+}
 
 s32 act_walking(struct MarioState *m) {
     Vec3f startPos;
@@ -2077,7 +2146,8 @@ s32 mario_execute_moving_action(struct MarioState *m) {
         case ACT_QUICKSAND_JUMP_LAND:      cancel = act_quicksand_jump_land(m);      break;
         case ACT_HOLD_QUICKSAND_JUMP_LAND: cancel = act_hold_quicksand_jump_land(m); break;
         case ACT_LONG_JUMP_LAND:           cancel = act_long_jump_land(m);           break;
-        case ACT_DASHING:                  cancel = act_dashing(m);                   break;
+        case ACT_DASHING:                  cancel = act_dashing(m);                  break;
+        case ACT_DASH_NO_CONTROL:          cancel = act_dashing_no_control(m);       break;
     }
     /* clang-format on */
 

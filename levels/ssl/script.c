@@ -155,6 +155,7 @@ const LevelScript level_ssl_entry[] = {
 		OBJECT(MODEL_BLUE_COIN, -7570, 1846, -5942, 0, -90, 0, 0x00000000, bhvBlueCoin),
 		OBJECT(MODEL_BLUE_COIN, -8637, 2220, 805, 0, -90, 0, 0x00000000, bhvBlueCoin),
 		OBJECT(MODEL_BLUE_COIN, -7637, 2220, 805, 0, -90, 0, 0x00000000, bhvBlueCoin),
+		OBJECT(MODEL_TOAD_NEW, 369, -803, 3013, 92, 1, 17, (41 << 16), bhvBobombBuddy),
 		OBJECT(MODEL_NONE, 15, 189, 16513, 0, -90, 0, 0x000A0000, bhvSpinAirborneWarp),
 		MARIO_POS(0x01, -180, 15, 189, 16513),
 		TERRAIN(ssl_area_1_collision),
