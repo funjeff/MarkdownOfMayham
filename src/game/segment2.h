@@ -181,4 +181,8 @@ extern u8 render_tv_top_texture_pal_rgba16[];
 extern u8 render_tv_bottom2_texture[];
 extern u8 render_tv_bottom2_texture_pal_rgba16[];
 
+extern u8 render_hud_tea1_texture[];
+
+extern u8 render_hud_tea2_texture[];
+
 #endif // SEGMENT2_H
