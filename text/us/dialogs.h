@@ -138,26 +138,27 @@ ATTENTION ALL PASTA\n\
 PAISANOS\n\
 !!!!!!!!!!!!!!!!!!!\n\
 We have a deal you \n\
-WONT wanna miss!\n\
+WON'T wanna miss!\n\
 !!!!!!!!!!!!!!!!!!!\n\
-our trademark spaghetti\n\ 
+Our trademark spaghetti\n\
 dish usually costs 6\n\
-coins\n\
-but for today only we\n\
+coins,\n\
+but for today only, we\n\
 are lowering the price\n\
-to just 4 COINS!!!?!?!\n\
-But act now!\n\ 
-\n\
-This deal wont last long\n\
-any late customers \n\
+to ONLY 4!!!!!!!\n\
+But you need to\n\
+act now! This deal\n\
+won't last long!\n\
+Any late customers \n\
 will NOT be eligible\n\
-for the special price\n\
-so be sure to get here\n\
-by 12 O'clock\n\
+for the special price.\n\
+Be sure to get here\n\
+by 12 O'clock SHARP.\n\
 \n\
-come on down and \n\
+Come on down and \n\
 get some grub!\n\
-if you can!"))
+\n\
+If you can..."))
 
 DEFINE_DIALOG(DIALOG_009, 1, 5, 30, 200, _("\
 Long time, no see! Wow,\n\
@@ -279,27 +280,27 @@ like being disturbed.\n\
 Please walk quietly."))
 
 DEFINE_DIALOG(DIALOG_019, 1, 4, 30, 200, _("\
-Mario\n\
+Mario!\n\
 Here for the deal\n\
 I assume?\n\
 \n\
-Well too bad!\n\
-you arent gonna\n\
-get ANY\n\
+Well, too bad!\n\
+You aren't gonna\n\
+get ANY!\n\
 \n\
-not unless you can\n\
+Not unless you can\n\
 get past ME!\n\
 \n\
 \n\
-Thats right Mario\n\
-Its finally time for\n\
+That's right Mario\n\
+It's finally time for\n\
 me to get my revenge!\n\
 \n\
-What\n\
-you're not scared?\n\
+What, you're not \n\
+scared?\n\
 \n\
 \n\
-oh I get it you think\n\
+Oh, I get it. You think\n\
 you can defeat me like\n\
 you did last time?\n\
 \n\
@@ -307,14 +308,14 @@ hahahahahahahhahahahha\n\
 hahahahahahahahahahaha\n\
 hahahahahahahahahahaha\n\
 hahahahahahahahahahaha\n\
-good luck with that\n\
+Good luck with that.\n\
 \n\
 \n\
 \n\
-you're not getting\n\
+You're not getting\n\
 past me unless you\n\
 have something with\n\
-more force than a train"))
+more force than a train!"))
 
 DEFINE_DIALOG(DIALOG_020, 1, 6, 95, 150, _("\
 Dear Mario:\n\
@@ -557,51 +558,51 @@ Below!"))
 
 DEFINE_DIALOG(DIALOG_041, 1, 3, 30, 200, _("\
 Hey Mario!\n\
-you like my new poster\n\
+You like my new poster?\n\
 \n\
-Its based off my favorate\n\
-video game portal 2!\n\
+It's based off my favorite\n\
+video game, Portal 2!\n\
 \n\
 What?\n\
 You thought it was a\n\
 real portal?\n\
-Mario\n\
+Mario.\n\
 \n\
 \n\
-portals aren't real\n\
+Portals aren't real.\n\
 \n\
 \n\
-You did know that\n\
+You did know that,\n\
 right?\n\
 "))
 
 DEFINE_DIALOG(DIALOG_042, 1, 3, 30, 200, _("\
 Hey Mario!\n\
-you like my new poster\n\
+You like my new poster?\n\
 \n\
-Its based off my favorate\n\
-video game portal 2!\n\
+It's based off my favorite\n\
+video game, Portal 2!\n\
 \n\
 What?\n\
 You thought it was a\n\
 real portal?\n\
-Mario\n\
+Mario.\n\
 \n\
 \n\
-portals aren't real\n\
+Portals aren't real.\n\
 \n\
 \n\
-You did know that\n\
+You did know that,\n\
 right?\n\
 "))
 
 DEFINE_DIALOG(DIALOG_043, 1, 3, 30, 200, _("\
-Which Pipe is it?\n\
+Which pipe is correct?\n\
 \n\
 \n\
-Clue 1\n\
+Clue 1:\n\
 You can go in the\n\
-middle pipe"))
+middle pipe."))
 
 DEFINE_DIALOG(DIALOG_044, 1, 5, 95, 200, _("\
 Whooo's there? Whooo\n\
@@ -629,33 +630,35 @@ That's it for now. Press\n\
 bye byyyyyyeeee!"))
 
 DEFINE_DIALOG(DIALOG_046, 1, 3, 30, 200, _("\
-Which Pipe is it?\n\
+Which pipe is correct?\n\
 \n\
 \n\
-Clue 2\n\
-The correct Pipe is\n\
-not red"))
+Clue 2:\n\
+The correct pipe is\n\
+not red."))
 
 DEFINE_DIALOG(DIALOG_047, 1, 2, 95, 200, _("\
 Hi! I'll prepare the\n\
 cannon for you!"))
 
 DEFINE_DIALOG(DIALOG_048, 1, 3, 30, 200, _("\
-Which Pipe is it?\n\
+Which pipe is correct?\n\
 \n\
 \n\
-Clue 3\n\
+Clue 3:\n\
 None of the clues\n\
-are lies\n\
-technically\n\
+are lies.\n\
+Technically.\n\
 \n\
-"))
+\n\
+Good job making it\n\
+up here, by the way."))
 
 DEFINE_DIALOG(DIALOG_049, 1, 3, 30, 200, _("\
-Which Pipe is it?\n\
+Which pipe is correct?\n\
 \n\
 \n\
-Clue 4\n\
+Clue 4:\n\
 The correct pipe is\n\
 pipe number\n\
 (lim x->8((x^2 - 81)\n\
@@ -665,122 +668,119 @@ times\n\
 divided by (x-5)))\n\
 divided by\n\
 (cosx^2 \n\
-plus sinx^2))\n\
-"))
+plus sinx^2))"))
 
 DEFINE_DIALOG(DIALOG_050, 1, 4, 30, 200, _("\
-Hey Mario!\n\
+Hey, Mario!\n\
 \n\
 \n\
 \n\
-I got some jucy news\n\
+I got some juicy news\n\
 for ya!\n\
 \n\
 \n\
-Your gonna wanna\n\
-remember this\n\
+You're gonna wanna\n\
+remember this.\n\
 \n\
 \n\
-like seriously get a\n\
+Like, seriously, get a\n\
 sticky note or open\n\
-notepad or something\n\
+notepad or something.\n\
 \n\
-alright you ready?\n\
+Alright, you ready?\n\
 \n\
 \n\
 \n\
-left\n\
+Left\n\
 \n\
 \n\
 \n\
-right\n\
+Right\n\
 \n\
 \n\
 \n\
-middle\n\
+Middle\n\
 \n\
 \n\
 \n\
-right\n\
+Right\n\
 \n\
 \n\
 \n\
-right\n\
+Right\n\
 \n\
 \n\
 \n\
-middle\n\
+Middle\n\
 \n\
 \n\
 \n\
-left\n\
+Left\n\
 \n\
 \n\
 \n\
-middle\n\
+Middle\n\
 \n\
 \n\
 \n\
-middle\n\
+Middle\n\
 \n\
 \n\
 \n\
-middle\n\
+Middle\n\
 \n\
 \n\
 \n\
-middle\n\
+Middle\n\
 \n\
 \n\
 \n\
-left\n\
+Left\n\
 \n\
 \n\
 \n\
-left\n\
+Left\n\
 \n\
 \n\
 \n\
-middle\n\
+Middle\n\
 \n\
 \n\
 \n\
-right\n\
+Right\n\
 \n\
 \n\
 \n\
-left\n\
+Left\n\
 \n\
 \n\
 \n\
-left\n\
+Left\n\
 \n\
 \n\
 \n\
-middle\n\
+Middle\n\
 \n\
 \n\
 \n\
-right\n\
+Right\n\
 \n\
 \n\
 \n\
-middle\n\
+Middle\n\
 \n\
 \n\
 \n\
-right\n\
+Right\n\
 \n\
 \n\
 \n\
-alright you get that?\n\
+Alright, you get that?\n\
 \n\
 \n\
 \n\
-its gonna be important\n\
-later I promise\n\
-\n\
-"))
+It's gonna be important\n\
+later, I promise."))
 
 DEFINE_DIALOG(DIALOG_051, 1, 6, 30, 200, _("\
 Climbing's easy! When you\n\
@@ -799,71 +799,60 @@ Jump off from the\n\
 handstand for a high,\n\
 stylin' dismount."))
 
-DEFINE_DIALOG(DIALOG_052, 1, 2, 30, 200, _("\
-oh\n\
-\n\
-Did I say 30 stars?\n\
-\n\
-Uhhh\n\
-\n\
-I meant 31 stars!\n\
-\n\
-yeah\n\
-\n\
-you need 31 stars\n\
-to open this door!"))
+DEFINE_DIALOG(DIALOG_052, 1, 4, 95, 200, _("\
+It takes the power of\n\
+31 Stars to open this\n\
+door. You need 1 more\n\
+Star."))
 
 DEFINE_DIALOG(DIALOG_053, 1, 3, 30, 200, _("\
-ooh\n\
+Ooh,\n\
 Master Mario!\n\
 \n\
 I thought I heard you\n\
-around here\n\
+around here.\n\
 \n\
-you need a star?\n\
-\n\
-\n\
-well I do have one\n\
+You need a star?\n\
 \n\
 \n\
-but\n\
-you seem stressed\n\
-Im worried about you!\n\
-you should chill\n\
-like the kids say!\n\
-\n\
-how about we\n\
-take a quick break\n\
+Well I do have one,\n\
+but you seem pretty\n\
+stressed.\n\
+I'm worried about you!\n\
+You should 'chill,'\n\
+like the kids say.\n\
+How about we\n\
+take a quick break,\n\
 old bean!\n\
-have some tea with\n\
-me!\n\
+Come, have some tea\n\
+with me.\n\
 \n\
-then you can have\n\
-my star\n\
-"))
+Then you can have\n\
+my star."))
 
 DEFINE_DIALOG(DIALOG_054, 1, 3, 30, 200, _("\
 Thanks for taking this\n\
-break with me Mario!\n\
+break with me, Mario!\n\
 \n\
 I really enjoyed the\n\
-tea and conversation\n\
+tea and conversation.\n\
 \n\
-I reflected on something\n\
-over that last cup\n\
-\n\
-perhaps my worrying\n\
-has been a burrden\n\
+It made me realize\n\
+something over that\n\
+last cup.\n\
+Perhaps my worrying\n\
+has been a burden\n\
 on your adventures?\n\
-so how about this\n\
+So, how about this:\n\
 \n\
 \n\
-next time Im bothering\n\
-you just push L and Ill\n\
-leave you alone\n\
-oh yeah I almost forgot\n\
-go ahead and take my star\n\
-you earned it!"))
+Next time I'm bothering\n\
+you, just push L and I'll\n\
+leave you alone!\n\
+Oh, don't let me forget\n\
+good chum, go ahead and\n\
+take my star!\n\
+You've earned it!"))
 
 DEFINE_DIALOG(DIALOG_055, 1, 4, 30, 200, _("\
 Hey-ey, Mario, buddy,\n\
@@ -922,14 +911,14 @@ Her parents must be\n\
 worried sick!"))
 
 DEFINE_DIALOG(DIALOG_060, 1, 2, 30, 200, _("\
-oh whoops! \n\
+Oh, whoops! \n\
 \n\
-sorry mario\n\
+Sorry Mario!\n\
 \n\
-your right tea can wait!\n\
+You're right, tea can wait!\n\
 \n\
-go ahead and take my\n\ 
-star"))
+Go ahead and take my\n\
+star."))
 
 DEFINE_DIALOG(DIALOG_061, 1, 4, 30, 200, _("\
 BRRR! Frostbite Danger!\n\
@@ -937,56 +926,47 @@ Do not swim here.\n\
 I'm serious.\n\
 /--The Penguin"))
 
-DEFINE_DIALOG(DIALOG_062, 1, 6, 30, 200, _("\
+DEFINE_DIALOG(DIALOG_062, 1, 4, 30, 200, _("\
+You're on the clock here,\n\
+so let's keep this brief.\n\
+\n\
+\n\
 Hack made by Dude45\n\
 and Pikmanfan2002\n\
 \n\
 \n\
+Thank you to everyone on \n\
+vgmusic for the MIDIs\n\
 \n\
 \n\
-This is our third hack\n\
+This is our third hack,\n\
 so feel free to put\n\
 ""SECOND HACK!??!??!""\n\
-in the title and just\n\
-have it be clickbait\n\
-\n\
-Be sure to collect a lot\n\
-of coins!  if you do\n\
-you might get a\n\
-better ending!\n\
-\n\
-\n\
-but be careful if you\n\
-don't make it to the\n\
-resturant in time you\n\
-will get the worst\n\
-ending regardles of\n\
-coins\n\
-We also added the ground\n\
-pound dive to make map\n\
-traversal a bit easier\n\
-\n\
-\n\
+in the title for clickbait.\n\
+Collecting coins increases\n\
+your rank! The more coins\n\
+you have, the better ending\n\
+you'll get.\n\
+Running out of time will\n\
+give you the worst ending\n\
+regardless of coins, so\n\
+better step it up!\n\
+We also added the Odyssey\n\
+dive to make map traversal\n\
+more fun.\n\
 \n\
 In today's episode of the\n\
 Super Show, the part of \n\
 Baljeet Tjinder will be\n\
-played by Luigi Amiibo.\n\
-\n\
-\n\
-Anyway the timer doesen't\n\
-stop while reading text\n\
-so I would get moving if\n\
-I were you!\n\
-\n\
-"))
+played by Luigi Amiibo."))
 
 DEFINE_DIALOG(DIALOG_063, 1, 2, 30, 200, _("\
-I lied about the ground\n\
-pound dive"))
+We lied about the ground\n\
+pound dive."))
 
-DEFINE_DIALOG(DIALOG_064, 1, 1, 30, 200, _("\
-Firsties?"))
+DEFINE_DIALOG(DIALOG_064, 1, 2, 30, 200, _("\
+Bet you can't do firsties\n\
+on that last dash pad."))
 
 DEFINE_DIALOG(DIALOG_065, 1, 6, 30, 200, _("\
 Swimming Lessons!\n\
@@ -1447,50 +1427,50 @@ away. Instead, sneak up\n\
 behind them and punch."))
 
 DEFINE_DIALOG(DIALOG_103, 1, 3, 95, 200, _("\
-Yo welcome to olive garden!\n\
+Yo, welcome to Olive Garden!\n\
+What are you hungry for?\n\
 \n\
-What you wanna eat?\n\
 Spaghetti?\n\
 \n\
 \n\
-Were out of Spaghetti\n\
+Sorry, but we're out of\n\
+spaghetti.\n\
 \n\
 \n\
 \n\
 \n\
-\n\
-nah just kidding\n\
+Nah just kidding,\n\
 how much you want?\n\
 \n\
-just one plate?\n\
+Just one plate?\n\
 \n\
 \n\
-no problem we'll\n\
+No problem, we'll\n\
 have that out in\n\
-a second"))
+a second."))
 
 DEFINE_DIALOG(DIALOG_104, 1, 3, 95, 200, _("\
-Yo welcome to olive garden!\n\
+Yo, welcome to Olive Garden!\n\
+What are you hungry for?\n\
 \n\
-What you wanna eat?\n\
 Spaghetti?\n\
 \n\
 \n\
-Were out of Spaghetti\n\
+Sorry, but we're out of\n\
+spaghetti.\n\
 \n\
 \n\
 \n\
 \n\
-\n\
-nah just kidding\n\
+Nah just kidding,\n\
 how much you want?\n\
 \n\
 25 orders?\n\
 \n\
 \n\
-uh OK we'll\n\
+Uh, okay, we'll\n\
 have that out in\n\
-a second"))
+a second."))
 
 DEFINE_DIALOG(DIALOG_105, 1, 3, 95, 200, _("\
 Ready for blastoff! Come\n\
@@ -1526,62 +1506,68 @@ the Big Boo!\n\
 Ka ha ha ha..."))
 
 DEFINE_DIALOG(DIALOG_109, 1, 3, 95, 200, _("\
-Yo welcome to olive garden!\n\
+Yo, welcome to Olive Garden!\n\
+What are you hungry for?\n\
 \n\
-What you wanna eat?\n\
 Spaghetti?\n\
 \n\
 \n\
-Were out of Spaghetti\n\
+Sorry, but we're out of\n\
+spaghetti.\n\
 \n\
 \n\
 \n\
 \n\
-\n\
-nah just kidding\n\
+Nah just kidding,\n\
 how much you want?\n\
 \n\
-what?\n\
-...\n\
-could you repeat that?\n\
-your kidding right?\n\
+What?\n\
+\n\
+\n\
+Could you repeat that?\n\
+\n\
+\n\
+You're kidding, right?\n\
 \n\
 \n\
 I don't think there\n\
 is that much spaghetti\n\
-on the entire earth\n\
-well we can try I guess!\n\
+on the entire planet...\n\
+Well I guess we can try!\n\
 \n\
 \n\
-we'll have that out\n\
+We'll have that out\n\
 for you whenever it\n\
-becomes possible"))
+becomes possible."))
 
 DEFINE_DIALOG(DIALOG_110, 1, 3, 95, 200, _("\
-Yo welcome to olive garden!\n\
+Yo, welcome to Olive Garden!\n\
+What are you hungry for?\n\
 \n\
-What you wanna eat?\n\
 Spaghetti?\n\
 \n\
 \n\
-Were out of Spaghetti\n\
+Sorry, but we're out of\n\
+spaghetti.\n\
 \n\
 \n\
 \n\
 \n\
-\n\
-nah just kidding\n\
+Nah just kidding,\n\
 how much you want?\n\
 \n\
 2 Tons?\n\
+\n\
+\n\
 2 TONS!?!?!?!?!?!\n\
 \n\
-I don't know If Im\n\
+\n\
+I don't know if I'm\n\
 legally allowed to\n\
-sell that much\n\
-but uh OK we'll\n\
+sell that much!\n\
+But, uh, okay, we'll\n\
 have that out in\n\
-a bit"))
+a bit!"))
 
 DEFINE_DIALOG(DIALOG_111, 1, 4, 95, 200, _("\
 Perfect! What a great\n\
@@ -2260,120 +2246,140 @@ DEFINE_DIALOG(DIALOG_162, 1, 4, 30, 200, _("\
 Oh ...\n\
 \n\
 \n\
-I see\n\
-To tell you the truth I\n\
-knew I probably coulden't\n\
-defeat you Mario.\n\
+I see.\n\
+To tell you the truth, I\n\
+knew I probably couldn't\n\
+defeat you, Mario.\n\
 \n\
-but thats the thing\n\
+But that's the thing.\n\
 \n\
 \n\
 \n\
 I don't have to defeat\n\
-you\n\
+you!\n\
 \n\
 \n\
 I just have to make\n\
-you run out of time\n\
+you run out of time!\n\
 \n\
 \n\
-so anyway did I ever\n\
+So, anyway, did I ever\n\
 tell you about the time\n\
 I fought in the big\n\
-leagues\n\
-Its a really intresting\n\
-story\n\
-Im sure you would love to\n\
-hear it\n\
-it all started when was\n\
-in college. I was \n\
-majoring in bombolgy with\n\
-a minor in throwing\n\
-but secretly after class\n\
-I would sneek into \n\
-dangerous underground\n\
-fights\n\
-My name is King bombomb\n\
-but I went by The bombomb\n\
-king so that nobody\n\
-would know my identity\n\
+leagues?\n\
+It's a really interesting\n\
+story, and I'm sure you\n\
+would love to hear it.\n\
+\n\
+It all started when I\n\
+was in college. I majored\n\
+in bombolgy with a minor \n\
+in throwing,\n\
+but secretly after class,\n\
+I would sneak into an\n\
+underground fight ring.\n\
+\n\
+I went by\n\
+'The Bob-omb King'\n\
+to hide my identity.\n\
+\n\
 After winning match after\n\
-match of cage fights. The\n\
-bombomb king became a\n\
-name to be feared\n\
-so much so that I got an\n\
-invatation to the match of\n\
-the century\n\
-\n\
+match of cage fights, I\n\
+became a name feared\n\
+by all.\n\
+I was held in such high\n\
+regard, I got an\n\
+invitation to the match\n\
+of the century!\n\
 A no holds barred grudge\n\
-match between the bombomb\n\
-king and the mysterious \n\
-man know only as \n\
-NSPTBSTMKESOUMTAWPAMS\n\
-MWDMMHMSWCMKMAWVVWWOL\n\
-SMPGKBMPOBLMITTBBCCTC\n\
-LGLSTBBBBPLOBBAKFSGIB\n\
-BMMBGGSBHSJOHMHMBWNMB\n\
-BSCFSMBMGKBJB\n\
-\n\
-\n\
-I knew I wasen't ready\n\
-for this fight so I \n\
+match between me,\n\
+The Bob-Omb King, and\n\
+a man of mystery.\n\
+No one knew his name, and\n\
+people only ever managed to\n\
+refer to him by spouting\n\
+complete jibberish.\n\
+It's like the auditory\n\
+counterpart to smashing\n\
+your head across a\n\
+keyboard repeatedly.\n\
+I knew I wasn't ready\n\
+for this fight, so I \n\
 trained every day for\n\
-three months to prepare\n\
-when the day finally came\n\
-I was terrified no other\n\
-opponent I had faced even\n\
-compared\n\
+three months to prepare.\n\
+When the day finally came,\n\
+I was terrified.\n\
+\n\
+\n\
+No other opponent I had \n\
+ever faced even compared\n\
+to JKBKSJDABDJKCHABHJKHKDAADS\n\
+DHJSBGASCHKBAHWUIHBKCSDXAADFGD\n\
+Sorry, I had to try saying\n\
+the name at least once.\n\
+\n\
+\n\
 I tried to open with my \n\
-trademark grab n throw \n\
-combo but he dodged it \n\
-effortlessly\n\
-he dashed around me in a\n\
+trademark grab 'n throw \n\
+combo, but he dodged it \n\
+effortlessly.\n\
+He dashed around me in a\n\
 flash, then picked me up\n\
 from behind and threw me\n\
-on the ground\n\
-it was humiliating!!!\n\
-I taunted back\n\
-YOU DARE TOSS\n\
-THE BOMBOMB KING!!\n\
-but inside I was shaking\n\
-in fear and he knew it\n\
-instantly captializing to\n\
-throw me again\n\
-at this point the pain\n\
-set in\n\
+on the ground!\n\
+It was humiliating!!!\n\
 \n\
 \n\
-no bombomb had ever\n\
+\n\
+I taunted back:\n\
+\n\
+\n\
+\n\
+'YOU DARE TOSS\n\
+THE BOB-OMB KING?!'\n\
+\n\
+\n\
+But inside...\n\
+I was shaking in fear,\n\
+and he knew it.\n\
+\n\
+He instantly capitalized\n\
+on my fear, throwing\n\
+me again.\n\
+\n\
+At this point, the pain\n\
+really set in.\n\
+\n\
+\n\
+No bob-omb had ever\n\
 survived being thrown\n\
-three times\n\
+three times consecutively.\n\
 \n\
 I had to give up before\n\
-I got hurt\n\
+I really got hurt.\n\
 \n\
 \n\
-and I was gonna until it\n\
-hit me all at once\n\
+But, right before I threw\n\
+in the towel, I had an\n\
+epiphany.\n\
 \n\
-\n\
-NSPTBSTMKESOUMTAWPAMS\n\
-MWDMMHMSWCMKMAWVVWWOL\n\
-SMPGKBMPOBLMITTBBCCTC\n\
-LGLSTBBBBPLOBBAKFSGIB\n\
-BMMBGGSBHSJOHMHMBWNMB\n\
-BSCFSMBMGKBJB\n\
-\n\
-\n\
-theres only one thing that\n\
-could stand for\n\
+A man so potent,\n\
+so feared, that when\n\
+uttering his name, people\n\
+can only spout gibberish?\n\
+There's only one person\n\
+that could have been.\n\
 \n\
 \n\
 Even though I could barely\n\
-walk I turrned and faced\n\
+walk, I turned and faced\n\
 my opponent with the\n\
-utmost determination\n\
-and said\n\
+utmost determination.\n\
+This confidence let me\n\
+speak perfectly clear\n\
+for everyone to hear.\n\
+\n\
+So I bellowed:\n\
 \n\
 \n\
 \n\
@@ -2489,7 +2495,7 @@ Mobile Android Kitkat\n\
 \n\
 \n\
 \n\
-Macantosh Apple Computer\n\
+Macintosh Apple Computer\n\
 \n\
 \n\
 \n\
@@ -2501,15 +2507,15 @@ VMWare\n\
 \n\
 \n\
 \n\
-Wii U browser\n\
+Wii U Browser\n\
 \n\
 \n\
 \n\
-Wii U nintendo browser\n\
+Wii U Nintendo Browser\n\
 \n\
 \n\
 \n\
-Original nintendololo\n\
+Original Nintendololo\n\
 \n\
 \n\
 \n\
@@ -2525,43 +2531,43 @@ Goomba\n\
 \n\
 \n\
 \n\
-Kooba troop\n\
+Kooba Troop\n\
 \n\
 \n\
 \n\
-para boopa\n\
+Para Boopa\n\
 \n\
 \n\
 \n\
-bullet bill\n\
+Bullet Bill\n\
 \n\
 \n\
 \n\
-my aunt jill\n\
+My Aunt Jill\n\
 \n\
 \n\
 \n\
-pirana plant\n\
+Piranha Plant\n\
 \n\
 \n\
 \n\
-obmabas rant\n\
+Obmaba's Rant\n\
 \n\
 \n\
 \n\
-big boo\n\
+Big Boo\n\
 \n\
 \n\
 \n\
-little boo\n\
+Little Boo\n\
 \n\
 \n\
 \n\
-medium boo\n\
+Medium Boo\n\
 \n\
 \n\
 \n\
-I miss you boo\n\
+I miss you Boo\n\
 \n\
 \n\
 \n\
@@ -2573,7 +2579,7 @@ Thwimpy\n\
 \n\
 \n\
 \n\
-bimble bimpy\n\
+Bimble Bimpy\n\
 \n\
 \n\
 \n\
@@ -2629,7 +2635,7 @@ Boobomb\n\
 \n\
 \n\
 \n\
-Pokey wokey\n\
+Pokey Wokey\n\
 \n\
 \n\
 \n\
@@ -2637,7 +2643,7 @@ Lickey Dokey\n\
 \n\
 \n\
 \n\
-oopemboopem\n\
+Oopemboopem\n\
 \n\
 \n\
 \n\
@@ -2669,19 +2675,19 @@ Golden Tiger Roll\n\
 \n\
 \n\
 \n\
-In Jolly Rodger bays home\n\
+In Jolly Rodger Bay's home\n\
 \n\
 \n\
 \n\
-Its time for dinner\n\
+It's time for dinner\n\
 \n\
 \n\
 \n\
-Bill blaster\n\
+Bill Blaster\n\
 \n\
 \n\
 \n\
-Bob ross\n\
+Bob Ross\n\
 \n\
 \n\
 \n\
@@ -2693,7 +2699,7 @@ Microgoomba\n\
 \n\
 \n\
 \n\
-Medication Beach goomba\n\
+Medication Beach Goomba\n\
 \n\
 \n\
 \n\
@@ -2717,11 +2723,11 @@ Your in trubba\n\
 \n\
 \n\
 \n\
-hiromame\n\
+Hiromame\n\
 \n\
 \n\
 \n\
-spooper pooper\n\
+Spooper Pooper\n\
 \n\
 \n\
 \n\
@@ -2729,31 +2735,31 @@ Jamboree\n\
 \n\
 \n\
 \n\
-omama\n\
+Omama\n\
 \n\
 \n\
 \n\
-Heave ho\n\
+Heave Ho\n\
 \n\
 \n\
 \n\
-Mr. Blizzerd\n\
+Mr. Blizzard\n\
 \n\
 \n\
 \n\
-holdey golden lizzard\n\
+Holy Golden Lizard\n\
 \n\
 \n\
 \n\
-mad piano who always\n\
-scared me as a kid in\n\
-super mario 64\n\
+Mad-Piano-who-always-\n\
+scared-me-as-a-kid-in-\n\
+Super-Mario-64\n\
 \n\
-bub\n\
+Bub\n\
 \n\
 \n\
 \n\
-whoosh dont blow me off\n\
+Whoosh dont blow me off\n\
 the mountain\n\
 \n\
 \n\
@@ -2761,60 +2767,60 @@ Nathan\n\
 \n\
 \n\
 \n\
-moneybag\n\
+Moneybag\n\
 \n\
 \n\
 \n\
-boneyslag\n\
+Boneyslag\n\
 \n\
 \n\
 \n\
-bomb\n\
+Bomb\n\
 \n\
 \n\
 \n\
-snuff it\n\
+Snuff it\n\
 \n\
 \n\
 \n\
-chuckya\n\
+Chuckya\n\
 \n\
 \n\
 \n\
-fuck ya\n\
+Fuck ya\n\
 \n\
 \n\
 \n\
-sushi shark\n\
+Sushi shark\n\
 \n\
 \n\
 \n\
-Mr I\n\
+Mr. I\n\
 \n\
 \n\
 \n\
-bookend\n\
+Bookend\n\
 \n\
 \n\
 \n\
-Bigger Mr I\n\
+Bigger Mr. I\n\
 \n\
 \n\
 \n\
-giant eyeball\n\
+Giant Eyeball\n\
 \n\
 \n\
 \n\
-killer chair\n\
+Killer Chair\n\
 floats and follows you \n\
 from one room to the\n\
 another\n\
-band\n\
+Band\n\
 \n\
 \n\
-i nameco entertainment\n\
-Japanese video game\n\
-development\n\
+i Namco Entertainment\n\
+Japanese Video Game\n\
+Development\n\
 \n\
 \n\
 BANDY\n\
@@ -2826,33 +2832,34 @@ I WILL DEFEAT YOU\n\
 \n\
 \n\
 I was filled with a wave\n\
-of courage\n\
+of courage!\n\
 \n\
 \n\
-I raced towards him he\n\
-tried to dodge but it was\n\
-too late I had him\n\
+I raced towards him. He\n\
+tried to dodge, but it was\n\
+too late. He was grabbed.\n\
 \n\
-with a single throw he\n\
-was out of the match\n\
-and I had won\n\
+With a single throw, he\n\
+was out of the match-\n\
+and I had won.\n\
 \n\
-they awarded me my \n\
-trophy but i knew I\n\
-coulden't keep living\n\
-a lie\n\
+They awarded me my \n\
+trophy, but I knew I\n\
+couldn't keep living\n\
+a lie.\n\
 In front of thousands of \n\
-people I took off my mask \n\
+people, I took off my mask.\n\
 \n\
 \n\
-shock was on everyones \n\
-faces as they realised I \n\
-wasen't the bombomb king\n\
-I was King bombomb\n\
-and then everybody clapped\n\
+Shock was on everyone's\n\
+faces as they realized I \n\
+wasn't the Bob-omb King...\n\
+no...\n\
+I was King Bob-omb!\n\
+And then everybody clapped.\n\
 \n\
 \n\
-the end!"))
+The End!"))
 
 DEFINE_DIALOG(DIALOG_163, 1, 5, 30, 200, _("\
 Noooo! You've really\n\
@@ -2896,111 +2903,131 @@ Ready...set...\n\
 //Go//// Don't Go"))
 
 DEFINE_DIALOG(DIALOG_165, 1, 4, 30, 200, _("\
-WHOA WHOA WHOA\n\
-MARIO! You werent\n\
+WHOA WHOA WHOA,\n\
+MARIO! You weren't\n\
 listening to my story!\n\
 \n\
-Its almost like you don't\n\
+It's almost like you don't\n\
 even care about it!\n\
 \n\
 \n\
-a good listner stays on\n\
+A good listner stays on\n\
 each part of a story for\n\
 a while before advancing\n\
-to the next part\n\
-how about this? Ill start\n\
-over and you pay more\n\
-attention this time\n\
+to the next part.\n\
+How about this? I'll start\n\
+over, and you pay more\n\
+attention this time!\n\
 \n\
-it all started when was\n\
-in college. I was \n\
-majoring in bombolgy with\n\
-a minor in throwing\n\
-but secretly after class\n\
-I would sneek into \n\
-dangerous underground\n\
-fights\n\
-My name is King bombomb\n\
-but I went by The bombomb\n\
-king so that nobody\n\
-would know my identity\n\
+It all started when I\n\
+was in college. I majored\n\
+in bombolgy with a minor \n\
+in throwing,\n\
+but secretly after class,\n\
+I would sneak into an\n\
+underground fight ring.\n\
+\n\
+I went by\n\
+'The Bob-omb King'\n\
+to hide my identity.\n\
+\n\
 After winning match after\n\
-match of cage fights. The\n\
-bombomb king became a\n\
-name to be feared\n\
-so much so that I got an\n\
-invatation to the match of\n\
-the century\n\
-\n\
+match of cage fights, I\n\
+became a name feared\n\
+by all.\n\
+I was held in such high\n\
+regard, I got an\n\
+invitation to the match\n\
+of the century!\n\
 A no holds barred grudge\n\
-match between the bombomb\n\
-king and the mysterious \n\
-man know only as \n\
-NSPTBSTMKESOUMTAWPAMS\n\
-MWDMMHMSWCMKMAWVVWWOL\n\
-SMPGKBMPOBLMITTBBCCTC\n\
-LGLSTBBBBPLOBBAKFSGIB\n\
-BMMBGGSBHSJOHMHMBWNMB\n\
-BSCFSMBMGKBJB\n\
-\n\
-\n\
-I knew I wasen't ready\n\
-for this fight so I \n\
+match between me,\n\
+The Bob-Omb King, and\n\
+a man of mystery.\n\
+No one knew his name, and\n\
+people only ever managed to\n\
+refer to him by spouting\n\
+complete jibberish.\n\
+It's like the auditory\n\
+counterpart to smashing\n\
+your head across a\n\
+keyboard repeatedly.\n\
+I knew I wasn't ready\n\
+for this fight, so I \n\
 trained every day for\n\
-three months to prepare\n\
-when the day finally came\n\
-I was terrified no other\n\
-opponent I had faced even\n\
-compared\n\
+three months to prepare.\n\
+When the day finally came,\n\
+I was terrified.\n\
+\n\
+\n\
+No other opponent I had \n\
+ever faced even compared\n\
+to JKBKSJDABDJKCHABHJKHKDAADS\n\
+DHJSBGASCHKBAHWUIHBKCSDXAADFGD\n\
+Sorry, I had to try saying\n\
+the name at least once.\n\
+\n\
+\n\
 I tried to open with my \n\
-trademark grab n throw \n\
-combo but he dodged it \n\
-effortlessly\n\
-he dashed around me in a\n\
+trademark grab 'n throw \n\
+combo, but he dodged it \n\
+effortlessly.\n\
+He dashed around me in a\n\
 flash, then picked me up\n\
 from behind and threw me\n\
-on the ground\n\
-it was humiliating!!!\n\
-I taunted back\n\
-YOU DARE TOSS\n\
-THE BOMBOMB KING!!\n\
-but inside I was shaking\n\
-in fear and he knew it\n\
-instantly captializing to\n\
-throw me again\n\
-at this point the pain\n\
-set in\n\
+on the ground!\n\
+It was humiliating!!!\n\
 \n\
 \n\
-no bombomb had ever\n\
+\n\
+I taunted back:\n\
+\n\
+\n\
+\n\
+'YOU DARE TOSS\n\
+THE BOB-OMB KING?!'\n\
+\n\
+\n\
+But inside...\n\
+I was shaking in fear,\n\
+and he knew it.\n\
+\n\
+He instantly capitalized\n\
+on my fear, throwing\n\
+me again.\n\
+\n\
+At this point, the pain\n\
+really set in.\n\
+\n\
+\n\
+No bob-omb had ever\n\
 survived being thrown\n\
-three times\n\
+three times consecutively.\n\
 \n\
 I had to give up before\n\
-I got hurt\n\
+I really got hurt.\n\
 \n\
 \n\
-and I was gonna until it\n\
-hit me all at once\n\
+But, right before I threw\n\
+in the towel, I had an\n\
+epiphany.\n\
 \n\
-\n\
-NSPTBSTMKESOUMTAWPAMS\n\
-MWDMMHMSWCMKMAWVVWWOL\n\
-SMPGKBMPOBLMITTBBCCTC\n\
-LGLSTBBBBPLOBBAKFSGIB\n\
-BMMBGGSBHSJOHMHMBWNMB\n\
-BSCFSMBMGKBJB\n\
-\n\
-\n\
-theres only one thing that\n\
-could stand for\n\
+A man so potent,\n\
+so feared, that when\n\
+uttering his name, people\n\
+can only spout gibberish?\n\
+There's only one person\n\
+that could have been.\n\
 \n\
 \n\
 Even though I could barely\n\
-walk I turrned and faced\n\
+walk, I turned and faced\n\
 my opponent with the\n\
-utmost determination\n\
-and said\n\
+utmost determination.\n\
+This confidence let me\n\
+speak perfectly clear\n\
+for everyone to hear.\n\
+\n\
+So I bellowed:\n\
 \n\
 \n\
 \n\
@@ -3116,7 +3143,7 @@ Mobile Android Kitkat\n\
 \n\
 \n\
 \n\
-Macantosh Apple Computer\n\
+Macintosh Apple Computer\n\
 \n\
 \n\
 \n\
@@ -3128,15 +3155,15 @@ VMWare\n\
 \n\
 \n\
 \n\
-Wii U browser\n\
+Wii U Browser\n\
 \n\
 \n\
 \n\
-Wii U nintendo browser\n\
+Wii U Nintendo Browser\n\
 \n\
 \n\
 \n\
-Original nintendololo\n\
+Original Nintendololo\n\
 \n\
 \n\
 \n\
@@ -3152,43 +3179,43 @@ Goomba\n\
 \n\
 \n\
 \n\
-Kooba troop\n\
+Kooba Troop\n\
 \n\
 \n\
 \n\
-para boopa\n\
+Para Boopa\n\
 \n\
 \n\
 \n\
-bullet bill\n\
+Bullet Bill\n\
 \n\
 \n\
 \n\
-my aunt jill\n\
+My Aunt Jill\n\
 \n\
 \n\
 \n\
-pirana plant\n\
+Piranha Plant\n\
 \n\
 \n\
 \n\
-obmabas rant\n\
+Obmaba's Rant\n\
 \n\
 \n\
 \n\
-big boo\n\
+Big Boo\n\
 \n\
 \n\
 \n\
-little boo\n\
+Little Boo\n\
 \n\
 \n\
 \n\
-medium boo\n\
+Medium Boo\n\
 \n\
 \n\
 \n\
-I miss you boo\n\
+I miss you Boo\n\
 \n\
 \n\
 \n\
@@ -3200,7 +3227,7 @@ Thwimpy\n\
 \n\
 \n\
 \n\
-bimble bimpy\n\
+Bimble Bimpy\n\
 \n\
 \n\
 \n\
@@ -3256,7 +3283,7 @@ Boobomb\n\
 \n\
 \n\
 \n\
-Pokey wokey\n\
+Pokey Wokey\n\
 \n\
 \n\
 \n\
@@ -3264,7 +3291,7 @@ Lickey Dokey\n\
 \n\
 \n\
 \n\
-oopemboopem\n\
+Oopemboopem\n\
 \n\
 \n\
 \n\
@@ -3296,19 +3323,19 @@ Golden Tiger Roll\n\
 \n\
 \n\
 \n\
-In Jolly Rodger bays home\n\
+In Jolly Rodger Bay's home\n\
 \n\
 \n\
 \n\
-Its time for dinner\n\
+It's time for dinner\n\
 \n\
 \n\
 \n\
-Bill blaster\n\
+Bill Blaster\n\
 \n\
 \n\
 \n\
-Bob ross\n\
+Bob Ross\n\
 \n\
 \n\
 \n\
@@ -3320,7 +3347,7 @@ Microgoomba\n\
 \n\
 \n\
 \n\
-Medication Beach goomba\n\
+Medication Beach Goomba\n\
 \n\
 \n\
 \n\
@@ -3344,11 +3371,11 @@ Your in trubba\n\
 \n\
 \n\
 \n\
-hiromame\n\
+Hiromame\n\
 \n\
 \n\
 \n\
-spooper pooper\n\
+Spooper Pooper\n\
 \n\
 \n\
 \n\
@@ -3356,31 +3383,31 @@ Jamboree\n\
 \n\
 \n\
 \n\
-omama\n\
+Omama\n\
 \n\
 \n\
 \n\
-Heave ho\n\
+Heave Ho\n\
 \n\
 \n\
 \n\
-Mr. Blizzerd\n\
+Mr. Blizzard\n\
 \n\
 \n\
 \n\
-holdey golden lizzard\n\
+Holy Golden Lizard\n\
 \n\
 \n\
 \n\
-mad piano who always\n\
-scared me as a kid in\n\
-super mario 64\n\
+Mad-Piano-who-always-\n\
+scared-me-as-a-kid-in-\n\
+Super-Mario-64\n\
 \n\
-bub\n\
+Bub\n\
 \n\
 \n\
 \n\
-whoosh dont blow me off\n\
+Whoosh dont blow me off\n\
 the mountain\n\
 \n\
 \n\
@@ -3388,60 +3415,60 @@ Nathan\n\
 \n\
 \n\
 \n\
-moneybag\n\
+Moneybag\n\
 \n\
 \n\
 \n\
-boneyslag\n\
+Boneyslag\n\
 \n\
 \n\
 \n\
-bomb\n\
+Bomb\n\
 \n\
 \n\
 \n\
-snuff it\n\
+Snuff it\n\
 \n\
 \n\
 \n\
-chuckya\n\
+Chuckya\n\
 \n\
 \n\
 \n\
-fuck ya\n\
+Fuck ya\n\
 \n\
 \n\
 \n\
-sushi shark\n\
+Sushi shark\n\
 \n\
 \n\
 \n\
-Mr I\n\
+Mr. I\n\
 \n\
 \n\
 \n\
-bookend\n\
+Bookend\n\
 \n\
 \n\
 \n\
-Bigger Mr I\n\
+Bigger Mr. I\n\
 \n\
 \n\
 \n\
-giant eyeball\n\
+Giant Eyeball\n\
 \n\
 \n\
 \n\
-killer chair\n\
+Killer Chair\n\
 floats and follows you \n\
 from one room to the\n\
 another\n\
-band\n\
+Band\n\
 \n\
 \n\
-i nameco entertainment\n\
-Japanese video game\n\
-development\n\
+i Namco Entertainment\n\
+Japanese Video Game\n\
+Development\n\
 \n\
 \n\
 BANDY\n\
@@ -3453,64 +3480,66 @@ I WILL DEFEAT YOU\n\
 \n\
 \n\
 I was filled with a wave\n\
-of courage\n\
+of courage!\n\
 \n\
 \n\
-I raced towards him he\n\
-tried to dodge but it was\n\
-too late I had him\n\
+I raced towards him. He\n\
+tried to dodge, but it was\n\
+too late. He was grabbed.\n\
 \n\
-with a single throw he\n\
-was out of the match\n\
-and I had won\n\
+With a single throw, he\n\
+was out of the match-\n\
+and I had won.\n\
 \n\
-they awarded me my \n\
-trophy but i knew I\n\
-coulden't keep living\n\
-a lie\n\
+They awarded me my \n\
+trophy, but I knew I\n\
+couldn't keep living\n\
+a lie.\n\
 In front of thousands of \n\
-people I took off my mask \n\
+people, I took off my mask.\n\
 \n\
 \n\
-shock was on everyones \n\
-faces as they realised I \n\
-wasen't the bombomb king\n\
-I was King bombomb\n\
-and then everybody clapped\n\
+Shock was on everyone's\n\
+faces as they realized I \n\
+wasn't the Bob-omb King...\n\
+no...\n\
+I was King Bob-omb!\n\
+And then everybody clapped.\n\
 \n\
 \n\
-the end!"))
+The End!"))
 
 DEFINE_DIALOG(DIALOG_166, 1, 4, 30, 200, _("\
-I'll be back soon.\n\
-I'm out training now,\n\
-so come back later.\n\
-//--Koopa the Quick"))
+You can preserve dash\n\
+pad speed with a\n\
+well-timed double\n\
+or triple jump!"))
 
-DEFINE_DIALOG(DIALOG_167, 1, 4, 30, 200, _("\
-Princess Toadstool's\n\
-castle is just ahead.\n\
+DEFINE_DIALOG(DIALOG_167, 1, 3, 30, 200, _("\
+Which pipe is correct?\n\
 \n\
 \n\
-Press [A] to jump, [Z] to\n\
-crouch, and [B] to punch,\n\
-read a sign, or grab\n\
-something.\n\
-Press [B] again to throw\n\
-something you're holding."))
-
-DEFINE_DIALOG(DIALOG_168, 1, 5, 30, 200, _("\
-Hey! Knock it off! That's\n\
-the second time you've\n\
-nailed me. Now you're\n\
-asking for it, linguine\n\
-breath!"))
-
-DEFINE_DIALOG(DIALOG_169, 1, 4, 30, 200, _("\
-Keep out!\n\
-That means you!\n\
-Arrgghh!\n\
+Clue 5:\n\
+It's the left one.\n\
 \n\
-Anyone entering this cave\n\
-without permission will\n\
-meet certain disaster."))
+I think."))
+
+DEFINE_DIALOG(DIALOG_168, 1, 1, 30, 200, _("\
+Elevator button."))
+
+DEFINE_DIALOG(DIALOG_169, 1, 1, 30, 200, _("\
+Elevator button."))
+
+DEFINE_DIALOG(DIALOG_170, 1, 3, 30, 200, _("\
+Here lies the dev time\n\
+lost to the release\n\
+of Pikmin 4.\n\
+Totally worth it."))
+
+DEFINE_DIALOG(DIALOG_171, 1, 2, 30, 200, _("\
+Only one of these pipes\n\
+won't kill you.\n\
+There are hints around\n\
+this area. Good luck.\n\
+Oh, and don't even THINK\n\
+about cheating."))

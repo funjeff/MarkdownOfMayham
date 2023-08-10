@@ -58,7 +58,7 @@ enum SurfaceTypes {
     SURFACE_WALL_MISC,                  // 0x0028 // Used for some walls, Cannon to adjust the camera, and some objects like Warp Pipe
     SURFACE_NOISE_DEFAULT,              // 0x0029 // Default floor with noise
     SURFACE_NOISE_SLIPPERY,             // 0x002A // Slippery floor with noise
-    SURFACE_002B,                       // 0x002B // Unused
+    SURFACE_DASH_PAD_UP_MID,            // 0x002B // Middling speed                      DASH_PAD
     SURFACE_HORIZONTAL_WIND,            // 0x002C // Horizontal wind, has parameters
     SURFACE_INSTANT_MOVING_QUICKSAND,   // 0x002D // Quicksand (lethal, flowing)
     SURFACE_ICE,                        // 0x002E // Slippery Ice, in snow levels and THI's water floor
@@ -72,9 +72,9 @@ enum SurfaceTypes {
     SURFACE_HARD_VERY_SLIPPERY,         // 0x0036 // Hard and very slippery (Always has fall damage)
     SURFACE_HARD_NOT_SLIPPERY,          // 0x0037 // Hard and Non-slippery (Always has fall damage)
     SURFACE_VERTICAL_WIND,              // 0x0038 // Death at bottom with vertical wind
-    SURFACE_0039,                       // 0x0039 // Unused
-    SURFACE_003A,                       // 0x003A // Unused
-    SURFACE_003B,                       // 0x003B // Unused
+    SURFACE_DASH_PAD_DOWN_MID,          // 0x0039 // Middling speed                      DASH_PAD
+    SURFACE_DASH_PAD_LEFT_MID,          // 0x003A // Middling speed                      DASH_PAD
+    SURFACE_DASH_PAD_RIGHT_MID,         // 0x003B // Middling speed                      DASH_PAD
     SURFACE_003C,                       // 0x003C // Unused
     SURFACE_003D,                       // 0x003D // Unused
     SURFACE_003E,                       // 0x003E // Unused

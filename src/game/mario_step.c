@@ -359,9 +359,76 @@ u32 mario_update_dash(struct MarioState *m){
         }
          m->dashTime = 100;
     }
-    
 
-    if (m->floor->type != SURFACE_DASH_PAD_DOWN && m->floor->type != SURFACE_DASH_PAD_LEFT && m->floor->type != SURFACE_DASH_PAD_RIGHT && m->floor->type != SURFACE_DASH_PAD_UP && m->floor->type != SURFACE_DASH_PAD_DOWN_FAST && m->floor->type != SURFACE_DASH_PAD_LEFT_FAST && m->floor->type != SURFACE_DASH_PAD_RIGHT_FAST && m->floor->type != SURFACE_DASH_PAD_UP_FAST ){
+    if (m->floor->type == SURFACE_DASH_PAD_UP_MID){
+        set_mario_action(m,ACT_DASHING, 0);
+        if ( m->forwardVel < 140){
+           m->forwardVel = 140;
+        }
+        m->dashTime = 100;
+        m->faceAngle [1] = 16340 * 3;
+       if (!m->onPad){
+            m->onPad = 1;
+            if (RAND(3)) {
+                play_sound(SOUND_DASH_PANNEL_2, m->marioObj->header.gfx.pos);
+            } else {
+                play_sound(SOUND_DASH_PANNEL_1, m->marioObj->header.gfx.pos);
+            }
+        }
+    }
+
+    if (m->floor->type == SURFACE_DASH_PAD_DOWN_MID){
+        set_mario_action(m,ACT_DASHING, 0);
+          if ( m->forwardVel < 140){
+           m->forwardVel = 140;
+        }
+        m->dashTime = 100;
+        m->faceAngle [1] = 16340 * 1;
+        if (!m->onPad){
+            m->onPad = 1;
+            if (RAND(3)) {
+                play_sound(SOUND_DASH_PANNEL_2, m->marioObj->header.gfx.pos);
+            } else {
+                play_sound(SOUND_DASH_PANNEL_1, m->marioObj->header.gfx.pos);
+            }
+        }
+    }
+
+    if (m->floor->type == SURFACE_DASH_PAD_LEFT_MID){
+        set_mario_action(m,ACT_DASHING, 0);
+          if ( m->forwardVel < 140){
+           m->forwardVel = 140;
+        }
+        m->dashTime = 100;
+        m->faceAngle [1] = 16340 * 2;
+        if (!m->onPad){
+            m->onPad = 1;
+            if (RAND(3)) {
+                play_sound(SOUND_DASH_PANNEL_2, m->marioObj->header.gfx.pos);
+            } else {
+                play_sound(SOUND_DASH_PANNEL_1, m->marioObj->header.gfx.pos);
+            }
+        }
+    }
+
+    if (m->floor->type == SURFACE_DASH_PAD_RIGHT_MID){
+        set_mario_action(m,ACT_DASHING, 0);
+          if ( m->forwardVel < 140){
+           m->forwardVel = 140;
+        }
+        m->dashTime = 100;
+        m->faceAngle [1] = 16340 * 0;
+        if (!m->onPad){
+            m->onPad = 1;
+            if (RAND(3)) {
+                play_sound(SOUND_DASH_PANNEL_2, m->marioObj->header.gfx.pos);
+            } else {
+                play_sound(SOUND_DASH_PANNEL_1, m->marioObj->header.gfx.pos);
+            }
+        }   
+    }
+
+    if (m->floor->type != SURFACE_DASH_PAD_DOWN && m->floor->type != SURFACE_DASH_PAD_LEFT && m->floor->type != SURFACE_DASH_PAD_RIGHT && m->floor->type != SURFACE_DASH_PAD_UP && m->floor->type != SURFACE_DASH_PAD_DOWN_FAST && m->floor->type != SURFACE_DASH_PAD_LEFT_FAST && m->floor->type != SURFACE_DASH_PAD_RIGHT_FAST && m->floor->type != SURFACE_DASH_PAD_UP_FAST && m->floor->type != SURFACE_DASH_PAD_DOWN_MID && m->floor->type != SURFACE_DASH_PAD_LEFT_MID && m->floor->type != SURFACE_DASH_PAD_RIGHT_MID && m->floor->type != SURFACE_DASH_PAD_UP_MID){
         m->onPad = 0;
     }
     return FALSE;
