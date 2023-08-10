@@ -57,3 +57,8 @@ UNUSED static const u64 binid_1 = 1;
 #include "purp/model.inc.c"
 #include "freddy/model.inc.c"
 #include "kirby/model.inc.c"
+#include "sDoor/model.inc.c"
+#include "sdoor/collision.inc.c"
+#include "sDoorR/model.inc.c"
+#include "toadsworth/model.inc.c"
+#include "tea/model.inc.c"

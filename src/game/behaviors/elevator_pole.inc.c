@@ -23,7 +23,7 @@ static struct ObjectHitbox sElevatorPoleButtonHitbox = {
 
 void bhv_elevator_pole_loop (void){
 	obj_set_hitbox(o, &sElevatorPoleButtonHitbox);
-	
+    
 	if (determine_interaction(gMarioState, o) == 2 && gMarioObject->oPosX > o->oPosX - 30 && gMarioObject->oPosX < o->oPosX + 30 && gMarioObject->oPosZ > 3145 && gMarioObject->oPosZ < 3205 && gMarioState->action != ACT_BUTTON_CUTSCENE){
 	 	set_mario_action(gMarioState, ACT_BUTTON_CUTSCENE, 0);
 		gMarioState->actionTimer = 0;

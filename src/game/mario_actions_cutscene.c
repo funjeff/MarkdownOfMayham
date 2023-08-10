@@ -2706,6 +2706,153 @@ static s32 act_button_cutscene(struct MarioState *m){
     return FALSE;
 }
 
+
+enum {
+    TOADSWORTH_READ_DOOR_TEXT,
+    TOADSWORTH_WALK_TO_MARIO,
+    TOADSWORTH_TEXT,
+    TOADSWORTH_WALK_TO_TABLE,
+    TOADSWORTH_WAIT,
+    TOADSWORTH_END,
+};
+
+static void toadsworth_read_door_text(struct MarioState *m){
+    create_dialog_box(DIALOG_052);
+    advance_cutscene_step(m);
+    set_mario_animation(m,MARIO_ANIM_IDLE_HEAD_CENTER);
+}
+
+static void toadsworth_walk_to_mario(struct MarioState *m){
+    if (get_dialog_id() != 52){
+        m->statusForCamera->cameraEvent = CAM_EVENT_TOADSWORTH;
+        if (!m->actionTimer){
+            m->actionTimer = 1;
+            struct Object * toadsworth = spawn_object_abs_with_rot(gMarioObject,0,MODEL_TOADSWORTH,bhvCutsceneProp,-8137, 2204, 2605, 0,0,0);
+            struct Object * tea = spawn_object_abs_with_rot(gMarioObject,0,MODEL_TEA,bhvCutsceneNone1,-8137, 2204, 2605 - 850, 0,0,0); 
+        } else {
+            m->actionTimer = m->actionTimer + 1;
+            uintptr_t *behaviorAddr = segmented_to_virtual(bhvCutsceneProp);
+
+	        struct ObjectNode *listHead = &gObjectLists[get_object_list_from_behavior(behaviorAddr)];
+
+	        struct Object *toadsworthProp = (struct Object *) listHead->next;
+
+	        while (toadsworthProp != (struct Object *) listHead) {
+	  	        if (toadsworthProp->behavior == behaviorAddr) {
+	  		        break;
+	  	        }
+	  	    toadsworthProp = (struct Object *) toadsworthProp->header.next;
+	        }
+
+            toadsworthProp->oPosZ = toadsworthProp->oPosZ + 10;
+
+            if (m->actionTimer == 80){
+                advance_cutscene_step(m);
+                create_dialog_box(DIALOG_053);
+            }
+
+        }
+    }
+}
+
+static void toadsworth_text(struct MarioState *m){
+    if (get_dialog_id() != 53){
+        
+            uintptr_t *behaviorAddr = segmented_to_virtual(bhvCutsceneProp);
+
+          struct ObjectNode *listHead = &gObjectLists[get_object_list_from_behavior(behaviorAddr)];
+
+	      struct Object *toadsworthProp = (struct Object *) listHead->next;
+
+	      while (toadsworthProp != (struct Object *) listHead) {
+	        if (toadsworthProp->behavior == behaviorAddr) {
+	            break;
+	  	    }
+	  	  toadsworthProp = (struct Object *) toadsworthProp->header.next;
+	    }
+        obj_set_angle(toadsworthProp,toadsworthProp->oFaceAnglePitch,toadsworthProp->oFaceAngleYaw + (16340 * 2),toadsworthProp->oFaceAngleRoll);
+        set_mario_animation(m,MARIO_ANIM_WALKING);
+        advance_cutscene_step(m);
+        gMarioObject->header.gfx.angle[1] = toadsworthProp->oFaceAngleYaw;
+        play_secondary_music(SEQ_EVENT_PIRANHA_PLANT, 0, 255, 1000);
+    }
+}
+
+static void toadsworth_walk_to_table(struct MarioState *m){
+    m->actionTimer = m->actionTimer + 1;
+    if (m->actionTimer < 170){
+        m->pos[0] = m->pos[0] + 1;
+        gMarioObject->header.gfx.pos[0] = gMarioObject->header.gfx.pos[0] + 1;     
+        m->pos[2] = m->pos[2] - 10;
+        gMarioObject->header.gfx.pos[2] = gMarioObject->header.gfx.pos[2] - 10;
+    }
+    uintptr_t *behaviorAddr = segmented_to_virtual(bhvCutsceneProp);
+
+	struct ObjectNode *listHead = &gObjectLists[get_object_list_from_behavior(behaviorAddr)];
+
+	struct Object *toadsworthProp = (struct Object *) listHead->next;
+
+	while (toadsworthProp != (struct Object *) listHead) {
+	    if (toadsworthProp->behavior == behaviorAddr) {
+	        break;
+	    }
+	    toadsworthProp = (struct Object *) toadsworthProp->header.next;
+	}
+
+    if (m->actionTimer == 190){
+        obj_set_angle(toadsworthProp,toadsworthProp->oFaceAnglePitch,toadsworthProp->oFaceAngleYaw + (16340 * 2),toadsworthProp->oFaceAngleRoll);
+        set_mario_animation(m,MARIO_ANIM_START_SLEEP_SITTING);
+        advance_cutscene_step(m);
+    }
+    toadsworthProp->oPosZ = toadsworthProp->oPosZ - 10;
+    
+
+
+}
+
+static void toadsworth_wait(struct MarioState *m){
+    m->actionTimer = m->actionTimer + 1;
+    if (m->actionTimer == 3600){
+        advance_cutscene_step(m);
+        create_dialog_box(DIALOG_054);
+    }
+}
+
+static void toadsworth_end(struct MarioState *m){
+    if (get_dialog_id() != 54){
+        func_80321080(50);
+        m->numStarsReal = m->numStarsReal + 1;
+        set_mario_action(m,ACT_IDLE,0);
+        gMarioState->statusForCamera->cameraEvent = CAM_EVENT_NONE;
+        reset_camera(gCurrentArea->camera);
+    }
+}
+
+static s32 act_toadsworth_cutscene(struct MarioState *m){
+    switch (m->actionArg){
+        case TOADSWORTH_READ_DOOR_TEXT:
+            toadsworth_read_door_text(m);
+            break;
+        case TOADSWORTH_WALK_TO_MARIO:
+            toadsworth_walk_to_mario(m);
+            break;
+        case TOADSWORTH_TEXT:
+            toadsworth_text(m);
+            break;
+        case TOADSWORTH_WALK_TO_TABLE:
+            toadsworth_walk_to_table(m);
+            break;
+        case TOADSWORTH_WAIT:
+            toadsworth_wait(m);
+            break;
+        case TOADSWORTH_END:
+            toadsworth_end(m);
+            break;
+    }
+
+    return FALSE;
+}
+
 static s32 act_do_nothing(struct MarioState *m){
     return FALSE;
 }
@@ -3057,6 +3204,7 @@ s32 mario_execute_cutscene_action(struct MarioState *m) {
         case ACT_DO_NOTHING:                 cancel = act_do_nothing(m);                 break;
         case ACT_FIRST_CUTSCENE:             cancel = act_first_cutscene(m);             break;
         case ACT_BUTTON_CUTSCENE:            cancel = act_button_cutscene(m);            break;
+        case ACT_TOADSWORTH_CUTSCENE:        cancel = act_toadsworth_cutscene(m);        break;
         case ACT_DISAPPEARED:                cancel = act_disappeared(m);                break;
         case ACT_INTRO_CUTSCENE:             cancel = act_intro_cutscene(m);             break;
         case ACT_STAR_DANCE_EXIT:            cancel = act_star_dance(m);                 break;

@@ -4944,6 +4944,9 @@ u8 get_cutscene_from_mario_status(struct Camera *c) {
             case CAM_EVENT_DESERT:
                 cutscene = CUTSCENE_DESERT;
                 break;
+            case CAM_EVENT_TOADSWORTH:
+                cutscene = CUTSCENE_TOADSWORTH;
+                break;
         }
     }
     //! doorStatus is reset every frame. CameraTriggers need to constantly set doorStatus
@@ -7218,6 +7221,30 @@ void cutscene_grand_star(struct Camera *c) {
     cutscene_event(cutscene_grand_star_accel_cvar2, c, 110, 159);
     cutscene_event(cutscene_grand_star_approach_mario, c, 160, -1);
     cutscene_event(cutscene_grand_star_move_cvar2, c, 110, -1);
+}
+
+void cutscene_toadsworth_camera_start(UNUSED struct Camera *c) {
+    vec3f_set(c->pos,  -8269 + 1000, 2200 + 100, 3754 -10);
+}
+
+void cutscene_toadsworth_start(struct Camera *c){
+	cutscene_event(cutscene_toadsworth_camera_start,c,0,0);
+}
+
+void cutscene_toadsworth_camera_loop(UNUSED struct Camera *c) {
+
+}
+
+void cutscene_toadsworth_loop(struct Camera *c){
+	if(gMarioState->actionArg == 3){
+		vec3f_set(c->pos, c->pos[0] + 2, c->pos[1] + 4, c->pos[2] -20);
+	}
+
+    if(gMarioState->actionArg == 4){
+        if (gMarioState->actionTimer % 2){
+		    vec3f_set(c->pos, c->pos[0] + 1, c->pos[1] + 1, c->pos[2] -1);
+        }
+    }
 }
 
 void cutscene_first_camera_start(UNUSED struct Camera *c) {
@@ -10048,6 +10075,11 @@ struct Cutscene sCutsceneDesert[] = {
     { cutscene_desert_loop, CUTSCENE_LOOP }
 };
 
+struct Cutscene sCutsceneToadsworth[] = {
+    { cutscene_toadsworth_start, 1 },
+    { cutscene_toadsworth_loop, CUTSCENE_LOOP }
+};
+
 /**
  * Cutscene that plays when Mario enters a door that warps to another area.
  */
@@ -10866,6 +10898,7 @@ void play_cutscene(struct Camera *c) {
         CUTSCENE(CUTSCENE_SSL_PYRAMID_EXPLODE,  sCutscenePyramidTopExplode)
         CUTSCENE(CUTSCENE_FIRST,                sCutsceneFirst)
         CUTSCENE(CUTSCENE_DESERT,               sCutsceneDesert)
+        CUTSCENE(CUTSCENE_TOADSWORTH,           sCutsceneToadsworth)
     }
 
 #undef CUTSCENE

@@ -478,6 +478,7 @@ struct MarioState {
              s8 zoomStop;
              s8 respawnIceCream;
              s8 groundClipDisabled;
+             s8 numStarsReal;
     // -- HackerSM64 MarioState fields begin --
 #ifdef BREATH_METER
              s16 breath;

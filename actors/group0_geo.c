@@ -33,3 +33,7 @@
 #include "purp/geo.inc.c"
 #include "freddy/geo.inc.c"
 #include "kirby/geo.inc.c"
+#include "sDoor/geo.inc.c"
+#include "sDoorR/geo.inc.c"
+#include "toadsworth/geo.inc.c"
+#include "tea/geo.inc.c"

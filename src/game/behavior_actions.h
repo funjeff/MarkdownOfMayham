@@ -128,6 +128,8 @@ void bhv_init_room(void);
 void bhv_small_water_wave_loop(void);
 void bhv_yellow_coin_init(void);
 void bhv_troll_coin_init(void);
+void bhv_real_star_init(void);
+void bhv_real_star_loop(void);
 void bhv_yellow_coin_loop(void);
 void bhv_blue_coin_init(void);
 void bhv_blue_coin_loop(void);
@@ -570,6 +572,7 @@ void bhv_ground_clip_disable_loop (void);
 void bhv_cutscene_trigger_init (void);
 void bhv_elevator_pole_loop (void);
 void bhv_bombomb_king_gate_loop (void);
+void bhv_hud_star_enable_loop (void);
 
 
 Gfx *geo_move_mario_part_from_parent(s32 callContext, UNUSED struct GraphNode *node, Mat4 mtx);

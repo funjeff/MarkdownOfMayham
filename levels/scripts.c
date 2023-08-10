@@ -239,7 +239,12 @@ const LevelScript script_func_global_1[] = {
     LOAD_MODEL_FROM_GEO(MODEL_PURP,                    purp_geo),
     LOAD_MODEL_FROM_GEO(MODEL_FREDDY,                  freddy_geo),
     LOAD_MODEL_FROM_GEO(MODEL_KIRBY,                   kirby_geo),
-    LOAD_MODEL_FROM_GEO(MODEL_BALJEET,                  baljeet_geo),
+    LOAD_MODEL_FROM_GEO(MODEL_BALJEET,                 baljeet_geo),
+   // LOAD_MODEL_FROM_GEO(MODEL_CASTLE_STAR_DOOR_30_STARS,    castle_geo_000F00),
+    LOAD_MODEL_FROM_GEO(MODEL_SDOOR,                   sDoor_geo),
+    LOAD_MODEL_FROM_GEO(MODEL_SDOORR,                  sDoorR_geo),
+    LOAD_MODEL_FROM_GEO(MODEL_TOADSWORTH,              toadsworth_geo),
+    LOAD_MODEL_FROM_GEO(MODEL_TEA,                     tea_geo),
 
     RETURN(),
 };

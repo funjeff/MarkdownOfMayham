@@ -728,10 +728,13 @@ void reset_mario_pitch(struct MarioState *m) {
 }
 
 u32 interact_coin(struct MarioState *m, UNUSED u32 interactType, struct Object *obj) {
-    m->numCoins += obj->oDamageOrCoinValue;
-    m->healCounter += 4 * obj->oDamageOrCoinValue;
-
-    if (!obj->oDamageOrCoinValue){
+    if (obj->oDamageOrCoinValue != -2){
+        m->numCoins += obj->oDamageOrCoinValue;
+        m->healCounter += 4 * obj->oDamageOrCoinValue;
+    } else {
+        m->numStarsReal = m->numStarsReal + 30;
+    }
+    if (!obj->oDamageOrCoinValue || obj->oDamageOrCoinValue == -2){
         u32 coinSound;
         if (gMarioState->action & (ACT_FLAG_SWIMMING | ACT_FLAG_METAL_WATER)) {
             coinSound = SOUND_GENERAL_COIN_WATER;
@@ -1001,11 +1004,10 @@ u32 get_door_save_file_flag(struct Object *door) {
 
     return saveFileFlag;
 }
-
 u32 interact_door(struct MarioState *m, UNUSED u32 interactType, struct Object *obj) {
     s16 requiredNumStars = (obj->oBehParams >> 24);
 #ifndef UNLOCK_ALL
-    s16 numStars = save_file_get_total_star_count(gCurrSaveFileNum - 1, COURSE_MIN - 1, COURSE_MAX - 1);
+    s16 numStars = gMarioState->numStarsReal;
 #endif
     if (m->action == ACT_WALKING || m->action == ACT_DECELERATING) {
 #ifndef UNLOCK_ALL
@@ -1040,17 +1042,23 @@ u32 interact_door(struct MarioState *m, UNUSED u32 interactType, struct Object *
         } else if (!sDisplayingDoorText) {
             u32 text = DIALOG_022 << 16;
 
-            switch (requiredNumStars) {
-                case  1: text = DIALOG_024 << 16; break;
-                case  3: text = DIALOG_025 << 16; break;
-                case  8: text = DIALOG_026 << 16; break;
-                case 30: text = DIALOG_027 << 16; break;
-                case 50: text = DIALOG_028 << 16; break;
-                case 70: text = DIALOG_029 << 16; break;
+            if (numStars != 30){
+
+                switch (requiredNumStars) {
+                    case  1: text = DIALOG_024 << 16; break;
+                    case  3: text = DIALOG_025 << 16; break;
+                    case  8: text = DIALOG_026 << 16; break;
+                    case 31: text = DIALOG_027 << 16; break;
+                    case 50: text = DIALOG_028 << 16; break;
+                    case 70: text = DIALOG_029 << 16; break;
+                }
+
+                text += (requiredNumStars - 1) - numStars;
+            } else {
+                text = DIALOG_052 << 16;
+                sDisplayingDoorText = TRUE;
+                return set_mario_action(m, ACT_TOADSWORTH_CUTSCENE, 0);
             }
-
-            text += requiredNumStars - numStars;
-
             sDisplayingDoorText = TRUE;
             return set_mario_action(m, ACT_READING_AUTOMATIC_DIALOG, text);
         }
@@ -1817,7 +1825,6 @@ void check_kick_or_punch_wall(struct MarioState *m) {
         }
     }
 }
-
 void mario_process_interactions(struct MarioState *m) {
     sDelayInvincTimer = FALSE;
     sInvulnerable = (m->action & ACT_FLAG_INVULNERABLE) || m->invincTimer != 0;
@@ -1852,6 +1859,7 @@ void mario_process_interactions(struct MarioState *m) {
     if (!(m->marioObj->collidedObjInteractTypes & (INTERACT_WARP_DOOR | INTERACT_DOOR))) {
         sDisplayingDoorText = FALSE;
     }
+
     if (!(m->marioObj->collidedObjInteractTypes & INTERACT_WARP)) {
         sJustTeleported = FALSE;
     }

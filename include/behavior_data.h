@@ -564,6 +564,7 @@ extern const BehaviorScript bhvCutsceneNone1[];
 extern const BehaviorScript bhvIceCream[];
 extern const BehaviorScript bhvBombombKingGate[];
 extern const BehaviorScript bhvGroundClipDisable[];
-
+extern const BehaviorScript bhvHudStarsEnable[];
+extern const BehaviorScript bhvRealStar[];
 
 #endif // BEHAVIOR_DATA_H

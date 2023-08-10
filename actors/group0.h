@@ -420,4 +420,14 @@ extern const struct Animation *const toad_seg6_anims_0600FB58[];
 
 #include "kirby/geo_header.h"
 
+#include "sDoor/geo_header.h"
+
+#include "sdoor/collision_header.h"
+
+#include "sDoorR/geo_header.h"
+
+#include "toadsworth/geo_header.h"
+
+#include "tea/geo_header.h"
+
 #endif

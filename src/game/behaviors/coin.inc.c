@@ -24,6 +24,18 @@ struct ObjectHitbox sTrollCoinHitbox = {
     /* hurtboxHeight:     */ 0,
 };
 
+struct ObjectHitbox sRealStarHitbox = {
+    /* interactType:      */ INTERACT_COIN,
+    /* downOffset:        */ 0,
+    /* damageOrCoinValue: */ -2,
+    /* health:            */ 0,
+    /* numLootCoins:      */ 0,
+    /* radius:            */ 150,
+    /* height:            */ 64,
+    /* hurtboxRadius:     */ 0,
+    /* hurtboxHeight:     */ 0,
+};
+
 struct ObjectHitbox sBlueCoinHitbox = {
     /* interactType:      */ INTERACT_COIN,
     /* downOffset:        */ 0,
@@ -115,6 +127,36 @@ void bhv_troll_coin_init(void) {
     if (o->oFloorHeight < FLOOR_LOWER_LIMIT_MISC) {
         obj_mark_for_deletion(o);
     }
+}
+
+void bhv_real_star_init(void) {
+    cur_obj_set_behavior(bhvYellowCoin);
+    obj_set_hitbox(o, &sRealStarHitbox);
+    cur_obj_update_floor_height();
+
+    if (500.0f < absf(o->oPosY - o->oFloorHeight)) {
+        if (cur_obj_has_model(MODEL_YELLOW_COIN)) {
+            cur_obj_set_model(MODEL_YELLOW_COIN_NO_SHADOW);
+        } else if (cur_obj_has_model(MODEL_BLUE_COIN)) {
+            cur_obj_set_model(MODEL_BLUE_COIN_NO_SHADOW);
+        } else if (cur_obj_has_model(MODEL_RED_COIN)) {
+            cur_obj_set_model(MODEL_RED_COIN_NO_SHADOW);
+#ifdef IA8_30FPS_COINS
+        } else if (cur_obj_has_model(MODEL_SILVER_COIN)) {
+            cur_obj_set_model(MODEL_SILVER_COIN_NO_SHADOW);
+#endif
+        }
+    }
+
+    if (o->oFloorHeight < FLOOR_LOWER_LIMIT_MISC) {
+        obj_mark_for_deletion(o);
+    }
+}
+
+void bhv_real_star_loop(void) {
+    bhv_coin_sparkles_init();
+    o->oAnimState++;
+    obj_set_angle(o,o->oFaceAnglePitch,o->oFaceAngleYaw + 800, o->oFaceAngleRoll);
 }
 
 void bhv_yellow_coin_loop(void) {

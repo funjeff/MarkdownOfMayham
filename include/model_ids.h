@@ -567,6 +567,10 @@
 #define MODEL_PURP                        0xF2
 #define MODEL_FREDDY                      0xF3
 #define MODEL_KIRBY                       0xF4
+#define MODEL_SDOOR                       0xF5
+#define MODEL_SDOORR                      0xF6
+#define MODEL_TOADSWORTH                  0xF7
+#define MODEL_TEA                         0xF8
 
 
 

@@ -595,12 +595,13 @@ You did know that\n\
 right?\n\
 "))
 
-DEFINE_DIALOG(DIALOG_043, 1, 5, 30, 200, _("\
-If you jump and hold the\n\
-[A] Button, you can hang on\n\
-to some objects overhead.\n\
-It's the same as grabbing\n\
-a flying bird!"))
+DEFINE_DIALOG(DIALOG_043, 1, 3, 30, 200, _("\
+Which Pipe is it?\n\
+\n\
+\n\
+Clue 1\n\
+You can go in the\n\
+middle pipe"))
 
 DEFINE_DIALOG(DIALOG_044, 1, 5, 95, 200, _("\
 Whooo's there? Whooo\n\
@@ -627,69 +628,159 @@ That's it for now. Press\n\
 [A] to let go. Okay,\n\
 bye byyyyyyeeee!"))
 
-DEFINE_DIALOG(DIALOG_046, 1, 5, 30, 200, _("\
-You have to master three\n\
-important jumping\n\
-techniques.\n\
-First try the Triple Jump.\n\
+DEFINE_DIALOG(DIALOG_046, 1, 3, 30, 200, _("\
+Which Pipe is it?\n\
 \n\
-Run fast, then jump three\n\
-times, one, two, three.\n\
-If you time the jumps\n\
-right, you'll hop, skip,\n\
-then jump really high.\n\
-Next, go for distance\n\
-with the Long Jump. Run,\n\
-press [Z] to crouch then [A]\n\
-to jump really far.\n\
 \n\
-To do the Wall Kick, press\n\
-[A] to jump at a wall, then\n\
-jump again when you hit\n\
-the wall.\n\
-\n\
-Got that? Triple Jump,\n\
-Long Jump, Wall Kick.\n\
-Practice, practice,\n\
-practice. You don't stand\n\
-a chance without them."))
+Clue 2\n\
+The correct Pipe is\n\
+not red"))
 
 DEFINE_DIALOG(DIALOG_047, 1, 2, 95, 200, _("\
 Hi! I'll prepare the\n\
 cannon for you!"))
 
-DEFINE_DIALOG(DIALOG_048, 1, 4, 30, 200, _("\
-Snow Mountain Summit\n\
-Watch for slippery\n\
-conditions! Please enter\n\
-the cottage first."))
+DEFINE_DIALOG(DIALOG_048, 1, 3, 30, 200, _("\
+Which Pipe is it?\n\
+\n\
+\n\
+Clue 3\n\
+None of the clues\n\
+are lies\n\
+technically\n\
+\n\
+"))
 
-DEFINE_DIALOG(DIALOG_049, 1, 5, 30, 200, _("\
-Remember that tricky Wall\n\
-Kick jump? It's a\n\
-technique you'll have to\n\
-master in order to reach\n\
-high places.\n\
-Use it to jump from wall\n\
-to wall. Press the\n\
-Control Stick in the\n\
-direction you want to\n\
-bounce to gain momentum.\n\
-Practice makes perfect!"))
+DEFINE_DIALOG(DIALOG_049, 1, 3, 30, 200, _("\
+Which Pipe is it?\n\
+\n\
+\n\
+Clue 4\n\
+The correct pipe is\n\
+pipe number\n\
+(lim x->8((x^2 - 81)\n\
+divided by (x-9)))\n\
+times\n\
+((lim x->4 (x^2)-25)\n\
+divided by (x-5)))\n\
+divided by\n\
+(cosx^2 \n\
+plus sinx^2))\n\
+"))
 
 DEFINE_DIALOG(DIALOG_050, 1, 4, 30, 200, _("\
-Hold [Z] to crouch and\n\
-slide down a slope.\n\
-Or press [Z] while in the\n\
-air to Pound the Ground!\n\
-If you stop, crouch, then\n\
-jump, you'll do a\n\
-Backward Somersault!\n\
-Got that?\n\
-There's more. Crouch and\n\
-then jump to do a\n\
-Long Jump! Or crouch and\n\
-walk to...never mind."))
+Hey Mario!\n\
+\n\
+\n\
+\n\
+I got some jucy news\n\
+for ya!\n\
+\n\
+\n\
+Your gonna wanna\n\
+remember this\n\
+\n\
+\n\
+like seriously get a\n\
+sticky note or open\n\
+notepad or something\n\
+\n\
+alright you ready?\n\
+\n\
+\n\
+\n\
+left\n\
+\n\
+\n\
+\n\
+right\n\
+\n\
+\n\
+\n\
+middle\n\
+\n\
+\n\
+\n\
+right\n\
+\n\
+\n\
+\n\
+right\n\
+\n\
+\n\
+\n\
+middle\n\
+\n\
+\n\
+\n\
+left\n\
+\n\
+\n\
+\n\
+middle\n\
+\n\
+\n\
+\n\
+middle\n\
+\n\
+\n\
+\n\
+middle\n\
+\n\
+\n\
+\n\
+middle\n\
+\n\
+\n\
+\n\
+left\n\
+\n\
+\n\
+\n\
+left\n\
+\n\
+\n\
+\n\
+middle\n\
+\n\
+\n\
+\n\
+right\n\
+\n\
+\n\
+\n\
+left\n\
+\n\
+\n\
+\n\
+left\n\
+\n\
+\n\
+\n\
+middle\n\
+\n\
+\n\
+\n\
+right\n\
+\n\
+\n\
+\n\
+middle\n\
+\n\
+\n\
+\n\
+right\n\
+\n\
+\n\
+\n\
+alright you get that?\n\
+\n\
+\n\
+\n\
+its gonna be important\n\
+later I promise\n\
+\n\
+"))
 
 DEFINE_DIALOG(DIALOG_051, 1, 6, 30, 200, _("\
 Climbing's easy! When you\n\
@@ -708,34 +799,71 @@ Jump off from the\n\
 handstand for a high,\n\
 stylin' dismount."))
 
-DEFINE_DIALOG(DIALOG_052, 1, 5, 30, 200, _("\
-Stop and press [Z] to\n\
-crouch, then press [A]\n\
-to do a high, Backward\n\
-Somersault!\n\
+DEFINE_DIALOG(DIALOG_052, 1, 2, 30, 200, _("\
+oh\n\
 \n\
-To perform a Side\n\
-Somersault, run, do a\n\
-sharp U-turn and jump.\n\
-You can catch lots of\n\
-air with both jumps."))
+Did I say 30 stars?\n\
+\n\
+Uhhh\n\
+\n\
+I meant 31 stars!\n\
+\n\
+yeah\n\
+\n\
+you need 31 stars\n\
+to open this door!"))
 
-DEFINE_DIALOG(DIALOG_053, 1, 5, 30, 200, _("\
-Sometimes, if you pass\n\
-through a coin ring or\n\
-find a secret point in a\n\
-course, a red number will\n\
-appear.\n\
-If you trigger five red\n\
-numbers, a secret Star\n\
-will show up."))
+DEFINE_DIALOG(DIALOG_053, 1, 3, 30, 200, _("\
+ooh\n\
+Master Mario!\n\
+\n\
+I thought I heard you\n\
+around here\n\
+\n\
+you need a star?\n\
+\n\
+\n\
+well I do have one\n\
+\n\
+\n\
+but\n\
+you seem stressed\n\
+Im worried about you!\n\
+you should chill\n\
+like the kids say!\n\
+\n\
+how about we\n\
+take a quick break\n\
+old bean!\n\
+have some tea with\n\
+me!\n\
+\n\
+then you can have\n\
+my star\n\
+"))
 
-DEFINE_DIALOG(DIALOG_054, 1, 5, 30, 200, _("\
-Welcome to the snow\n\
-slide! Hop on! To speed\n\
-up, press forward on the\n\
-Control Stick. To slow\n\
-down, pull back."))
+DEFINE_DIALOG(DIALOG_054, 1, 3, 30, 200, _("\
+Thanks for taking this\n\
+break with me Mario!\n\
+\n\
+I really enjoyed the\n\
+tea and conversation\n\
+\n\
+I reflected on something\n\
+over that last cup\n\
+\n\
+perhaps my worrying\n\
+has been a burrden\n\
+on your adventures?\n\
+so how about this\n\
+\n\
+\n\
+next time Im bothering\n\
+you just push L and Ill\n\
+leave you alone\n\
+oh yeah I almost forgot\n\
+go ahead and take my star\n\
+you earned it!"))
 
 DEFINE_DIALOG(DIALOG_055, 1, 4, 30, 200, _("\
 Hey-ey, Mario, buddy,\n\
