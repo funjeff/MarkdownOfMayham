@@ -732,7 +732,7 @@ u32 interact_coin(struct MarioState *m, UNUSED u32 interactType, struct Object *
         m->numCoins += obj->oDamageOrCoinValue;
         m->healCounter += 4 * obj->oDamageOrCoinValue;
     } else {
-        m->numStarsReal = m->numStarsReal + 30;
+        m->numStarsReal = m->numStarsReal + 1;
     }
     if (!obj->oDamageOrCoinValue || obj->oDamageOrCoinValue == -2){
         u32 coinSound;

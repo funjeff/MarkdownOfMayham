@@ -3934,7 +3934,6 @@ const BehaviorScript bhvBobombBuddy[] = {
     SET_INT(oBobombBuddyRole, 0),
     LOAD_ANIMATIONS(oAnimations, bobomb_seg8_anims_0802396C),
     SET_INTERACT_TYPE(INTERACT_TEXT),
-    SET_FLOAT(oDrawingDistance, 20000),
     DROP_TO_FLOOR(),
     SET_HITBOX(/*Radius*/ 100, /*Height*/ 60),
     ANIMATE(BOBOMB_ANIM_WALKING),

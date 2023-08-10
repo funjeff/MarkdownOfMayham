@@ -44,7 +44,7 @@ enum CameraHUDLUT {
 
 void set_hud_camera_status(s16 status);
 void render_hud(void);
-
+void set_reaction_num(int);
 
 
 #endif // HUD_H

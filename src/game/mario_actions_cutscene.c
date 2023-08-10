@@ -2714,6 +2714,7 @@ enum {
     TOADSWORTH_WALK_TO_TABLE,
     TOADSWORTH_WAIT,
     TOADSWORTH_END,
+    TOADSWORTH_SKIP,
 };
 
 static void toadsworth_read_door_text(struct MarioState *m){
@@ -2747,6 +2748,7 @@ static void toadsworth_walk_to_mario(struct MarioState *m){
             toadsworthProp->oPosZ = toadsworthProp->oPosZ + 10;
 
             if (m->actionTimer == 80){
+                play_sound(SOUND_TOADSWORTH1, m->marioObj->header.gfx.cameraToObject);
                 advance_cutscene_step(m);
                 create_dialog_box(DIALOG_053);
             }
@@ -2775,6 +2777,7 @@ static void toadsworth_text(struct MarioState *m){
         advance_cutscene_step(m);
         gMarioObject->header.gfx.angle[1] = toadsworthProp->oFaceAngleYaw;
         play_secondary_music(SEQ_EVENT_PIRANHA_PLANT, 0, 255, 1000);
+        play_sound(SOUND_OK, m->marioObj->header.gfx.cameraToObject);
     }
 }
 
@@ -2803,6 +2806,7 @@ static void toadsworth_walk_to_table(struct MarioState *m){
         obj_set_angle(toadsworthProp,toadsworthProp->oFaceAnglePitch,toadsworthProp->oFaceAngleYaw + (16340 * 2),toadsworthProp->oFaceAngleRoll);
         set_mario_animation(m,MARIO_ANIM_START_SLEEP_SITTING);
         advance_cutscene_step(m);
+        set_reaction_num(14);
     }
     toadsworthProp->oPosZ = toadsworthProp->oPosZ - 10;
     
@@ -2814,6 +2818,7 @@ static void toadsworth_wait(struct MarioState *m){
     m->actionTimer = m->actionTimer + 1;
     if (m->actionTimer == 3600){
         advance_cutscene_step(m);
+        play_sound(SOUND_TOADSWORTH2, m->marioObj->header.gfx.cameraToObject);
         create_dialog_box(DIALOG_054);
     }
 }
@@ -2825,6 +2830,18 @@ static void toadsworth_end(struct MarioState *m){
         set_mario_action(m,ACT_IDLE,0);
         gMarioState->statusForCamera->cameraEvent = CAM_EVENT_NONE;
         reset_camera(gCurrentArea->camera);
+        set_reaction_num(0);
+    }
+}
+
+static void toadsworth_skip(struct MarioState *m){
+    if (get_dialog_id() != 60){
+        func_80321080(50);
+        m->numStarsReal = m->numStarsReal + 1;
+        set_mario_action(m,ACT_IDLE,0);
+        gMarioState->statusForCamera->cameraEvent = CAM_EVENT_NONE;
+        reset_camera(gCurrentArea->camera);
+        set_reaction_num(0);
     }
 }
 
@@ -2848,6 +2865,15 @@ static s32 act_toadsworth_cutscene(struct MarioState *m){
         case TOADSWORTH_END:
             toadsworth_end(m);
             break;
+        case TOADSWORTH_SKIP:
+            toadsworth_skip(m);
+            break;
+    }
+
+     if (get_dialog_id() != 60 && get_dialog_id() != 52 && get_dialog_id() != 53 && get_dialog_id() != 54 && gPlayer1Controller->buttonPressed & L_TRIG){
+        play_sound(SOUND_TOADSWORTH3, m->marioObj->header.gfx.cameraToObject);
+        m->actionArg = TOADSWORTH_SKIP;
+        create_dialog_box(DIALOG_060);
     }
 
     return FALSE;

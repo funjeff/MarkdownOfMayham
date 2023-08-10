@@ -7037,6 +7037,34 @@ sound_ref .sound_satchel
 sound_ref .sound_you_cant_do_this
 sound_ref .sound_louie
 sound_ref .sound_purp_death
+sound_ref .sound_ok
+sound_ref .sound_toadsworth1
+sound_ref .sound_toadsworth2
+sound_ref .sound_toadsworth3
+
+.sound_ok:
+chan_setbank 11
+chan_setinstr 52
+chan_setlayer 0, .layer_new_sound 
+chan_end
+
+.sound_toadsworth1:
+chan_setbank 11
+chan_setinstr 53
+chan_setlayer 0, .layer_new_sound 
+chan_end
+
+.sound_toadsworth2:
+chan_setbank 11
+chan_setinstr 54
+chan_setlayer 0, .layer_new_sound 
+chan_end
+
+.sound_toadsworth3:
+chan_setbank 11
+chan_setinstr 55
+chan_setlayer 0, .layer_new_sound 
+chan_end
 
 .sound_come_on:
 chan_setbank 11

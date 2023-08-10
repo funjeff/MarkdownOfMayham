@@ -15,6 +15,7 @@ extern void scroll_ssl_dl_Geometry1_010_mesh_layer_1_vtx_3();
 extern void scroll_ssl_dl_Geometry1_010_mesh_layer_1_vtx_4();
 extern void scroll_ssl_dl_Geometry1_010_mesh_layer_1_vtx_5();
 extern void scroll_ssl_dl_Geometry1_010_mesh_layer_1_vtx_6();
+extern void scroll_ssl_dl_Geometry1_010_mesh_layer_1_vtx_7();
 extern void scroll_ssl_dl_Geometry1_016_mesh_layer_1_vtx_3();
 extern void scroll_ssl_dl_Geometry1_017_mesh_layer_1_vtx_3();
 extern void scroll_ssl();

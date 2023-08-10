@@ -602,7 +602,10 @@ enum SoundBank {
 #define SOUND_YOU_CANT_DO_THIS                   /* 0x14280000 */ SOUND_ARG_LOAD(SOUND_BANK_MENU,     0x66, 0xFF, SOUND_NO_VOLUME_LOSS | SOUND_DISCRETE)
 #define SOUND_LOUIE                              /* 0x14280000 */ SOUND_ARG_LOAD(SOUND_BANK_MENU,     0x67, 0xFF, SOUND_NO_VOLUME_LOSS | SOUND_DISCRETE)
 #define SOUND_PURP_DEATH                         /* 0x14280000 */ SOUND_ARG_LOAD(SOUND_BANK_MENU,     0x68, 0xFF, SOUND_NO_VOLUME_LOSS | SOUND_DISCRETE)
-
+#define SOUND_OK                                 /* 0x14280000 */ SOUND_ARG_LOAD(SOUND_BANK_MENU,     0x69, 0xFF, SOUND_NO_VOLUME_LOSS | SOUND_DISCRETE)
+#define SOUND_TOADSWORTH1                        /* 0x14280000 */ SOUND_ARG_LOAD(SOUND_BANK_MENU,     0x6A, 0xFF, SOUND_NO_VOLUME_LOSS | SOUND_DISCRETE)
+#define SOUND_TOADSWORTH2                        /* 0x14280000 */ SOUND_ARG_LOAD(SOUND_BANK_MENU,     0x6B, 0xFF, SOUND_NO_VOLUME_LOSS | SOUND_DISCRETE)
+#define SOUND_TOADSWORTH3                        /* 0x14280000 */ SOUND_ARG_LOAD(SOUND_BANK_MENU,     0x6C, 0xFF, SOUND_NO_VOLUME_LOSS | SOUND_DISCRETE)
 
 // US/EU only; an index between 0-7 or 0-4 is added to the sound ID before
 // playing, producing the same sound with different pitch.

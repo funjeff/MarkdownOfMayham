@@ -602,6 +602,10 @@ void render_hud_skip_notification(void){
 int reactionNum;
 int reactionSwitched = 0;
 
+void set_reaction_num(int newNum){
+	reactionNum = newNum;
+}
+
 void render_hud_live_reaction(void){
 	u16 xPos = 255;
 	u16 yPos = 40;
@@ -611,13 +615,16 @@ void render_hud_live_reaction(void){
     u16 timerSecs = (timerValFrames - (timerMins * 1800)) / 30;
 	f32 timerSecsf = (timerValFrames - (timerMins * 1800)) / 30.0;
 
-	if (timerSecs % 5 == 0 && !reactionSwitched){
-		reactionNum = random_u16()%13;
-		reactionSwitched = 1;
-	}
 
-	if (timerSecs % 5 != 0){
-		reactionSwitched = 0;
+	if (reactionNum != 14){
+		if (timerSecs % 5 == 0 && !reactionSwitched){
+			reactionNum = random_u16()%13;
+			reactionSwitched = 1;
+		}
+
+		if (timerSecs % 5 != 0){
+			reactionSwitched = 0;
+		}
 	}
 
 	render_tv_top(xPos,yPos,64,32,0,0);
@@ -688,6 +695,13 @@ void render_hud_live_reaction(void){
 		case 12:
 			render_reaction14(xPos + 5,yPos+19,48,40,0,0);
 			break;	
+		case 14:
+			if (timerSecs %3 == 0){
+				render_hud_tea2(xPos + 5,yPos+19,48,40,0,0);
+			} else {
+				render_hud_tea1(xPos + 5,yPos+19,48,40,0,0);
+			}
+			break;
 	}
 	render_tv_text(xPos,yPos -10,64,32,0,0);
 }

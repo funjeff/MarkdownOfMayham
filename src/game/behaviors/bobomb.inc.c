@@ -416,7 +416,6 @@ void bobomb_buddy_actions(void) {
             break;
     }
 
-    set_object_visibility(o, 3000);
 }
 
 void bhv_bobomb_buddy_loop(void) {
