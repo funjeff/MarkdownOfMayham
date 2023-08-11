@@ -185,4 +185,8 @@ extern u8 render_hud_tea1_texture[];
 
 extern u8 render_hud_tea2_texture[];
 
+extern u8 render_hud_creepypasta1_texture[];
+
+extern u8 render_hud_creepypasta2_texture[];
+
 #endif // SEGMENT2_H

@@ -1,4 +1,6 @@
 
+#include "src/game/hud.h"
+
 int clipLength = 57;
 
 void bhv_connection_terminated_loop(void) {
@@ -155,6 +157,7 @@ void bhv_connection_terminated_loop(void) {
     
     if (o->oTimer == clipLength * 37){
          play_music(SEQ_PLAYER_LEVEL, SEQUENCE_ARGS(15, SEQ_LEVEL_SNOW), 0);
+         set_reaction_num(1);
         obj_mark_for_deletion(o);
     }
     

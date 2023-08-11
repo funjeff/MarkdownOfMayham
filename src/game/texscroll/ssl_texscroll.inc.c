@@ -3,4 +3,5 @@
 void scroll_textures_ssl() {
 	scroll_ssl();
 	scroll_ssl();
+	scroll_ssl();
 }

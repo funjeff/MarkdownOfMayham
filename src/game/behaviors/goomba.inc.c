@@ -1,4 +1,5 @@
 #include "src/game/print.h"
+#include "src/game/hud.h"
 /**
  * Behavior for bhvGoomba and bhvGoombaTripletSpawner,
  * Goombas can either be spawned individually, or spawned by a triplet spawner.
@@ -375,6 +376,7 @@ void bhv_goomba_update(void) {
                 case 3:
                     spawn_object_at_origin(o, 23, MODEL_NONE,bhvConnectionTerminated);
                     stop_background_music(SEQ_LEVEL_GRASS);
+                    set_reaction_num(15);
                     break;
                 case 4:
                     play_sound(SOUND_KIRBY_DEATH1, gMarioState->marioObj->header.gfx.cameraToObject);
@@ -414,7 +416,8 @@ void bhv_goomba_update(void) {
 
                 if (found){
                     obj_mark_for_deletion(henry);
-                     play_music(SEQ_PLAYER_LEVEL, SEQUENCE_ARGS(15, SEQ_LEVEL_GRASS), 0);
+                    play_music(SEQ_PLAYER_LEVEL, SEQUENCE_ARGS(15, SEQ_LEVEL_SNOW), 0);
+                    set_reaction_num(1);
                 }
 
             }

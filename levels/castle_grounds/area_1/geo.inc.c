@@ -78,6 +78,8 @@ const GeoLayout castle_grounds_area_1_geo[] = {
 		GEO_TRANSLATE_ROTATE_WITH_DL(LAYER_OPAQUE, 0, 5016, 0, 90, 0, 176, castle_grounds_dl_Shape_IndexedFaceSet_132_Shape_IndexedFaceSet_254_mesh_layer_1),
 		GEO_TRANSLATE_ROTATE_WITH_DL(LAYER_OPAQUE, 0, 5016, 0, 90, 0, 176, castle_grounds_dl_Shape_IndexedFaceSet_136_Shape_IndexedFaceSet_258_mesh_layer_1),
 		GEO_TRANSLATE_ROTATE_WITH_DL(LAYER_OPAQUE, 0, 5016, 0, 90, 0, 176, castle_grounds_dl_Shape_IndexedFaceSet_137_Shape_IndexedFaceSet_259_mesh_layer_1),
+		GEO_TRANSLATE_ROTATE_WITH_DL(LAYER_OPAQUE, -71, 5377, -3235, 90, 0, 176, castle_grounds_dl_skinned_001_mesh_layer_1),
+		GEO_TRANSLATE_ROTATE_WITH_DL(LAYER_OPAQUE, -274, 5378, -3228, 90, 0, 176, castle_grounds_dl_skinned_002_mesh_layer_1),
 		GEO_TRANSLATE_ROTATE_WITH_DL(LAYER_OPAQUE, 126, 5437, 413, 94, 0, 0, castle_grounds_dl_vsn_mesh_0__010_mesh_layer_1),
 	GEO_CLOSE_NODE(),
 	GEO_RETURN(),
