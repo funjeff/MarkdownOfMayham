@@ -387,11 +387,11 @@ void king_bobomb_move(void) {
     cur_obj_call_action_function(sKingBobombActions);
     exec_anim_sound_state(sKingBobombSoundStates);
 
-    if (o->oDistanceToMario < 5000.0f) { //! oDrawingDistance?
-        cur_obj_enable_rendering();
-    } else {
-        cur_obj_disable_rendering();
-    }
+    // if (o->oDistanceToMario < 5000.0f) { //! oDrawingDistance?
+    //     cur_obj_enable_rendering();
+    // } else {
+    //     cur_obj_disable_rendering();
+    // }
 }
 
 void bhv_king_bobomb_loop(void) {

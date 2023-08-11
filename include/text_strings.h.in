@@ -252,7 +252,7 @@
  * Menus Text (Pause, Course Completed)
  */
 // Main Courses
-#define TEXT_COURSE _("COURSE")
+#define TEXT_COURSE _("")
 #define TEXT_MYSCORE _("MYSCORE")
 #define TEXT_CONTINUE _("CONTINUE")
 #define TEXT_EXIT_COURSE _("EXIT COURSE")

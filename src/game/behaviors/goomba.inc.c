@@ -375,7 +375,7 @@ void bhv_goomba_update(void) {
                     break;
                 case 3:
                     spawn_object_at_origin(o, 23, MODEL_NONE,bhvConnectionTerminated);
-                    stop_background_music(SEQ_LEVEL_GRASS);
+                    stop_background_music(SEQ_LEVEL_SNOW);
                     set_reaction_num(15);
                     break;
                 case 4:

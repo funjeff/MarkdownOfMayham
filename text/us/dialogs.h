@@ -563,9 +563,12 @@ You like my new poster?\n\
 It's based off my favorite\n\
 video game, Portal 2!\n\
 \n\
+I had another one too\n\
+but some dolt stole it!\n\
+\n\
 What?\n\
-You thought it was a\n\
-real portal?\n\
+You thought they were\n\
+real portals?\n\
 Mario.\n\
 \n\
 \n\
@@ -945,15 +948,15 @@ so feel free to put\n\
 in the title for clickbait.\n\
 Collecting coins increases\n\
 your rank! The more coins\n\
-you have, the better ending\n\
-you'll get.\n\
+you have, the better\n\
+ending you'll get.\n\
 Running out of time will\n\
 give you the worst ending\n\
 regardless of coins, so\n\
 better step it up!\n\
-We also added the Odyssey\n\
-dive to make map traversal\n\
-more fun.\n\
+We also added the\n\
+Odyssey dive to make\n\
+map traversal more fun.\n\
 \n\
 In today's episode of the\n\
 Super Show, the part of \n\
@@ -1427,7 +1430,7 @@ away. Instead, sneak up\n\
 behind them and punch."))
 
 DEFINE_DIALOG(DIALOG_103, 1, 3, 95, 200, _("\
-Yo, welcome to Olive Garden!\n\
+Yo, welcome\n\
 What are you hungry for?\n\
 \n\
 Spaghetti?\n\
@@ -1450,7 +1453,7 @@ have that out in\n\
 a second."))
 
 DEFINE_DIALOG(DIALOG_104, 1, 3, 95, 200, _("\
-Yo, welcome to Olive Garden!\n\
+Yo, welcome\n\
 What are you hungry for?\n\
 \n\
 Spaghetti?\n\
@@ -1506,7 +1509,7 @@ the Big Boo!\n\
 Ka ha ha ha..."))
 
 DEFINE_DIALOG(DIALOG_109, 1, 3, 95, 200, _("\
-Yo, welcome to Olive Garden!\n\
+Yo, welcome\n\
 What are you hungry for?\n\
 \n\
 Spaghetti?\n\
@@ -1541,7 +1544,7 @@ for you whenever it\n\
 becomes possible."))
 
 DEFINE_DIALOG(DIALOG_110, 1, 3, 95, 200, _("\
-Yo, welcome to Olive Garden!\n\
+Yo, welcome\n\
 What are you hungry for?\n\
 \n\
 Spaghetti?\n\
@@ -2911,7 +2914,7 @@ It's almost like you don't\n\
 even care about it!\n\
 \n\
 \n\
-A good listner stays on\n\
+A good listener stays on\n\
 each part of a story for\n\
 a while before advancing\n\
 to the next part.\n\
@@ -2944,8 +2947,8 @@ match between me,\n\
 The Bob-Omb King, and\n\
 a man of mystery.\n\
 No one knew his name, and\n\
-people only ever managed to\n\
-refer to him by spouting\n\
+people only ever managed\n\
+to refer to him by spouting\n\
 complete jibberish.\n\
 It's like the auditory\n\
 counterpart to smashing\n\

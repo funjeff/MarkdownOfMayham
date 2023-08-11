@@ -523,6 +523,7 @@ const BehaviorScript bhvKingBobomb[] = {
     SET_HITBOX(/*Radius*/ 100, /*Height*/ 100),
     SET_OBJ_PHYSICS(/*Wall hitbox radius*/ 30, /*Gravity*/ -400, /*Bounciness*/ -50, /*Drag strength*/ 1000, /*Friction*/ 1000, /*Buoyancy*/ 200, /*Unused*/ 0, 0),
     SET_INT(oIntangibleTimer, 0),
+    SET_FLOAT(oDrawingDistance, 18000),
     DROP_TO_FLOOR(),
     SET_HOME(),
     SPAWN_OBJ(/*Model*/ MODEL_NONE, /*Behavior*/ bhvBobombAnchorMario),
@@ -838,8 +839,9 @@ const BehaviorScript bhvElevatorPole[] = {
 
 const BehaviorScript bhvBombombKingGate[] = {
     BEGIN(OBJ_LIST_SURFACE),
-    OR_INT(oFlags, OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE),
+    OR_INT(oFlags, OBJ_FLAG_ACTIVE_FROM_AFAR | OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE),
 	LOAD_COLLISION_DATA(bombomb_king_gate_collision),
+     SET_FLOAT(oDrawingDistance, 18000),
 	SET_HITBOX(/*Radius*/ 200, /*Height*/ 100),
 	BEGIN_LOOP(),
     	CALL_NATIVE(load_object_collision_model),

@@ -1,48 +1,48 @@
-Lights1 wf_dl_m0_f3d_v4_lights = gdSPDefLights1(
+Lights1 wf_dl_m0_f3d_v4_001_lights = gdSPDefLights1(
 	0x7F, 0x7F, 0x7F,
 	0xFF, 0xFF, 0xFF, 0x28, 0x28, 0x28);
 
-Lights1 wf_dl_stoneside_001_v4_001_lights = gdSPDefLights1(
+Lights1 wf_dl_stoneside_001_v4_002_lights = gdSPDefLights1(
 	0x7F, 0x7F, 0x7F,
 	0xFF, 0xFF, 0xFF, 0x28, 0x28, 0x28);
 
-Lights1 wf_dl_stonetop_001_v4_001_lights = gdSPDefLights1(
+Lights1 wf_dl_stonetop_001_v4_002_lights = gdSPDefLights1(
 	0x7F, 0x7F, 0x7F,
 	0xFF, 0xFF, 0xFF, 0x28, 0x28, 0x28);
 
-Lights1 wf_dl_floor_001_v4_lights = gdSPDefLights1(
+Lights1 wf_dl_floor_001_v4_001_lights = gdSPDefLights1(
 	0x7F, 0x7F, 0x7F,
 	0xFF, 0xFF, 0xFF, 0x28, 0x28, 0x28);
 
 Lights1 wf_dl_dash_down_mid_lights = gdSPDefLights1(
-	0xBC, 0xBC, 0xBC,
-	0xFF, 0xFF, 0xFF, 0x28, 0x28, 0x28);
-
-Lights1 wf_dl_stoneside_001_v4_v4_001_lights = gdSPDefLights1(
 	0x7F, 0x7F, 0x7F,
 	0xFF, 0xFF, 0xFF, 0x28, 0x28, 0x28);
 
-Lights1 wf_dl_stonetop_001_v4_v4_001_lights = gdSPDefLights1(
+Lights1 wf_dl_stoneside_001_v4_v4_002_lights = gdSPDefLights1(
 	0x7F, 0x7F, 0x7F,
 	0xFF, 0xFF, 0xFF, 0x28, 0x28, 0x28);
 
-Lights1 wf_dl_floor_001_v4_v4_001_lights = gdSPDefLights1(
+Lights1 wf_dl_stonetop_001_v4_v4_002_lights = gdSPDefLights1(
+	0x7F, 0x7F, 0x7F,
+	0xFF, 0xFF, 0xFF, 0x28, 0x28, 0x28);
+
+Lights1 wf_dl_floor_001_v4_v4_002_lights = gdSPDefLights1(
 	0x7F, 0x7F, 0x7F,
 	0xFF, 0xFF, 0xFF, 0x28, 0x28, 0x28);
 
 Lights1 wf_dl_dash_down_mid_v4_lights = gdSPDefLights1(
-	0xBC, 0xBC, 0xBC,
-	0xFF, 0xFF, 0xFF, 0x28, 0x28, 0x28);
-
-Lights1 wf_dl_f3dlite_material_v4_001_lights = gdSPDefLights1(
 	0x7F, 0x7F, 0x7F,
 	0xFF, 0xFF, 0xFF, 0x28, 0x28, 0x28);
 
-Lights1 wf_dl_f3dlite_material_v4_v4_001_lights = gdSPDefLights1(
+Lights1 wf_dl_f3dlite_material_v4_002_lights = gdSPDefLights1(
 	0x7F, 0x7F, 0x7F,
 	0xFF, 0xFF, 0xFF, 0x28, 0x28, 0x28);
 
-Lights1 wf_dl_f3dlite_material_v4_v4_v4_001_layer5_area1_lights = gdSPDefLights1(
+Lights1 wf_dl_f3dlite_material_v4_v4_002_lights = gdSPDefLights1(
+	0x7F, 0x7F, 0x7F,
+	0xFF, 0xFF, 0xFF, 0x28, 0x28, 0x28);
+
+Lights1 wf_dl_f3dlite_material_v4_v4_v4_002_layer5_area1_lights = gdSPDefLights1(
 	0x7F, 0x7F, 0x7F,
 	0xFF, 0xFF, 0xFF, 0x28, 0x28, 0x28);
 
@@ -50,20 +50,20 @@ Lights1 wf_dl_darkground_v4_lights = gdSPDefLights1(
 	0x4D, 0x2E, 0x14,
 	0xA0, 0x65, 0x33, 0x28, 0x28, 0x28);
 
-Lights1 wf_dl_wall_001_v4_001_lights = gdSPDefLights1(
+Lights1 wf_dl_wall_001_v4_002_lights = gdSPDefLights1(
 	0x7F, 0x7F, 0x7F,
 	0xFF, 0xFF, 0xFF, 0x28, 0x28, 0x28);
 
-Lights1 wf_dl_ground_001_v4_001_lights = gdSPDefLights1(
+Lights1 wf_dl_ground_001_v4_002_lights = gdSPDefLights1(
 	0x7F, 0x7F, 0x7F,
 	0xFF, 0xFF, 0xFF, 0x28, 0x28, 0x28);
 
-Lights1 wf_dl_sand_scroll_v4_001_lights = gdSPDefLights1(
+Lights1 wf_dl_sand_scroll_v4_002_lights = gdSPDefLights1(
 	0x7F, 0x7F, 0x7F,
 	0xFF, 0xFF, 0xFF, 0x28, 0x28, 0x28);
 
 Lights1 wf_dl_dark_sand_scroll_v4_lights = gdSPDefLights1(
-	0xBC, 0xBC, 0xBC,
+	0x7F, 0x7F, 0x7F,
 	0xFF, 0xFF, 0xFF, 0x28, 0x28, 0x28);
 
 Lights1 wf_dl_dash_left_v4_lights = gdSPDefLights1(
@@ -71,66 +71,66 @@ Lights1 wf_dl_dash_left_v4_lights = gdSPDefLights1(
 	0xFF, 0xFF, 0xFF, 0x28, 0x28, 0x28);
 
 Lights1 wf_dl_dash_pad2_v4_lights = gdSPDefLights1(
-	0xBC, 0xBC, 0xBC,
+	0x7F, 0x7F, 0x7F,
 	0xFF, 0xFF, 0xFF, 0x28, 0x28, 0x28);
 
 Lights1 wf_dl_darkground_v4_v4_lights = gdSPDefLights1(
 	0x4D, 0x2E, 0x14,
 	0xA0, 0x65, 0x33, 0x28, 0x28, 0x28);
 
-Lights1 wf_dl_wall_001_v4_v4_001_lights = gdSPDefLights1(
+Lights1 wf_dl_wall_001_v4_v4_002_lights = gdSPDefLights1(
 	0x7F, 0x7F, 0x7F,
 	0xFF, 0xFF, 0xFF, 0x28, 0x28, 0x28);
 
-Lights1 wf_dl_sand_right_001_lights = gdSPDefLights1(
-	0xBC, 0xBC, 0xBC,
+Lights1 wf_dl_sand_right_002_lights = gdSPDefLights1(
+	0x7F, 0x7F, 0x7F,
 	0xFF, 0xFF, 0xFF, 0x28, 0x28, 0x28);
 
-Lights1 wf_dl_sand_up_001_lights = gdSPDefLights1(
-	0xBC, 0xBC, 0xBC,
+Lights1 wf_dl_sand_up_002_lights = gdSPDefLights1(
+	0x7F, 0x7F, 0x7F,
 	0xFF, 0xFF, 0xFF, 0x28, 0x28, 0x28);
 
-Lights1 wf_dl_sand_down_001_lights = gdSPDefLights1(
-	0xBC, 0xBC, 0xBC,
+Lights1 wf_dl_sand_down_002_lights = gdSPDefLights1(
+	0x7F, 0x7F, 0x7F,
 	0xFF, 0xFF, 0xFF, 0x28, 0x28, 0x28);
 
 Lights1 wf_dl_f3d_material_001_lights = gdSPDefLights1(
-	0xBC, 0xBC, 0xBC,
-	0xFF, 0xFF, 0xFF, 0x28, 0x28, 0x28);
-
-Lights1 wf_dl_ground_001_v4_v4_001_lights = gdSPDefLights1(
 	0x7F, 0x7F, 0x7F,
 	0xFF, 0xFF, 0xFF, 0x28, 0x28, 0x28);
 
-Lights1 wf_dl_grate_001_v4_001_lights = gdSPDefLights1(
-	0xBC, 0xBC, 0xBC,
+Lights1 wf_dl_ground_001_v4_v4_002_lights = gdSPDefLights1(
+	0x7F, 0x7F, 0x7F,
+	0xFF, 0xFF, 0xFF, 0x28, 0x28, 0x28);
+
+Lights1 wf_dl_grate_001_v4_002_lights = gdSPDefLights1(
+	0x7F, 0x7F, 0x7F,
 	0xFF, 0xFF, 0xFF, 0x28, 0x28, 0x28);
 
 Lights1 wf_dl_dash_left_sand_lights = gdSPDefLights1(
-	0xBC, 0xBC, 0xBC,
-	0xFF, 0xFF, 0xFF, 0x28, 0x28, 0x28);
-
-Lights1 wf_dl_dash_up_sand_lights = gdSPDefLights1(
-	0xBC, 0xBC, 0xBC,
-	0xFF, 0xFF, 0xFF, 0x28, 0x28, 0x28);
-
-Lights1 wf_dl_dash_down_sand_lights = gdSPDefLights1(
-	0xBC, 0xBC, 0xBC,
-	0xFF, 0xFF, 0xFF, 0x28, 0x28, 0x28);
-
-Lights1 wf_dl_dash_right_sand_lights = gdSPDefLights1(
-	0xBC, 0xBC, 0xBC,
-	0xFF, 0xFF, 0xFF, 0x28, 0x28, 0x28);
-
-Lights1 wf_dl_up_slow_001_v4_001_lights = gdSPDefLights1(
-	0xBC, 0xBC, 0xBC,
-	0xFF, 0xFF, 0xFF, 0x28, 0x28, 0x28);
-
-Lights1 wf_dl_ground_001_v4_v4_v4_001_lights = gdSPDefLights1(
 	0x7F, 0x7F, 0x7F,
 	0xFF, 0xFF, 0xFF, 0x28, 0x28, 0x28);
 
-Lights1 wf_dl_wall_001_v4_v4_v4_001_lights = gdSPDefLights1(
+Lights1 wf_dl_dash_up_sand_lights = gdSPDefLights1(
+	0x7F, 0x7F, 0x7F,
+	0xFF, 0xFF, 0xFF, 0x28, 0x28, 0x28);
+
+Lights1 wf_dl_dash_down_sand_lights = gdSPDefLights1(
+	0x7F, 0x7F, 0x7F,
+	0xFF, 0xFF, 0xFF, 0x28, 0x28, 0x28);
+
+Lights1 wf_dl_dash_right_sand_lights = gdSPDefLights1(
+	0x7F, 0x7F, 0x7F,
+	0xFF, 0xFF, 0xFF, 0x28, 0x28, 0x28);
+
+Lights1 wf_dl_up_slow_001_v4_002_lights = gdSPDefLights1(
+	0x7F, 0x7F, 0x7F,
+	0xFF, 0xFF, 0xFF, 0x28, 0x28, 0x28);
+
+Lights1 wf_dl_ground_001_v4_v4_v4_002_lights = gdSPDefLights1(
+	0x7F, 0x7F, 0x7F,
+	0xFF, 0xFF, 0xFF, 0x28, 0x28, 0x28);
+
+Lights1 wf_dl_wall_001_v4_v4_v4_002_lights = gdSPDefLights1(
 	0x7F, 0x7F, 0x7F,
 	0xFF, 0xFF, 0xFF, 0x28, 0x28, 0x28);
 
@@ -138,23 +138,23 @@ Lights1 wf_dl_darkground_v4_v4_v4_lights = gdSPDefLights1(
 	0x4D, 0x2E, 0x14,
 	0xA0, 0x65, 0x33, 0x28, 0x28, 0x28);
 
-Lights1 wf_dl_lambert2_v_f3d_v4_001_lights = gdSPDefLights1(
+Lights1 wf_dl_lambert2_v_f3d_v4_002_lights = gdSPDefLights1(
 	0x7F, 0x7F, 0x7F,
 	0xFF, 0xFF, 0xFF, 0x28, 0x28, 0x28);
 
-Lights1 wf_dl_lambert3_v_f3d_v4_001_lights = gdSPDefLights1(
+Lights1 wf_dl_lambert3_v_f3d_v4_002_lights = gdSPDefLights1(
 	0x7F, 0x7F, 0x7F,
 	0xFF, 0xFF, 0xFF, 0x28, 0x28, 0x28);
 
-Lights1 wf_dl_lambert4_v_f3d_v4_001_lights = gdSPDefLights1(
+Lights1 wf_dl_lambert4_v_f3d_v4_002_lights = gdSPDefLights1(
 	0x7F, 0x7F, 0x7F,
 	0xFF, 0xFF, 0xFF, 0x28, 0x28, 0x28);
 
-Lights1 wf_dl_sign_icecream_f3d_v4_001_lights = gdSPDefLights1(
+Lights1 wf_dl_sign_icecream_f3d_v4_002_lights = gdSPDefLights1(
 	0x7F, 0x7F, 0x7F,
 	0xFF, 0xFF, 0xFF, 0x28, 0x28, 0x28);
 
-Lights1 wf_dl_sign_icecream_bottom_f3d_v4_001_lights = gdSPDefLights1(
+Lights1 wf_dl_sign_icecream_bottom_f3d_v4_002_lights = gdSPDefLights1(
 	0x7F, 0x7F, 0x7F,
 	0xFF, 0xFF, 0xFF, 0x28, 0x28, 0x28);
 
@@ -166,15 +166,15 @@ Lights1 wf_dl_arrow_f3d_v4_lights = gdSPDefLights1(
 	0x7F, 0x7F, 0x7F,
 	0xFF, 0xFF, 0xFF, 0x28, 0x28, 0x28);
 
-Lights1 wf_dl_X_001_v4_v4_v4_v4_001_lights = gdSPDefLights1(
+Lights1 wf_dl_X_001_v4_v4_v4_v4_002_lights = gdSPDefLights1(
 	0x7F, 0x7F, 0x7F,
 	0xFF, 0xFF, 0xFF, 0x28, 0x28, 0x28);
 
-Lights1 wf_dl_X_001_v4_v4_v4_v4_v4_001_lights = gdSPDefLights1(
+Lights1 wf_dl_X_001_v4_v4_v4_v4_v4_002_lights = gdSPDefLights1(
 	0x7F, 0x7F, 0x7F,
 	0xFF, 0xFF, 0xFF, 0x28, 0x28, 0x28);
 
-Lights1 wf_dl_X_001_v4_v4_v4_v4_v4_v4_001_lights = gdSPDefLights1(
+Lights1 wf_dl_X_001_v4_v4_v4_v4_v4_v4_002_lights = gdSPDefLights1(
 	0x7F, 0x7F, 0x7F,
 	0xFF, 0xFF, 0xFF, 0x28, 0x28, 0x28);
 
@@ -10130,7 +10130,7 @@ Gfx wf_dl_X_002_mesh_layer_5_tri_0[] = {
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_wf_dl_m0_f3d_v4[] = {
+Gfx mat_wf_dl_m0_f3d_v4_001[] = {
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(TEXEL0, 0, SHADE, 0, 0, 0, 0, ENVIRONMENT, TEXEL0, 0, SHADE, 0, 0, 0, 0, ENVIRONMENT),
 	gsSPTexture(65535, 65535, 0, 0, 1),
@@ -10144,17 +10144,17 @@ Gfx mat_wf_dl_m0_f3d_v4[] = {
 	gsDPLoadBlock(7, 0, 0, 1023, 256),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 8, 0, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 6, 0),
 	gsDPSetTileSize(0, 0, 0, 252, 124),
-	gsSPSetLights1(wf_dl_m0_f3d_v4_lights),
+	gsSPSetLights1(wf_dl_m0_f3d_v4_001_lights),
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_revert_wf_dl_m0_f3d_v4[] = {
+Gfx mat_revert_wf_dl_m0_f3d_v4_001[] = {
 	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_wf_dl_stoneside_001_v4_001[] = {
+Gfx mat_wf_dl_stoneside_001_v4_002[] = {
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(TEXEL0, 0, SHADE, 0, 0, 0, 0, ENVIRONMENT, TEXEL0, 0, SHADE, 0, 0, 0, 0, ENVIRONMENT),
 	gsSPTexture(65535, 65535, 0, 0, 1),
@@ -10163,11 +10163,11 @@ Gfx mat_wf_dl_stoneside_001_v4_001[] = {
 	gsDPLoadBlock(7, 0, 0, 1023, 256),
 	gsDPSetTile(G_IM_FMT_RGBA, G_IM_SIZ_16b, 8, 0, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
-	gsSPSetLights1(wf_dl_stoneside_001_v4_001_lights),
+	gsSPSetLights1(wf_dl_stoneside_001_v4_002_lights),
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_wf_dl_stonetop_001_v4_001[] = {
+Gfx mat_wf_dl_stonetop_001_v4_002[] = {
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(TEXEL0, 0, SHADE, 0, 0, 0, 0, ENVIRONMENT, TEXEL0, 0, SHADE, 0, 0, 0, 0, ENVIRONMENT),
 	gsSPTexture(65535, 65535, 0, 0, 1),
@@ -10181,17 +10181,17 @@ Gfx mat_wf_dl_stonetop_001_v4_001[] = {
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
-	gsSPSetLights1(wf_dl_stonetop_001_v4_001_lights),
+	gsSPSetLights1(wf_dl_stonetop_001_v4_002_lights),
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_revert_wf_dl_stonetop_001_v4_001[] = {
+Gfx mat_revert_wf_dl_stonetop_001_v4_002[] = {
 	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_wf_dl_floor_001_v4[] = {
+Gfx mat_wf_dl_floor_001_v4_001[] = {
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(TEXEL0, 0, SHADE, 0, 0, 0, 0, ENVIRONMENT, TEXEL0, 0, SHADE, 0, 0, 0, 0, ENVIRONMENT),
 	gsSPTexture(65535, 65535, 0, 0, 1),
@@ -10205,11 +10205,11 @@ Gfx mat_wf_dl_floor_001_v4[] = {
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
-	gsSPSetLights1(wf_dl_floor_001_v4_lights),
+	gsSPSetLights1(wf_dl_floor_001_v4_001_lights),
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_revert_wf_dl_floor_001_v4[] = {
+Gfx mat_revert_wf_dl_floor_001_v4_001[] = {
 	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
@@ -10228,7 +10228,7 @@ Gfx mat_wf_dl_dash_down_mid[] = {
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_wf_dl_stoneside_001_v4_v4_001[] = {
+Gfx mat_wf_dl_stoneside_001_v4_v4_002[] = {
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(TEXEL0, 0, SHADE, 0, 0, 0, 0, ENVIRONMENT, TEXEL0, 0, SHADE, 0, 0, 0, 0, ENVIRONMENT),
 	gsSPTexture(65535, 65535, 0, 0, 1),
@@ -10237,11 +10237,11 @@ Gfx mat_wf_dl_stoneside_001_v4_v4_001[] = {
 	gsDPLoadBlock(7, 0, 0, 1023, 256),
 	gsDPSetTile(G_IM_FMT_RGBA, G_IM_SIZ_16b, 8, 0, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
-	gsSPSetLights1(wf_dl_stoneside_001_v4_v4_001_lights),
+	gsSPSetLights1(wf_dl_stoneside_001_v4_v4_002_lights),
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_wf_dl_stonetop_001_v4_v4_001[] = {
+Gfx mat_wf_dl_stonetop_001_v4_v4_002[] = {
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(TEXEL0, 0, SHADE, 0, 0, 0, 0, ENVIRONMENT, TEXEL0, 0, SHADE, 0, 0, 0, 0, ENVIRONMENT),
 	gsSPTexture(65535, 65535, 0, 0, 1),
@@ -10255,17 +10255,17 @@ Gfx mat_wf_dl_stonetop_001_v4_v4_001[] = {
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
-	gsSPSetLights1(wf_dl_stonetop_001_v4_v4_001_lights),
+	gsSPSetLights1(wf_dl_stonetop_001_v4_v4_002_lights),
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_revert_wf_dl_stonetop_001_v4_v4_001[] = {
+Gfx mat_revert_wf_dl_stonetop_001_v4_v4_002[] = {
 	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_wf_dl_floor_001_v4_v4_001[] = {
+Gfx mat_wf_dl_floor_001_v4_v4_002[] = {
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(TEXEL0, 0, SHADE, 0, 0, 0, 0, ENVIRONMENT, TEXEL0, 0, SHADE, 0, 0, 0, 0, ENVIRONMENT),
 	gsSPTexture(65535, 65535, 0, 0, 1),
@@ -10279,11 +10279,11 @@ Gfx mat_wf_dl_floor_001_v4_v4_001[] = {
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
-	gsSPSetLights1(wf_dl_floor_001_v4_v4_001_lights),
+	gsSPSetLights1(wf_dl_floor_001_v4_v4_002_lights),
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_revert_wf_dl_floor_001_v4_v4_001[] = {
+Gfx mat_revert_wf_dl_floor_001_v4_v4_002[] = {
 	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
@@ -10302,7 +10302,7 @@ Gfx mat_wf_dl_dash_down_mid_v4[] = {
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_wf_dl_f3dlite_material_v4_001[] = {
+Gfx mat_wf_dl_f3dlite_material_v4_002[] = {
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(TEXEL0, 0, SHADE, 0, TEXEL0, 0, PRIMITIVE, 0, TEXEL0, 0, SHADE, 0, TEXEL0, 0, PRIMITIVE, 0),
 	gsSPClearGeometryMode(G_CULL_BACK),
@@ -10313,17 +10313,17 @@ Gfx mat_wf_dl_f3dlite_material_v4_001[] = {
 	gsDPSetTile(G_IM_FMT_IA, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
 	gsDPSetPrimColor(0, 0, 255, 255, 255, 255),
-	gsSPSetLights1(wf_dl_f3dlite_material_v4_001_lights),
+	gsSPSetLights1(wf_dl_f3dlite_material_v4_002_lights),
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_revert_wf_dl_f3dlite_material_v4_001[] = {
+Gfx mat_revert_wf_dl_f3dlite_material_v4_002[] = {
 	gsDPPipeSync(),
 	gsSPSetGeometryMode(G_CULL_BACK),
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_wf_dl_f3dlite_material_v4_v4_001[] = {
+Gfx mat_wf_dl_f3dlite_material_v4_v4_002[] = {
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(TEXEL0, 0, SHADE, 0, TEXEL0, 0, PRIMITIVE, 0, TEXEL0, 0, SHADE, 0, TEXEL0, 0, PRIMITIVE, 0),
 	gsSPClearGeometryMode(G_CULL_BACK),
@@ -10334,17 +10334,17 @@ Gfx mat_wf_dl_f3dlite_material_v4_v4_001[] = {
 	gsDPSetTile(G_IM_FMT_IA, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
 	gsDPSetPrimColor(0, 0, 255, 255, 255, 255),
-	gsSPSetLights1(wf_dl_f3dlite_material_v4_v4_001_lights),
+	gsSPSetLights1(wf_dl_f3dlite_material_v4_v4_002_lights),
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_revert_wf_dl_f3dlite_material_v4_v4_001[] = {
+Gfx mat_revert_wf_dl_f3dlite_material_v4_v4_002[] = {
 	gsDPPipeSync(),
 	gsSPSetGeometryMode(G_CULL_BACK),
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_wf_dl_f3dlite_material_v4_v4_v4_001_layer5_area1[] = {
+Gfx mat_wf_dl_f3dlite_material_v4_v4_v4_002_layer5_area1[] = {
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(TEXEL0, 0, SHADE, 0, TEXEL0, 0, PRIMITIVE, 0, 0, 0, 0, COMBINED, 0, 0, 0, COMBINED),
 	gsDPSetFogColor(0, 0, 0, 255),
@@ -10360,11 +10360,11 @@ Gfx mat_wf_dl_f3dlite_material_v4_v4_v4_001_layer5_area1[] = {
 	gsDPSetTile(G_IM_FMT_IA, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
 	gsDPSetPrimColor(0, 0, 255, 255, 255, 255),
-	gsSPSetLights1(wf_dl_f3dlite_material_v4_v4_v4_001_layer5_area1_lights),
+	gsSPSetLights1(wf_dl_f3dlite_material_v4_v4_v4_002_layer5_area1_lights),
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_revert_wf_dl_f3dlite_material_v4_v4_v4_001_layer5_area1[] = {
+Gfx mat_revert_wf_dl_f3dlite_material_v4_v4_v4_002_layer5_area1[] = {
 	gsDPPipeSync(),
 	gsSPClearGeometryMode(G_FOG),
 	gsSPSetGeometryMode(G_CULL_BACK),
@@ -10397,7 +10397,7 @@ Gfx mat_revert_wf_dl_darkground_v4[] = {
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_wf_dl_wall_001_v4_001[] = {
+Gfx mat_wf_dl_wall_001_v4_002[] = {
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(TEXEL0, 0, SHADE, 0, 0, 0, 0, ENVIRONMENT, TEXEL0, 0, SHADE, 0, 0, 0, 0, ENVIRONMENT),
 	gsSPTexture(65535, 65535, 0, 0, 1),
@@ -10411,17 +10411,17 @@ Gfx mat_wf_dl_wall_001_v4_001[] = {
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
-	gsSPSetLights1(wf_dl_wall_001_v4_001_lights),
+	gsSPSetLights1(wf_dl_wall_001_v4_002_lights),
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_revert_wf_dl_wall_001_v4_001[] = {
+Gfx mat_revert_wf_dl_wall_001_v4_002[] = {
 	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_wf_dl_ground_001_v4_001[] = {
+Gfx mat_wf_dl_ground_001_v4_002[] = {
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(TEXEL0, 0, SHADE, 0, 0, 0, 0, ENVIRONMENT, TEXEL0, 0, SHADE, 0, 0, 0, 0, ENVIRONMENT),
 	gsSPTexture(65535, 65535, 0, 0, 1),
@@ -10435,17 +10435,17 @@ Gfx mat_wf_dl_ground_001_v4_001[] = {
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
-	gsSPSetLights1(wf_dl_ground_001_v4_001_lights),
+	gsSPSetLights1(wf_dl_ground_001_v4_002_lights),
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_revert_wf_dl_ground_001_v4_001[] = {
+Gfx mat_revert_wf_dl_ground_001_v4_002[] = {
 	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_wf_dl_sand_scroll_v4_001[] = {
+Gfx mat_wf_dl_sand_scroll_v4_002[] = {
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(TEXEL0, 0, SHADE, 0, 0, 0, 0, ENVIRONMENT, TEXEL0, 0, SHADE, 0, 0, 0, 0, ENVIRONMENT),
 	gsSPTexture(65535, 65535, 0, 0, 1),
@@ -10459,11 +10459,11 @@ Gfx mat_wf_dl_sand_scroll_v4_001[] = {
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
-	gsSPSetLights1(wf_dl_sand_scroll_v4_001_lights),
+	gsSPSetLights1(wf_dl_sand_scroll_v4_002_lights),
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_revert_wf_dl_sand_scroll_v4_001[] = {
+Gfx mat_revert_wf_dl_sand_scroll_v4_002[] = {
 	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
@@ -10543,7 +10543,7 @@ Gfx mat_revert_wf_dl_darkground_v4_v4[] = {
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_wf_dl_wall_001_v4_v4_001[] = {
+Gfx mat_wf_dl_wall_001_v4_v4_002[] = {
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(TEXEL0, 0, SHADE, 0, 0, 0, 0, ENVIRONMENT, TEXEL0, 0, SHADE, 0, 0, 0, 0, ENVIRONMENT),
 	gsSPTexture(65535, 65535, 0, 0, 1),
@@ -10557,17 +10557,17 @@ Gfx mat_wf_dl_wall_001_v4_v4_001[] = {
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
-	gsSPSetLights1(wf_dl_wall_001_v4_v4_001_lights),
+	gsSPSetLights1(wf_dl_wall_001_v4_v4_002_lights),
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_revert_wf_dl_wall_001_v4_v4_001[] = {
+Gfx mat_revert_wf_dl_wall_001_v4_v4_002[] = {
 	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_wf_dl_sand_right_001[] = {
+Gfx mat_wf_dl_sand_right_002[] = {
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(TEXEL0, 0, SHADE, 0, 0, 0, 0, ENVIRONMENT, TEXEL0, 0, SHADE, 0, 0, 0, 0, ENVIRONMENT),
 	gsSPTexture(65535, 65535, 0, 0, 1),
@@ -10581,17 +10581,17 @@ Gfx mat_wf_dl_sand_right_001[] = {
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
-	gsSPSetLights1(wf_dl_sand_right_001_lights),
+	gsSPSetLights1(wf_dl_sand_right_002_lights),
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_revert_wf_dl_sand_right_001[] = {
+Gfx mat_revert_wf_dl_sand_right_002[] = {
 	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_wf_dl_sand_up_001[] = {
+Gfx mat_wf_dl_sand_up_002[] = {
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(TEXEL0, 0, SHADE, 0, 0, 0, 0, ENVIRONMENT, TEXEL0, 0, SHADE, 0, 0, 0, 0, ENVIRONMENT),
 	gsSPTexture(65535, 65535, 0, 0, 1),
@@ -10605,17 +10605,17 @@ Gfx mat_wf_dl_sand_up_001[] = {
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
-	gsSPSetLights1(wf_dl_sand_up_001_lights),
+	gsSPSetLights1(wf_dl_sand_up_002_lights),
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_revert_wf_dl_sand_up_001[] = {
+Gfx mat_revert_wf_dl_sand_up_002[] = {
 	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_wf_dl_sand_down_001[] = {
+Gfx mat_wf_dl_sand_down_002[] = {
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(TEXEL0, 0, SHADE, 0, 0, 0, 0, ENVIRONMENT, TEXEL0, 0, SHADE, 0, 0, 0, 0, ENVIRONMENT),
 	gsSPTexture(65535, 65535, 0, 0, 1),
@@ -10629,11 +10629,11 @@ Gfx mat_wf_dl_sand_down_001[] = {
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
-	gsSPSetLights1(wf_dl_sand_down_001_lights),
+	gsSPSetLights1(wf_dl_sand_down_002_lights),
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_revert_wf_dl_sand_down_001[] = {
+Gfx mat_revert_wf_dl_sand_down_002[] = {
 	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
@@ -10663,7 +10663,7 @@ Gfx mat_revert_wf_dl_f3d_material_001[] = {
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_wf_dl_ground_001_v4_v4_001[] = {
+Gfx mat_wf_dl_ground_001_v4_v4_002[] = {
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(TEXEL0, 0, SHADE, 0, 0, 0, 0, ENVIRONMENT, TEXEL0, 0, SHADE, 0, 0, 0, 0, ENVIRONMENT),
 	gsSPTexture(65535, 65535, 0, 0, 1),
@@ -10677,17 +10677,17 @@ Gfx mat_wf_dl_ground_001_v4_v4_001[] = {
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
-	gsSPSetLights1(wf_dl_ground_001_v4_v4_001_lights),
+	gsSPSetLights1(wf_dl_ground_001_v4_v4_002_lights),
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_revert_wf_dl_ground_001_v4_v4_001[] = {
+Gfx mat_revert_wf_dl_ground_001_v4_v4_002[] = {
 	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_wf_dl_grate_001_v4_001[] = {
+Gfx mat_wf_dl_grate_001_v4_002[] = {
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(TEXEL0, 0, SHADE, 0, TEXEL0, 0, PRIMITIVE, 0, TEXEL0, 0, SHADE, 0, TEXEL0, 0, PRIMITIVE, 0),
 	gsSPClearGeometryMode(G_CULL_BACK),
@@ -10703,11 +10703,11 @@ Gfx mat_wf_dl_grate_001_v4_001[] = {
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
 	gsDPSetPrimColor(0, 0, 255, 255, 255, 255),
-	gsSPSetLights1(wf_dl_grate_001_v4_001_lights),
+	gsSPSetLights1(wf_dl_grate_001_v4_002_lights),
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_revert_wf_dl_grate_001_v4_001[] = {
+Gfx mat_revert_wf_dl_grate_001_v4_002[] = {
 	gsDPPipeSync(),
 	gsSPSetGeometryMode(G_CULL_BACK),
 	gsDPSetTextureLUT(G_TT_NONE),
@@ -10810,7 +10810,7 @@ Gfx mat_revert_wf_dl_dash_right_sand[] = {
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_wf_dl_up_slow_001_v4_001[] = {
+Gfx mat_wf_dl_up_slow_001_v4_002[] = {
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(TEXEL0, 0, SHADE, 0, 0, 0, 0, ENVIRONMENT, TEXEL0, 0, SHADE, 0, 0, 0, 0, ENVIRONMENT),
 	gsSPTexture(65535, 65535, 0, 0, 1),
@@ -10819,11 +10819,11 @@ Gfx mat_wf_dl_up_slow_001_v4_001[] = {
 	gsDPLoadBlock(7, 0, 0, 2047, 256),
 	gsDPSetTile(G_IM_FMT_RGBA, G_IM_SIZ_16b, 8, 0, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 6, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 252),
-	gsSPSetLights1(wf_dl_up_slow_001_v4_001_lights),
+	gsSPSetLights1(wf_dl_up_slow_001_v4_002_lights),
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_wf_dl_ground_001_v4_v4_v4_001[] = {
+Gfx mat_wf_dl_ground_001_v4_v4_v4_002[] = {
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(TEXEL0, 0, SHADE, 0, 0, 0, 0, ENVIRONMENT, TEXEL0, 0, SHADE, 0, 0, 0, 0, ENVIRONMENT),
 	gsSPTexture(65535, 65535, 0, 0, 1),
@@ -10837,17 +10837,17 @@ Gfx mat_wf_dl_ground_001_v4_v4_v4_001[] = {
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
-	gsSPSetLights1(wf_dl_ground_001_v4_v4_v4_001_lights),
+	gsSPSetLights1(wf_dl_ground_001_v4_v4_v4_002_lights),
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_revert_wf_dl_ground_001_v4_v4_v4_001[] = {
+Gfx mat_revert_wf_dl_ground_001_v4_v4_v4_002[] = {
 	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_wf_dl_wall_001_v4_v4_v4_001[] = {
+Gfx mat_wf_dl_wall_001_v4_v4_v4_002[] = {
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(TEXEL0, 0, SHADE, 0, 0, 0, 0, ENVIRONMENT, TEXEL0, 0, SHADE, 0, 0, 0, 0, ENVIRONMENT),
 	gsSPTexture(65535, 65535, 0, 0, 1),
@@ -10861,11 +10861,11 @@ Gfx mat_wf_dl_wall_001_v4_v4_v4_001[] = {
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
-	gsSPSetLights1(wf_dl_wall_001_v4_v4_v4_001_lights),
+	gsSPSetLights1(wf_dl_wall_001_v4_v4_v4_002_lights),
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_revert_wf_dl_wall_001_v4_v4_v4_001[] = {
+Gfx mat_revert_wf_dl_wall_001_v4_v4_v4_002[] = {
 	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
@@ -10895,7 +10895,7 @@ Gfx mat_revert_wf_dl_darkground_v4_v4_v4[] = {
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_wf_dl_lambert2_v_f3d_v4_001[] = {
+Gfx mat_wf_dl_lambert2_v_f3d_v4_002[] = {
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(TEXEL0, 0, SHADE, 0, 0, 0, 0, ENVIRONMENT, TEXEL0, 0, SHADE, 0, 0, 0, 0, ENVIRONMENT),
 	gsSPTexture(65535, 65535, 0, 0, 1),
@@ -10909,17 +10909,17 @@ Gfx mat_wf_dl_lambert2_v_f3d_v4_001[] = {
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
-	gsSPSetLights1(wf_dl_lambert2_v_f3d_v4_001_lights),
+	gsSPSetLights1(wf_dl_lambert2_v_f3d_v4_002_lights),
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_revert_wf_dl_lambert2_v_f3d_v4_001[] = {
+Gfx mat_revert_wf_dl_lambert2_v_f3d_v4_002[] = {
 	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_wf_dl_lambert3_v_f3d_v4_001[] = {
+Gfx mat_wf_dl_lambert3_v_f3d_v4_002[] = {
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(TEXEL0, 0, SHADE, 0, 0, 0, 0, ENVIRONMENT, TEXEL0, 0, SHADE, 0, 0, 0, 0, ENVIRONMENT),
 	gsSPTexture(65535, 65535, 0, 0, 1),
@@ -10933,17 +10933,17 @@ Gfx mat_wf_dl_lambert3_v_f3d_v4_001[] = {
 	gsDPLoadBlock(7, 0, 0, 255, 1024),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_4b, 2, 0, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
-	gsSPSetLights1(wf_dl_lambert3_v_f3d_v4_001_lights),
+	gsSPSetLights1(wf_dl_lambert3_v_f3d_v4_002_lights),
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_revert_wf_dl_lambert3_v_f3d_v4_001[] = {
+Gfx mat_revert_wf_dl_lambert3_v_f3d_v4_002[] = {
 	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_wf_dl_lambert4_v_f3d_v4_001[] = {
+Gfx mat_wf_dl_lambert4_v_f3d_v4_002[] = {
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(TEXEL0, 0, SHADE, 0, 0, 0, 0, ENVIRONMENT, TEXEL0, 0, SHADE, 0, 0, 0, 0, ENVIRONMENT),
 	gsSPTexture(65535, 65535, 0, 0, 1),
@@ -10957,17 +10957,17 @@ Gfx mat_wf_dl_lambert4_v_f3d_v4_001[] = {
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
-	gsSPSetLights1(wf_dl_lambert4_v_f3d_v4_001_lights),
+	gsSPSetLights1(wf_dl_lambert4_v_f3d_v4_002_lights),
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_revert_wf_dl_lambert4_v_f3d_v4_001[] = {
+Gfx mat_revert_wf_dl_lambert4_v_f3d_v4_002[] = {
 	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_wf_dl_sign_icecream_f3d_v4_001[] = {
+Gfx mat_wf_dl_sign_icecream_f3d_v4_002[] = {
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(TEXEL0, 0, SHADE, 0, 0, 0, 0, ENVIRONMENT, TEXEL0, 0, SHADE, 0, 0, 0, 0, ENVIRONMENT),
 	gsSPTexture(65535, 65535, 0, 0, 1),
@@ -10981,17 +10981,17 @@ Gfx mat_wf_dl_sign_icecream_f3d_v4_001[] = {
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
-	gsSPSetLights1(wf_dl_sign_icecream_f3d_v4_001_lights),
+	gsSPSetLights1(wf_dl_sign_icecream_f3d_v4_002_lights),
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_revert_wf_dl_sign_icecream_f3d_v4_001[] = {
+Gfx mat_revert_wf_dl_sign_icecream_f3d_v4_002[] = {
 	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_wf_dl_sign_icecream_bottom_f3d_v4_001[] = {
+Gfx mat_wf_dl_sign_icecream_bottom_f3d_v4_002[] = {
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(TEXEL0, 0, SHADE, 0, 0, 0, 0, ENVIRONMENT, TEXEL0, 0, SHADE, 0, 0, 0, 0, ENVIRONMENT),
 	gsSPTexture(65535, 65535, 0, 0, 1),
@@ -11005,11 +11005,11 @@ Gfx mat_wf_dl_sign_icecream_bottom_f3d_v4_001[] = {
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
-	gsSPSetLights1(wf_dl_sign_icecream_bottom_f3d_v4_001_lights),
+	gsSPSetLights1(wf_dl_sign_icecream_bottom_f3d_v4_002_lights),
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_revert_wf_dl_sign_icecream_bottom_f3d_v4_001[] = {
+Gfx mat_revert_wf_dl_sign_icecream_bottom_f3d_v4_002[] = {
 	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
@@ -11059,7 +11059,7 @@ Gfx mat_revert_wf_dl_arrow_f3d_v4[] = {
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_wf_dl_X_001_v4_v4_v4_v4_001[] = {
+Gfx mat_wf_dl_X_001_v4_v4_v4_v4_002[] = {
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(TEXEL0, 0, SHADE, 0, TEXEL0, 0, ENVIRONMENT, 0, TEXEL0, 0, SHADE, 0, TEXEL0, 0, ENVIRONMENT, 0),
 	gsSPClearGeometryMode(G_CULL_BACK),
@@ -11074,18 +11074,18 @@ Gfx mat_wf_dl_X_001_v4_v4_v4_v4_001[] = {
 	gsDPLoadBlock(7, 0, 0, 255, 1024),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_4b, 2, 0, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
-	gsSPSetLights1(wf_dl_X_001_v4_v4_v4_v4_001_lights),
+	gsSPSetLights1(wf_dl_X_001_v4_v4_v4_v4_002_lights),
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_revert_wf_dl_X_001_v4_v4_v4_v4_001[] = {
+Gfx mat_revert_wf_dl_X_001_v4_v4_v4_v4_002[] = {
 	gsDPPipeSync(),
 	gsSPSetGeometryMode(G_CULL_BACK),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_wf_dl_X_001_v4_v4_v4_v4_v4_001[] = {
+Gfx mat_wf_dl_X_001_v4_v4_v4_v4_v4_002[] = {
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(TEXEL0, 0, SHADE, 0, TEXEL0, 0, PRIMITIVE, 0, TEXEL0, 0, SHADE, 0, TEXEL0, 0, PRIMITIVE, 0),
 	gsSPClearGeometryMode(G_CULL_BACK),
@@ -11101,18 +11101,18 @@ Gfx mat_wf_dl_X_001_v4_v4_v4_v4_v4_001[] = {
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_4b, 2, 0, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
 	gsDPSetPrimColor(0, 0, 255, 255, 255, 255),
-	gsSPSetLights1(wf_dl_X_001_v4_v4_v4_v4_v4_001_lights),
+	gsSPSetLights1(wf_dl_X_001_v4_v4_v4_v4_v4_002_lights),
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_revert_wf_dl_X_001_v4_v4_v4_v4_v4_001[] = {
+Gfx mat_revert_wf_dl_X_001_v4_v4_v4_v4_v4_002[] = {
 	gsDPPipeSync(),
 	gsSPSetGeometryMode(G_CULL_BACK),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_wf_dl_X_001_v4_v4_v4_v4_v4_v4_001[] = {
+Gfx mat_wf_dl_X_001_v4_v4_v4_v4_v4_v4_002[] = {
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(TEXEL0, 0, SHADE, 0, TEXEL0, 0, PRIMITIVE, 0, TEXEL0, 0, SHADE, 0, TEXEL0, 0, PRIMITIVE, 0),
 	gsSPClearGeometryMode(G_CULL_BACK),
@@ -11128,11 +11128,11 @@ Gfx mat_wf_dl_X_001_v4_v4_v4_v4_v4_v4_001[] = {
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_4b, 2, 0, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
 	gsDPSetPrimColor(0, 0, 255, 255, 255, 255),
-	gsSPSetLights1(wf_dl_X_001_v4_v4_v4_v4_v4_v4_001_lights),
+	gsSPSetLights1(wf_dl_X_001_v4_v4_v4_v4_v4_v4_002_lights),
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_revert_wf_dl_X_001_v4_v4_v4_v4_v4_v4_001[] = {
+Gfx mat_revert_wf_dl_X_001_v4_v4_v4_v4_v4_v4_002[] = {
 	gsDPPipeSync(),
 	gsSPSetGeometryMode(G_CULL_BACK),
 	gsDPSetTextureLUT(G_TT_NONE),
@@ -11140,58 +11140,58 @@ Gfx mat_revert_wf_dl_X_001_v4_v4_v4_v4_v4_v4_001[] = {
 };
 
 Gfx wf_dl_ArrowSign_mesh_layer_1[] = {
-	gsSPDisplayList(mat_wf_dl_m0_f3d_v4),
+	gsSPDisplayList(mat_wf_dl_m0_f3d_v4_001),
 	gsSPDisplayList(wf_dl_ArrowSign_mesh_layer_1_tri_0),
-	gsSPDisplayList(mat_revert_wf_dl_m0_f3d_v4),
+	gsSPDisplayList(mat_revert_wf_dl_m0_f3d_v4_001),
 	gsSPEndDisplayList(),
 };
 
 Gfx wf_dl_DashPlatform_mesh_layer_1[] = {
-	gsSPDisplayList(mat_wf_dl_stoneside_001_v4_001),
+	gsSPDisplayList(mat_wf_dl_stoneside_001_v4_002),
 	gsSPDisplayList(wf_dl_DashPlatform_mesh_layer_1_tri_0),
-	gsSPDisplayList(mat_wf_dl_stonetop_001_v4_001),
+	gsSPDisplayList(mat_wf_dl_stonetop_001_v4_002),
 	gsSPDisplayList(wf_dl_DashPlatform_mesh_layer_1_tri_1),
-	gsSPDisplayList(mat_revert_wf_dl_stonetop_001_v4_001),
-	gsSPDisplayList(mat_wf_dl_floor_001_v4),
+	gsSPDisplayList(mat_revert_wf_dl_stonetop_001_v4_002),
+	gsSPDisplayList(mat_wf_dl_floor_001_v4_001),
 	gsSPDisplayList(wf_dl_DashPlatform_mesh_layer_1_tri_2),
-	gsSPDisplayList(mat_revert_wf_dl_floor_001_v4),
+	gsSPDisplayList(mat_revert_wf_dl_floor_001_v4_001),
 	gsSPDisplayList(mat_wf_dl_dash_down_mid),
 	gsSPDisplayList(wf_dl_DashPlatform_mesh_layer_1_tri_3),
 	gsSPEndDisplayList(),
 };
 
 Gfx wf_dl_DashPlatform_001_mesh_layer_1[] = {
-	gsSPDisplayList(mat_wf_dl_stoneside_001_v4_v4_001),
+	gsSPDisplayList(mat_wf_dl_stoneside_001_v4_v4_002),
 	gsSPDisplayList(wf_dl_DashPlatform_001_mesh_layer_1_tri_0),
-	gsSPDisplayList(mat_wf_dl_stonetop_001_v4_v4_001),
+	gsSPDisplayList(mat_wf_dl_stonetop_001_v4_v4_002),
 	gsSPDisplayList(wf_dl_DashPlatform_001_mesh_layer_1_tri_1),
-	gsSPDisplayList(mat_revert_wf_dl_stonetop_001_v4_v4_001),
-	gsSPDisplayList(mat_wf_dl_floor_001_v4_v4_001),
+	gsSPDisplayList(mat_revert_wf_dl_stonetop_001_v4_v4_002),
+	gsSPDisplayList(mat_wf_dl_floor_001_v4_v4_002),
 	gsSPDisplayList(wf_dl_DashPlatform_001_mesh_layer_1_tri_2),
-	gsSPDisplayList(mat_revert_wf_dl_floor_001_v4_v4_001),
+	gsSPDisplayList(mat_revert_wf_dl_floor_001_v4_v4_002),
 	gsSPDisplayList(mat_wf_dl_dash_down_mid_v4),
 	gsSPDisplayList(wf_dl_DashPlatform_001_mesh_layer_1_tri_3),
 	gsSPEndDisplayList(),
 };
 
 Gfx wf_dl_death_plane_working_mesh_layer_5[] = {
-	gsSPDisplayList(mat_wf_dl_f3dlite_material_v4_001),
+	gsSPDisplayList(mat_wf_dl_f3dlite_material_v4_002),
 	gsSPDisplayList(wf_dl_death_plane_working_mesh_layer_5_tri_0),
-	gsSPDisplayList(mat_revert_wf_dl_f3dlite_material_v4_001),
+	gsSPDisplayList(mat_revert_wf_dl_f3dlite_material_v4_002),
 	gsSPEndDisplayList(),
 };
 
 Gfx wf_dl_death_plane_working_001_mesh_layer_5[] = {
-	gsSPDisplayList(mat_wf_dl_f3dlite_material_v4_v4_001),
+	gsSPDisplayList(mat_wf_dl_f3dlite_material_v4_v4_002),
 	gsSPDisplayList(wf_dl_death_plane_working_001_mesh_layer_5_tri_0),
-	gsSPDisplayList(mat_revert_wf_dl_f3dlite_material_v4_v4_001),
+	gsSPDisplayList(mat_revert_wf_dl_f3dlite_material_v4_v4_002),
 	gsSPEndDisplayList(),
 };
 
 Gfx wf_dl_death_plane_working_002_mesh_layer_5[] = {
-	gsSPDisplayList(mat_wf_dl_f3dlite_material_v4_v4_v4_001_layer5_area1),
+	gsSPDisplayList(mat_wf_dl_f3dlite_material_v4_v4_v4_002_layer5_area1),
 	gsSPDisplayList(wf_dl_death_plane_working_002_mesh_layer_5_tri_0),
-	gsSPDisplayList(mat_revert_wf_dl_f3dlite_material_v4_v4_v4_001_layer5_area1),
+	gsSPDisplayList(mat_revert_wf_dl_f3dlite_material_v4_v4_v4_002_layer5_area1),
 	gsSPEndDisplayList(),
 };
 
@@ -11199,15 +11199,15 @@ Gfx wf_dl_GeometryLower_mesh_layer_1[] = {
 	gsSPDisplayList(mat_wf_dl_darkground_v4),
 	gsSPDisplayList(wf_dl_GeometryLower_mesh_layer_1_tri_0),
 	gsSPDisplayList(mat_revert_wf_dl_darkground_v4),
-	gsSPDisplayList(mat_wf_dl_wall_001_v4_001),
+	gsSPDisplayList(mat_wf_dl_wall_001_v4_002),
 	gsSPDisplayList(wf_dl_GeometryLower_mesh_layer_1_tri_1),
-	gsSPDisplayList(mat_revert_wf_dl_wall_001_v4_001),
-	gsSPDisplayList(mat_wf_dl_ground_001_v4_001),
+	gsSPDisplayList(mat_revert_wf_dl_wall_001_v4_002),
+	gsSPDisplayList(mat_wf_dl_ground_001_v4_002),
 	gsSPDisplayList(wf_dl_GeometryLower_mesh_layer_1_tri_2),
-	gsSPDisplayList(mat_revert_wf_dl_ground_001_v4_001),
-	gsSPDisplayList(mat_wf_dl_sand_scroll_v4_001),
+	gsSPDisplayList(mat_revert_wf_dl_ground_001_v4_002),
+	gsSPDisplayList(mat_wf_dl_sand_scroll_v4_002),
 	gsSPDisplayList(wf_dl_GeometryLower_mesh_layer_1_tri_3),
-	gsSPDisplayList(mat_revert_wf_dl_sand_scroll_v4_001),
+	gsSPDisplayList(mat_revert_wf_dl_sand_scroll_v4_002),
 	gsSPDisplayList(mat_wf_dl_dark_sand_scroll_v4),
 	gsSPDisplayList(wf_dl_GeometryLower_mesh_layer_1_tri_4),
 	gsSPDisplayList(mat_revert_wf_dl_dark_sand_scroll_v4),
@@ -11222,24 +11222,24 @@ Gfx wf_dl_GeometryLower_001_mesh_layer_1[] = {
 	gsSPDisplayList(mat_wf_dl_darkground_v4_v4),
 	gsSPDisplayList(wf_dl_GeometryLower_001_mesh_layer_1_tri_0),
 	gsSPDisplayList(mat_revert_wf_dl_darkground_v4_v4),
-	gsSPDisplayList(mat_wf_dl_wall_001_v4_v4_001),
+	gsSPDisplayList(mat_wf_dl_wall_001_v4_v4_002),
 	gsSPDisplayList(wf_dl_GeometryLower_001_mesh_layer_1_tri_1),
-	gsSPDisplayList(mat_revert_wf_dl_wall_001_v4_v4_001),
-	gsSPDisplayList(mat_wf_dl_sand_right_001),
+	gsSPDisplayList(mat_revert_wf_dl_wall_001_v4_v4_002),
+	gsSPDisplayList(mat_wf_dl_sand_right_002),
 	gsSPDisplayList(wf_dl_GeometryLower_001_mesh_layer_1_tri_2),
-	gsSPDisplayList(mat_revert_wf_dl_sand_right_001),
-	gsSPDisplayList(mat_wf_dl_sand_up_001),
+	gsSPDisplayList(mat_revert_wf_dl_sand_right_002),
+	gsSPDisplayList(mat_wf_dl_sand_up_002),
 	gsSPDisplayList(wf_dl_GeometryLower_001_mesh_layer_1_tri_3),
-	gsSPDisplayList(mat_revert_wf_dl_sand_up_001),
-	gsSPDisplayList(mat_wf_dl_sand_down_001),
+	gsSPDisplayList(mat_revert_wf_dl_sand_up_002),
+	gsSPDisplayList(mat_wf_dl_sand_down_002),
 	gsSPDisplayList(wf_dl_GeometryLower_001_mesh_layer_1_tri_4),
-	gsSPDisplayList(mat_revert_wf_dl_sand_down_001),
+	gsSPDisplayList(mat_revert_wf_dl_sand_down_002),
 	gsSPDisplayList(mat_wf_dl_f3d_material_001),
 	gsSPDisplayList(wf_dl_GeometryLower_001_mesh_layer_1_tri_5),
 	gsSPDisplayList(mat_revert_wf_dl_f3d_material_001),
-	gsSPDisplayList(mat_wf_dl_ground_001_v4_v4_001),
+	gsSPDisplayList(mat_wf_dl_ground_001_v4_v4_002),
 	gsSPDisplayList(wf_dl_GeometryLower_001_mesh_layer_1_tri_6),
-	gsSPDisplayList(mat_revert_wf_dl_ground_001_v4_v4_001),
+	gsSPDisplayList(mat_revert_wf_dl_ground_001_v4_v4_002),
 	gsSPDisplayList(mat_wf_dl_dash_left_sand),
 	gsSPDisplayList(wf_dl_GeometryLower_001_mesh_layer_1_tri_7),
 	gsSPDisplayList(mat_revert_wf_dl_dash_left_sand),
@@ -11252,25 +11252,25 @@ Gfx wf_dl_GeometryLower_001_mesh_layer_1[] = {
 	gsSPDisplayList(mat_wf_dl_dash_right_sand),
 	gsSPDisplayList(wf_dl_GeometryLower_001_mesh_layer_1_tri_10),
 	gsSPDisplayList(mat_revert_wf_dl_dash_right_sand),
-	gsSPDisplayList(mat_wf_dl_up_slow_001_v4_001),
+	gsSPDisplayList(mat_wf_dl_up_slow_001_v4_002),
 	gsSPDisplayList(wf_dl_GeometryLower_001_mesh_layer_1_tri_11),
 	gsSPEndDisplayList(),
 };
 
 Gfx wf_dl_GeometryLower_001_mesh_layer_5[] = {
-	gsSPDisplayList(mat_wf_dl_grate_001_v4_001),
+	gsSPDisplayList(mat_wf_dl_grate_001_v4_002),
 	gsSPDisplayList(wf_dl_GeometryLower_001_mesh_layer_5_tri_0),
-	gsSPDisplayList(mat_revert_wf_dl_grate_001_v4_001),
+	gsSPDisplayList(mat_revert_wf_dl_grate_001_v4_002),
 	gsSPEndDisplayList(),
 };
 
 Gfx wf_dl_GeometryUpper_mesh_layer_1[] = {
-	gsSPDisplayList(mat_wf_dl_ground_001_v4_v4_v4_001),
+	gsSPDisplayList(mat_wf_dl_ground_001_v4_v4_v4_002),
 	gsSPDisplayList(wf_dl_GeometryUpper_mesh_layer_1_tri_0),
-	gsSPDisplayList(mat_revert_wf_dl_ground_001_v4_v4_v4_001),
-	gsSPDisplayList(mat_wf_dl_wall_001_v4_v4_v4_001),
+	gsSPDisplayList(mat_revert_wf_dl_ground_001_v4_v4_v4_002),
+	gsSPDisplayList(mat_wf_dl_wall_001_v4_v4_v4_002),
 	gsSPDisplayList(wf_dl_GeometryUpper_mesh_layer_1_tri_1),
-	gsSPDisplayList(mat_revert_wf_dl_wall_001_v4_v4_v4_001),
+	gsSPDisplayList(mat_revert_wf_dl_wall_001_v4_v4_v4_002),
 	gsSPDisplayList(mat_wf_dl_darkground_v4_v4_v4),
 	gsSPDisplayList(wf_dl_GeometryUpper_mesh_layer_1_tri_2),
 	gsSPDisplayList(mat_revert_wf_dl_darkground_v4_v4_v4),
@@ -11278,25 +11278,25 @@ Gfx wf_dl_GeometryUpper_mesh_layer_1[] = {
 };
 
 Gfx wf_dl_model_mesh_layer_1[] = {
-	gsSPDisplayList(mat_wf_dl_lambert2_v_f3d_v4_001),
+	gsSPDisplayList(mat_wf_dl_lambert2_v_f3d_v4_002),
 	gsSPDisplayList(wf_dl_model_mesh_layer_1_tri_0),
-	gsSPDisplayList(mat_revert_wf_dl_lambert2_v_f3d_v4_001),
-	gsSPDisplayList(mat_wf_dl_lambert3_v_f3d_v4_001),
+	gsSPDisplayList(mat_revert_wf_dl_lambert2_v_f3d_v4_002),
+	gsSPDisplayList(mat_wf_dl_lambert3_v_f3d_v4_002),
 	gsSPDisplayList(wf_dl_model_mesh_layer_1_tri_1),
-	gsSPDisplayList(mat_revert_wf_dl_lambert3_v_f3d_v4_001),
-	gsSPDisplayList(mat_wf_dl_lambert4_v_f3d_v4_001),
+	gsSPDisplayList(mat_revert_wf_dl_lambert3_v_f3d_v4_002),
+	gsSPDisplayList(mat_wf_dl_lambert4_v_f3d_v4_002),
 	gsSPDisplayList(wf_dl_model_mesh_layer_1_tri_2),
-	gsSPDisplayList(mat_revert_wf_dl_lambert4_v_f3d_v4_001),
+	gsSPDisplayList(mat_revert_wf_dl_lambert4_v_f3d_v4_002),
 	gsSPEndDisplayList(),
 };
 
 Gfx wf_dl_Object001_mesh_layer_1[] = {
-	gsSPDisplayList(mat_wf_dl_sign_icecream_f3d_v4_001),
+	gsSPDisplayList(mat_wf_dl_sign_icecream_f3d_v4_002),
 	gsSPDisplayList(wf_dl_Object001_mesh_layer_1_tri_0),
-	gsSPDisplayList(mat_revert_wf_dl_sign_icecream_f3d_v4_001),
-	gsSPDisplayList(mat_wf_dl_sign_icecream_bottom_f3d_v4_001),
+	gsSPDisplayList(mat_revert_wf_dl_sign_icecream_f3d_v4_002),
+	gsSPDisplayList(mat_wf_dl_sign_icecream_bottom_f3d_v4_002),
 	gsSPDisplayList(wf_dl_Object001_mesh_layer_1_tri_1),
-	gsSPDisplayList(mat_revert_wf_dl_sign_icecream_bottom_f3d_v4_001),
+	gsSPDisplayList(mat_revert_wf_dl_sign_icecream_bottom_f3d_v4_002),
 	gsSPEndDisplayList(),
 };
 
@@ -11315,23 +11315,23 @@ Gfx wf_dl_submesh_0_mesh_layer_1[] = {
 };
 
 Gfx wf_dl_X_mesh_layer_4[] = {
-	gsSPDisplayList(mat_wf_dl_X_001_v4_v4_v4_v4_001),
+	gsSPDisplayList(mat_wf_dl_X_001_v4_v4_v4_v4_002),
 	gsSPDisplayList(wf_dl_X_mesh_layer_4_tri_0),
-	gsSPDisplayList(mat_revert_wf_dl_X_001_v4_v4_v4_v4_001),
+	gsSPDisplayList(mat_revert_wf_dl_X_001_v4_v4_v4_v4_002),
 	gsSPEndDisplayList(),
 };
 
 Gfx wf_dl_X_001_mesh_layer_5[] = {
-	gsSPDisplayList(mat_wf_dl_X_001_v4_v4_v4_v4_v4_001),
+	gsSPDisplayList(mat_wf_dl_X_001_v4_v4_v4_v4_v4_002),
 	gsSPDisplayList(wf_dl_X_001_mesh_layer_5_tri_0),
-	gsSPDisplayList(mat_revert_wf_dl_X_001_v4_v4_v4_v4_v4_001),
+	gsSPDisplayList(mat_revert_wf_dl_X_001_v4_v4_v4_v4_v4_002),
 	gsSPEndDisplayList(),
 };
 
 Gfx wf_dl_X_002_mesh_layer_5[] = {
-	gsSPDisplayList(mat_wf_dl_X_001_v4_v4_v4_v4_v4_v4_001),
+	gsSPDisplayList(mat_wf_dl_X_001_v4_v4_v4_v4_v4_v4_002),
 	gsSPDisplayList(wf_dl_X_002_mesh_layer_5_tri_0),
-	gsSPDisplayList(mat_revert_wf_dl_X_001_v4_v4_v4_v4_v4_v4_001),
+	gsSPDisplayList(mat_revert_wf_dl_X_001_v4_v4_v4_v4_v4_v4_002),
 	gsSPEndDisplayList(),
 };
 
