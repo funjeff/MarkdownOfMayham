@@ -123,7 +123,6 @@ const LevelScript level_wdw_entry[] = {
 		OBJECT(MODEL_FREDDY, -2050, 2390, 590, 0, 4, 0, (0 << 24) | (1 << 8) | (3), bhvGoomba),
 		OBJECT(MODEL_LOUIE, -16, 2591, 416, 0, -4, 0, (0 << 24) | (1 << 8) | (7), bhvGoomba),
 		OBJECT(MODEL_PURP, -16, 2568, 892, -1, -179, 5, (0 << 24) | (1 << 8) | (8), bhvGoomba),
-		OBJECT(BOMBOMB_KING_GATE, -2038, 2601, -127, 0, 92, 0, (0 << 24), bhvBombombKingGate),
 		OBJECT(MODEL_KING_BOBOMB, 2258, 2450, -2798, 0, 0, 0, 0x00000000, bhvKingBobomb),
 		OBJECT(MODEL_NONE, -778, 2772, -3578, 0, 0, 0, 0x000A0000, bhvSpinAirborneWarp),
 		MARIO_POS(0x01, 0, -822, 2616, -3496),

@@ -1537,11 +1537,6 @@ s32 act_squished(struct MarioState *m) {
                 vec3f_set(m->marioObj->header.gfx.scale, 2.0f - squishAmount, squishAmount,
                           2.0f - squishAmount);
             } else {
-                if (!(m->flags & MARIO_METAL_CAP) && m->invincTimer == 0) {
-                    // cap on: 3 units; cap off: 4.5 units
-                    m->hurtCounter += m->flags & MARIO_CAP_ON_HEAD ? 12 : 18;
-                    play_sound_if_no_flag(m, SOUND_MARIO_ATTACKED, MARIO_MARIO_SOUND_PLAYED);
-                }
 
                 vec3f_set(m->marioObj->header.gfx.scale, 1.8f, 0.05f, 1.8f);
 #if ENABLE_RUMBLE
@@ -1560,9 +1555,9 @@ s32 act_squished(struct MarioState *m) {
             if (m->actionTimer >= 15) {
                 // 1 unit of health
                 if (m->health < 0x100) {
-                    level_trigger_warp(m, WARP_OP_DEATH);
-                    // woosh, he's gone!
-                    set_mario_action(m, ACT_DISAPPEARED, 0);
+                     level_trigger_warp(m, WARP_OP_DEATH);
+                     // woosh, he's gone!
+                     set_mario_action(m, ACT_DISAPPEARED, 0);
                 } else if (m->hurtCounter == 0) {
                     // un-squish animation
                     m->squishTimer = 30;
@@ -1598,8 +1593,8 @@ s32 act_squished(struct MarioState *m) {
         }
     }
 
-    // squished for more than 10 seconds, so kill Mario
-    if (m->actionArg++ > 300) {
+    // squished for more than 30 seconds, so kill Mario
+    if (m->actionArg++ > 900) {
         // 0 units of health
         m->health = 0x00FF;
         m->hurtCounter = 0;
@@ -2547,6 +2542,8 @@ enum {
     BUTTON_THWOMP_UP,
 };
 
+#include "src/game/print.h"
+
 static void button_thwomp(struct MarioState *m){
 
      m->actionTimer = m->actionTimer + 1;
@@ -2563,8 +2560,16 @@ static void button_thwomp(struct MarioState *m){
       }
 
       if (m->actionTimer == 79){
-          struct Object * thwomp = spawn_object_relative(0,0,590,0, gMarioObject, MODEL_THWOMP,bhvCutsceneProp);
-          obj_set_angle(thwomp,thwomp->oFaceAnglePitch,thwomp->oFaceAngleYaw + 16340*2, thwomp->oFaceAngleRoll);
+          
+          struct Object * thwomp = spawn_object_at_origin(gMarioObject, 23, MODEL_THWOMP,bhvCutsceneProp);
+        
+        thwomp->oPosX = gMarioObject->header.gfx.pos[0];
+
+        thwomp->oPosY = 590 + gMarioObject->header.gfx.pos[1];
+
+        thwomp->oPosZ = gMarioObject->header.gfx.pos[2];
+
+          obj_set_angle(thwomp,thwomp->oFaceAnglePitch,thwomp->oFaceAngleYaw + 16340*0, thwomp->oFaceAngleRoll);
           play_sound(SOUND_OBJ_THWOMP, gGlobalSoundSource);
       }
 
@@ -2597,10 +2602,19 @@ static void button_goomba(struct MarioState *m){
         m->actionTimer = m->actionTimer + 1;
 
         if (m->actionTimer == 30){
-        struct Object * goomba = spawn_object_relative(0,800,15,0, gMarioObject, MODEL_GOOMBA,bhvCutsceneNone1);
-        obj_set_angle(goomba,goomba->oFaceAnglePitch ,goomba->oFaceAngleYaw, goomba->oFaceAngleRoll+ 16340);
+        
+        struct Object * goomba = spawn_object_at_origin(gMarioObject, 23, MODEL_GOOMBA,bhvCutsceneNone1);
+        
+        goomba->oPosX = gMarioObject->header.gfx.pos[0] - 800;
+
+        goomba->oPosY = 15 + gMarioObject->header.gfx.pos[1];
+
+        goomba->oPosZ = gMarioObject->header.gfx.pos[2];
+
+        obj_set_angle(goomba,goomba->oFaceAnglePitch ,goomba->oFaceAngleYaw + 16340 * 2, goomba->oFaceAngleRoll+ 16340);
         
         }
+
 
         if (m->actionTimer < 80 && m->actionTimer > 30){
              uintptr_t *behaviorAddr = segmented_to_virtual(bhvCutsceneNone1);
@@ -2617,6 +2631,8 @@ static void button_goomba(struct MarioState *m){
 	        }
 
             goombaProp->oPosX = goombaProp->oPosX + 10;
+        
+
         }
 
         if (m->actionTimer == 80){
@@ -2718,13 +2734,13 @@ enum {
 };
 
 static void toadsworth_read_door_text(struct MarioState *m){
-    create_dialog_box(DIALOG_052);
+    create_dialog_box(DIALOG_026);
     advance_cutscene_step(m);
     set_mario_animation(m,MARIO_ANIM_IDLE_HEAD_CENTER);
 }
 
 static void toadsworth_walk_to_mario(struct MarioState *m){
-    if (get_dialog_id() != 52){
+    if (get_dialog_id() != 26){
         m->statusForCamera->cameraEvent = CAM_EVENT_TOADSWORTH;
         if (!m->actionTimer){
             m->actionTimer = 1;
@@ -2870,12 +2886,25 @@ static s32 act_toadsworth_cutscene(struct MarioState *m){
             break;
     }
 
-     if (get_dialog_id() != 60 && get_dialog_id() != 52 && get_dialog_id() != 53 && get_dialog_id() != 54 && gPlayer1Controller->buttonPressed & L_TRIG){
-        play_sound(SOUND_TOADSWORTH3, m->marioObj->header.gfx.cameraToObject);
-        m->actionArg = TOADSWORTH_SKIP;
-        create_dialog_box(DIALOG_060);
+    
+
+     if (get_dialog_id() != 60 && get_dialog_id() != 26 && get_dialog_id() != 53 && get_dialog_id() != 54 && gPlayer1Controller->buttonPressed & L_TRIG){
+        
+        if (m->lCount == 5){
+            play_sound(SOUND_TOADSWORTH3, m->marioObj->header.gfx.cameraToObject);
+            m->actionArg = TOADSWORTH_SKIP;
+            create_dialog_box(DIALOG_060);
+        }
+        m->lCount = m->lCount + 1;
+        m->lTimer = 10;
     }
 
+    if (m->lTimer){
+        m->lTimer = m->lTimer -1;
+    } else {
+        m->lCount = 0;
+    }
+ 
     return FALSE;
 }
 

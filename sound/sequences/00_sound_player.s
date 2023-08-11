@@ -2120,6 +2120,24 @@ sound_ref .sound_peach_something_special
 sound_ref .sound_peach_bake_a_cake
 sound_ref .sound_peach_for_mario
 sound_ref .sound_peach_mario2
+sound_ref .sound_connection20
+sound_ref .sound_connection21
+sound_ref .sound_connection22
+sound_ref .sound_connection23
+sound_ref .sound_connection24
+sound_ref .sound_connection25
+sound_ref .sound_connection26
+sound_ref .sound_connection27
+sound_ref .sound_connection28
+sound_ref .sound_connection29
+sound_ref .sound_connection30
+sound_ref .sound_connection31
+sound_ref .sound_connection32
+sound_ref .sound_connection33
+sound_ref .sound_connection34
+sound_ref .sound_connection35
+sound_ref .sound_connection36
+sound_ref .sound_connection37
 
 .sound_mario_jump_hoo:
 chan_setbank 8
@@ -7041,6 +7059,247 @@ sound_ref .sound_ok
 sound_ref .sound_toadsworth1
 sound_ref .sound_toadsworth2
 sound_ref .sound_toadsworth3
+sound_ref .sound_connection1
+sound_ref .sound_connection2
+sound_ref .sound_connection3
+sound_ref .sound_connection4
+sound_ref .sound_connection5
+sound_ref .sound_connection6
+sound_ref .sound_connection7
+sound_ref .sound_connection8
+sound_ref .sound_connection9
+sound_ref .sound_connection10
+sound_ref .sound_connection11
+sound_ref .sound_connection12
+sound_ref .sound_connection13
+sound_ref .sound_connection14
+sound_ref .sound_connection15
+sound_ref .sound_connection16
+sound_ref .sound_connection17
+sound_ref .sound_connection18
+sound_ref .sound_connection19
+
+.sound_connection1:
+chan_setbank 11
+chan_setinstr 56
+chan_setlayer 0, .layer_new_sound 
+chan_end
+
+.sound_connection2:
+chan_setbank 11
+chan_setinstr 57
+chan_setlayer 0, .layer_new_sound 
+chan_end
+
+.sound_connection3:
+chan_setbank 11
+chan_setinstr 58
+chan_setlayer 0, .layer_new_sound 
+chan_end
+
+.sound_connection4:
+chan_setbank 11
+chan_setinstr 59
+chan_setlayer 0, .layer_new_sound 
+chan_end
+
+.sound_connection5:
+chan_setbank 11
+chan_setinstr 60
+chan_setlayer 0, .layer_new_sound 
+chan_end
+
+.sound_connection6:
+chan_setbank 11
+chan_setinstr 61
+chan_setlayer 0, .layer_new_sound 
+chan_end
+
+.sound_connection7:
+chan_setbank 11
+chan_setinstr 62
+chan_setlayer 0, .layer_new_sound 
+chan_end
+
+.sound_connection8:
+chan_setbank 11
+chan_setinstr 63
+chan_setlayer 0, .layer_new_sound 
+chan_end
+
+.sound_connection9:
+chan_setbank 11
+chan_setinstr 64
+chan_setlayer 0, .layer_new_sound 
+chan_end
+
+.sound_connection10:
+chan_setbank 11
+chan_setinstr 65
+chan_setlayer 0, .layer_new_sound 
+chan_end
+
+.sound_connection11:
+chan_setbank 11
+chan_setinstr 66
+chan_setlayer 0, .layer_new_sound 
+chan_end
+
+.sound_connection12:
+chan_setbank 11
+chan_setinstr 67
+chan_setlayer 0, .layer_new_sound 
+chan_end
+
+.sound_connection13:
+chan_setbank 11
+chan_setinstr 68
+chan_setlayer 0, .layer_new_sound 
+chan_end
+
+.sound_connection14:
+chan_setbank 11
+chan_setinstr 69
+chan_setlayer 0, .layer_new_sound 
+chan_end
+
+.sound_connection15:
+chan_setbank 11
+chan_setinstr 70
+chan_setlayer 0, .layer_new_sound 
+chan_end
+
+.sound_connection16:
+chan_setbank 11
+chan_setinstr 71
+chan_setlayer 0, .layer_new_sound 
+chan_end
+
+.sound_connection17:
+chan_setbank 11
+chan_setinstr 72
+chan_setlayer 0, .layer_new_sound 
+chan_end
+
+.sound_connection18:
+chan_setbank 11
+chan_setinstr 73
+chan_setlayer 0, .layer_new_sound 
+chan_end
+
+.sound_connection19:
+chan_setbank 11
+chan_setinstr 74
+chan_setlayer 0, .layer_new_sound 
+chan_end
+
+.sound_connection20:
+chan_setbank 11
+chan_setinstr 75
+chan_setlayer 0, .layer_new_sound 
+chan_end
+
+.sound_connection21:
+chan_setbank 11
+chan_setinstr 76
+chan_setlayer 0, .layer_new_sound 
+chan_end
+
+.sound_connection22:
+chan_setbank 11
+chan_setinstr 77
+chan_setlayer 0, .layer_new_sound 
+chan_end
+
+.sound_connection23:
+chan_setbank 11
+chan_setinstr 78
+chan_setlayer 0, .layer_new_sound 
+chan_end
+
+.sound_connection24:
+chan_setbank 11
+chan_setinstr 79
+chan_setlayer 0, .layer_new_sound 
+chan_end
+
+.sound_connection25:
+chan_setbank 11
+chan_setinstr 80
+chan_setlayer 0, .layer_new_sound 
+chan_end
+
+.sound_connection26:
+chan_setbank 11
+chan_setinstr 81
+chan_setlayer 0, .layer_new_sound 
+chan_end
+
+.sound_connection27:
+chan_setbank 11
+chan_setinstr 82
+chan_setlayer 0, .layer_new_sound 
+chan_end
+
+.sound_connection28:
+chan_setbank 11
+chan_setinstr 83
+chan_setlayer 0, .layer_new_sound 
+chan_end
+
+.sound_connection29:
+chan_setbank 11
+chan_setinstr 84
+chan_setlayer 0, .layer_new_sound 
+chan_end
+
+.sound_connection30:
+chan_setbank 11
+chan_setinstr 85
+chan_setlayer 0, .layer_new_sound 
+chan_end
+
+.sound_connection31:
+chan_setbank 11
+chan_setinstr 86
+chan_setlayer 0, .layer_new_sound 
+chan_end
+
+.sound_connection32:
+chan_setbank 11
+chan_setinstr 87
+chan_setlayer 0, .layer_new_sound 
+chan_end
+
+.sound_connection33:
+chan_setbank 11
+chan_setinstr 88
+chan_setlayer 0, .layer_new_sound 
+chan_end
+
+.sound_connection34:
+chan_setbank 11
+chan_setinstr 89
+chan_setlayer 0, .layer_new_sound 
+chan_end
+
+.sound_connection35:
+chan_setbank 11
+chan_setinstr 90
+chan_setlayer 0, .layer_new_sound 
+chan_end
+
+.sound_connection36:
+chan_setbank 11
+chan_setinstr 91
+chan_setlayer 0, .layer_new_sound 
+chan_end
+
+.sound_connection37:
+chan_setbank 11
+chan_setinstr 92
+chan_setlayer 0, .layer_new_sound 
+chan_end
 
 .sound_ok:
 chan_setbank 11

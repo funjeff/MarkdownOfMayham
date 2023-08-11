@@ -6,7 +6,7 @@ static struct ObjectHitbox sTrollpadHitbox = {
     /* damageOrCoinValue: */ 0,
     /* health:            */ 0,
     /* numLootCoins:      */ 0,
-    /* radius:            */ 800,
+    /* radius:            */ 300,
     /* height:            */ 80,
     /* hurtboxRadius:     */ 40,
     /* hurtboxHeight:     */ 60,
@@ -33,7 +33,7 @@ void bhv_trollpad_loop (void){
                  gMarioState->forwardVel = 200;
              }
             gMarioState->dashTime = 100;
-            gMarioState->faceAngle [1] = 16340 * 3;
+            gMarioState->faceAngle [1] = 16340 * 1;
             if (!gMarioState->onPad){
                 gMarioState->onPad = 1;
                 if (RAND(3)) {

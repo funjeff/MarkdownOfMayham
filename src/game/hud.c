@@ -497,12 +497,12 @@ void render_hud_timer(void) {
 	
 	u16 framesLeft = 30*60*30.5 - (timerValFrames);
 
-	  if (framesLeft == 30*60*30){
-	  	play_sound(SOUND_30_MINUTES_LEFT, gMarioState->marioObj->header.gfx.cameraToObject);
-	  }
-	  if (framesLeft == 30*60*30 - 57){
-	  	play_sound(SOUND_30_LEFT, gMarioState->marioObj->header.gfx.cameraToObject);
-	  }
+	//   if (framesLeft == 30*60*30){
+	//   	play_sound(SOUND_30_MINUTES_LEFT, gMarioState->marioObj->header.gfx.cameraToObject);
+	//   }
+	//   if (framesLeft == 30*60*30 - 57){
+	//   	play_sound(SOUND_30_LEFT, gMarioState->marioObj->header.gfx.cameraToObject);
+	//   }
 
 
 	if (framesLeft == 20*60*30){
@@ -514,11 +514,11 @@ void render_hud_timer(void) {
 	}
 
 	//10 minutes left alarm plays 2 minutes early to see if anybody notices
-	if (framesLeft == 12*60*30){
+	if (framesLeft == 10*60*30){
 		play_sound(SOUND_10_MINUTES_LEFT, gMarioState->marioObj->header.gfx.cameraToObject);
 	}
 
-	if (framesLeft == 12*60*30 - 57){
+	if (framesLeft == 10*60*30 - 57){
 		play_sound(SOUND_10_LEFT, gMarioState->marioObj->header.gfx.cameraToObject);
 	}
 
@@ -549,9 +549,12 @@ void render_hud_timer(void) {
 	if (framesLeft == 1*60*30){
 		play_sound(SOUND_1_MINUTE_LEFT, gMarioState->marioObj->header.gfx.cameraToObject);
 	}
+	if (framesLeft == 1*60*30 - 57){
+		play_sound(SOUND_1_LEFT, gMarioState->marioObj->header.gfx.cameraToObject);
+	}
 
 	//Ten seconds left for real
-	if (framesLeft == 3*60*30){
+	if (framesLeft == 10*30){
 		play_sound(SOUND_10_SECONDS_LEFT, gMarioState->marioObj->header.gfx.cameraToObject);
 	}
 

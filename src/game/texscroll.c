@@ -19,6 +19,7 @@
 #include "src/game/texscroll/ttm_texscroll.inc.c"
 #include "src/game/texscroll/wdw_texscroll.inc.c"
 #include "src/game/texscroll/ssl_texscroll.inc.c"
+#include "src/game/texscroll/ttc_texscroll.inc.c"
 void scroll_textures() {
 	if(SCROLL_CONDITION(sSegmentROMTable[0x8] == (uintptr_t)_common0_mio0SegmentRomStart)) {
 		scroll_textures_common0();
@@ -46,6 +47,10 @@ void scroll_textures() {
 
 	if(SCROLL_CONDITION(sSegmentROMTable[0x7] == (uintptr_t)_ssl_segment_7SegmentRomStart)) {
 		scroll_textures_ssl();
+	}
+
+	if(SCROLL_CONDITION(sSegmentROMTable[0x7] == (uintptr_t)_ttc_segment_7SegmentRomStart)) {
+		scroll_textures_ttc();
 	}
 
 }

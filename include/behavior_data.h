@@ -567,4 +567,6 @@ extern const BehaviorScript bhvGroundClipDisable[];
 extern const BehaviorScript bhvHudStarsEnable[];
 extern const BehaviorScript bhvRealStar[];
 
+extern const BehaviorScript bhvConnectionTerminated[];
+
 #endif // BEHAVIOR_DATA_H

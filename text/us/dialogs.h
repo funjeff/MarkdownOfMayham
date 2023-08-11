@@ -356,9 +356,9 @@ Stars."))
 
 DEFINE_DIALOG(DIALOG_026, 1, 4, 95, 200, _("\
 It takes the power of\n\
-8 Stars to open this\n\
-door. You need [%] more\n\
-Stars."))
+31 Stars to open this\n\
+door. You need 1 more\n\
+Star."))
 
 DEFINE_DIALOG(DIALOG_027, 1, 4, 95, 200, _("\
 It takes the power of\n\
@@ -368,9 +368,9 @@ Stars."))
 
 DEFINE_DIALOG(DIALOG_028, 1, 4, 95, 200, _("\
 It takes the power of\n\
-50 Stars to open this\n\
-door. You need [%] more\n\
-Stars."))
+31 Stars to open this\n\
+door. You need 1 more\n\
+Star."))
 
 DEFINE_DIALOG(DIALOG_029, 1, 5, 95, 200, _("\
 To open the door that\n\
@@ -847,8 +847,8 @@ So, how about this:\n\
 \n\
 \n\
 Next time I'm bothering\n\
-you, just push L and I'll\n\
-leave you alone!\n\
+you, just push L 5 times\n\
+and I'll leave you alone!\n\
 Oh, don't let me forget\n\
 good chum, go ahead and\n\
 take my star!\n\

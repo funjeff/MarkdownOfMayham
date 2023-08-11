@@ -568,6 +568,7 @@ void bhv_clerk_message_init(void);
 void bhv_clerk_message_loop(void);
 void bhv_cutscene_prop_loop(void);
 void bhv_cutscene_trigger_loop (void);
+void bhv_connection_terminated_loop (void);
 void bhv_ground_clip_disable_loop (void);
 void bhv_cutscene_trigger_init (void);
 void bhv_elevator_pole_loop (void);

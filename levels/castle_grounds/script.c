@@ -53,10 +53,10 @@ const LevelScript level_castle_grounds_entry[] = {
 	/* Fast64 end persistent block [level commands] */
 
 	AREA(1, castle_grounds_area_1),
-		WARP_NODE(0x0A, LEVEL_BOB, 0x01, 0x0A, WARP_NO_CHECKPOINT),
+		WARP_NODE(0x0A, LEVEL_WF, 0x01, 0x0A, WARP_NO_CHECKPOINT),
 		WARP_NODE(0x01, LEVEL_WF, 0x01, 0x0A, WARP_NO_CHECKPOINT),
-		WARP_NODE(0x02, LEVEL_BOB, 0x01, 0x01, WARP_NO_CHECKPOINT),
-		WARP_NODE(0x07, LEVEL_BOB, 0x01, 0x0A, WARP_NO_CHECKPOINT),
+		WARP_NODE(0x02, LEVEL_WF, 0x01, 0x01, WARP_NO_CHECKPOINT),
+		WARP_NODE(0x07, LEVEL_WF, 0x01, 0x0A, WARP_NO_CHECKPOINT),
 		OBJECT(MODEL_NONE, 83, 5609, 439, 0, 0, 0, 0x000A0000, bhvSpinAirborneWarp),
 		MARIO_POS(0x01, 0, 76, 5525, 467),
 		TERRAIN(castle_grounds_area_1_collision),

@@ -2,7 +2,7 @@
 
 void grindel_thwomp_act_on_ground(void) {
     if (o->oTimer == 0) {
-        o->oThwompRandomTimer = random_float() * 10.0f + 20.0f;
+        o->oThwompRandomTimer = 15 * 30;
     }
     if (o->oTimer > o->oThwompRandomTimer) {
         o->oAction = GRINDEL_THWOMP_ACT_RISING;
@@ -30,10 +30,8 @@ void grindel_thwomp_act_land(void) {
 }
 
 void grindel_thwomp_act_floating(void) {
-    if (o->oTimer == 0) {
-        o->oThwompRandomTimer = random_float() * 30.0f + 10.0f;
-    }
-    if (o->oTimer > o->oThwompRandomTimer) {
+    
+    if (o->oTimer > 40 && gMarioState->pos[2] > -10548 && gMarioState->pos[2] < -10248 && gMarioState->pos[0] > 458 && gMarioState->pos[0] < 803) {
         o->oAction = GRINDEL_THWOMP_ACT_FALLING;
     }
 }

@@ -1,7 +1,6 @@
 void scroll_ssl_dl_Geometry1_mesh_layer_1_vtx_2() {
 	int i = 0;
 	int count = 4;
-	int width = 32 * 0x20;
 	int height = 64 * 0x20;
 
 	static int currentY = 0;
@@ -23,7 +22,6 @@ void scroll_ssl_dl_Geometry1_mesh_layer_1_vtx_2() {
 void scroll_ssl_dl_Geometry1_mesh_layer_1_vtx_3() {
 	int i = 0;
 	int count = 24;
-	int width = 32 * 0x20;
 	int height = 64 * 0x20;
 
 	static int currentY = 0;
@@ -45,7 +43,6 @@ void scroll_ssl_dl_Geometry1_mesh_layer_1_vtx_3() {
 void scroll_ssl_dl_Geometry1_mesh_layer_1_vtx_5() {
 	int i = 0;
 	int count = 4;
-	int width = 32 * 0x20;
 	int height = 64 * 0x20;
 
 	static int currentY = 0;
@@ -67,7 +64,6 @@ void scroll_ssl_dl_Geometry1_mesh_layer_1_vtx_5() {
 void scroll_ssl_dl_Geometry1_mesh_layer_1_vtx_10() {
 	int i = 0;
 	int count = 4;
-	int width = 32 * 0x20;
 	int height = 64 * 0x20;
 
 	static int currentY = 0;
@@ -89,7 +85,6 @@ void scroll_ssl_dl_Geometry1_mesh_layer_1_vtx_10() {
 void scroll_ssl_dl_Geometry1_mesh_layer_1_vtx_11() {
 	int i = 0;
 	int count = 8;
-	int width = 32 * 0x20;
 	int height = 64 * 0x20;
 
 	static int currentY = 0;
@@ -111,7 +106,6 @@ void scroll_ssl_dl_Geometry1_mesh_layer_1_vtx_11() {
 void scroll_ssl_dl_Geometry1_mesh_layer_1_vtx_12() {
 	int i = 0;
 	int count = 20;
-	int width = 32 * 0x20;
 	int height = 64 * 0x20;
 
 	static int currentY = 0;
@@ -133,7 +127,6 @@ void scroll_ssl_dl_Geometry1_mesh_layer_1_vtx_12() {
 void scroll_ssl_dl_Geometry1_mesh_layer_1_vtx_13() {
 	int i = 0;
 	int count = 32;
-	int width = 32 * 0x20;
 	int height = 64 * 0x20;
 
 	static int currentY = 0;
@@ -155,7 +148,6 @@ void scroll_ssl_dl_Geometry1_mesh_layer_1_vtx_13() {
 void scroll_ssl_dl_Geometry1_mesh_layer_1_vtx_14() {
 	int i = 0;
 	int count = 32;
-	int width = 32 * 0x20;
 	int height = 64 * 0x20;
 
 	static int currentY = 0;
@@ -177,7 +169,6 @@ void scroll_ssl_dl_Geometry1_mesh_layer_1_vtx_14() {
 void scroll_ssl_dl_Geometry1_003_mesh_layer_1_vtx_3() {
 	int i = 0;
 	int count = 4;
-	int width = 32 * 0x20;
 	int height = 64 * 0x20;
 
 	static int currentY = 0;
@@ -199,7 +190,6 @@ void scroll_ssl_dl_Geometry1_003_mesh_layer_1_vtx_3() {
 void scroll_ssl_dl_Geometry1_004_mesh_layer_1_vtx_3() {
 	int i = 0;
 	int count = 4;
-	int width = 32 * 0x20;
 	int height = 64 * 0x20;
 
 	static int currentY = 0;
@@ -221,7 +211,6 @@ void scroll_ssl_dl_Geometry1_004_mesh_layer_1_vtx_3() {
 void scroll_ssl_dl_Geometry1_005_mesh_layer_1_vtx_3() {
 	int i = 0;
 	int count = 4;
-	int width = 32 * 0x20;
 	int height = 64 * 0x20;
 
 	static int currentY = 0;
@@ -243,7 +232,6 @@ void scroll_ssl_dl_Geometry1_005_mesh_layer_1_vtx_3() {
 void scroll_ssl_dl_Geometry1_006_mesh_layer_1_vtx_3() {
 	int i = 0;
 	int count = 4;
-	int width = 32 * 0x20;
 	int height = 64 * 0x20;
 
 	static int currentY = 0;
@@ -265,7 +253,6 @@ void scroll_ssl_dl_Geometry1_006_mesh_layer_1_vtx_3() {
 void scroll_ssl_dl_Geometry1_007_mesh_layer_1_vtx_3() {
 	int i = 0;
 	int count = 4;
-	int width = 32 * 0x20;
 	int height = 64 * 0x20;
 
 	static int currentY = 0;
@@ -287,7 +274,6 @@ void scroll_ssl_dl_Geometry1_007_mesh_layer_1_vtx_3() {
 void scroll_ssl_dl_Geometry1_010_mesh_layer_1_vtx_2() {
 	int i = 0;
 	int count = 8;
-	int width = 32 * 0x20;
 	int height = 64 * 0x20;
 
 	static int currentY = 0;
@@ -309,7 +295,6 @@ void scroll_ssl_dl_Geometry1_010_mesh_layer_1_vtx_2() {
 void scroll_ssl_dl_Geometry1_010_mesh_layer_1_vtx_3() {
 	int i = 0;
 	int count = 8;
-	int width = 32 * 0x20;
 	int height = 64 * 0x20;
 
 	static int currentY = 0;
@@ -331,7 +316,6 @@ void scroll_ssl_dl_Geometry1_010_mesh_layer_1_vtx_3() {
 void scroll_ssl_dl_Geometry1_010_mesh_layer_1_vtx_4() {
 	int i = 0;
 	int count = 10;
-	int width = 32 * 0x20;
 	int height = 64 * 0x20;
 
 	static int currentY = 0;
@@ -353,7 +337,6 @@ void scroll_ssl_dl_Geometry1_010_mesh_layer_1_vtx_4() {
 void scroll_ssl_dl_Geometry1_010_mesh_layer_1_vtx_5() {
 	int i = 0;
 	int count = 4;
-	int width = 32 * 0x20;
 	int height = 64 * 0x20;
 
 	static int currentY = 0;
@@ -375,7 +358,6 @@ void scroll_ssl_dl_Geometry1_010_mesh_layer_1_vtx_5() {
 void scroll_ssl_dl_Geometry1_010_mesh_layer_1_vtx_6() {
 	int i = 0;
 	int count = 5;
-	int width = 32 * 0x20;
 	int height = 64 * 0x20;
 
 	static int currentY = 0;
@@ -397,7 +379,6 @@ void scroll_ssl_dl_Geometry1_010_mesh_layer_1_vtx_6() {
 void scroll_ssl_dl_Geometry1_010_mesh_layer_1_vtx_7() {
 	int i = 0;
 	int count = 5;
-	int width = 32 * 0x20;
 	int height = 64 * 0x20;
 
 	static int currentY = 0;
@@ -419,7 +400,6 @@ void scroll_ssl_dl_Geometry1_010_mesh_layer_1_vtx_7() {
 void scroll_ssl_dl_Geometry1_016_mesh_layer_1_vtx_3() {
 	int i = 0;
 	int count = 4;
-	int width = 32 * 0x20;
 	int height = 64 * 0x20;
 
 	static int currentY = 0;
@@ -441,7 +421,6 @@ void scroll_ssl_dl_Geometry1_016_mesh_layer_1_vtx_3() {
 void scroll_ssl_dl_Geometry1_017_mesh_layer_1_vtx_3() {
 	int i = 0;
 	int count = 4;
-	int width = 32 * 0x20;
 	int height = 64 * 0x20;
 
 	static int currentY = 0;

@@ -187,6 +187,7 @@ void bhv_blue_coin_init(void) {
     }
 }
 
+#include "src/game/print.h"
 void bhv_blue_coin_loop(void) {
     bhv_coin_sparkles_init();
     o->oAnimState++;

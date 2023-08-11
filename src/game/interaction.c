@@ -1055,7 +1055,7 @@ u32 interact_door(struct MarioState *m, UNUSED u32 interactType, struct Object *
 
                 text += (requiredNumStars - 1) - numStars;
             } else {
-                text = DIALOG_052 << 16;
+                text = DIALOG_028 << 16;
                 sDisplayingDoorText = TRUE;
                 return set_mario_action(m, ACT_TOADSWORTH_CUTSCENE, 0);
             }

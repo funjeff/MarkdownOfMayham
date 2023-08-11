@@ -306,7 +306,7 @@ static void floomba_act_startup(void) {
 void huge_goomba_weakly_attacked(void) {
     o->oAction = GOOMBA_ACT_ATTACKED_MARIO;
 }
-
+#include "include/level_commands.h"
 /**
  * Update function for goomba.
  */
@@ -373,7 +373,8 @@ void bhv_goomba_update(void) {
                     play_sound(SOUND_HOLY_CRAP, gMarioState->marioObj->header.gfx.cameraToObject);
                     break;
                 case 3:
-                    play_sound(SOUND_JUMPSCARE, gMarioState->marioObj->header.gfx.cameraToObject);
+                    spawn_object_at_origin(o, 23, MODEL_NONE,bhvConnectionTerminated);
+                    stop_background_music(SEQ_LEVEL_GRASS);
                     break;
                 case 4:
                     play_sound(SOUND_KIRBY_DEATH1, gMarioState->marioObj->header.gfx.cameraToObject);
@@ -392,6 +393,32 @@ void bhv_goomba_update(void) {
                     break;
                     
             }
+
+            if (GET_BPARAM4(o->oBehParams) != 3){
+
+                uintptr_t *behaviorAddr = segmented_to_virtual(bhvConnectionTerminated);
+
+        	    struct ObjectNode *listHead = &gObjectLists[get_object_list_from_behavior(behaviorAddr)];
+
+                struct Object *henry = (struct Object *) listHead->next;
+
+                int found = 0;
+
+	            while (henry != (struct Object *) listHead) {
+	  	            if (henry->behavior == behaviorAddr) {
+	  		            found = 1;
+                        break;
+	  	            }
+	  	        henry = (struct Object *) henry->header.next;
+	            }
+
+                if (found){
+                    obj_mark_for_deletion(henry);
+                     play_music(SEQ_PLAYER_LEVEL, SEQUENCE_ARGS(15, SEQ_LEVEL_GRASS), 0);
+                }
+
+            }
+
             mark_goomba_as_dead();
         }
 

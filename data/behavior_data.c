@@ -876,6 +876,15 @@ const BehaviorScript bhvCutsceneTrigger[] = {
    	END_LOOP(),
 };
 
+const BehaviorScript bhvConnectionTerminated[] = {
+   	BEGIN(OBJ_LIST_LEVEL),
+   	OR_INT(oFlags, OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE),
+   	SET_OBJ_PHYSICS(/*Wall hitbox radius*/ 30, /*Gravity*/ -400, /*Bounciness*/ -50, /*Drag strength*/ 1000, /*Friction*/ 1000, /*Buoyancy*/ 200, /*Unused*/ 0, 0),
+	BEGIN_LOOP(),
+   	    CALL_NATIVE(bhv_connection_terminated_loop),
+   	END_LOOP(),
+};
+
 const BehaviorScript bhvGroundClipDisable[] = {
    	BEGIN(OBJ_LIST_LEVEL),
    	OR_INT(oFlags, OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE),

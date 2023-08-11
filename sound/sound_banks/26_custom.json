@@ -289,6 +289,191 @@
             "release_rate": 208,
             "envelope": "envelope0",
             "sound": "55_toadsworth3"
+        },
+		"inst56": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "56_connection1"
+        },
+		"inst57": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "57_connection2"
+        },
+		"inst58": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "58_connection3"
+        },
+		"inst59": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "59_connection4"
+        },
+		"inst60": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "60_connection5"
+        },
+		"inst61": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "61_connection6"
+        },
+		"inst62": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "62_connection7"
+        },
+		"inst63": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "63_connection8"
+        },
+		"inst64": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "64_connection9"
+        },
+		"inst65": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "65_connection10"
+        },
+		"inst66": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "66_connection11"
+        },
+		"inst67": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "67_connection12"
+        },
+		"inst68": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "68_connection13"
+        },
+		"inst69": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "69_connection14"
+        },
+		"inst70": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "70_connection15"
+        },
+		"inst71": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "71_connection16"
+        },
+		"inst72": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "72_connection17"
+        },
+		"inst73": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "73_connection18"
+        },
+		"inst74": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "74_connection19"
+        },
+		"inst75": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "75_connection20"
+        },
+		"inst76": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "76_connection21"
+        },
+		"inst77": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "77_connection22"
+        },
+		"inst78": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "78_connection23"
+        },
+		"inst79": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "79_connection24"
+        },
+		"inst80": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "80_connection25"
+        },
+		"inst81": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "81_connection26"
+        },
+		"inst82": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "82_connection27"
+        },
+		"inst83": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "83_connection28"
+        },
+		"inst84": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "84_connection29"
+        },
+		"inst85": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "85_connection30"
+        },
+		"inst86": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "86_connection31"
+        },
+		"inst87": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "87_connection32"
+        },
+		"inst88": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "88_connection33"
+        },
+		"inst89": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "89_connection34"
+        },
+		"inst90": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "90_connection35"
+        },
+		"inst91": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "91_connection36"
+        },
+		"inst92": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "92_connection37"
         }
     },
     "instrument_list": [
@@ -347,6 +532,43 @@
 		"inst52",
 		"inst53",
 		"inst54",
-		"inst55"
+		"inst55",
+		"inst56",
+		"inst57",
+		"inst58",
+		"inst59",
+		"inst60",
+		"inst61",
+		"inst62",
+		"inst63",
+		"inst64",
+		"inst65",
+		"inst66",
+		"inst67",
+		"inst68",
+		"inst69",
+		"inst70",
+		"inst71",
+		"inst72",
+		"inst73",
+		"inst74",
+		"inst75",
+		"inst76",
+		"inst77",
+		"inst78",
+		"inst79",
+		"inst80",
+		"inst81",
+		"inst82",
+		"inst83",
+		"inst84",
+		"inst85",
+		"inst86",
+		"inst87",
+		"inst88",
+		"inst89",
+		"inst90",
+		"inst91",
+		"inst92"
     ]
 }
