@@ -461,7 +461,7 @@ void render_hud_timer(void) {
     u16 timerMins = timerValFrames / (30 * 60);
     u16 timerSecs = (timerValFrames - (timerMins * 1800)) / 30;
 
-    u32 timeLeft = 1830 - ((60 * timerMins) + timerSecs);
+    u32 timeLeft = 30 - ((60 * timerMins) + timerSecs);
 
     u16 headX = 42 + (230 - ((230 *timeLeft)/1830));
 
