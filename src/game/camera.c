@@ -7304,9 +7304,9 @@ void cutscene_train_camera_loop(UNUSED struct Camera *c) {
 
 void cutscene_train_loop(struct Camera *c){
     if (!gMarioState->zoomStop){
-	    vec3f_set(c->pos, c->pos[0] - 80, c->pos[1] + 100, c->pos[2] - 150);
+	    vec3f_set(c->pos, c->pos[0] - 160, c->pos[1] + 200, c->pos[2] - 150);
     } else {
-        vec3f_set(c->pos, c->pos[0], c->pos[1], c->pos[2] - 150);
+        vec3f_set(c->pos, c->pos[0], c->pos[1], c->pos[2] - 140);
     }
 }
 
