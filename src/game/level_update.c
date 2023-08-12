@@ -1402,6 +1402,7 @@ s32 lvl_play_the_end_screen_sound12(UNUSED s16 initOrUpdate, UNUSED s32 levelNum
 }
 
 s32 lvl_play_the_end_screen_sound2(UNUSED s16 initOrUpdate, UNUSED s32 levelNum) {
+    play_music(SEQ_PLAYER_LEVEL, SEQUENCE_ARGS(15, SEQ_LEVEL_HOT), 0);
     play_sound(SOUND_QUESTION, gGlobalSoundSource);
     return TRUE;
 }
@@ -1422,6 +1423,7 @@ s32 lvl_play_the_end_screen_sound4(UNUSED s16 initOrUpdate, UNUSED s32 levelNum)
 }
 
 s32 lvl_play_the_end_screen_sound5(UNUSED s16 initOrUpdate, UNUSED s32 levelNum) {
+    play_music(SEQ_PLAYER_LEVEL, SEQUENCE_ARGS(15, SEQ_LEVEL_WATER), 0);
     play_sound(SOUND_SPAGHETTI, gGlobalSoundSource);
     return TRUE;
 }
