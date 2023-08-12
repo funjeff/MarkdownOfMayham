@@ -3,7 +3,7 @@
 const GeoLayout wdw_area_2_geo[] = {
 	GEO_NODE_START(),
 	GEO_OPEN_NODE(),
-		GEO_TRANSLATE_ROTATE_WITH_DL(LAYER_OPAQUE, -2008, 11474, -7586, 0, 90, 0, wdw_dl_Cube_mesh_layer_1),
+		GEO_TRANSLATE_ROTATE_WITH_DL(LAYER_OPAQUE, 459, 10540, 3325, 0, 90, 0, wdw_dl_Cube_mesh_layer_1),
 	GEO_CLOSE_NODE(),
 	GEO_RETURN(),
 };
