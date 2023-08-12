@@ -312,6 +312,10 @@ Good luck with that.\n\
 \n\
 \n\
 \n\
+I've taken away your\n\
+Odyssey dive, Mario.\n\
+And I've bulked up.\n\
+\n\
 You're not getting\n\
 past me unless you\n\
 have something with\n\
@@ -563,7 +567,7 @@ You like my new poster?\n\
 It's based off my favorite\n\
 video game, Portal 2!\n\
 \n\
-I had another one too\n\
+I had another one, too,\n\
 but some dolt stole it!\n\
 \n\
 What?\n\
@@ -964,8 +968,8 @@ Baljeet Tjinder will be\n\
 played by Luigi Amiibo."))
 
 DEFINE_DIALOG(DIALOG_063, 1, 2, 30, 200, _("\
-We lied about the ground\n\
-pound dive."))
+We lied about the\n\
+Odyssey dive."))
 
 DEFINE_DIALOG(DIALOG_064, 1, 2, 30, 200, _("\
 Bet you can't do firsties\n\
