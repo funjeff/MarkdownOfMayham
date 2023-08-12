@@ -245,6 +245,7 @@ const LevelScript script_func_global_1[] = {
     LOAD_MODEL_FROM_GEO(MODEL_SDOORR,                  sDoorR_geo),
     LOAD_MODEL_FROM_GEO(MODEL_TOADSWORTH,              toadsworth_geo),
     LOAD_MODEL_FROM_GEO(MODEL_TEA,                     tea_geo),
+    LOAD_MODEL_FROM_GEO(MODEL_TRAIN,                   train_geo),
 
     RETURN(),
 };

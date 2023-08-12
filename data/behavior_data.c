@@ -523,7 +523,6 @@ const BehaviorScript bhvKingBobomb[] = {
     SET_HITBOX(/*Radius*/ 100, /*Height*/ 100),
     SET_OBJ_PHYSICS(/*Wall hitbox radius*/ 30, /*Gravity*/ -400, /*Bounciness*/ -50, /*Drag strength*/ 1000, /*Friction*/ 1000, /*Buoyancy*/ 200, /*Unused*/ 0, 0),
     SET_INT(oIntangibleTimer, 0),
-    SET_FLOAT(oDrawingDistance, 18000),
     DROP_TO_FLOOR(),
     SET_HOME(),
     SPAWN_OBJ(/*Model*/ MODEL_NONE, /*Behavior*/ bhvBobombAnchorMario),
@@ -865,6 +864,16 @@ const BehaviorScript bhvCutsceneProp[] = {
 	SET_OBJ_PHYSICS(/*Wall hitbox radius*/ 30, /*Gravity*/ -400, /*Bounciness*/ -50, /*Drag strength*/ 1000, /*Friction*/ 1000, /*Buoyancy*/ 200, /*Unused*/ 0, 0),
 	BEGIN_LOOP(),
 	    CALL_NATIVE(bhv_cutscene_prop_loop),
+	END_LOOP(),
+};
+
+const BehaviorScript bhvTrain[] = {
+	BEGIN(OBJ_LIST_LEVEL),
+	OR_INT(oFlags, OBJ_FLAG_ACTIVE_FROM_AFAR | OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE),
+	SET_OBJ_PHYSICS(/*Wall hitbox radius*/ 30, /*Gravity*/ -400, /*Bounciness*/ -50, /*Drag strength*/ 1000, /*Friction*/ 1000, /*Buoyancy*/ 200, /*Unused*/ 0, 0),
+	SET_FLOAT(oDrawingDistance, 18000),
+    BEGIN_LOOP(),
+	    CALL_NATIVE(bhv_train_loop),
 	END_LOOP(),
 };
 

@@ -430,4 +430,6 @@ extern const struct Animation *const toad_seg6_anims_0600FB58[];
 
 #include "tea/geo_header.h"
 
+#include "train/geo_header.h"
+
 #endif

@@ -46,11 +46,14 @@ const LevelScript level_ttm_entry[] = {
 		WARP_NODE(0x0A, LEVEL_BOB, 0x01, 0x0A, WARP_NO_CHECKPOINT),
 		WARP_NODE(0xF0, LEVEL_BOB, 0x01, 0x0A, WARP_NO_CHECKPOINT),
 		WARP_NODE(0xF1, LEVEL_BOB, 0x01, 0x0A, WARP_NO_CHECKPOINT),
+		WARP_NODE(0x01, LEVEL_WDW, 0x01, 0x0A, WARP_CHECKPOINT),
+		OBJECT(MODEL_TRAIN, -17198, 115, 13027, 0, -90, 0, 0x00010000, bhvTrain),
+		OBJECT(MODEL_NONE, -2000, 115, -26200, 0, -90, 0, 0x0B010000, bhvWarp),
 		OBJECT(MODEL_NONE, -2461, 196, 30025, 0, 0, 0, 0x000A0000, bhvSpinAirborneWarp),
 		MARIO_POS(0x01, 0, -2461, 196, 30025),
 		TERRAIN(ttm_area_1_collision),
 		MACRO_OBJECTS(ttm_area_1_macro_objs),
-		SET_BACKGROUND_MUSIC(0x00, SEQ_LEVEL_GRASS),
+		SET_BACKGROUND_MUSIC(0x00, SEQ_LEVEL_SNOW),
 		TERRAIN_TYPE(TERRAIN_GRASS),
 		/* Fast64 begin persistent block [area commands] */
 		/* Fast64 end persistent block [area commands] */

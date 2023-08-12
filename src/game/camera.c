@@ -4944,6 +4944,9 @@ u8 get_cutscene_from_mario_status(struct Camera *c) {
             case CAM_EVENT_DESERT:
                 cutscene = CUTSCENE_DESERT;
                 break;
+            case CAM_EVENT_TRAIN:
+                cutscene = CUTSCENE_TRAIN;
+                break;
             case CAM_EVENT_TOADSWORTH:
                 cutscene = CUTSCENE_TOADSWORTH;
                 break;
@@ -7284,6 +7287,26 @@ void cutscene_desert_camera_loop(UNUSED struct Camera *c) {
 void cutscene_desert_loop(struct Camera *c){
     if (!gMarioState->zoomStop){
 	    vec3f_set(c->pos, c->pos[0] + 80, c->pos[1] + 180, c->pos[2] - 700);
+    }
+}
+
+void cutscene_train_camera_start(UNUSED struct Camera *c) {
+    //vec3f_set(c->focus, c->focus[0] - 800, c->focus[1] + 1500, c->focus[2]);
+}
+
+void cutscene_train_start(struct Camera *c){
+    cutscene_event(cutscene_train_camera_start,c,0,0);
+}
+
+void cutscene_train_camera_loop(UNUSED struct Camera *c) {
+
+}
+
+void cutscene_train_loop(struct Camera *c){
+    if (!gMarioState->zoomStop){
+	    vec3f_set(c->pos, c->pos[0] - 80, c->pos[1] + 100, c->pos[2] - 150);
+    } else {
+        vec3f_set(c->pos, c->pos[0], c->pos[1], c->pos[2] - 150);
     }
 }
 
@@ -10078,6 +10101,11 @@ struct Cutscene sCutsceneDesert[] = {
     { cutscene_desert_loop, CUTSCENE_LOOP }
 };
 
+struct Cutscene sCutsceneTrain[] = {
+    { cutscene_train_start, 1 },
+    { cutscene_train_loop, CUTSCENE_LOOP }
+};
+
 struct Cutscene sCutsceneToadsworth[] = {
     { cutscene_toadsworth_start, 1 },
     { cutscene_toadsworth_loop, CUTSCENE_LOOP }
@@ -10902,6 +10930,8 @@ void play_cutscene(struct Camera *c) {
         CUTSCENE(CUTSCENE_FIRST,                sCutsceneFirst)
         CUTSCENE(CUTSCENE_DESERT,               sCutsceneDesert)
         CUTSCENE(CUTSCENE_TOADSWORTH,           sCutsceneToadsworth)
+        CUTSCENE(CUTSCENE_TRAIN,                sCutsceneTrain)
+        
     }
 
 #undef CUTSCENE

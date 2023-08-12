@@ -571,6 +571,8 @@
 #define MODEL_SDOORR                      0xF6
 #define MODEL_TOADSWORTH                  0xF7
 #define MODEL_TEA                         0xF8
+#define MODEL_TRAIN                       0xF9
+
 
 
 

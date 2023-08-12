@@ -1,6 +1,6 @@
 const Collision ttm_area_2_collision[] = {
 	COL_INIT(),
-	COL_VERTEX_INIT(8),
+	COL_VERTEX_INIT(12),
 	COL_VERTEX(-2748, 1278, 29150),
 	COL_VERTEX(-2748, 1478, 29150),
 	COL_VERTEX(-2748, 1478, 28950),
@@ -9,6 +9,10 @@ const Collision ttm_area_2_collision[] = {
 	COL_VERTEX(-2548, 1278, 28950),
 	COL_VERTEX(-2548, 1478, 29150),
 	COL_VERTEX(-2548, 1278, 29150),
+	COL_VERTEX(-2099, 131, 737),
+	COL_VERTEX(-2899, 131, 737),
+	COL_VERTEX(-2899, 131, 1257),
+	COL_VERTEX(-2099, 131, 1257),
 	COL_TRI_INIT(SURFACE_DEFAULT, 12),
 	COL_TRI(0, 1, 2),
 	COL_TRI(0, 2, 3),
@@ -22,6 +26,9 @@ const Collision ttm_area_2_collision[] = {
 	COL_TRI(3, 7, 0),
 	COL_TRI(4, 2, 1),
 	COL_TRI(4, 1, 6),
+	COL_TRI_INIT(SURFACE_DASH_PAD_FREEZE_LEFT, 2),
+	COL_TRI(8, 9, 10),
+	COL_TRI(8, 10, 11),
 	COL_TRI_STOP(),
 	COL_END()
 };

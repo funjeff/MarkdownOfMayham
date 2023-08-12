@@ -62,3 +62,4 @@ UNUSED static const u64 binid_1 = 1;
 #include "sDoorR/model.inc.c"
 #include "toadsworth/model.inc.c"
 #include "tea/model.inc.c"
+#include "train/model.inc.c"

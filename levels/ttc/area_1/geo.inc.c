@@ -28,7 +28,7 @@ const GeoLayout ttc_area_1_geo[] = {
 		GEO_TRANSLATE_NODE_WITH_DL(LAYER_OPAQUE, -1100, 8400, -17809, ttc_dl_Dash_Left_016_mesh_layer_1),
 		GEO_TRANSLATE_ROTATE_WITH_DL(LAYER_OPAQUE, 2100, 8700, -16315, 0, -90, 0, ttc_dl_Dash_Left_017_mesh_layer_1),
 		GEO_TRANSLATE_ROTATE_WITH_DL(LAYER_OPAQUE, 2105, 9700, -15867, 0, 90, 0, ttc_dl_Dash_Left_018_mesh_layer_1),
-		GEO_TRANSLATE_ROTATE_WITH_DL(LAYER_OPAQUE, 0, 11800, -16853, 0, 90, 0, ttc_dl_Dash_Left_019_mesh_layer_1),
+		GEO_TRANSLATE_ROTATE_WITH_DL(LAYER_OPAQUE, 0, 11800, -16703, 0, 90, 0, ttc_dl_Dash_Left_019_mesh_layer_1),
 		GEO_TRANSLATE_ROTATE_WITH_DL(LAYER_OPAQUE, 588, 10700, -19079, 0, 180, 0, ttc_dl_Dash_Left_020_mesh_layer_1),
 		GEO_TRANSLATE_ROTATE_WITH_DL(LAYER_OPAQUE, -1412, 10700, -19079, 0, 180, 0, ttc_dl_Dash_Left_021_mesh_layer_1),
 		GEO_TRANSLATE_ROTATE_WITH_DL(LAYER_OPAQUE, -3008, 11000, -18459, 0, -90, 0, ttc_dl_Dash_Left_022_mesh_layer_1),

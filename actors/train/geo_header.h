@@ -1,0 +1,10 @@
+extern const GeoLayout train_geo[];
+extern Lights1 train_M_TrainN64_f3d_001_lights;
+extern u8 train_T_TrainN64_Alb2_ci4[];
+extern u8 train_T_TrainN64_Alb2_ci4_pal_rgba16[];
+extern Vtx train_TrainN64A_Body__M_TrainN64_mesh_layer_1_vtx_0[8213];
+extern Gfx train_TrainN64A_Body__M_TrainN64_mesh_layer_1_tri_0[];
+extern Gfx mat_train_M_TrainN64_f3d_001[];
+extern Gfx mat_revert_train_M_TrainN64_f3d_001[];
+extern Gfx train_TrainN64A_Body__M_TrainN64_mesh_layer_1[];
+extern Gfx train_material_revert_render_settings[];

@@ -37,3 +37,4 @@
 #include "sDoorR/geo.inc.c"
 #include "toadsworth/geo.inc.c"
 #include "tea/geo.inc.c"
+#include "train/geo.inc.c"
