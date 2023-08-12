@@ -21,15 +21,15 @@ static void clerk_message_opaque(void) {
     o->oInteractionSubtype = INT_SUBTYPE_NPC;
         if (o->oInteractStatus & INT_STATUS_INTERACTED) {
             level_control_timer(TIMER_CONTROL_HIDE);
-            if (gMarioState->numCoins >= 100){
+            if (gMarioState->numCoins >= 320){
                 o->oToadMessageDialogId = GOOD_END_ID;
             }
 
-            if (gMarioState->numCoins >= 200){
+            if (gMarioState->numCoins >= 420){
                 o->oToadMessageDialogId = GREAT_END_ID;
             }
 
-            if (gMarioState->numCoins >= 300){
+            if (gMarioState->numCoins >= 520){
                 o->oToadMessageDialogId = BEST_END_ID;
             }
             
