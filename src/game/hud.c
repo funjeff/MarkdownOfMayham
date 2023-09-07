@@ -497,12 +497,12 @@ void render_hud_timer(void) {
 	
 	u16 framesLeft = 30*60*30.5 - (timerValFrames);
 
-	//   if (framesLeft == 30*60*30){
-	//   	play_sound(SOUND_30_MINUTES_LEFT, gMarioState->marioObj->header.gfx.cameraToObject);
-	//   }
-	//   if (framesLeft == 30*60*30 - 57){
-	//   	play_sound(SOUND_30_LEFT, gMarioState->marioObj->header.gfx.cameraToObject);
-	//   }
+	if (framesLeft == 30*60*30){
+		play_sound(SOUND_30_MINUTES_LEFT, gMarioState->marioObj->header.gfx.cameraToObject);
+	}
+	if (framesLeft == 30*60*30 - 57){
+		play_sound(SOUND_30_LEFT, gMarioState->marioObj->header.gfx.cameraToObject);
+	}
 
 
 	if (framesLeft == 20*60*30){
@@ -514,11 +514,11 @@ void render_hud_timer(void) {
 	}
 
 	//10 minutes left alarm plays 2 minutes early to see if anybody notices
-	if (framesLeft == 10*60*30){
+	if (framesLeft == 12*60*30){
 		play_sound(SOUND_10_MINUTES_LEFT, gMarioState->marioObj->header.gfx.cameraToObject);
 	}
 
-	if (framesLeft == 10*60*30 - 57){
+	if (framesLeft == 12*60*30 - 57){
 		play_sound(SOUND_10_LEFT, gMarioState->marioObj->header.gfx.cameraToObject);
 	}
 
@@ -610,7 +610,7 @@ void set_reaction_num(int newNum){
 }
 
 void render_hud_live_reaction(void){
-	u16 xPos = 255;
+	u16 xPos = 258;
 	u16 yPos = 40;
 
 	u16 timerValFrames = gHudDisplay.timer;

@@ -14,21 +14,25 @@ static struct ObjectHitbox sTrollpadHitbox = {
 
 void bhv_trollpad_loop (void){
      obj_set_hitbox(o, &sTrollpadHitbox);
-	  
 
-      if (o->trollPadTimer > 0 && o->trollPadTimer != 80){
+
+      if (o->trollPadTimer > 0 && o->trollPadTimer != 81){
         obj_set_angle(o,o->oFaceAnglePitch,o->oFaceAngleYaw - 200, o->oFaceAngleRoll);
-        o->trollPadTimer = o->trollPadTimer + 1;
+
+        if (o->trollPadTimer != 80){
+            o->trollPadTimer = o->trollPadTimer + 1;
+        }
       }
 
       if (obj_check_if_collided_with_object(o, gMarioObject) && o->trollPadTimer == 0) {
         play_sound(SOUND_STONE_PUSH, gMarioState->marioObj->header.gfx.pos);
-	 	set_mario_action(gMarioState,ACT_DO_NOTHING,0);
+         set_mario_action(gMarioState,ACT_DO_NOTHING,0);
         set_mario_animation(gMarioState, MARIO_ANIM_IDLE_HEAD_CENTER);
         o->trollPadTimer = 1;
-	  }
-      if (obj_check_if_collided_with_object(o, gMarioObject) && o->trollPadTimer == 80 & gMarioState->action != ACT_DASHING) {
+      }
+      if ((obj_check_if_collided_with_object(o, gMarioObject) && o->trollPadTimer == 81)  || o->trollPadTimer == 80 & gMarioState->action != ACT_DASHING) {
             set_mario_action(gMarioState,ACT_DASHING, 0);
+            o->trollPadTimer = 81;
             if ( gMarioState->forwardVel < 200){
                  gMarioState->forwardVel = 200;
              }
@@ -41,7 +45,7 @@ void bhv_trollpad_loop (void){
                 } else {
                     play_sound(SOUND_DASH_PANNEL_1, gMarioState->marioObj->header.gfx.pos);
                 }
-            }  
+            }
       }
-      
+
 }
